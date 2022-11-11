@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import Head from "next/head";
+import NavBar from "../components/navbar";
 
 const Home: NextPage = () => {
   return (
@@ -10,7 +11,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="container mx-auto flex min-h-screen flex-col items-center justify-center p-4">
+      <NavBar/>
+
+      <main className="container mx-auto flex flex-col items-center justify-center p-4">
         <p className="text-3xl text-center">
             I’m Griffin Baxter, a Graduate Software Engineer in Christchurch, New Zealand.
         </p>
