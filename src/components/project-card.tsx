@@ -1,5 +1,6 @@
 import {Badge, Card} from "flowbite-react";
 import { type NextPage } from "next";
+import { type Project } from "../pages/projects";
 
 export enum Language {
     C_CPlusPlus,
@@ -25,25 +26,23 @@ const languageMap: Record<Language, LanguageData> = {
 }
 
 interface Props {
-    projectName: string,
-    projectDate: string,
-    projectLanguages: Language[],
+    projectObject: Project
 }
 
-const ProjectCard: NextPage<Props> = ({projectName: name, projectDate: date, projectLanguages: languages}) => {
+const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
     return (
         <Card
             imgSrc="/logo.png"
             imgAlt="Image"
         >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {name}
+                {project.name}
             </h5>
             <h6 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {date}
+                {project.date}
             </h6>
             <div className="flex flex-wrap gap-2">
-                {languages.map((language) => (
+                {project.languages.map((language) => (
                     <Badge key={language} color={languageMap[language].badgeColour} size="sm">
                         {languageMap[language].name}
                     </Badge>
