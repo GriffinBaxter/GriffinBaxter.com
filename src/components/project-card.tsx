@@ -1,14 +1,14 @@
+import { type posts } from "@prisma/client";
 import {Badge, Card} from "flowbite-react";
 import { type NextPage } from "next";
-import { type Project } from "../pages/projects";
 
-export enum Language {
-    C_CPlusPlus,
-    HTML_CSS,
-    Java,
-    JavaScript_TypeScript,
-    Python,
-    SQL,
+enum Language {
+    C_CPlusPlus = 0,
+    HTML_CSS = 1,
+    Java = 2,
+    JavaScript_TypeScript = 3,
+    Python = 4,
+    SQL = 5,
 }
 
 interface LanguageData {
@@ -26,23 +26,25 @@ const languageMap: Record<Language, LanguageData> = {
 }
 
 interface Props {
-    projectObject: Project
+    projectObject: posts
 }
 
 const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
+    const languages = project.languages as Language[]
+
     return (
         <Card
-            imgSrc="/logo.png"
+            imgSrc="/placeholder.jpg"
             imgAlt="Image"
         >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {project.name}
+                {project.title}
             </h5>
             <h6 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {project.date}
+                {project.subtitle}
             </h6>
             <div className="flex flex-wrap gap-2">
-                {project.languages.map((language) => (
+                {languages?.map((language) => (
                     <Badge key={language} color={languageMap[language].badgeColour} size="sm">
                         {languageMap[language].name}
                     </Badge>

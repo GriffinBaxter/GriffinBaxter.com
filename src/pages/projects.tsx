@@ -1,38 +1,33 @@
 import {type NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
-import ProjectCard, { type Language } from "../components/project-card";
-
-export interface Project {
-    name: string,
-    date: string,
-    languages: Language[],
-}
-
-const temporaryProjectsList: Project[] = []
+import ProjectCard from "../components/project-card";
+import {trpc} from "../utils/trpc";
 
 const Projects: NextPage = () => {
-  return (
-    <>
-      <Head>
-        <title>Software Projects - Griffin Baxter</title>
-        <meta name="description" content="Software Projects" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    const projectPosts = trpc.posts.getAllProjects.useQuery();
 
-      <NavBar page={NavigationPage.SoftwareProjects}/>
+    return (
+        <>
+            <Head>
+                <title>Software Projects - Griffin Baxter</title>
+                <meta name="description" content="Software Projects" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
 
-      <main className="container mx-auto flex flex-col items-center justify-center p-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {temporaryProjectsList.map((project) => (
-                  <div key={project.name} className="max-w-sm">
-                      <ProjectCard projectObject={project}/>
-                  </div>
-              ))}
-          </div>
-      </main>
-    </>
-  );
+            <NavBar page={NavigationPage.SoftwareProjects}/>
+
+            <main className="container mx-auto flex flex-col items-center justify-center p-4">
+                {projectPosts.data ?
+                    <div
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">{projectPosts.data.map(post => (
+                        <div key={post.id} className="max-w-sm">
+                            <ProjectCard projectObject={post}/>
+                        </div>
+                    ))}</div> : <div></div>}
+            </main>
+        </>
+    );
 };
 
 export default Projects;

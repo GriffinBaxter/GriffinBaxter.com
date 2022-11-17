@@ -1,7 +1,16 @@
 import {publicProcedure, router} from "../trpc";
 
 export const postRouter = router({
-    getAll: publicProcedure.query(({ ctx }) => {
-        return ctx.prisma.posts.findMany();
+    getAllProjects: publicProcedure.query(({ ctx }) => {
+        return ctx.prisma.posts.findMany({
+            where: {
+                type: {
+                    equals: 'PROJECT',
+                },
+            },
+            orderBy: {
+                published: 'desc'
+            }
+        });
     }),
 })
