@@ -9,8 +9,15 @@ export const postRouter = router({
                 },
             },
             orderBy: {
-                published: 'desc'
-            }
+                published: 'desc',
+            },
+            select: {
+                id: true,
+                title: true,
+                subtitle: true,
+                content: true,
+                languages: true,
+            },
         });
     }),
 })

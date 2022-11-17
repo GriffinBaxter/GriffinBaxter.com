@@ -26,7 +26,7 @@ const languageMap: Record<Language, LanguageData> = {
 }
 
 interface Props {
-    projectObject: posts
+    projectObject: Partial<posts>
 }
 
 const ProjectCard: NextPage<Props> = ({projectObject: project}) => {

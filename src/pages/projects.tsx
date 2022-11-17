@@ -3,6 +3,7 @@ import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/project-card";
 import {trpc} from "../utils/trpc";
+import {Spinner} from "flowbite-react";
 
 const Projects: NextPage = () => {
     const projectPosts = trpc.posts.getAllProjects.useQuery();
@@ -24,7 +25,7 @@ const Projects: NextPage = () => {
                         <div key={post.id} className="max-w-sm">
                             <ProjectCard projectObject={post}/>
                         </div>
-                    ))}</div> : <div></div>}
+                    ))}</div> : <Spinner className="min-h-[380px]" size="xl" />}
             </main>
         </>
     );
