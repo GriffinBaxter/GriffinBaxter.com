@@ -1,8 +1,8 @@
 import {type NextPage} from "next";
 import Head from "next/head";
-import NavBar, {NavigationPage} from "../../components/navbar";
-import ProjectCard from "../../components/project-card";
-import {trpc} from "../../utils/trpc";
+import NavBar, {NavigationPage} from "../components/navbar";
+import ProjectCard from "../components/project-card";
+import {trpc} from "../utils/trpc";
 import {Spinner} from "flowbite-react";
 
 const Projects: NextPage = () => {
