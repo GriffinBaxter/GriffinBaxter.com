@@ -15,4 +15,5 @@ model posts {
   published DateTime @default(dbgenerated("'2022-11-16'::date")) @db.Timestamptz(6)
   content   Json     @db.Json
   languages Json?    @db.Json
+  slug      String
 }

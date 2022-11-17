@@ -36,6 +36,7 @@ const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
         <Card
             imgSrc="/placeholder.jpg"
             imgAlt="Image"
+            href={project.slug}
         >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {project.title}

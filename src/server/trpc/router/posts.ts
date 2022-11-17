@@ -16,6 +16,7 @@ export const postRouter = router({
                 title: true,
                 subtitle: true,
                 languages: true,
+                slug: true,
             },
         });
     }),
