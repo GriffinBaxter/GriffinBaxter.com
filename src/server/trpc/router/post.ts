@@ -1,8 +1,9 @@
 import {publicProcedure, router} from "../trpc";
+import {z} from "zod";
 
 export const postRouter = router({
     getAllProjects: publicProcedure.query(({ ctx }) => {
-        return ctx.prisma.posts.findMany({
+        return ctx.prisma.post.findMany({
             where: {
                 type: {
                     equals: 'PROJECT',
@@ -12,12 +13,20 @@ export const postRouter = router({
                 published: 'desc',
             },
             select: {
-                id: true,
+                slug: true,
                 title: true,
                 subtitle: true,
                 languages: true,
-                slug: true,
             },
+        });
+    }),
+    getSinglePost: publicProcedure.input(z.string().optional()).query(({ ctx, input }) => {
+        return ctx.prisma.post.findFirst({
+            where: {
+                slug: {
+                    equals: input
+                }
+            }
         });
     }),
 })

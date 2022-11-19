@@ -1,4 +1,4 @@
-import { type posts } from "@prisma/client";
+import { type Post } from "@prisma/client";
 import {Badge, Card} from "flowbite-react";
 import { type NextPage } from "next";
 
@@ -26,7 +26,7 @@ const languageMap: Record<Language, LanguageData> = {
 }
 
 interface Props {
-    projectObject: Partial<posts>
+    projectObject: Partial<Post>
 }
 
 const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
@@ -45,7 +45,7 @@ const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
                 {project.subtitle}
             </h6>
             <div className="flex flex-wrap gap-2">
-                {languages?.map((language) => (
+                {languages.map((language) => (
                     <Badge key={language} color={languageMap[language].badgeColour} size="sm">
                         {languageMap[language].name}
                     </Badge>

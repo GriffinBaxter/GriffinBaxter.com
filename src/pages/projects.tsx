@@ -22,7 +22,7 @@ const Projects: NextPage = () => {
                 {projects.data ?
                     <div
                         className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">{projects.data.map(project => (
-                        <div key={project.id} className="max-w-sm">
+                        <div key={project.slug} className="max-w-sm">
                             <ProjectCard projectObject={project}/>
                         </div>
                     ))}</div> : <Spinner className="min-h-[380px]" size="xl" />}

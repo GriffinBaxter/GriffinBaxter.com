@@ -1,19 +1,20 @@
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["referentialIntegrity"]
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "mysql"
   url      = env("DATABASE_URL")
+  referentialIntegrity = "prisma"
 }
 
-model posts {
-  id        Int      @id @default(autoincrement())
+model Post {
+  slug      String   @id
   type      String
   title     String
   subtitle  String
-  published DateTime @default(dbgenerated("'2022-11-16'::date")) @db.Timestamptz(6)
-  content   Json     @db.Json
-  languages Json?    @db.Json
-  slug      String
+  published DateTime @default(now())
+  content   Json
+  languages Json?
 }
