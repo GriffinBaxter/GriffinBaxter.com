@@ -11,7 +11,7 @@ export enum NavigationPage {
 }
 
 interface Props {
-    page: NavigationPage;
+    page: NavigationPage | null;
 }
 
 const NavBar: NextPage<Props> = ({page: navPage}) => {

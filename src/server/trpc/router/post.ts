@@ -24,9 +24,17 @@ export const postRouter = router({
         return ctx.prisma.post.findFirst({
             where: {
                 slug: {
-                    equals: input
-                }
-            }
+                    equals: input,
+                },
+            },
+            select: {
+                slug: true,
+                type: true,
+                title: true,
+                subtitle: true,
+                content: true,
+                languages: true,
+            },
         });
     }),
 })
