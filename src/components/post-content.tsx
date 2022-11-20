@@ -31,7 +31,7 @@ const PostContent: NextPage<Props> = ({contentObject: content, postSlug: slug}) 
             } else if ("gallery" in section) {
                 contentHTML += `<div class="flex flex-col items-center pt-10"><p class="text-3xl">Gallery</p>`
                 for (const image of section.gallery) {
-                    contentHTML += `<Image class="pt-8" src=/images/posts/${slug}/gallery/${image} alt="Post Gallery Image" width="1200" height="675"></Image>`
+                    contentHTML += `<img class="pt-8" src=/images/posts/${slug}/gallery/${image} alt="Post Gallery Image"</img>`
                 }
                 contentHTML += `</div>`
             }
