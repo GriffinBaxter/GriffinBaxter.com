@@ -34,8 +34,8 @@ const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
 
     return (
         <Card
-            imgSrc="/placeholder.jpg"
-            imgAlt="Image"
+            imgSrc={`/images/posts/${project.slug}/main.png`}
+            imgAlt="Project Image"
             href={project.slug}
         >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
