@@ -16,5 +16,5 @@ model Post {
   subtitle  String
   published DateTime @default(now())
   content   Json
-  languages Json?
+  extra     Json
 }

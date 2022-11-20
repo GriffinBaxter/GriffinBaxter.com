@@ -25,12 +25,16 @@ const languageMap: Record<Language, LanguageData> = {
     [Language.SQL]: {name: "SQL", badgeColour: "success"},
 }
 
+interface ProjectExtra {
+    languages: Language[]
+}
+
 interface Props {
     projectObject: Partial<Post>
 }
 
 const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
-    const languages = project.languages as Language[]
+    const extra = project.extra as unknown as ProjectExtra
 
     return (
         <Card
@@ -45,7 +49,7 @@ const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
                 {project.subtitle}
             </h6>
             <div className="flex flex-wrap gap-2">
-                {languages.map((language) => (
+                {extra.languages.map((language) => (
                     <Badge key={language} color={languageMap[language].badgeColour} size="sm">
                         {languageMap[language].name}
                     </Badge>

@@ -16,7 +16,7 @@ export const postRouter = router({
                 slug: true,
                 title: true,
                 subtitle: true,
-                languages: true,
+                extra: true,
             },
         });
     }),
@@ -51,7 +51,7 @@ export const postRouter = router({
                 title: true,
                 subtitle: true,
                 content: true,
-                languages: true,
+                extra: true,
             },
         });
     }),
