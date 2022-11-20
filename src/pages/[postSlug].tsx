@@ -5,11 +5,18 @@ import {useRouter} from 'next/router'
 import {trpc} from "../utils/trpc";
 import {Spinner} from "flowbite-react";
 import PostPage from "../components/post-page";
+import {useEffect} from "react";
 
 const Post: NextPage = () => {
     const router = useRouter()
     const postSlug = router.query.postSlug as string
     const post = trpc.posts.getSinglePost.useQuery(postSlug);
+
+    useEffect(() => {
+        if (post?.data === null) {
+            router?.push('/404/notfound')
+        }
+    });
 
     return (
         <>
