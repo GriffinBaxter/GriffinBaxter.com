@@ -12,7 +12,11 @@ interface ContentGallery {
     gallery: string[]
 }
 
-export type Content = (ContentText | ContentLink | ContentGallery)[][]
+interface ContentImage {
+    image: string
+}
+
+export type Content = (ContentText | ContentLink | ContentGallery | ContentImage)[][]
 
 interface Props {
     contentObject: Content
@@ -31,9 +35,11 @@ const PostContent: NextPage<Props> = ({contentObject: content, postSlug: slug}) 
             } else if ("gallery" in section) {
                 contentHTML += `<div class="flex flex-col items-center pt-10"><p class="text-3xl">Gallery</p>`
                 for (const image of section.gallery) {
-                    contentHTML += `<img class="pt-8" src=/images/posts/${slug}/gallery/${image} alt="Post Gallery Image"</img>`
+                    contentHTML += `<img class="pt-8" src=/images/posts/${slug}/${image} alt="Post Gallery Image"</img>`
                 }
                 contentHTML += `</div>`
+            } else if ("image" in section) {
+                contentHTML += `<div class="flex flex-col items-center"><img class="py-6" src=/images/posts/${slug}/${section.image} alt="Post Image"</img></div>`
             }
         }
         contentHTML += "</p>"

@@ -28,7 +28,7 @@ const Post: NextPage = () => {
             </Head>
 
             {post?.data ? <NavBar
-                    page={post.data.type == "PROJECT" ? NavigationPage.SoftwareProjects : NavigationPage.Reviews}/> :
+                    page={post.data.type == "PROJECT" ? NavigationPage.SoftwareProjects : NavigationPage.GameReviews}/> :
                 <NavBar page={null}/>}
 
             <main className="container mx-auto flex flex-col items-center justify-center p-4">

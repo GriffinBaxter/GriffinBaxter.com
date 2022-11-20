@@ -20,6 +20,24 @@ export const postRouter = router({
             },
         });
     }),
+    getAllReviews: publicProcedure.query(({ ctx }) => {
+        return ctx.prisma.post.findMany({
+            where: {
+                type: {
+                    equals: 'REVIEW',
+                },
+            },
+            orderBy: {
+                published: 'desc',
+            },
+            select: {
+                slug: true,
+                title: true,
+                subtitle: true,
+                published: true,
+            },
+        });
+    }),
     getSinglePost: publicProcedure.input(z.string().optional()).query(({ ctx, input }) => {
         return ctx.prisma.post.findFirst({
             where: {
