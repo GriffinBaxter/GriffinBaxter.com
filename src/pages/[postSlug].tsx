@@ -5,8 +5,8 @@ import {useRouter} from 'next/router'
 import {trpc} from "../utils/trpc";
 import {Spinner} from "flowbite-react";
 import {useEffect} from "react";
-import ProjectPage from "../components/project-page";
-import ReviewPage from "../components/review-page";
+import ProjectPage from "../components/post/project/project-page";
+import ReviewPage from "../components/post/review/review-page";
 
 const Post: NextPage = () => {
     const router = useRouter()

@@ -1,7 +1,7 @@
 import {type NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
-import ReviewCard from "../components/review-card";
+import ReviewCard from "../components/post/review/review-card";
 import {trpc} from "../utils/trpc";
 import {Spinner} from "flowbite-react";
 

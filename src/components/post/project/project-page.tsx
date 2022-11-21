@@ -1,7 +1,7 @@
 import { type NextPage } from "next";
 import { type Post } from "@prisma/client";
 import Image from 'next/image';
-import PostContent, { type Content } from "./post-content";
+import PostContent, { type Content } from "../post-content";
 import {Badge} from "flowbite-react";
 
 enum Language {
@@ -50,7 +50,7 @@ const ProjectPage: NextPage<Props> = ({postObject: project}) => {
                     </Badge>
                 ))}
             </div>
-            <Image className="py-3 mx-auto" src={`/images/posts/${project.slug}/main.png`} alt="Main Post Image" width="1200" height="675"></Image>
+            <Image className="py-3 mx-auto" src={`/images/posts/${project.slug}/main.png`} alt="Main Post Image" width="1200" height="675" priority={true}></Image>
             {project.slug ? <PostContent contentObject={content} postSlug={project.slug} /> : <p></p>}
         </>
     )

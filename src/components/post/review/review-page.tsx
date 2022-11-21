@@ -1,8 +1,8 @@
 import { type NextPage } from "next";
 import { type Post } from "@prisma/client";
 import Image from 'next/image';
-import PostContent, { type Content } from "./post-content";
-import Divider from "./divider";
+import PostContent, { type Content } from "../post-content";
+import Divider from "../../divider";
 
 export interface ReviewExtra {
     rating: number,
@@ -28,7 +28,7 @@ const ReviewPage: NextPage<Props> = ({postObject: review}) => {
         <>
             <p className="text-7xl font-bold text-center pt-10">{review.title}</p>
             <p className="text-4xl text-center py-10">{review.subtitle}</p>
-            <Image className="py-3 mx-auto" src={`/images/posts/${review.slug}/main.png`} alt="Main Post Image" width="1200" height="675"></Image>
+            <Image className="py-3 mx-auto" src={`/images/posts/${review.slug}/main.png`} alt="Main Post Image" width="1200" height="675" priority={true}></Image>
             {review.slug ? <PostContent contentObject={content} postSlug={review.slug} /> : <p></p>}
             <p className="text-3xl text-center font-bold py-10">Rating: {extra.rating}/10</p>
             <Divider/>
