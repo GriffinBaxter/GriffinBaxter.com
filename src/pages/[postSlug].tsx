@@ -4,8 +4,9 @@ import NavBar, {NavigationPage} from "../components/navbar";
 import {useRouter} from 'next/router'
 import {trpc} from "../utils/trpc";
 import {Spinner} from "flowbite-react";
-import PostPage from "../components/post-page";
 import {useEffect} from "react";
+import ProjectPage from "../components/project-page";
+import ReviewPage from "../components/review-page";
 
 const Post: NextPage = () => {
     const router = useRouter()
@@ -31,8 +32,10 @@ const Post: NextPage = () => {
                     page={post.data.type == "PROJECT" ? NavigationPage.SoftwareProjects : NavigationPage.GameReviews}/> :
                 <NavBar page={null}/>}
 
-            <main className="container mx-auto flex flex-col items-center justify-center p-4">
-                {post?.data ? <PostPage postObject={post.data} /> : <Spinner className="min-h-[380px]" size="xl" />}
+            <main className="container mx-auto flex flex-col justify-center p-4">
+                {post?.data ? (post.data.type == "PROJECT" ? <ProjectPage postObject={post.data}/> :
+                    <ReviewPage postObject={post.data}/>) :
+                    <div className="text-center"><Spinner className="min-h-[380px]" size="xl"/></div>}
             </main>
         </>
     );

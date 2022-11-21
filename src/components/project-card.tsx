@@ -1,33 +1,7 @@
 import { type Post } from "@prisma/client";
 import {Badge, Card} from "flowbite-react";
 import { type NextPage } from "next";
-
-enum Language {
-    C_CPlusPlus = 0,
-    HTML_CSS = 1,
-    Java = 2,
-    JavaScript_TypeScript = 3,
-    Python = 4,
-    SQL = 5,
-}
-
-interface LanguageData {
-    name: string,
-    badgeColour: string,
-}
-
-const languageMap: Record<Language, LanguageData> = {
-    [Language.C_CPlusPlus]: {name: "C / C++", badgeColour: "purple"},
-    [Language.HTML_CSS]: {name: "HTML / CSS", badgeColour: "pink"},
-    [Language.Java]: {name: "Java", badgeColour: "failure"},
-    [Language.JavaScript_TypeScript]: {name: "JavaScript / TypeScript", badgeColour: "warning"},
-    [Language.Python]: {name: "Python", badgeColour: "info"},
-    [Language.SQL]: {name: "SQL", badgeColour: "success"},
-}
-
-interface ProjectExtra {
-    languages: Language[]
-}
+import {languageMap, type ProjectExtra} from "./project-page";
 
 interface Props {
     projectObject: Partial<Post>

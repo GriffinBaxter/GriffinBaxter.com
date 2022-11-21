@@ -31,9 +31,9 @@ const PostContent: NextPage<Props> = ({contentObject: content, postSlug: slug}) 
             if ("text" in section) {
                 contentHTML += section.text
             } else if ("link" in section) {
-                contentHTML += `<a href="${section.link[1]}" target="_blank">${section.link[0]}</a>`
+                contentHTML += `<a class="underline text-blue-600 hover:text-blue-800" href="${section.link[1]}" target="_blank">${section.link[0]}</a>`
             } else if ("gallery" in section) {
-                contentHTML += `<div class="flex flex-col items-center pt-10"><p class="text-3xl">Gallery</p>`
+                contentHTML += `<div class="flex flex-col items-center pt-10"><p class="text-3xl font-bold">Gallery</p>`
                 for (const image of section.gallery) {
                     contentHTML += `<img class="pt-8" src=/images/posts/${slug}/${image} alt="Post Gallery Image"</img>`
                 }
