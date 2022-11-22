@@ -32,6 +32,7 @@ export async function getAllProjects() {
                 categories {
                     nodes {
                         name
+                        slug
                     }
                 }
                 excerpt(format: RAW)

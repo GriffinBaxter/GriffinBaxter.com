@@ -1,18 +1,24 @@
-import { type Post } from "@prisma/client";
 import {Badge, Card} from "flowbite-react";
 import { type NextPage } from "next";
-import {languageMap, type ProjectExtra} from "./project-page";
+import {type Project} from "../../../pages/projects";
+
+const languageBadgeColour: Record<string, string> = {
+    c: "purple",
+    "html-css": "pink",
+    java: "failure",
+    javascript: "warning",
+    python: "info",
+    sql: "success",
+}
 
 interface Props {
-    projectObject: Partial<Post>
+    projectObject: Project
 }
 
 const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
-    const extra = project.extra as unknown as ProjectExtra
-
     return (
         <Card
-            imgSrc={`/images/posts/${project.slug}/main.png`}
+            imgSrc={project.featuredImage.node.sourceUrl}
             imgAlt="Project Image"
             href={project.slug}
         >
@@ -20,13 +26,14 @@ const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
                 {project.title}
             </h5>
             <h6 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {project.subtitle}
+                {project.excerpt}
             </h6>
             <div className="flex flex-wrap gap-2">
-                {extra.languages.map((language) => (
-                    <Badge key={language} color={languageMap[language].badgeColour} size="sm">
-                        {languageMap[language].name}
-                    </Badge>
+                {project.categories.nodes.map((category) => (
+                    (Object.keys(languageBadgeColour).includes(category.slug)) ?
+                    <Badge key={category.slug} color={languageBadgeColour[category.slug]} size="sm">
+                        {category.name}
+                    </Badge> : null
                 ))}
             </div>
         </Card>

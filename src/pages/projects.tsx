@@ -1,12 +1,27 @@
-import {type NextPage} from "next";
+import {type GetStaticProps, type NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
-import {trpc} from "../utils/trpc";
+import {getAllProjects} from "../lib/api";
 
-const Projects: NextPage = () => {
-    const projects = trpc.posts.getAllProjects.useQuery();
+interface Category {
+    name: string,
+    slug: string,
+}
 
+export interface Project {
+    slug: string,
+    title: string,
+    categories: { nodes: Category[] }
+    excerpt: string,
+    featuredImage: { node: { sourceUrl: string } },
+}
+
+interface Props {
+    projectObjects: Project[]
+}
+
+const Projects: NextPage<Props> = ({ projectObjects: projects }) => {
     return (
         <>
             <Head>
@@ -19,7 +34,7 @@ const Projects: NextPage = () => {
 
             <main className="container mx-auto flex flex-col items-center justify-center p-4">
                 <div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">{projects.data?.map(project => (
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">{projects?.map(project => (
                     <div key={project.slug} className="max-w-sm">
                         <ProjectCard projectObject={project}/>
                     </div>
@@ -30,3 +45,12 @@ const Projects: NextPage = () => {
 };
 
 export default Projects;
+
+export const getStaticProps: GetStaticProps = async () => {
+    const projects = await getAllProjects()
+    return {
+        props: {
+            projectObjects: projects,
+        },
+    }
+}
