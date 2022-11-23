@@ -1,28 +1,29 @@
-import { type Post } from "@prisma/client";
 import {Card} from "flowbite-react";
 import { type NextPage } from "next";
+import { type Review } from "../../../lib/api";
 
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
 
 interface Props {
-    reviewObject: Partial<Post>
+    reviewObject: Review
 }
 
 const ReviewCard: NextPage<Props> = ({reviewObject: review}) => {
+    const date = new Date(review.date)
     return (
         <Card
-            imgSrc={`/images/posts/${review.slug}/main.png`}
-            imgAlt="Project Image"
+            imgSrc={review.featuredImage.node.sourceUrl}
+            imgAlt="Review Image"
             href={review.slug}
         >
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {review.title}
             </h5>
             <h6 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {review.subtitle}
+                {review.excerpt}
             </h6>
             <p>
-                {review.published?.getUTCDate()} {months[review.published ? review.published?.getUTCMonth() : 0]} {review.published?.getUTCFullYear()}
+                {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
             </p>
         </Card>
     )

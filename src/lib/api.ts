@@ -5,12 +5,19 @@ interface Category {
     slug: string,
 }
 
-export interface Project {
+interface Post {
     slug: string,
     title: string,
-    categories: { nodes: Category[] }
     excerpt: string,
     featuredImage: { node: { sourceUrl: string } },
+}
+
+export interface Project extends Post {
+    categories: { nodes: Category[] },
+}
+
+export interface Review extends Post {
+    date: Date,
 }
 
 export interface Block {
@@ -18,7 +25,7 @@ export interface Block {
     tagName: string,
 }
 
-export interface Post extends Project {
+export interface SinglePost extends Project, Review {
     blocks: Block[]
 }
 
@@ -74,7 +81,28 @@ export async function getAllProjects(): Promise<Project[]> {
     return data?.posts.nodes
 }
 
-export async function getSinglePost(slug: string): Promise<Post> {
+export async function getAllReviews(): Promise<Review[]> {
+    const data = await fetchAPI(`
+    {
+        posts(where: {categoryName: "game-reviews"}) {
+            nodes {
+                slug
+                title
+                excerpt(format: RAW)
+                featuredImage {
+                    node {
+                        sourceUrl
+                    }
+                }
+                date
+            }
+        }
+    }
+    `)
+    return data?.posts.nodes
+}
+
+export async function getSinglePost(slug: string): Promise<SinglePost> {
     const data = await fetchAPI(`
     {
         post(id: "${slug}", idType: SLUG) {
@@ -95,6 +123,7 @@ export async function getSinglePost(slug: string): Promise<Post> {
                     sourceUrl
                 }
             }
+            date
         }
     }
     `)

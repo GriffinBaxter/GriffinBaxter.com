@@ -1,14 +1,14 @@
-import {type GetStaticProps, type NextPage} from "next";
+import type {GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
 import {getAllProjects, type Project} from "../lib/api";
 
 interface Props {
-    projectObjects: Project[]
+    projects: Project[]
 }
 
-const Projects: NextPage<Props> = ({ projectObjects: projects }) => {
+const Projects: NextPage<Props> = ({ projects }) => {
     return (
         <>
             <Head>
@@ -37,7 +37,7 @@ export const getStaticProps: GetStaticProps = async () => {
     const projects = await getAllProjects()
     return {
         props: {
-            projectObjects: projects,
+            projects,
         },
     }
 }

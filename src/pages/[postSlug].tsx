@@ -1,7 +1,7 @@
 import type {GetStaticPaths, GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
-import {getAllPostSlugs, getSinglePost, type Post} from "../lib/api";
+import {getAllPostSlugs, getSinglePost, type SinglePost} from "../lib/api";
 import Image from "next/image";
 import PostContent from "../components/post/post-content";
 import {Badge} from "flowbite-react";
@@ -16,11 +16,11 @@ export const languageBadgeColour: Record<string, string> = {
 }
 
 interface Props {
-    post: Post
+    post: SinglePost
     isProject: boolean
 }
 
-const SinglePost: NextPage<Props> = ({ post, isProject }) => {
+const Post: NextPage<Props> = ({ post, isProject }) => {
     const pageTitle = `${post?.title} - Griffin Baxter`
     return (
         <>
@@ -51,7 +51,7 @@ const SinglePost: NextPage<Props> = ({ post, isProject }) => {
     );
 };
 
-export default SinglePost;
+export default Post;
 
 export const getStaticProps: GetStaticProps = async (context) => {
     const post = await getSinglePost(context.params?.postSlug as string)
