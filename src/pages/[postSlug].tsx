@@ -6,6 +6,7 @@ import Image from "next/image";
 import PostContent from "../components/post/post-content";
 import {Badge} from "flowbite-react";
 import type {SinglePost} from "../server/wpgraphql/models";
+import FooterComponent from "../components/footer";
 
 export const languageBadgeColour: Record<string, string> = {
     c: "purple",
@@ -55,6 +56,8 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
                 <Image className="py-3 mx-auto" src={post?.featuredImage.node.sourceUrl} alt="Main Post Image" width="1200" height="675" priority={true}></Image>
                 <PostContent blocks={post?.blocks} />
             </main>
+
+            <FooterComponent/>
         </>
     );
 };

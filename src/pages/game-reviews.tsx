@@ -4,6 +4,7 @@ import NavBar, {NavigationPage} from "../components/navbar";
 import ReviewCard from "../components/post/review/review-card";
 import {getReviews} from "../server/wpgraphql/api";
 import type {Review} from "../server/wpgraphql/models";
+import FooterComponent from "../components/footer";
 
 interface Props {
     reviews: Review[]
@@ -28,6 +29,8 @@ const GameReviews: NextPage<Props> = ({ reviews }) => {
                     </div>
                 ))}</div>
             </main>
+
+            <FooterComponent/>
         </>
     );
 };

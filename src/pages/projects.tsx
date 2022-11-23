@@ -4,6 +4,7 @@ import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
 import {getProjects} from "../server/wpgraphql/api";
 import type {Project} from "../server/wpgraphql/models";
+import FooterComponent from "../components/footer";
 
 interface Props {
     projects: Project[]
@@ -28,6 +29,8 @@ const Projects: NextPage<Props> = ({ projects }) => {
                     </div>
                 ))}</div>
             </main>
+
+            <FooterComponent/>
         </>
     );
 };

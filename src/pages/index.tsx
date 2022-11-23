@@ -6,6 +6,7 @@ import ProjectCard from "../components/post/project/project-card";
 import {getProjects, getReviews} from "../server/wpgraphql/api";
 import type {Project, Review} from "../server/wpgraphql/models";
 import ReviewCard from "../components/post/review/review-card";
+import FooterComponent from "../components/footer";
 
 interface Props {
     latestProjects: Project[],
@@ -44,6 +45,8 @@ const Home: NextPage<Props> = ({ latestProjects, latestReviews }) => {
                     </div>
                 ))}</div>
             </main>
+
+            <FooterComponent/>
         </>
     );
 };
