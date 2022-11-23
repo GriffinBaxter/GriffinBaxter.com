@@ -1,15 +1,7 @@
 import {Badge, Card} from "flowbite-react";
 import { type NextPage } from "next";
-import {type Project} from "../../../pages/projects";
-
-const languageBadgeColour: Record<string, string> = {
-    c: "purple",
-    "html-css": "pink",
-    java: "failure",
-    javascript: "warning",
-    python: "info",
-    sql: "success",
-}
+import { type Project } from "../../../lib/api";
+import {languageBadgeColour} from "../../../pages/[postSlug]";
 
 interface Props {
     projectObject: Project

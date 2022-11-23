@@ -1,24 +1,27 @@
-import {type NextPage} from "next";
+import type {GetStaticPaths, GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
-import {useRouter} from 'next/router'
-import {trpc} from "../utils/trpc";
-import {useEffect} from "react";
-import ProjectPage from "../components/post/project/project-page";
-import ReviewPage from "../components/post/review/review-page";
+import {getAllPostSlugs, getSinglePost, type Post} from "../lib/api";
+import Image from "next/image";
+import PostContent from "../components/post/post-content";
+import {Badge} from "flowbite-react";
 
-const Post: NextPage = () => {
-    const router = useRouter()
-    const postSlug = router.query.postSlug as string
-    const post = trpc.posts.getSinglePost.useQuery(postSlug);
-    const pageTitle = `${post.data?.title} - Griffin Baxter`
+export const languageBadgeColour: Record<string, string> = {
+    c: "purple",
+    "html-css": "pink",
+    java: "failure",
+    javascript: "warning",
+    python: "info",
+    sql: "success",
+}
 
-    useEffect(() => {
-        if (post.data === null) {
-            router?.push('/404/notfound')
-        }
-    });
+interface Props {
+    post: Post
+    isProject: boolean
+}
 
+const SinglePost: NextPage<Props> = ({ post, isProject }) => {
+    const pageTitle = `${post?.title} - Griffin Baxter`
     return (
         <>
             <Head>
@@ -27,16 +30,48 @@ const Post: NextPage = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            {post.data ? <NavBar
-                    page={post.data.type == "PROJECT" ? NavigationPage.SoftwareProjects : NavigationPage.GameReviews}/> :
-                <NavBar page={null}/>}
+            <NavBar page={isProject ? NavigationPage.SoftwareProjects : NavigationPage.GameReviews}/>
 
             <main className="container mx-auto flex flex-col justify-center p-4">
-                {post.data ? (post.data.type == "PROJECT" ? <ProjectPage postObject={post.data}/> :
-                    <ReviewPage postObject={post.data}/>) : <p></p>}
+                <p className="text-7xl font-bold text-center pt-10">{post?.title}</p>
+                <p className="text-4xl text-center py-10">{post?.excerpt}</p>
+                {isProject ?
+                    <div className="flex flex-wrap gap-2 pb-6 mx-auto">
+                        {post?.categories.nodes.map((category) => (
+                            (Object.keys(languageBadgeColour).includes(category.slug)) ?
+                                <Badge key={category.slug} color={languageBadgeColour[category.slug]} size="sm">
+                                    {category.name}
+                                </Badge> : null
+                        ))}
+                    </div> : null}
+                <Image className="py-3 mx-auto" src={post?.featuredImage.node.sourceUrl} alt="Main Post Image" width="1200" height="675" priority={true}></Image>
+                <PostContent blocks={post?.blocks} />
             </main>
         </>
     );
 };
 
-export default Post;
+export default SinglePost;
+
+export const getStaticProps: GetStaticProps = async (context) => {
+    const post = await getSinglePost(context.params?.postSlug as string)
+
+    let isProject = false
+    for (const category of post.categories.nodes) {
+        if (category.slug == "projects") {
+            isProject = true
+        }
+    }
+
+    return {
+        props: { post, isProject },
+    }
+}
+
+export const getStaticPaths: GetStaticPaths = async () => {
+    const slugs = await getAllPostSlugs()
+    return {
+        paths: slugs.map(({ slug }) => `/${slug}`) || [],
+        fallback: false,
+    }
+}

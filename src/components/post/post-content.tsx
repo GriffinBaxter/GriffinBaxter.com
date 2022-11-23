@@ -1,48 +1,43 @@
 import { type NextPage } from "next";
-
-interface ContentText {
-    text: string
-}
-
-interface ContentLink {
-    link: string[2]
-}
-
-interface ContentGallery {
-    gallery: string[]
-}
-
-interface ContentImage {
-    image: string
-}
-
-export type Content = (ContentText | ContentLink | ContentGallery | ContentImage)[][]
+import { type Block } from "../../lib/api";
 
 interface Props {
-    contentObject: Content
-    postSlug: string
+    blocks: Block[]
 }
 
-const PostContent: NextPage<Props> = ({contentObject: content, postSlug: slug}) => {
+function divider() {
+    return `
+        <div class="relative flex py-2 items-center w-full">
+            <div class="flex-grow border-t border-gray-400"></div>
+            <span class="flex-shrink mx-4 text-gray-400">//</span>
+            <div class="flex-grow border-t border-gray-400"></div>
+        </div>
+    `
+}
+
+function styleLinks(html: string) {
+    return html.replaceAll(
+        "<a ",
+        `<a class="underline text-blue-600 hover:text-blue-800" target="_blank" `,
+    )
+}
+
+const PostContent: NextPage<Props> = ({ blocks }) => {
     let contentHTML = ""
-    for (const paragraph of content) {
-        contentHTML += `<p class="text-xl pt-8">`
-        for (const section of paragraph) {
-            if ("text" in section) {
-                contentHTML += section.text
-            } else if ("link" in section) {
-                contentHTML += `<a class="underline text-blue-600 hover:text-blue-800" href="${section.link[1]}" target="_blank">${section.link[0]}</a>`
-            } else if ("gallery" in section) {
-                contentHTML += `<div class="flex flex-col items-center pt-10"><p class="text-3xl font-bold">Gallery</p>`
-                for (const image of section.gallery) {
-                    contentHTML += `<img class="pt-8" src=/images/posts/${slug}/${image} alt="Post Gallery Image"</img>`
-                }
-                contentHTML += `</div>`
-            } else if ("image" in section) {
-                contentHTML += `<div class="flex flex-col items-center"><img class="py-6" src=/images/posts/${slug}/${section.image} alt="Post Image"</img></div>`
+    if (blocks) {
+        for (const block of blocks) { // TODO: cover all tag scenarios
+            contentHTML += `<p class="text-xl pt-8">`
+            if (block.tagName == "p") {
+                contentHTML += styleLinks(block.innerHtml)
+            } else if (block.tagName == "h4") {
+                contentHTML += styleLinks(block.innerHtml)  // TODO: update h4 styling
+            } else if (block.tagName == "hr") {
+                contentHTML += divider()
+            } else if (block.tagName == "figure") {
+                contentHTML += `<div class="flex flex-col items-center py-6">${block.innerHtml}</div>`
             }
+            contentHTML += "</p>"
         }
-        contentHTML += "</p>"
     }
     return <div className="pt-2" dangerouslySetInnerHTML={{ __html: contentHTML }} />
 }

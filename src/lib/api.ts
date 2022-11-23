@@ -1,5 +1,31 @@
 import {env} from "../env/server.mjs";
 
+interface Category {
+    name: string,
+    slug: string,
+}
+
+export interface Project {
+    slug: string,
+    title: string,
+    categories: { nodes: Category[] }
+    excerpt: string,
+    featuredImage: { node: { sourceUrl: string } },
+}
+
+export interface Block {
+    innerHtml: string,
+    tagName: string,
+}
+
+export interface Post extends Project {
+    blocks: Block[]
+}
+
+interface Slug {
+    slug: string
+}
+
 async function fetchAPI(query: string) {
     const headers = {
         'Content-Type': 'application/json',
@@ -22,7 +48,7 @@ async function fetchAPI(query: string) {
     return json.data
 }
 
-export async function getAllProjects() {
+export async function getAllProjects(): Promise<Project[]> {
     const data = await fetchAPI(`
     {
         posts(where: {categoryName: "projects"}) {
@@ -48,16 +74,42 @@ export async function getAllProjects() {
     return data?.posts.nodes
 }
 
-export async function getSinglePost(slug: string) {
+export async function getSinglePost(slug: string): Promise<Post> {
     const data = await fetchAPI(`
     {
         post(id: "${slug}", idType: SLUG) {
             blocks {
-                type
                 innerHtml
+                tagName
+            }
+            title
+            categories {
+                nodes {
+                    name
+                    slug
+                }
+            }
+            excerpt(format: RAW)
+            featuredImage {
+                node {
+                    sourceUrl
+                }
             }
         }
     }
     `)
     return data?.post
+}
+
+export async function getAllPostSlugs(): Promise<Slug[]> {
+    const data = await fetchAPI(`
+    {
+        posts(first: 100) {
+            nodes {
+                slug
+            }
+        }
+    }
+    `)
+    return data?.posts.nodes
 }

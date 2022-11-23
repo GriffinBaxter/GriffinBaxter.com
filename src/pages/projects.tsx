@@ -2,20 +2,7 @@ import {type GetStaticProps, type NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
-import {getAllProjects} from "../lib/api";
-
-interface Category {
-    name: string,
-    slug: string,
-}
-
-export interface Project {
-    slug: string,
-    title: string,
-    categories: { nodes: Category[] }
-    excerpt: string,
-    featuredImage: { node: { sourceUrl: string } },
-}
+import {getAllProjects, type Project} from "../lib/api";
 
 interface Props {
     projectObjects: Project[]
