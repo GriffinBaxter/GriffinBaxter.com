@@ -2,7 +2,8 @@ import type {GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
-import {getAllProjects, type Project} from "../lib/api";
+import {getAllProjects} from "../server/wpgraphql/api";
+import type {Project} from "../server/wpgraphql/models";
 
 interface Props {
     projects: Project[]

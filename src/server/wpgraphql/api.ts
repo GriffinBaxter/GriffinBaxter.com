@@ -1,37 +1,5 @@
-import {env} from "../env/server.mjs";
-
-interface Category {
-    name: string,
-    slug: string,
-}
-
-interface Post {
-    slug: string,
-    title: string,
-    excerpt: string,
-    featuredImage: { node: { sourceUrl: string } },
-}
-
-export interface Project extends Post {
-    categories: { nodes: Category[] },
-}
-
-export interface Review extends Post {
-    date: string,
-}
-
-export interface Block {
-    innerHtml: string,
-    tagName: string,
-}
-
-export interface SinglePost extends Project, Review {
-    blocks: Block[]
-}
-
-interface Slug {
-    slug: string
-}
+import {env} from "../../env/server.mjs";
+import type {Project, Review, SinglePost, Slug} from "./models";
 
 async function fetchAPI(query: string) {
     const headers = {

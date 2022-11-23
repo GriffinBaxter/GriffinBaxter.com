@@ -1,6 +1,6 @@
 import {Badge, Card} from "flowbite-react";
 import { type NextPage } from "next";
-import { type Project } from "../../../lib/api";
+import type { Project } from "../../../server/wpgraphql/models";
 import {languageBadgeColour} from "../../../pages/[postSlug]";
 
 interface Props {

@@ -2,7 +2,8 @@ import type {GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ReviewCard from "../components/post/review/review-card";
-import {getAllReviews, type Review} from "../lib/api";
+import {getAllReviews} from "../server/wpgraphql/api";
+import type {Review} from "../server/wpgraphql/models";
 
 interface Props {
     reviews: Review[]

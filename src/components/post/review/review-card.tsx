@@ -1,6 +1,6 @@
 import {Card} from "flowbite-react";
 import { type NextPage } from "next";
-import { type Review } from "../../../lib/api";
+import { type Review } from "../../../server/wpgraphql/models";
 import {months} from "../../../pages/[postSlug]";
 
 interface Props {

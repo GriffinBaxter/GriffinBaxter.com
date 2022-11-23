@@ -1,10 +1,11 @@
 import type {GetStaticPaths, GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
-import {getAllPostSlugs, getSinglePost, type SinglePost} from "../lib/api";
+import {getAllPostSlugs, getSinglePost} from "../server/wpgraphql/api";
 import Image from "next/image";
 import PostContent from "../components/post/post-content";
 import {Badge} from "flowbite-react";
+import type {SinglePost} from "../server/wpgraphql/models";
 
 export const languageBadgeColour: Record<string, string> = {
     c: "purple",
