@@ -11,12 +11,12 @@ export enum NavigationPage {
 }
 
 interface Props {
-    page: NavigationPage | null;
+    page?: NavigationPage;
 }
 
 const NavBar: NextPage<Props> = ({page: navPage}) => {
     return (
-        <Navbar fluid={true} rounded={true}>
+        <Navbar className="mx-auto max-w-[1200px]" fluid={true} rounded={true}>
             <Navbar.Brand href="/">
                 <Image src={logo} className="mr-3 h-6 w-6 sm:h-9 sm:w-9" alt="Logo"/>
                 <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">

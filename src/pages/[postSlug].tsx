@@ -36,7 +36,7 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
 
             <NavBar page={isProject ? NavigationPage.SoftwareProjects : NavigationPage.GameReviews}/>
 
-            <main className="container mx-auto flex flex-col justify-center p-4">
+            <main className="container mx-auto flex flex-col justify-center max-w-[1200px]">
                 <p className="text-7xl font-bold text-center pt-10">{post?.title}</p>
                 <p className="text-4xl text-center py-10">{post?.excerpt}</p>
                 {isProject ?

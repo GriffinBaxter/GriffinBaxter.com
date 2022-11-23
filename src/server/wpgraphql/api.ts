@@ -23,10 +23,10 @@ async function fetchAPI(query: string) {
     return json.data
 }
 
-export async function getAllProjects(): Promise<Project[]> {
+export async function getProjects(first = 100): Promise<Project[]> {
     const data = await fetchAPI(`
     {
-        posts(where: {categoryName: "projects"}, first: 100) {
+        posts(where: {categoryName: "projects"}, first: ${first}) {
             nodes {
                 slug
                 title
@@ -49,10 +49,10 @@ export async function getAllProjects(): Promise<Project[]> {
     return data?.posts.nodes
 }
 
-export async function getAllReviews(): Promise<Review[]> {
+export async function getReviews(first = 100): Promise<Review[]> {
     const data = await fetchAPI(`
     {
-        posts(where: {categoryName: "game-reviews"}, first: 100) {
+        posts(where: {categoryName: "game-reviews"}, first: ${first}) {
             nodes {
                 slug
                 title

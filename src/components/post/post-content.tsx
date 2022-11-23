@@ -5,11 +5,11 @@ interface Props {
     blocks: Block[]
 }
 
-function divider() {
+function contentDivider() {
     return `
         <div class="relative flex py-2 items-center w-full">
             <div class="flex-grow border-t border-gray-400"></div>
-            <span class="flex-shrink mx-4 text-gray-400">//</span>
+            <span class="flex-shrink mx-4 text-gray-400 select-none">//</span>
             <div class="flex-grow border-t border-gray-400"></div>
         </div>
     `
@@ -57,7 +57,7 @@ const PostContent: NextPage<Props> = ({ blocks }) => {
             } else if (block.tagName == "blockquote") {
                 contentHTML += styleQuote(block.innerHtml)
             } else if (block.tagName == "hr") {
-                contentHTML += divider()
+                contentHTML += contentDivider()
             } else if (block.tagName == "figure") {
                 contentHTML += `<div class="flex flex-col items-center py-6">${block.innerHtml}</div>`
             }

@@ -2,7 +2,7 @@ import type {GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
-import {getAllProjects} from "../server/wpgraphql/api";
+import {getProjects} from "../server/wpgraphql/api";
 import type {Project} from "../server/wpgraphql/models";
 
 interface Props {
@@ -35,7 +35,7 @@ const Projects: NextPage<Props> = ({ projects }) => {
 export default Projects;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const projects = await getAllProjects()
+    const projects = await getProjects()
     return {
         props: {
             projects,

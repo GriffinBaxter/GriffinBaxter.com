@@ -2,7 +2,7 @@ import type {GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ReviewCard from "../components/post/review/review-card";
-import {getAllReviews} from "../server/wpgraphql/api";
+import {getReviews} from "../server/wpgraphql/api";
 import type {Review} from "../server/wpgraphql/models";
 
 interface Props {
@@ -35,7 +35,7 @@ const GameReviews: NextPage<Props> = ({ reviews }) => {
 export default GameReviews;
 
 export const getStaticProps: GetStaticProps = async () => {
-    const reviews = await getAllReviews()
+    const reviews = await getReviews()
     return {
         props: {
             reviews,
