@@ -1,8 +1,7 @@
 import {Card} from "flowbite-react";
 import { type NextPage } from "next";
 import { type Review } from "../../../lib/api";
-
-const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+import {months} from "../../../pages/[postSlug]";
 
 interface Props {
     reviewObject: Review

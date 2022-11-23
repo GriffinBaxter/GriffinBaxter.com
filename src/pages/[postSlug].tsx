@@ -15,6 +15,8 @@ export const languageBadgeColour: Record<string, string> = {
     sql: "success",
 }
 
+export const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
+
 interface Props {
     post: SinglePost
     isProject: boolean
@@ -22,6 +24,7 @@ interface Props {
 
 const Post: NextPage<Props> = ({ post, isProject }) => {
     const pageTitle = `${post?.title} - Griffin Baxter`
+    const date = new Date(post?.date)
     return (
         <>
             <Head>
@@ -43,7 +46,11 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
                                     {category.name}
                                 </Badge> : null
                         ))}
-                    </div> : null}
+                    </div> :
+                    <div className="flex flex-wrap gap-2 pb-6 mx-auto">
+                        {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
+                    </div>
+                }
                 <Image className="py-3 mx-auto" src={post?.featuredImage.node.sourceUrl} alt="Main Post Image" width="1200" height="675" priority={true}></Image>
                 <PostContent blocks={post?.blocks} />
             </main>

@@ -17,7 +17,7 @@ export interface Project extends Post {
 }
 
 export interface Review extends Post {
-    date: Date,
+    date: string,
 }
 
 export interface Block {
@@ -58,7 +58,7 @@ async function fetchAPI(query: string) {
 export async function getAllProjects(): Promise<Project[]> {
     const data = await fetchAPI(`
     {
-        posts(where: {categoryName: "projects"}) {
+        posts(where: {categoryName: "projects"}, first: 100) {
             nodes {
                 slug
                 title
@@ -84,7 +84,7 @@ export async function getAllProjects(): Promise<Project[]> {
 export async function getAllReviews(): Promise<Review[]> {
     const data = await fetchAPI(`
     {
-        posts(where: {categoryName: "game-reviews"}) {
+        posts(where: {categoryName: "game-reviews"}, first: 100) {
             nodes {
                 slug
                 title
