@@ -6,7 +6,6 @@ import { z } from "zod";
  * This way you can ensure the app isn't built with invalid env vars.
  */
 export const serverSchema = z.object({
-  DATABASE_URL: z.string().url(),
   WORDPRESS_API_URL: z.string().url(),
   WORDPRESS_AUTH_REFRESH_TOKEN: z.string(),
   NODE_ENV: z.enum(["development", "test", "production"]),
