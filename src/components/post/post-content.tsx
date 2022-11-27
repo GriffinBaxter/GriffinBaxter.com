@@ -1,5 +1,5 @@
 import { type NextPage } from "next";
-import type { Block } from "../../server/wpgraphql/models";
+import type {Block, BlockAttribute} from "../../server/wpgraphql/models";
 
 interface Props {
     blocks: Block[]
@@ -22,9 +22,9 @@ function styleLinks(html: string) {
     )
 }
 
-function styleH4(html: string) {
-    const isRating = html.endsWith("/10")
-    if (isRating) {
+function styleH4(html: string, attributes: BlockAttribute[]) {
+    const isCentre = attributes.filter(attribute => attribute.name == "textAlign" && attribute.value == "center").length > 0
+    if (isCentre) {
         return `<p class="text-3xl font-bold text-center py-6">${styleLinks(html)}</p>`
     } else {
         return `<p class="text-3xl font-bold">${styleLinks(html)}</p>`
@@ -51,7 +51,7 @@ const PostContent: NextPage<Props> = ({ blocks }) => {
             if (block.tagName == "p") {
                 contentHTML += styleLinks(block.innerHtml)
             } else if (block.tagName == "h4") {
-                contentHTML += styleH4(block.innerHtml)
+                contentHTML += styleH4(block.innerHtml, block.attributes)
             } else if (block.tagName == "ul") {
                 contentHTML += styleList(block.innerHtml)
             } else if (block.tagName == "blockquote") {

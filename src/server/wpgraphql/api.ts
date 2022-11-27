@@ -77,6 +77,10 @@ export async function getSinglePost(slug: string): Promise<SinglePost> {
             blocks {
                 innerHtml
                 tagName
+                attributes {
+                    name
+                    value
+                }
             }
             title
             categories {

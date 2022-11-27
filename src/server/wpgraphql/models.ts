@@ -18,9 +18,15 @@ export interface Review extends Post {
     date: string,
 }
 
+export interface BlockAttribute {
+    name: string,
+    value: string,
+}
+
 export interface Block {
     innerHtml: string,
     tagName: string,
+    attributes: BlockAttribute[],
 }
 
 export interface SinglePost extends Project, Review {
