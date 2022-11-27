@@ -25,7 +25,7 @@ const Home: NextPage<Props> = ({ latestProjects, latestReviews }) => {
             <NavBar page={NavigationPage.Home}/>
 
             <main className="container mx-auto flex flex-col justify-center max-w-[1200px]">
-                <p className="text-3xl text-center pt-12 pb-8">
+                <p className="text-3xl text-center py-8">
                     I’m Griffin Baxter, a Graduate Software Engineer in Christchurch, New Zealand.
                 </p>
                 <Divider/>
