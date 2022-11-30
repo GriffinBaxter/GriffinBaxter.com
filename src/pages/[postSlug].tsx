@@ -9,12 +9,14 @@ import type {SinglePost} from "../server/wpgraphql/models";
 import FooterComponent from "../components/footer";
 
 export const languageBadgeColour: Record<string, string> = {
-    c: "purple",
+    c: "gray",
     "html-css": "pink",
     java: "failure",
     javascript: "warning",
-    python: "info",
+    kotlin: "purple",
+    python: "indigo",
     sql: "success",
+    typescript: "info",
 }
 
 export const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
