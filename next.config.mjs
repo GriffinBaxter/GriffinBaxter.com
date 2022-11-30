@@ -17,7 +17,7 @@ const config = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'www.griffinbaxter.com'
+        hostname: 'www.wordpress.griffinbaxter.com'
       }
     ]
   }
