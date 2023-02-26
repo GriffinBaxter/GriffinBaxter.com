@@ -17,7 +17,7 @@ const NavBar: NextPage<Props> = ({page: navPage}) => {
         <div className="w-full bg-navbar-dark-blue mb-10">
             <div className="navbar bg-neutral text-neutral-content mx-auto max-w-[1200px]">
                 <div className="flex-1">
-                    <a className="btn btn-ghost normal-case text-xl">Griffin Baxter</a>
+                    <Link href="/" className="btn btn-ghost normal-case text-xl">Griffin Baxter</Link>
                 </div>
                 <div className="flex-none">
                     <ul className="menu menu-horizontal px-1">

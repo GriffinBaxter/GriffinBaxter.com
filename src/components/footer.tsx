@@ -1,29 +1,20 @@
-import { Footer } from "flowbite-react";
 import { type NextPage } from "next";
 import {FaGithub, FaLinkedin} from "react-icons/fa";
+import Link from "next/link";
 
 const FooterComponent: NextPage = () => {
     return (
-        <Footer>
-            <div className="w-full bg-black mt-10">
-                <div className="max-w-[1200px] py-6 px-4 flex items-center justify-between mx-auto">
-                    <Footer.Copyright
-                        by="Griffin Baxter"
-                        year={new Date().getFullYear()}
-                    />
-                    <div className="mt-4 flex space-x-6 mt-0 justify-center">
-                        <Footer.Icon
-                            href="https://github.com/GriffinBaxter"
-                            icon={FaGithub}
-                        />
-                        <Footer.Icon
-                            href="https://www.linkedin.com/in/griffinbaxter/"
-                            icon={FaLinkedin}
-                        />
-                    </div>
+        <div className="w-full bg-navbar-dark-blue">
+            <footer className="footer items-center p-4 bg-neutral text-neutral-content mx-auto max-w-[1200px]">
+                <div className="items-center grid-flow-col">
+                    <p>© {new Date().getFullYear()} Griffin Baxter</p>
                 </div>
-            </div>
-        </Footer>
+                <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+                    <Link href="https://github.com/GriffinBaxter"><FaGithub size={24}></FaGithub></Link>
+                    <Link href="https://www.linkedin.com/in/griffinbaxter/"><FaLinkedin size={24}></FaLinkedin></Link>
+                </div>
+            </footer>
+        </div>
     )
 }
 
