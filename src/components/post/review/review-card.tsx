@@ -1,7 +1,8 @@
-import {Card} from "flowbite-react";
 import { type NextPage } from "next";
 import { type Review } from "../../../server/wpgraphql/models";
 import {months} from "../../../pages/[postSlug]";
+import Link from "next/link";
+import Image from "next/image";
 
 interface Props {
     reviewObject: Review
@@ -10,21 +11,16 @@ interface Props {
 const ReviewCard: NextPage<Props> = ({reviewObject: review}) => {
     const date = new Date(review.date)
     return (
-        <Card
-            imgSrc={review.featuredImage.node.sourceUrl}
-            imgAlt="Review Image"
-            href={review.slug}
-        >
-            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {review.title}
-            </h5>
-            <h6 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
-                {review.excerpt}
-            </h6>
-            <p>
-                {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
-            </p>
-        </Card>
+        <Link href={review.slug}>
+            <div className="card w-96 bg-base-100 shadow-xl">
+                <figure><Image src={review.featuredImage.node.sourceUrl} alt="Review Image" width={384} height={216}/></figure>
+                <div className="card-body">
+                    <h2 className="card-title">{review.title}</h2>
+                    <p className="font-semibold">{review.excerpt}</p>
+                    <p>{date.getDate()} {months[date.getMonth()]} {date.getFullYear()}</p>
+                </div>
+            </div>
+        </Link>
     )
 }
 
