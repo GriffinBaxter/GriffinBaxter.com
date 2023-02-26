@@ -1,4 +1,3 @@
-import {Badge} from "flowbite-react";
 import { type NextPage } from "next";
 import type { Project } from "../../../server/wpgraphql/models";
 import {languageBadgeColour} from "../../../pages/[postSlug]";
@@ -20,9 +19,9 @@ const ProjectCard: NextPage<Props> = ({projectObject: project}) => {
                     <div className="flex flex-wrap gap-2">
                         {project.categories.nodes.map((category) => (
                             (Object.keys(languageBadgeColour).includes(category.slug)) ?
-                                <Badge key={category.slug} color={languageBadgeColour[category.slug]} size="sm">
+                                <div key={category.slug} className={`badge ${languageBadgeColour[category.slug]}`}>
                                     {category.name}
-                                </Badge> : null
+                                </div> : null
                         ))}
                     </div>
                 </div>

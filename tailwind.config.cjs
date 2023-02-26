@@ -3,7 +3,6 @@ const { fontFamily } = require('tailwindcss/defaultTheme')
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./node_modules/flowbite-react/**/*.js",
     "./src/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.html",
   ],
@@ -18,7 +17,6 @@ module.exports = {
     },
   },
   plugins: [
-    require("flowbite/plugin"),
     require("daisyui"),
   ],
   daisyui: {

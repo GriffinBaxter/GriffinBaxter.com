@@ -4,19 +4,18 @@ import NavBar, {NavigationPage} from "../components/navbar";
 import {getAllPostSlugs, getSinglePost} from "../server/wpgraphql/api";
 import Image from "next/image";
 import PostContent from "../components/post/post-content";
-import {Badge} from "flowbite-react";
 import type {SinglePost} from "../server/wpgraphql/models";
 import FooterComponent from "../components/footer";
 
 export const languageBadgeColour: Record<string, string> = {
-    c: "gray",
-    "html-css": "pink",
-    java: "failure",
-    javascript: "warning",
-    kotlin: "purple",
-    python: "indigo",
-    sql: "success",
-    typescript: "info",
+    c: "",
+    "html-css": "badge-error",
+    java: "badge-accent",
+    javascript: "badge-warning",
+    kotlin: "badge-secondary",
+    python: "badge-info",
+    sql: "badge-success",
+    typescript: "badge-primary",
 }
 
 export const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -46,9 +45,9 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
                     <div className="flex flex-wrap gap-2 pb-6 mx-auto">
                         {post?.categories.nodes.map((category) => (
                             (Object.keys(languageBadgeColour).includes(category.slug)) ?
-                                <Badge key={category.slug} color={languageBadgeColour[category.slug]} size="sm">
+                                <div key={category.slug} className={`badge ${languageBadgeColour[category.slug]}`}>
                                     {category.name}
-                                </Badge> : null
+                                </div> : null
                         ))}
                     </div> :
                     <div className="flex flex-wrap gap-2 pb-6 mx-auto">
