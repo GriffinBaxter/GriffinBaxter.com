@@ -12,9 +12,16 @@ module.exports = {
       fontFamily: {
         sans: ['var(--font-inter)', ...fontFamily.sans],
       },
+      colors: {
+        'navbar-dark-blue': '#001530'
+      }
     },
   },
   plugins: [
     require("flowbite/plugin"),
+    require("daisyui"),
   ],
+  daisyui: {
+    themes: ["winter"],
+  }
 };

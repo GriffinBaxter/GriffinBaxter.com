@@ -1,5 +1,5 @@
-import { Navbar } from "flowbite-react";
 import { type NextPage } from "next";
+import Link from "next/link";
 
 export enum NavigationPage {
     Home,
@@ -14,21 +14,20 @@ interface Props {
 
 const NavBar: NextPage<Props> = ({page: navPage}) => {
     return (
-        <div className="w-full bg-black mb-10">
-            <Navbar className="mx-auto max-w-[1200px] bg-black" fluid={true} >
-                <Navbar.Brand href="/">
-                <span className="self-center whitespace-nowrap text-xl font-bold text-white">
-                    Griffin Baxter
-                </span>
-                </Navbar.Brand>
-                <Navbar.Toggle />
-                <Navbar.Collapse>
-                    <Navbar.Link href="/" className={navPage == NavigationPage.Home ? "first:text-white" : "first:text-gray-400"} active={navPage == NavigationPage.Home}>Home</Navbar.Link>
-                    <Navbar.Link href="projects" className={navPage == NavigationPage.SoftwareProjects ? "first:text-white" : "first:text-gray-400"} active={navPage == NavigationPage.SoftwareProjects}>Software Projects</Navbar.Link>
-                    <Navbar.Link href="game-reviews" className={navPage == NavigationPage.GameReviews ? "first:text-white" : "first:text-gray-400"} active={navPage == NavigationPage.GameReviews}>Game Reviews</Navbar.Link>
-                    <Navbar.Link href="contact" className={navPage == NavigationPage.Contact ? "first:text-white" : "first:text-gray-400"} active={navPage == NavigationPage.Contact}>Contact</Navbar.Link>
-                </Navbar.Collapse>
-            </Navbar>
+        <div className="w-full bg-navbar-dark-blue mb-10">
+            <div className="navbar bg-neutral text-neutral-content mx-auto max-w-[1200px]">
+                <div className="flex-1">
+                    <a className="btn btn-ghost normal-case text-xl">Griffin Baxter</a>
+                </div>
+                <div className="flex-none">
+                    <ul className="menu menu-horizontal px-1">
+                        <li><Link href="/" className={navPage == NavigationPage.Home ? "text-blue-100" : ""}>Home</Link></li>
+                        <li><Link href="projects" className={navPage == NavigationPage.SoftwareProjects ? "text-blue-100" : ""}>Software Projects</Link></li>
+                        <li><Link href="game-reviews" className={navPage == NavigationPage.GameReviews ? "text-blue-100" : ""}>Game Reviews</Link></li>
+                        <li><Link href="contact" className={navPage == NavigationPage.Contact ? "text-blue-100" : ""}>Contact</Link></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     )
 }
