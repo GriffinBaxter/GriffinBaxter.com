@@ -5,7 +5,8 @@ import Image from "next/image";
 import PostContent from "../components/post/post-content";
 import type {SinglePost} from "../models";
 import FooterComponent from "../components/footer";
-import postSlugsJson from "../server/data/post-slugs.json";
+import projectsJson from "../server/data/projects.json";
+import reviewsJson from "../server/data/reviews.json";
 
 export const languageBadgeColour: Record<string, string> = {
     c: "",
@@ -82,7 +83,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
 export const getStaticPaths: GetStaticPaths = () => {
     return {
-        paths: postSlugsJson.map(({ slug }) => `/${slug}`),
+        paths: [...projectsJson, ...reviewsJson].map(({ slug }) => `/${slug}`),
         fallback: false,
     }
 }
