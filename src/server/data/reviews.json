@@ -1,0 +1,68 @@
+[
+    {
+        "slug": "half-life-alyx-review",
+        "title": "Half-Life: Alyx",
+        "excerpt": "Review",
+        "featuredImage": {
+            "node": {
+                "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/HLA-Screenshot-1.png"
+            }
+        },
+        "date": "2020-09-05T12:00:00"
+    },
+    {
+        "slug": "wolfenstein-youngblood-review",
+        "title": "Wolfenstein: Youngblood",
+        "excerpt": "Co-op Review",
+        "featuredImage": {
+            "node": {
+                "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Youngblood-Screenshot-1.png"
+            }
+        },
+        "date": "2020-07-11T17:00:00"
+    },
+    {
+        "slug": "heavy-rain-review",
+        "title": "Heavy Rain",
+        "excerpt": "Review",
+        "featuredImage": {
+            "node": {
+                "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/04/HR-Screenshot-1.png"
+            }
+        },
+        "date": "2020-04-20T22:00:00"
+    },
+    {
+        "slug": "rise-of-the-tomb-raider-review",
+        "title": "Rise of the Tomb Raider",
+        "excerpt": "Short Review",
+        "featuredImage": {
+            "node": {
+                "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/03/RotTR-Screenshot-1.png"
+            }
+        },
+        "date": "2020-03-23T18:00:00"
+    },
+    {
+        "slug": "life-is-strange-2-review",
+        "title": "Life is Strange 2",
+        "excerpt": "Review",
+        "featuredImage": {
+            "node": {
+                "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/02/LiS2-Screenshot-1.jpeg"
+            }
+        },
+        "date": "2020-02-15T18:00:00"
+    },
+    {
+        "slug": "red-dead-redemption-2-review",
+        "title": "Red Dead Redemption 2",
+        "excerpt": "Single-player Review",
+        "featuredImage": {
+            "node": {
+                "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/01/RDR2-Screenshot-1.png"
+            }
+        },
+        "date": "2020-01-25T14:00:13"
+    }
+]

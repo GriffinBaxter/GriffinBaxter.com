@@ -1,0 +1,48 @@
+{
+    "blocks": [
+        {
+            "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/GriffinBaxter.com\">GitHub.com/GriffinBaxter/GriffinBaxter.com</a>",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "The latest version of this website, GriffinBaxter.com, was created from <a rel=\"noreferrer noopener\" href=\"https://create.t3.gg/\">Create T3 App</a>, developed in TypeScript, and makes use of <a rel=\"noreferrer noopener\" href=\"https://nextjs.org/\">NextJS (React)</a>, <a rel=\"noreferrer noopener\" href=\"https://tailwindcss.com/\">Tailwind CSS</a>, <a rel=\"noreferrer noopener\" href=\"https://flowbite-react.com/\">Flowbite</a>, and <a rel=\"noreferrer noopener\" href=\"https://www.wpgraphql.com/\">WPGraphQL</a>. This replaces the original version of this website, which was created entirely using <a rel=\"noreferrer noopener\" href=\"https://wordpress.org/\">WordPress</a>. This new version of the site is statically generated and hosted on <a rel=\"noreferrer noopener\" href=\"https://vercel.com/\">Vercel</a>, which has significantly sped up loading times.",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "WordPress is still being used, but only as a headless CMS using <a rel=\"noreferrer noopener\" href=\"https://www.wpgraphql.com/\">WPGraphQL</a>, in order to load the website’s content at build time (thus allowing for the site’s static generation of pages).",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "This new version of the site is intended to be continually updated and improved.",
+            "tagName": "p",
+            "attributes": []
+        }
+    ],
+    "title": "GriffinBaxter.com",
+    "categories": {
+        "nodes": [
+            {
+                "name": "HTML / CSS",
+                "slug": "html-css"
+            },
+            {
+                "name": "Software Projects",
+                "slug": "projects"
+            },
+            {
+                "name": "TypeScript",
+                "slug": "typescript"
+            }
+        ]
+    },
+    "excerpt": "2022 Onwards (Continuing Project)",
+    "featuredImage": {
+        "node": {
+            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GriffinBaxter.com01.png"
+        }
+    },
+    "date": "2022-11-30T22:45:13"
+}

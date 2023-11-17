@@ -1,0 +1,122 @@
+{
+    "blocks": [
+        {
+            "innerHtml": "GitHub Repository (Backend): <a href=\"https://github.com/GriffinBaxter/Events-App-Backend\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/Events-App-Backend</a>",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "GitHub Repository (Frontend / Client): <a href=\"https://github.com/GriffinBaxter/Events-App\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/Events-App</a>",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "This events web app was created in JavaScript with a Vue.js 3 client (making use of Bootstrap and Element Plus) and a backend RESTful API (interacting with MySQL database server) for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG365&occurrence=21S1(C)&year=2021\" rel=\"noreferrer noopener\">SENG 365 (Web Computing Architectures)</a>, during Semester 1 of 2021. The project itself received an A+ (98.75%) grade for the backend (top in class) and an A+ (90%) grade for the frontend client for the course.",
+            "tagName": "p",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "justify"
+                }
+            ]
+        },
+        {
+            "innerHtml": "The web app allows for users to register/login and create, view, modify, delete and attend events with the intention of multiple users making use of the app.",
+            "tagName": "p",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "justify"
+                }
+            ]
+        },
+        {
+            "innerHtml": "",
+            "tagName": "hr",
+            "attributes": []
+        },
+        {
+            "innerHtml": "Gallery",
+            "tagName": "h4",
+            "attributes": [
+                {
+                    "name": "level",
+                    "value": "4"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-1.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-2.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-4.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-5.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-6.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-7.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-8.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-9.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-10.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": []
+        }
+    ],
+    "title": "Events App",
+    "categories": {
+        "nodes": [
+            {
+                "name": "HTML / CSS",
+                "slug": "html-css"
+            },
+            {
+                "name": "JavaScript",
+                "slug": "javascript"
+            },
+            {
+                "name": "Software Projects",
+                "slug": "projects"
+            },
+            {
+                "name": "SQL",
+                "slug": "sql"
+            }
+        ]
+    },
+    "excerpt": "2021, Semester 1",
+    "featuredImage": {
+        "node": {
+            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-Featured.png"
+        }
+    },
+    "date": "2021-06-22T12:45:57"
+}

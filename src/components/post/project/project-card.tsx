@@ -1,5 +1,5 @@
 import { type NextPage } from "next";
-import type { Project } from "../../../server/wpgraphql/models";
+import type { Project } from "../../../models";
 import {languageBadgeColour} from "../../../pages/[postSlug]";
 import Image from "next/image";
 import Link from "next/link";

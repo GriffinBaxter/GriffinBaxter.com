@@ -1,0 +1,49 @@
+{
+    "blocks": [
+        {
+            "innerHtml": "GitHub Repository: <a href=\"https://github.com/GriffinBaxter/Battleships\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/Battleships</a>",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "This game, Battleships, was created in C with a project partner for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=ENCE260&occurrence=20S2(C)&year=2020\" rel=\"noreferrer noopener\">ENCE 260 (Computer Systems)</a>, during Semester 2 of 2020. The project itself received an A- (84%) grade for the course.",
+            "tagName": "p",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "justify"
+                }
+            ]
+        },
+        {
+            "innerHtml": "Battleships can be played with two players using two ATmega32U2 microcontrollers via IR transmitters, each with a 5×7 LED display. To start, each player must choose the positions of three ships, each of different sizes, using a joystick and button. Once both players have chosen, the game of Battleships starts. Each player can check the status of their own ships and shoot a shot when it is their turn until the game is complete.",
+            "tagName": "p",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "justify"
+                }
+            ]
+        }
+    ],
+    "title": "Battleships",
+    "categories": {
+        "nodes": [
+            {
+                "name": "C / C++",
+                "slug": "c"
+            },
+            {
+                "name": "Software Projects",
+                "slug": "projects"
+            }
+        ]
+    },
+    "excerpt": "2020, Semester 2",
+    "featuredImage": {
+        "node": {
+            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/Battleships-Photo-1.png"
+        }
+    },
+    "date": "2021-02-11T13:03:33"
+}

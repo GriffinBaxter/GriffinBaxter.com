@@ -1,0 +1,126 @@
+{
+    "blocks": [
+        {
+            "innerHtml": "This terrain model scene was created in OpenGL 4 using C++ for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC422&occurrence=22S2(C)&year=2022\" rel=\"noreferrer noopener\">COSC 422 (Advanced Computer Graphics)</a>, during Semester 2 of 2022. The project itself received an A+ (100%) grade for the course.",
+            "tagName": "p",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "justify"
+                }
+            ]
+        },
+        {
+            "innerHtml": "This terrain depicts a scene with mountains, consisting of grass, dirt, snow, and water. Using the arrow keys, the scene can be interacted with to move around. Using the arrow keys, the scene can be interacted with to move around. The scene makes use of adjustable snow and water levels, fog, smooth shading, and multiple terrain models that can be swapped between.",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "",
+            "tagName": "hr",
+            "attributes": []
+        },
+        {
+            "innerHtml": "Gallery",
+            "tagName": "h4",
+            "attributes": [
+                {
+                    "name": "level",
+                    "value": "4"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Terrain02.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3511"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Terrain03.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3512"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Terrain04.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3513"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Terrain05.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3514"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        }
+    ],
+    "title": "Terrain Model",
+    "categories": {
+        "nodes": [
+            {
+                "name": "C / C++",
+                "slug": "c"
+            },
+            {
+                "name": "Software Projects",
+                "slug": "projects"
+            }
+        ]
+    },
+    "excerpt": "2022, Semester 2",
+    "featuredImage": {
+        "node": {
+            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Terrain01.png"
+        }
+    },
+    "date": "2022-11-29T15:01:11"
+}

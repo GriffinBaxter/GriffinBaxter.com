@@ -1,0 +1,81 @@
+{
+    "blocks": [
+        {
+            "innerHtml": "This raytraced graphics scene was created in OpenGL 2 using C++ for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC363&occurrence=21S1(C)&year=2021\" rel=\"noreferrer noopener\">COSC 363 (Computer Graphics)</a>, during Semester 1 of 2021. The project itself received an A+ (97.5%) grade for the course.",
+            "tagName": "p",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "justify"
+                }
+            ]
+        },
+        {
+            "innerHtml": "The raytraced scene showcases reflections, refractions, transparency, fog, texturing, lighting and shadows. Anti-aliasing is also used in the scene, with super-sampling and adaptive sampling.",
+            "tagName": "p",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "justify"
+                }
+            ]
+        },
+        {
+            "innerHtml": "",
+            "tagName": "hr",
+            "attributes": []
+        },
+        {
+            "innerHtml": "Gallery",
+            "tagName": "h4",
+            "attributes": [
+                {
+                    "name": "level",
+                    "value": "4"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Raytraced-Graphics-Scene-2.png\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "wide"
+                },
+                {
+                    "name": "id",
+                    "value": "830"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        }
+    ],
+    "title": "Raytraced Graphics Scene",
+    "categories": {
+        "nodes": [
+            {
+                "name": "C / C++",
+                "slug": "c"
+            },
+            {
+                "name": "Software Projects",
+                "slug": "projects"
+            }
+        ]
+    },
+    "excerpt": "2021, Semester 1",
+    "featuredImage": {
+        "node": {
+            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Raytraced-Graphics-Scene-1.png"
+        }
+    },
+    "date": "2021-06-22T13:39:39"
+}

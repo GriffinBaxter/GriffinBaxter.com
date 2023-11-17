@@ -1,11 +1,11 @@
 import type {GetStaticPaths, GetStaticProps, NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
-import {getAllPostSlugs, getSinglePost} from "../server/wpgraphql/api";
 import Image from "next/image";
 import PostContent from "../components/post/post-content";
-import type {SinglePost} from "../server/wpgraphql/models";
+import type {SinglePost} from "../models";
 import FooterComponent from "../components/footer";
+import postSlugsJson from "../server/data/post-slugs.json";
 
 export const languageBadgeColour: Record<string, string> = {
     c: "",
@@ -66,7 +66,7 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
 export default Post;
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const post = await getSinglePost(context.params?.postSlug as string)
+    const { default: post } = await import(`../server/data/posts/${context.params?.postSlug}.json`);
 
     let isProject = false
     for (const category of post.categories.nodes) {
@@ -80,10 +80,9 @@ export const getStaticProps: GetStaticProps = async (context) => {
     }
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
-    const slugs = await getAllPostSlugs()
+export const getStaticPaths: GetStaticPaths = () => {
     return {
-        paths: slugs.map(({ slug }) => `/${slug}`) || [],
+        paths: postSlugsJson.map(({ slug }) => `/${slug}`),
         fallback: false,
     }
 }

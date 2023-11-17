@@ -1,5 +1,5 @@
 import { type NextPage } from "next";
-import type {Block, BlockAttribute} from "../../server/wpgraphql/models";
+import type {Block, BlockAttribute} from "../../models";
 
 interface Props {
     blocks: Block[]

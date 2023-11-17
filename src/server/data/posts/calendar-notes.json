@@ -1,0 +1,172 @@
+{
+    "blocks": [
+        {
+            "innerHtml": "GitHub Repository: <a href=\"https://github.com/GriffinBaxter/Calendar-Notes\" rel=\"noreferrer noopener\">Github.com/GriffinBaxter/Calendar-Notes</a>",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "This Android notetaking app, Calendar Notes, was created in Kotlin for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG440&occurrence=22S2(C)&year=2022\" rel=\"noreferrer noopener\">SENG 440 (Special Topic: Topics in Mobile Computing)</a>, during Semester 2 of 2022. The project itself received an A (87%) grade for the course.",
+            "tagName": "p",
+            "attributes": [
+                {
+                    "name": "align",
+                    "value": "justify"
+                }
+            ]
+        },
+        {
+            "innerHtml": "I chose to create this app based on my note-taking habits. I usually make use of Google Keep, which unfortunately has many limitations (unable to add dates/times to portions of notes, and unable to differentiate between due dates or events, etc). Calendar Notes allows for users to create different types of notes, including “due date” and “event” based notes, which allows for a date or a period within a day to be attributed with each section of the note. Sections can be added to each note which allows for due dates or events to show up in the day-by-day calendar.",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "XML was used for declaratively creating the user interface, primarily due to the fact that Jetpack Compose was relatively new and not as well established. I also made use of a “Single Activity-Multiple Fragment” architecture for the navigation of the app, to allow for easy navigation using a nav graph. The app also makes use of implicit intents for sharing notes, RecyclerViews, French translation, <a rel=\"noreferrer noopener\" href=\"https://date.nager.at/Api\">public holiday API</a> with coroutines, animations, data persistence, <a rel=\"noreferrer noopener\" href=\"https://developer.android.com/develop/ui/views/launch/shortcuts\">static and dynamic shortcuts</a>, and supports both landscape and portrait orientations.",
+            "tagName": "p",
+            "attributes": []
+        },
+        {
+            "innerHtml": "",
+            "tagName": "hr",
+            "attributes": []
+        },
+        {
+            "innerHtml": "Gallery",
+            "tagName": "h4",
+            "attributes": [
+                {
+                    "name": "level",
+                    "value": "4"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes02.jpg\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3522"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes03.jpg\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3523"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes04.jpg\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3524"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes05.jpg\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3525"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes06.jpg\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3526"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        },
+        {
+            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes07.jpg\" alt=\"\">",
+            "tagName": "figure",
+            "attributes": [
+                {
+                    "name": "id",
+                    "value": "3527"
+                },
+                {
+                    "name": "sizeSlug",
+                    "value": "full"
+                },
+                {
+                    "name": "linkDestination",
+                    "value": "none"
+                }
+            ]
+        }
+    ],
+    "title": "Calendar Notes",
+    "categories": {
+        "nodes": [
+            {
+                "name": "Kotlin",
+                "slug": "kotlin"
+            },
+            {
+                "name": "Software Projects",
+                "slug": "projects"
+            }
+        ]
+    },
+    "excerpt": "2022, Semester 2",
+    "featuredImage": {
+        "node": {
+            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes01.jpg"
+        }
+    },
+    "date": "2022-11-30T14:02:26"
+}

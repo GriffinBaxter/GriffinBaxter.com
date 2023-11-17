@@ -1,16 +1,11 @@
-import type {GetStaticProps, NextPage} from "next";
+import type {NextPage} from "next";
 import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
-import {getProjects} from "../server/wpgraphql/api";
-import type {Project} from "../server/wpgraphql/models";
 import FooterComponent from "../components/footer";
+import projectsJson from "../server/data/projects.json";
 
-interface Props {
-    projects: Project[]
-}
-
-const Projects: NextPage<Props> = ({ projects }) => {
+const Projects: NextPage = () => {
     return (
         <>
             <Head>
@@ -23,7 +18,7 @@ const Projects: NextPage<Props> = ({ projects }) => {
 
             <main className="container mx-auto flex flex-col items-center justify-center p-4">
                 <div
-                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">{projects?.map(project => (
+                    className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">{projectsJson.map(project => (
                     <div key={project.slug} className="max-w-sm">
                         <ProjectCard projectObject={project}/>
                     </div>
@@ -36,12 +31,3 @@ const Projects: NextPage<Props> = ({ projects }) => {
 };
 
 export default Projects;
-
-export const getStaticProps: GetStaticProps = async () => {
-    const projects = await getProjects()
-    return {
-        props: {
-            projects,
-        },
-    }
-}

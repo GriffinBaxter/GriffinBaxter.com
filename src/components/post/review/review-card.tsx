@@ -1,5 +1,5 @@
 import { type NextPage } from "next";
-import { type Review } from "../../../server/wpgraphql/models";
+import { type Review } from "../../../models";
 import {months} from "../../../pages/[postSlug]";
 import Link from "next/link";
 import Image from "next/image";
