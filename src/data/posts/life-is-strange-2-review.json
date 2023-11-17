@@ -21,7 +21,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/LiS2-Screenshot-2.png\" alt=\"\">",
+            "innerHtml": "LiS2 Screenshot 2.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -59,7 +59,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/LiS2-Screenshot-3.png\" alt=\"\">",
+            "innerHtml": "LiS2 Screenshot 3.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -97,7 +97,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/LiS2-Screenshot-4.png\" alt=\"\">",
+            "innerHtml": "LiS2 Screenshot 4.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -135,7 +135,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/LiS2-Screenshot-5.png\" alt=\"\">",
+            "innerHtml": "LiS2 Screenshot 5.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -284,7 +284,7 @@
     "excerpt": "Review",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/02/LiS2-Screenshot-1.jpeg"
+            "sourceUrl": "LiS2 Screenshot 1.jpeg"
         }
     },
     "date": "2020-02-15T18:00:00"

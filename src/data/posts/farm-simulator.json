@@ -46,7 +46,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Farm-Simulator-Game-Screenshot-2.png\" alt=\"\">",
+            "innerHtml": "Farm Simulator Game Screenshot 2.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -68,7 +68,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Farm-Simulator-Game-Screenshot-3.png\" alt=\"\">",
+            "innerHtml": "Farm Simulator Game Screenshot 3.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -86,7 +86,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Farm-Simulator-Game-Screenshot-4.png\" alt=\"\">",
+            "innerHtml": "Farm Simulator Game Screenshot 4.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -104,7 +104,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Farm-Simulator-Game-Screenshot-5.png\" alt=\"\">",
+            "innerHtml": "Farm Simulator Game Screenshot 5.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -122,7 +122,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Farm-Simulator-Game-Screenshot-6.png\" alt=\"\">",
+            "innerHtml": "Farm Simulator Game Screenshot 6.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -140,7 +140,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Farm-Simulator-Game-Screenshot-7.png\" alt=\"\">",
+            "innerHtml": "Farm Simulator Game Screenshot 7.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -158,7 +158,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Farm-Simulator-Game-Screenshot-8.png\" alt=\"\">",
+            "innerHtml": "Farm Simulator Game Screenshot 8.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -192,7 +192,7 @@
     "excerpt": "2020, Semester 1",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Farm-Simulator-Game-Screenshot-1.png"
+            "sourceUrl": "Farm Simulator Game Screenshot 1.png"
         }
     },
     "date": "2020-07-06T14:00:29"

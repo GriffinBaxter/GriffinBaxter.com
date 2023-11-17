@@ -43,8 +43,8 @@ function contentDivider() {
     `
 }
 
-function styleImage(html: string) {
-    return html.replaceAll("<img ", `<img class="max-h-[675px]" `)
+function styleImage(fileName: string) {
+    return `<img src="/images/${fileName}" alt="Post Image" class="max-h-[675px]"/>`
 }
 
 const PostContent: NextPage<Props> = ({ blocks }) => {

@@ -25,7 +25,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/01/RDR2-Screenshot-2.png\" alt=\"\">",
+            "innerHtml": "RDR2 Screenshot 2.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -63,7 +63,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/RDR2-Screenshot-3.png\" alt=\"\">",
+            "innerHtml": "RDR2 Screenshot 3.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -101,7 +101,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/01/RDR2-Screenshot-4.png\" alt=\"\">",
+            "innerHtml": "RDR2 Screenshot 4.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -139,7 +139,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/01/RDR2-Screenshot-5.png\" alt=\"\">",
+            "innerHtml": "RDR2 Screenshot 5.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -172,7 +172,7 @@
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/01/RDR2-Screenshot-6.png\" alt=\"\">",
+            "innerHtml": "RDR2 Screenshot 6.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -316,7 +316,7 @@
     "excerpt": "Single-player Review",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/01/RDR2-Screenshot-1.png"
+            "sourceUrl": "RDR2 Screenshot 1.png"
         }
     },
     "date": "2020-01-25T14:00:13"

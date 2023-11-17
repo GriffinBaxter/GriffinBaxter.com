@@ -31,7 +31,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Skeletal02.png\" alt=\"\">",
+            "innerHtml": "Skeletal02.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -49,7 +49,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Skeletal03.png\" alt=\"\">",
+            "innerHtml": "Skeletal03.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -67,7 +67,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Skeletal04.png\" alt=\"\">",
+            "innerHtml": "Skeletal04.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -101,7 +101,7 @@
     "excerpt": "2022, Semester 2",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/Skeletal01.png"
+            "sourceUrl": "Skeletal01.png"
         }
     },
     "date": "2022-11-30T16:33:40"

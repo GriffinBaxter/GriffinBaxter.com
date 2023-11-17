@@ -51,27 +51,27 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/05/QTE02.png\" alt=\"\">",
+            "innerHtml": "QTE02.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/05/QTE03.png\" alt=\"\">",
+            "innerHtml": "QTE03.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/05/QTE04.png\" alt=\"\">",
+            "innerHtml": "QTE04.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/05/QTE05.png\" alt=\"\">",
+            "innerHtml": "QTE05.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/05/QTE06.png\" alt=\"\">",
+            "innerHtml": "QTE06.png",
             "tagName": "figure",
             "attributes": []
         }
@@ -92,7 +92,7 @@
     "excerpt": "2022, Semester 1",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/05/QTE01.png"
+            "sourceUrl": "QTE01.png"
         }
     },
     "date": "2022-05-29T11:46:49"

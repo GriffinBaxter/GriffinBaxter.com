@@ -55,7 +55,7 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
                         {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
                     </div>
                 }
-                <Image className="py-3 mx-auto" src={post?.featuredImage.node.sourceUrl} alt="Main Post Image" width="1200" height="675" priority={true}></Image>
+                <Image className="py-3 mx-auto" src={`/images/${post?.featuredImage.node.sourceUrl}`} alt="Main Post Image" width="1200" height="675" priority={true}></Image>
                 <PostContent blocks={post?.blocks} />
             </main>
 

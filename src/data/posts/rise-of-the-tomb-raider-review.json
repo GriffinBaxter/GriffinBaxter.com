@@ -21,7 +21,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/RotTR-Screenshot-2.png\" alt=\"\">",
+            "innerHtml": "RotTR Screenshot 2.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -165,7 +165,7 @@
     "excerpt": "Short Review",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/03/RotTR-Screenshot-1.png"
+            "sourceUrl": "RotTR Screenshot 1.png"
         }
     },
     "date": "2020-03-23T18:00:00"

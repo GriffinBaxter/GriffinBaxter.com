@@ -46,7 +46,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt02.png\" alt=\"\">",
+            "innerHtml": "GuessIt02.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -64,7 +64,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt03.png\" alt=\"\">",
+            "innerHtml": "GuessIt03.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -82,7 +82,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt04.png\" alt=\"\">",
+            "innerHtml": "GuessIt04.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -100,7 +100,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt05.png\" alt=\"\">",
+            "innerHtml": "GuessIt05.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -118,7 +118,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt06.png\" alt=\"\">",
+            "innerHtml": "GuessIt06.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -136,7 +136,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt07.png\" alt=\"\">",
+            "innerHtml": "GuessIt07.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -154,7 +154,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt08.png\" alt=\"\">",
+            "innerHtml": "GuessIt08.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -172,7 +172,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt09.png\" alt=\"\">",
+            "innerHtml": "GuessIt09.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -190,7 +190,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt10.png\" alt=\"\">",
+            "innerHtml": "GuessIt10.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -208,7 +208,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt11.png\" alt=\"\">",
+            "innerHtml": "GuessIt11.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -226,7 +226,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt12.png\" alt=\"\">",
+            "innerHtml": "GuessIt12.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -260,7 +260,7 @@
     "excerpt": "2022, Semester 2",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/GuessIt01.png"
+            "sourceUrl": "GuessIt01.png"
         }
     },
     "date": "2022-11-30T16:02:37"

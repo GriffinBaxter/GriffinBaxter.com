@@ -21,7 +21,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/Youngblood-Screenshot-2.png\" alt=\"\">",
+            "innerHtml": "Youngblood Screenshot 2.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -59,7 +59,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Youngblood-Screenshot-3.png\" alt=\"\">",
+            "innerHtml": "Youngblood Screenshot 3.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -213,7 +213,7 @@
     "excerpt": "Co-op Review",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/07/Youngblood-Screenshot-1.png"
+            "sourceUrl": "Youngblood Screenshot 1.png"
         }
     },
     "date": "2020-07-11T17:00:00"

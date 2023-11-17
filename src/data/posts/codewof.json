@@ -41,7 +41,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CodeWOF02.png\" alt=\"\">",
+            "innerHtml": "CodeWOF02.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -74,7 +74,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CodeWOF03.png\" alt=\"\">",
+            "innerHtml": "CodeWOF03.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -92,7 +92,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CodeWOF04.png\" alt=\"\">",
+            "innerHtml": "CodeWOF04.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -134,7 +134,7 @@
     "excerpt": "2022, Semester 1 and 2",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CodeWOF01.png"
+            "sourceUrl": "CodeWOF01.png"
         }
     },
     "date": "2022-11-30T18:35:38"

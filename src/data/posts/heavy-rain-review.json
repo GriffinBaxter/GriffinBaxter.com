@@ -21,7 +21,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/HR-Screenshot-2.png\" alt=\"\">",
+            "innerHtml": "HR Screenshot 2.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -59,7 +59,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/HR-Screenshot-3.png\" alt=\"\">",
+            "innerHtml": "HR Screenshot 3.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -97,7 +97,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/09/HR-Screenshot-4.png\" alt=\"\">",
+            "innerHtml": "HR Screenshot 4.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -251,7 +251,7 @@
     "excerpt": "Review",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2020/04/HR-Screenshot-1.png"
+            "sourceUrl": "HR Screenshot 1.png"
         }
     },
     "date": "2020-04-20T22:00:00"

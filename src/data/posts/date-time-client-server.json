@@ -36,17 +36,17 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/DateTime-Photo-2.png\" alt=\"\">",
+            "innerHtml": "DateTime Photo 2.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/DateTime-Photo-3.png\" alt=\"\">",
+            "innerHtml": "DateTime Photo 3.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/DateTime-Photo-4.png\" alt=\"\">",
+            "innerHtml": "DateTime Photo 4.png",
             "tagName": "figure",
             "attributes": []
         }
@@ -67,7 +67,7 @@
     "excerpt": "2020, Semester 2",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/DateTime-Photo-1.png"
+            "sourceUrl": "DateTime Photo 1.png"
         }
     },
     "date": "2021-06-21T14:30:25"

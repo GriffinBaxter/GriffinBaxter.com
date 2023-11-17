@@ -41,7 +41,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes02.jpg\" alt=\"\">",
+            "innerHtml": "CalendarNotes02.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -59,7 +59,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes03.jpg\" alt=\"\">",
+            "innerHtml": "CalendarNotes03.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -77,7 +77,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes04.jpg\" alt=\"\">",
+            "innerHtml": "CalendarNotes04.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -95,7 +95,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes05.jpg\" alt=\"\">",
+            "innerHtml": "CalendarNotes05.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -113,7 +113,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes06.jpg\" alt=\"\">",
+            "innerHtml": "CalendarNotes06.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -131,7 +131,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes07.jpg\" alt=\"\">",
+            "innerHtml": "CalendarNotes07.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -165,7 +165,7 @@
     "excerpt": "2022, Semester 2",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2022/11/CalendarNotes01.jpg"
+            "sourceUrl": "CalendarNotes01.png"
         }
     },
     "date": "2022-11-30T14:02:26"

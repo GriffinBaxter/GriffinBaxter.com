@@ -46,47 +46,47 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-1.png\" alt=\"\">",
+            "innerHtml": "Events App 1.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-2.png\" alt=\"\">",
+            "innerHtml": "Events App 2.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-4.png\" alt=\"\">",
+            "innerHtml": "Events App 4.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-5.png\" alt=\"\">",
+            "innerHtml": "Events App 5.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-6.png\" alt=\"\">",
+            "innerHtml": "Events App 6.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-7.png\" alt=\"\">",
+            "innerHtml": "Events App 7.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-8.png\" alt=\"\">",
+            "innerHtml": "Events App 8.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-9.png\" alt=\"\">",
+            "innerHtml": "Events App 9.png",
             "tagName": "figure",
             "attributes": []
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-10.png\" alt=\"\">",
+            "innerHtml": "Events App 10.png",
             "tagName": "figure",
             "attributes": []
         }
@@ -115,7 +115,7 @@
     "excerpt": "2021, Semester 1",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/06/Events-App-Featured.png"
+            "sourceUrl": "Events App Featured.png"
         }
     },
     "date": "2021-06-22T12:45:57"

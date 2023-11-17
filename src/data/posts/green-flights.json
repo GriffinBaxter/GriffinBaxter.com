@@ -51,7 +51,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-2.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 2.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -61,7 +61,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-3.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 3.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -71,7 +71,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-4.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 4.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -81,7 +81,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-5.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 5.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -91,7 +91,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-6.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 6.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -101,7 +101,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-7.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 7.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -111,7 +111,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-8.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 8.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -121,7 +121,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-9.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 9.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -131,7 +131,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-10.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 10.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -141,7 +141,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-11.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 11.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -151,7 +151,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-12.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 12.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -161,7 +161,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-13.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 13.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -171,7 +171,7 @@
             ]
         },
         {
-            "innerHtml": "<img src=\"https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-14.png\" alt=\"\">",
+            "innerHtml": "GreenFlights Screenshot 14.png",
             "tagName": "figure",
             "attributes": [
                 {
@@ -201,7 +201,7 @@
     "excerpt": "2020, Semester 2",
     "featuredImage": {
         "node": {
-            "sourceUrl": "https://www.wordpress.griffinbaxter.com/wp-content/uploads/2021/02/GreenFlights-Screenshot-1.png"
+            "sourceUrl": "GreenFlights Screenshot 1.png"
         }
     },
     "date": "2021-02-10T23:56:08"
