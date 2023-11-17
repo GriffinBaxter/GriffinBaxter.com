@@ -5,8 +5,8 @@ import Divider from "../components/divider";
 import ProjectCard from "../components/post/project/project-card";
 import ReviewCard from "../components/post/review/review-card";
 import FooterComponent from "../components/footer";
-import projectsJson from "../server/data/projects.json";
-import reviewsJson from "../server/data/reviews.json";
+import projectsJson from "../data/projects.json";
+import reviewsJson from "../data/reviews.json";
 
 const Home: NextPage = () => {
     return (

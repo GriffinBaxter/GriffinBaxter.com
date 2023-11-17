@@ -3,7 +3,7 @@ import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
 import FooterComponent from "../components/footer";
-import projectsJson from "../server/data/projects.json";
+import projectsJson from "../data/projects.json";
 
 const Projects: NextPage = () => {
     return (

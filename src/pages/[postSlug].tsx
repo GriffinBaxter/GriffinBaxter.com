@@ -5,8 +5,8 @@ import Image from "next/image";
 import PostContent from "../components/post/post-content";
 import type {SinglePost} from "../models";
 import FooterComponent from "../components/footer";
-import projectsJson from "../server/data/projects.json";
-import reviewsJson from "../server/data/reviews.json";
+import projectsJson from "../data/projects.json";
+import reviewsJson from "../data/reviews.json";
 
 export const languageBadgeColour: Record<string, string> = {
     c: "",
@@ -67,7 +67,7 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
 export default Post;
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const { default: post } = await import(`../server/data/posts/${context.params?.postSlug}.json`);
+    const { default: post } = await import(`../data/posts/${context.params?.postSlug}.json`);
 
     let isProject = false
     for (const category of post.categories.nodes) {

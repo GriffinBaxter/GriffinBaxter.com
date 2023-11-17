@@ -3,7 +3,7 @@ import Head from "next/head";
 import NavBar, {NavigationPage} from "../components/navbar";
 import ReviewCard from "../components/post/review/review-card";
 import FooterComponent from "../components/footer";
-import reviewsJson from "../server/data/reviews.json";
+import reviewsJson from "../data/reviews.json";
 
 const GameReviews: NextPage = () => {
     return (
