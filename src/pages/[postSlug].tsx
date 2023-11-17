@@ -67,7 +67,7 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
 export default Post;
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const { default: post } = await import(`../data/posts/${context.params?.postSlug}.json`);
+    const post = await require(`../data/posts/${context.params?.postSlug}.json`);
 
     let isProject = false
     for (const category of post.categories.nodes) {
