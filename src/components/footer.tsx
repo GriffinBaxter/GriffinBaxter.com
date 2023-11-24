@@ -10,11 +10,11 @@ const FooterComponent: NextPage = () => {
           <p>© {new Date().getFullYear()} Griffin Baxter</p>
         </div>
         <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <Link href="https://github.com/GriffinBaxter">
-            <FaGithub size={24}></FaGithub>
-          </Link>
           <Link href="https://www.linkedin.com/in/griffinbaxter/">
             <FaLinkedin size={24}></FaLinkedin>
+          </Link>
+          <Link href="https://github.com/GriffinBaxter">
+            <FaGithub size={24}></FaGithub>
           </Link>
         </div>
       </footer>

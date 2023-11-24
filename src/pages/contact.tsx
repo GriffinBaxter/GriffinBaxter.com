@@ -3,6 +3,7 @@ import Head from "next/head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import FooterComponent from "../components/footer";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import Divider from "../components/divider";
 
 const Contact: NextPage = () => {
   return (
@@ -15,16 +16,30 @@ const Contact: NextPage = () => {
 
       <NavBar page={NavigationPage.Contact} />
 
-      <main className="container mx-auto flex flex-col items-center p-4">
-        <div className="grid grid-cols-2 items-center gap-x-6 gap-y-2">
+      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center">
+        <p className="py-8 text-center text-5xl font-bold">Contact</p>
+        <p className="pb-8 text-center text-xl">
+          Add me on{" "}
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/griffinbaxter/"
+            rel="noreferrer"
+            className="font-bold text-blue-600 underline hover:text-blue-800"
+          >
+            LinkedIn
+          </a>{" "}
+          or follow me on{" "}
           <a
             target="_blank"
             href="https://github.com/GriffinBaxter"
             rel="noreferrer"
+            className="font-bold text-blue-600 underline hover:text-blue-800"
           >
-            <FaGithubSquare size={100} color="24292d" />
-            <p className="pt-2 text-center text-lg font-bold">GitHub</p>
+            GitHub
           </a>
+        </p>
+        <Divider />
+        <div className="grid grid-cols-2 items-center gap-x-6 gap-y-2 pb-12 pt-6">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/griffinbaxter/"
@@ -32,6 +47,14 @@ const Contact: NextPage = () => {
           >
             <FaLinkedin size={100} color="0d66c2" />
             <p className="pt-2 text-center text-lg font-bold">LinkedIn</p>
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/GriffinBaxter"
+            rel="noreferrer"
+          >
+            <FaGithubSquare size={100} color="24292d" />
+            <p className="pt-2 text-center text-lg font-bold">GitHub</p>
           </a>
         </div>
       </main>
