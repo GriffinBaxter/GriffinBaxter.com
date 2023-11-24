@@ -5,6 +5,8 @@ import ReviewCard from "../components/post/review/review-card";
 import FooterComponent from "../components/footer";
 import reviewsJson from "../data/reviews.json";
 import Divider from "../components/divider";
+import gamesRankedJson from "../data/games-ranked.json";
+import Link from "next/link";
 
 const GameReviews: NextPage = () => {
   return (
@@ -30,6 +32,44 @@ const GameReviews: NextPage = () => {
             </div>
           ))}
         </div>
+        <button
+          className="btn btn-secondary my-4"
+          onClick={() =>
+            (
+              document.getElementById("games-ranked-modal") as HTMLDialogElement
+            ).showModal()
+          }
+        >
+          Games Ranked
+        </button>
+        <dialog id="games-ranked-modal" className="modal">
+          <div className="modal-box">
+            <h3 className="pb-6 pt-2 text-center text-2xl font-bold">
+              All Games I’ve Completed (Ranked)
+            </h3>
+            <ol className="list-decimal pl-8">
+              {gamesRankedJson.map((game) =>
+                game.slug ? (
+                  <li key={game.name}>
+                    <Link
+                      target="_blank"
+                      href={game.slug}
+                      rel="noreferrer"
+                      className="font-bold text-blue-600 underline hover:text-blue-800"
+                    >
+                      {game.name}
+                    </Link>
+                  </li>
+                ) : (
+                  <li key={game.name}>{game.name}</li>
+                ),
+              )}
+            </ol>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
       </main>
 
       <FooterComponent />
