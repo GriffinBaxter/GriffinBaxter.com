@@ -1,199 +1,199 @@
 {
-    "blocks": [
+  "blocks": [
+    {
+      "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/Farm-Simulator-Game\">GitHub.com/GriffinBaxter/Farm-Simulator-Game</a>",
+      "tagName": "p",
+      "attributes": [
         {
-            "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/Farm-Simulator-Game\">GitHub.com/GriffinBaxter/Farm-Simulator-Game</a>",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "left"
-                }
-            ]
-        },
-        {
-            "innerHtml": "This game, Farm Simulator, was created in Java with a project partner for one of my  University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG201&occurrence=20S1(C)&year=2020\">SENG 201 (Software Engineering I)</a>, during Semester 1 of 2020.  The project itself received an A+ (95%) grade for the course.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "The game includes a fully-featured GUI interface making use of Swing, a widget toolkit for Java. The game can be downloaded and played using the GitHub repository link above, given that Java SE Development Kit 11 is installed on the machine. Additionally, the source code for the project is available publicly on the GitHub repository.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "",
-            "tagName": "hr",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Gallery",
-            "tagName": "h4",
-            "attributes": [
-                {
-                    "name": "level",
-                    "value": "4"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Farm Simulator Game Screenshot 2.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "id",
-                    "value": "439"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                },
-                {
-                    "name": "linkDestination",
-                    "value": "none"
-                },
-                {
-                    "name": "className",
-                    "value": "is-style-default"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Farm Simulator Game Screenshot 3.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "id",
-                    "value": "440"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                },
-                {
-                    "name": "linkDestination",
-                    "value": "none"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Farm Simulator Game Screenshot 4.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "id",
-                    "value": "441"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                },
-                {
-                    "name": "linkDestination",
-                    "value": "none"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Farm Simulator Game Screenshot 5.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "id",
-                    "value": "442"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                },
-                {
-                    "name": "linkDestination",
-                    "value": "none"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Farm Simulator Game Screenshot 6.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "id",
-                    "value": "443"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                },
-                {
-                    "name": "linkDestination",
-                    "value": "none"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Farm Simulator Game Screenshot 7.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "id",
-                    "value": "444"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                },
-                {
-                    "name": "linkDestination",
-                    "value": "none"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Farm Simulator Game Screenshot 8.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "id",
-                    "value": "445"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                },
-                {
-                    "name": "linkDestination",
-                    "value": "none"
-                }
-            ]
+          "name": "align",
+          "value": "left"
         }
-    ],
-    "title": "Farm Simulator",
-    "categories": {
-        "nodes": [
-            {
-                "name": "Java",
-                "slug": "java"
-            },
-            {
-                "name": "Software Projects",
-                "slug": "projects"
-            }
-        ]
+      ]
     },
-    "excerpt": "2020, Semester 1",
-    "featuredImage": {
-        "node": {
-            "sourceUrl": "Farm Simulator Game Screenshot 1.png"
+    {
+      "innerHtml": "This game, Farm Simulator, was created in Java with a project partner for one of my  University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG201&occurrence=20S1(C)&year=2020\">SENG 201 (Software Engineering I)</a>, during Semester 1 of 2020.  The project itself received an A+ (95%) grade for the course.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
         }
+      ]
     },
-    "date": "2020-07-06T14:00:29"
+    {
+      "innerHtml": "The game includes a fully-featured GUI interface making use of Swing, a widget toolkit for Java. The game can be downloaded and played using the GitHub repository link above, given that Java SE Development Kit 11 is installed on the machine. Additionally, the source code for the project is available publicly on the GitHub repository.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
+        }
+      ]
+    },
+    {
+      "innerHtml": "",
+      "tagName": "hr",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Gallery",
+      "tagName": "h4",
+      "attributes": [
+        {
+          "name": "level",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Farm Simulator Game Screenshot 2.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "id",
+          "value": "439"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        },
+        {
+          "name": "linkDestination",
+          "value": "none"
+        },
+        {
+          "name": "className",
+          "value": "is-style-default"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Farm Simulator Game Screenshot 3.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "id",
+          "value": "440"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        },
+        {
+          "name": "linkDestination",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Farm Simulator Game Screenshot 4.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "id",
+          "value": "441"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        },
+        {
+          "name": "linkDestination",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Farm Simulator Game Screenshot 5.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "id",
+          "value": "442"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        },
+        {
+          "name": "linkDestination",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Farm Simulator Game Screenshot 6.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "id",
+          "value": "443"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        },
+        {
+          "name": "linkDestination",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Farm Simulator Game Screenshot 7.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "id",
+          "value": "444"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        },
+        {
+          "name": "linkDestination",
+          "value": "none"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Farm Simulator Game Screenshot 8.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "id",
+          "value": "445"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        },
+        {
+          "name": "linkDestination",
+          "value": "none"
+        }
+      ]
+    }
+  ],
+  "title": "Farm Simulator",
+  "categories": {
+    "nodes": [
+      {
+        "name": "Java",
+        "slug": "java"
+      },
+      {
+        "name": "Software Projects",
+        "slug": "projects"
+      }
+    ]
+  },
+  "excerpt": "2020, Semester 1",
+  "featuredImage": {
+    "node": {
+      "sourceUrl": "Farm Simulator Game Screenshot 1.png"
+    }
+  },
+  "date": "2020-07-06T14:00:29"
 }

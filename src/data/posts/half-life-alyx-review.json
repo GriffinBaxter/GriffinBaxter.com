@@ -1,210 +1,210 @@
 {
-    "blocks": [
+  "blocks": [
+    {
+      "innerHtml": "While I haven’t been waiting as long as many others for the next entry in the Half-Life series, I have played the first and second games with its accompanying episodes around five years ago. The prospect of Half-Life: Alyx being a VR title was exciting. So, I promptly attained a Windows Mixed Reality headset, primarily for playing the game. I can only blame <a href=\"https://www.youtube.com/valvenewsnetwork\" rel=\"noreferrer noopener\">Tyler from Valve News Network</a> for hyping up Half-Life: Alyx so much, such that I purchased a headset before the release of the game. But, did the game live up to the hype?",
+      "tagName": "p",
+      "attributes": [
         {
-            "innerHtml": "While I haven’t been waiting as long as many others for the next entry in the Half-Life series, I have played the first and second games with its accompanying episodes around five years ago. The prospect of Half-Life: Alyx being a VR title was exciting. So, I promptly attained a Windows Mixed Reality headset, primarily for playing the game. I can only blame <a href=\"https://www.youtube.com/valvenewsnetwork\" rel=\"noreferrer noopener\">Tyler from Valve News Network</a> for hyping up Half-Life: Alyx so much, such that I purchased a headset before the release of the game. But, did the game live up to the hype?",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "The game’s interactivity is amazing and can only be sufficiently demonstrated when playing the game for yourself. Almost every item in the environment can be picked up, thrown and moved around. This sounds pretty standard for games, except for the added dimension of VR, which allows for infinitely many more possibilities in terms of interaction. The mundane task of opening drawers and searching for items in them becomes a fun task in VR, due to its manual and interactive nature. Even the act of reloading a gun becomes a whole process in Half-Life: Alyx, rather than a button press as accustomed to in regular non-VR titles. While this aspect can sound annoying and useless, it ends up becoming an interesting part of the gameplay, in which you manage the reloading of a gun alongside navigating away from an enemy or behind cover. In the latter cases of which, can require physically moving away and crouching down. This physical movement is an extremely fun aspect of the game’s combat and allows for many exciting and fun moments.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "HLA Screenshot 2.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "wide"
-                },
-                {
-                    "name": "id",
-                    "value": "488"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                }
-            ]
-        },
-        {
-            "innerHtml": "The plot certainly doesn’t disappoint, with great performances by the game’s cast and brilliant story moments. Having a voiced playable character is a first for a game in the main Half-Life series. Alyx being voiced in VR worked great in this instance and felt beneficial to the story and communications throughout. Additionally, New Zealand’s Rhys Darby voices Russel, a new character in the series. Russel has many great performances throughout the campaign, including some great instances of Valve’s signature humour.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Half-Life: Alyx does not only look good for a VR game, its graphical fidelity is similar and sometimes even better than many modern non-VR games. The environments of the game look brilliant and are expertly crafted. The game’s variety is also a great aspect, in which many locations are visited throughout Alyx’s chapters, with various unique objectives and activities. An unexpected aspect of the environments was its use of horror, which was especially effective being a VR game. Additionally, the chapters of Half-Life: Alyx feature brilliant music and sounds, making full use of the virtual reality medium and surround audio.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "HLA Screenshot 3.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "wide"
-                },
-                {
-                    "name": "id",
-                    "value": "489"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Half-Life: Alyx is easily the best VR game I have played and one of the best games I have played of all time. I ended up taking 19 hours to finish the game, which is well over the estimates for completion. This is likely due to the game’s overwhelmingly detailed environments and fantastic use of the VR medium, allowing for lots of time to be easily spent indulged in various activities. I hope that this game reaches the point of being a bland VR experience, similar to how Half-Life 2 is now sometimes regarded as being a typical shooter game by today’s standards. Half-Life: Alyx has pushed the medium so far as to make it easily the standard of VR game design. With my current experience of games and in-comparison to anything I’ve played before, I can confidently say that this game is top-tier. And yes, it was well worth purchasing the VR headset for.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "<a rel=\"noreferrer noopener\" href=\"https://www.wordpress.griffinbaxter.com/review-ratings/\">Numerical Rating</a>: 10/10",
-            "tagName": "h4",
-            "attributes": [
-                {
-                    "name": "textAlign",
-                    "value": "center"
-                },
-                {
-                    "name": "level",
-                    "value": "4"
-                }
-            ]
-        },
-        {
-            "innerHtml": "",
-            "tagName": "hr",
-            "attributes": [
-                {
-                    "name": "className",
-                    "value": "is-style-wide"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Review Info",
-            "tagName": "h4",
-            "attributes": [
-                {
-                    "name": "level",
-                    "value": "4"
-                }
-            ]
-        },
-        {
-            "innerHtml": "The developer/publisher did not provide a review sample of this game.",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Game Info:</strong>",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Name: Half-Life: Alyx",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Developer: Valve",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Publisher: Valve",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Platform:</strong> PC (Steam)",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Review PC Specs:</strong>",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "CPU: Intel i7-8700",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "GPU: Nvidia GTX 1070",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Memory: 16GB DDR4 2666MHz",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Game Storage: NVME SSD",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Game Start Date:</strong> 24 March 2020",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Game Completion Date:</strong> 1 April 2020 (Main Story completed)",
-            "tagName": "p",
-            "attributes": []
+          "name": "align",
+          "value": "justify"
         }
-    ],
-    "title": "Half-Life: Alyx",
-    "categories": {
-        "nodes": [
-            {
-                "name": "Game Reviews",
-                "slug": "game-reviews"
-            }
-        ]
+      ]
     },
-    "excerpt": "Review",
-    "featuredImage": {
-        "node": {
-            "sourceUrl": "HLA Screenshot 1.png"
+    {
+      "innerHtml": "The game’s interactivity is amazing and can only be sufficiently demonstrated when playing the game for yourself. Almost every item in the environment can be picked up, thrown and moved around. This sounds pretty standard for games, except for the added dimension of VR, which allows for infinitely many more possibilities in terms of interaction. The mundane task of opening drawers and searching for items in them becomes a fun task in VR, due to its manual and interactive nature. Even the act of reloading a gun becomes a whole process in Half-Life: Alyx, rather than a button press as accustomed to in regular non-VR titles. While this aspect can sound annoying and useless, it ends up becoming an interesting part of the gameplay, in which you manage the reloading of a gun alongside navigating away from an enemy or behind cover. In the latter cases of which, can require physically moving away and crouching down. This physical movement is an extremely fun aspect of the game’s combat and allows for many exciting and fun moments.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
         }
+      ]
     },
-    "date": "2020-09-05T12:00:00"
+    {
+      "innerHtml": "HLA Screenshot 2.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "wide"
+        },
+        {
+          "name": "id",
+          "value": "488"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "innerHtml": "The plot certainly doesn’t disappoint, with great performances by the game’s cast and brilliant story moments. Having a voiced playable character is a first for a game in the main Half-Life series. Alyx being voiced in VR worked great in this instance and felt beneficial to the story and communications throughout. Additionally, New Zealand’s Rhys Darby voices Russel, a new character in the series. Russel has many great performances throughout the campaign, including some great instances of Valve’s signature humour.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Half-Life: Alyx does not only look good for a VR game, its graphical fidelity is similar and sometimes even better than many modern non-VR games. The environments of the game look brilliant and are expertly crafted. The game’s variety is also a great aspect, in which many locations are visited throughout Alyx’s chapters, with various unique objectives and activities. An unexpected aspect of the environments was its use of horror, which was especially effective being a VR game. Additionally, the chapters of Half-Life: Alyx feature brilliant music and sounds, making full use of the virtual reality medium and surround audio.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
+        }
+      ]
+    },
+    {
+      "innerHtml": "HLA Screenshot 3.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "wide"
+        },
+        {
+          "name": "id",
+          "value": "489"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Half-Life: Alyx is easily the best VR game I have played and one of the best games I have played of all time. I ended up taking 19 hours to finish the game, which is well over the estimates for completion. This is likely due to the game’s overwhelmingly detailed environments and fantastic use of the VR medium, allowing for lots of time to be easily spent indulged in various activities. I hope that this game reaches the point of being a bland VR experience, similar to how Half-Life 2 is now sometimes regarded as being a typical shooter game by today’s standards. Half-Life: Alyx has pushed the medium so far as to make it easily the standard of VR game design. With my current experience of games and in-comparison to anything I’ve played before, I can confidently say that this game is top-tier. And yes, it was well worth purchasing the VR headset for.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
+        }
+      ]
+    },
+    {
+      "innerHtml": "<a rel=\"noreferrer noopener\" href=\"https://www.wordpress.griffinbaxter.com/review-ratings/\">Numerical Rating</a>: 10/10",
+      "tagName": "h4",
+      "attributes": [
+        {
+          "name": "textAlign",
+          "value": "center"
+        },
+        {
+          "name": "level",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "innerHtml": "",
+      "tagName": "hr",
+      "attributes": [
+        {
+          "name": "className",
+          "value": "is-style-wide"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Review Info",
+      "tagName": "h4",
+      "attributes": [
+        {
+          "name": "level",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "innerHtml": "The developer/publisher did not provide a review sample of this game.",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Game Info:</strong>",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Name: Half-Life: Alyx",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Developer: Valve",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Publisher: Valve",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Platform:</strong> PC (Steam)",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Review PC Specs:</strong>",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "CPU: Intel i7-8700",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "GPU: Nvidia GTX 1070",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Memory: 16GB DDR4 2666MHz",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Game Storage: NVME SSD",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Game Start Date:</strong> 24 March 2020",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Game Completion Date:</strong> 1 April 2020 (Main Story completed)",
+      "tagName": "p",
+      "attributes": []
+    }
+  ],
+  "title": "Half-Life: Alyx",
+  "categories": {
+    "nodes": [
+      {
+        "name": "Game Reviews",
+        "slug": "game-reviews"
+      }
+    ]
+  },
+  "excerpt": "Review",
+  "featuredImage": {
+    "node": {
+      "sourceUrl": "HLA Screenshot 1.png"
+    }
+  },
+  "date": "2020-09-05T12:00:00"
 }

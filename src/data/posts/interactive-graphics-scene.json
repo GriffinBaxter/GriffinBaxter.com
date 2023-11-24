@@ -1,74 +1,74 @@
 {
-    "blocks": [
+  "blocks": [
+    {
+      "innerHtml": "This interactive graphics scene was created in OpenGL 2 using C++ for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC363&occurrence=21S1(C)&year=2021\" rel=\"noreferrer noopener\">COSC 363 (Computer Graphics)</a>, during Semester 1 of 2021. The project itself received an A+ (100%) grade for the course.",
+      "tagName": "p",
+      "attributes": [
         {
-            "innerHtml": "This interactive graphics scene was created in OpenGL 2 using C++ for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC363&occurrence=21S1(C)&year=2021\" rel=\"noreferrer noopener\">COSC 363 (Computer Graphics)</a>, during Semester 1 of 2021. The project itself received an A+ (100%) grade for the course.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "The scene depicts a synchronised coupled animation of a ball being hit from one side of the scene to the other, traversing through torus hoops. Using the arrow keys, the scene can be interacted with to move around, within the boundaries set by the collision detection. The scene also makes use of lighting, shadows, sweep surface models and textures.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "",
-            "tagName": "hr",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Gallery",
-            "tagName": "h4",
-            "attributes": [
-                {
-                    "name": "level",
-                    "value": "4"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Interactive Graphics Scene 2.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Interactive Graphics Scene 3.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Interactive Graphics Scene 4.png",
-            "tagName": "figure",
-            "attributes": []
+          "name": "align",
+          "value": "justify"
         }
-    ],
-    "title": "Interactive Graphics Scene",
-    "categories": {
-        "nodes": [
-            {
-                "name": "C / C++",
-                "slug": "c"
-            },
-            {
-                "name": "Software Projects",
-                "slug": "projects"
-            }
-        ]
+      ]
     },
-    "excerpt": "2021, Semester 1",
-    "featuredImage": {
-        "node": {
-            "sourceUrl": "Interactive Graphics Scene 1.png"
+    {
+      "innerHtml": "The scene depicts a synchronised coupled animation of a ball being hit from one side of the scene to the other, traversing through torus hoops. Using the arrow keys, the scene can be interacted with to move around, within the boundaries set by the collision detection. The scene also makes use of lighting, shadows, sweep surface models and textures.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
         }
+      ]
     },
-    "date": "2021-06-22T11:28:07"
+    {
+      "innerHtml": "",
+      "tagName": "hr",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Gallery",
+      "tagName": "h4",
+      "attributes": [
+        {
+          "name": "level",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Interactive Graphics Scene 2.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Interactive Graphics Scene 3.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Interactive Graphics Scene 4.png",
+      "tagName": "figure",
+      "attributes": []
+    }
+  ],
+  "title": "Interactive Graphics Scene",
+  "categories": {
+    "nodes": [
+      {
+        "name": "C / C++",
+        "slug": "c"
+      },
+      {
+        "name": "Software Projects",
+        "slug": "projects"
+      }
+    ]
+  },
+  "excerpt": "2021, Semester 1",
+  "featuredImage": {
+    "node": {
+      "sourceUrl": "Interactive Graphics Scene 1.png"
+    }
+  },
+  "date": "2021-06-22T11:28:07"
 }

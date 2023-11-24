@@ -1,420 +1,420 @@
 [
-    {
-        "slug": "griffinbaxter-com",
-        "title": "GriffinBaxter.com",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "HTML / CSS",
-                    "slug": "html-css"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                },
-                {
-                    "name": "TypeScript",
-                    "slug": "typescript"
-                }
-            ]
+  {
+    "slug": "griffinbaxter-com",
+    "title": "GriffinBaxter.com",
+    "categories": {
+      "nodes": [
+        {
+          "name": "HTML / CSS",
+          "slug": "html-css"
         },
-        "excerpt": "2022 Onwards",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "GriffinBaxter.com01.png"
-            }
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        },
+        {
+          "name": "TypeScript",
+          "slug": "typescript"
         }
+      ]
     },
-    {
-        "slug": "codewof",
-        "title": "Skill Tracking and Recommendations for CodeWOF",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "HTML / CSS",
-                    "slug": "html-css"
-                },
-                {
-                    "name": "JavaScript",
-                    "slug": "javascript"
-                },
-                {
-                    "name": "Python",
-                    "slug": "python"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2022, Semester 1 and 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "CodeWOF01.png"
-            }
-        }
-    },
-    {
-        "slug": "skeletal-animation",
-        "title": "Skeletal Animation",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "C / C++",
-                    "slug": "c"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2022, Semester 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Skeletal01.png"
-            }
-        }
-    },
-    {
-        "slug": "guess-it",
-        "title": "Guess it!",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "Kotlin",
-                    "slug": "kotlin"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2022, Semester 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "GuessIt01.png"
-            }
-        }
-    },
-    {
-        "slug": "non-photorealistic-rendering",
-        "title": "Non-Photorealistic Rendering",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "C / C++",
-                    "slug": "c"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2022, Semester 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "NPR01.png"
-            }
-        }
-    },
-    {
-        "slug": "calendar-notes",
-        "title": "Calendar Notes",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "Kotlin",
-                    "slug": "kotlin"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2022, Semester 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "CalendarNotes01.png"
-            }
-        }
-    },
-    {
-        "slug": "terrain-model",
-        "title": "Terrain Model",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "C / C++",
-                    "slug": "c"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2022, Semester 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Terrain01.png"
-            }
-        }
-    },
-    {
-        "slug": "quick-time-event-detector",
-        "title": "Quick-Time Event Detector",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "Python",
-                    "slug": "python"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2022, Semester 1",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "QTE01.png"
-            }
-        }
-    },
-    {
-        "slug": "video-speed-keys",
-        "title": "Video Speed Keys",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "HTML / CSS",
-                    "slug": "html-css"
-                },
-                {
-                    "name": "JavaScript",
-                    "slug": "javascript"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2021/2022, Summer Break",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Video Speed Keys 1.png"
-            }
-        }
-    },
-    {
-        "slug": "reusability",
-        "title": "Reusability: Share & Save",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "HTML / CSS",
-                    "slug": "html-css"
-                },
-                {
-                    "name": "Java",
-                    "slug": "java"
-                },
-                {
-                    "name": "JavaScript",
-                    "slug": "javascript"
-                },
-                {
-                    "name": "Python",
-                    "slug": "python"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                },
-                {
-                    "name": "SQL",
-                    "slug": "sql"
-                }
-            ]
-        },
-        "excerpt": "2021, Semester 1 and 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Reusability01.png"
-            }
-        }
-    },
-    {
-        "slug": "raytraced-graphics-scene",
-        "title": "Raytraced Graphics Scene",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "C / C++",
-                    "slug": "c"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2021, Semester 1",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Raytraced Graphics Scene 1.png"
-            }
-        }
-    },
-    {
-        "slug": "events-app",
-        "title": "Events App",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "HTML / CSS",
-                    "slug": "html-css"
-                },
-                {
-                    "name": "JavaScript",
-                    "slug": "javascript"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                },
-                {
-                    "name": "SQL",
-                    "slug": "sql"
-                }
-            ]
-        },
-        "excerpt": "2021, Semester 1",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Events App Featured.png"
-            }
-        }
-    },
-    {
-        "slug": "interactive-graphics-scene",
-        "title": "Interactive Graphics Scene",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "C / C++",
-                    "slug": "c"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2021, Semester 1",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Interactive Graphics Scene 1.png"
-            }
-        }
-    },
-    {
-        "slug": "date-time-client-server",
-        "title": "Date-Time App",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "Python",
-                    "slug": "python"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2020, Semester 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "DateTime Photo 1.png"
-            }
-        }
-    },
-    {
-        "slug": "battleships",
-        "title": "Battleships",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "C / C++",
-                    "slug": "c"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2020, Semester 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Battleships Photo 1.png"
-            }
-        }
-    },
-    {
-        "slug": "green-flights",
-        "title": "GreenFlights",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "Java",
-                    "slug": "java"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                },
-                {
-                    "name": "SQL",
-                    "slug": "sql"
-                }
-            ]
-        },
-        "excerpt": "2020, Semester 2",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "GreenFlights Screenshot 1.png"
-            }
-        }
-    },
-    {
-        "slug": "farm-simulator",
-        "title": "Farm Simulator",
-        "categories": {
-            "nodes": [
-                {
-                    "name": "Java",
-                    "slug": "java"
-                },
-                {
-                    "name": "Software Projects",
-                    "slug": "projects"
-                }
-            ]
-        },
-        "excerpt": "2020, Semester 1",
-        "featuredImage": {
-            "node": {
-                "sourceUrl": "Farm Simulator Game Screenshot 1.png"
-            }
-        }
+    "excerpt": "2022 Onwards",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "GriffinBaxter.com01.png"
+      }
     }
+  },
+  {
+    "slug": "codewof",
+    "title": "Skill Tracking and Recommendations for CodeWOF",
+    "categories": {
+      "nodes": [
+        {
+          "name": "HTML / CSS",
+          "slug": "html-css"
+        },
+        {
+          "name": "JavaScript",
+          "slug": "javascript"
+        },
+        {
+          "name": "Python",
+          "slug": "python"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2022, Semester 1 and 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "CodeWOF01.png"
+      }
+    }
+  },
+  {
+    "slug": "skeletal-animation",
+    "title": "Skeletal Animation",
+    "categories": {
+      "nodes": [
+        {
+          "name": "C / C++",
+          "slug": "c"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2022, Semester 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Skeletal01.png"
+      }
+    }
+  },
+  {
+    "slug": "guess-it",
+    "title": "Guess it!",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Kotlin",
+          "slug": "kotlin"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2022, Semester 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "GuessIt01.png"
+      }
+    }
+  },
+  {
+    "slug": "non-photorealistic-rendering",
+    "title": "Non-Photorealistic Rendering",
+    "categories": {
+      "nodes": [
+        {
+          "name": "C / C++",
+          "slug": "c"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2022, Semester 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "NPR01.png"
+      }
+    }
+  },
+  {
+    "slug": "calendar-notes",
+    "title": "Calendar Notes",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Kotlin",
+          "slug": "kotlin"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2022, Semester 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "CalendarNotes01.png"
+      }
+    }
+  },
+  {
+    "slug": "terrain-model",
+    "title": "Terrain Model",
+    "categories": {
+      "nodes": [
+        {
+          "name": "C / C++",
+          "slug": "c"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2022, Semester 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Terrain01.png"
+      }
+    }
+  },
+  {
+    "slug": "quick-time-event-detector",
+    "title": "Quick-Time Event Detector",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Python",
+          "slug": "python"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2022, Semester 1",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "QTE01.png"
+      }
+    }
+  },
+  {
+    "slug": "video-speed-keys",
+    "title": "Video Speed Keys",
+    "categories": {
+      "nodes": [
+        {
+          "name": "HTML / CSS",
+          "slug": "html-css"
+        },
+        {
+          "name": "JavaScript",
+          "slug": "javascript"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2021/2022, Summer Break",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Video Speed Keys 1.png"
+      }
+    }
+  },
+  {
+    "slug": "reusability",
+    "title": "Reusability: Share & Save",
+    "categories": {
+      "nodes": [
+        {
+          "name": "HTML / CSS",
+          "slug": "html-css"
+        },
+        {
+          "name": "Java",
+          "slug": "java"
+        },
+        {
+          "name": "JavaScript",
+          "slug": "javascript"
+        },
+        {
+          "name": "Python",
+          "slug": "python"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        },
+        {
+          "name": "SQL",
+          "slug": "sql"
+        }
+      ]
+    },
+    "excerpt": "2021, Semester 1 and 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Reusability01.png"
+      }
+    }
+  },
+  {
+    "slug": "raytraced-graphics-scene",
+    "title": "Raytraced Graphics Scene",
+    "categories": {
+      "nodes": [
+        {
+          "name": "C / C++",
+          "slug": "c"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2021, Semester 1",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Raytraced Graphics Scene 1.png"
+      }
+    }
+  },
+  {
+    "slug": "events-app",
+    "title": "Events App",
+    "categories": {
+      "nodes": [
+        {
+          "name": "HTML / CSS",
+          "slug": "html-css"
+        },
+        {
+          "name": "JavaScript",
+          "slug": "javascript"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        },
+        {
+          "name": "SQL",
+          "slug": "sql"
+        }
+      ]
+    },
+    "excerpt": "2021, Semester 1",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Events App Featured.png"
+      }
+    }
+  },
+  {
+    "slug": "interactive-graphics-scene",
+    "title": "Interactive Graphics Scene",
+    "categories": {
+      "nodes": [
+        {
+          "name": "C / C++",
+          "slug": "c"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2021, Semester 1",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Interactive Graphics Scene 1.png"
+      }
+    }
+  },
+  {
+    "slug": "date-time-client-server",
+    "title": "Date-Time App",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Python",
+          "slug": "python"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2020, Semester 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "DateTime Photo 1.png"
+      }
+    }
+  },
+  {
+    "slug": "battleships",
+    "title": "Battleships",
+    "categories": {
+      "nodes": [
+        {
+          "name": "C / C++",
+          "slug": "c"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2020, Semester 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Battleships Photo 1.png"
+      }
+    }
+  },
+  {
+    "slug": "green-flights",
+    "title": "GreenFlights",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Java",
+          "slug": "java"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        },
+        {
+          "name": "SQL",
+          "slug": "sql"
+        }
+      ]
+    },
+    "excerpt": "2020, Semester 2",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "GreenFlights Screenshot 1.png"
+      }
+    }
+  },
+  {
+    "slug": "farm-simulator",
+    "title": "Farm Simulator",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Java",
+          "slug": "java"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2020, Semester 1",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "Farm Simulator Game Screenshot 1.png"
+      }
+    }
+  }
 ]

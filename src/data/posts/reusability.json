@@ -1,280 +1,280 @@
 {
-    "blocks": [
-        {
-            "innerHtml": "GitHub Repository: <a href=\"https://github.com/GriffinBaxter/Reusability\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/Reusability</a>",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "This food-waste management web app, Reusability: Share &amp; Save, was created with a team of seven other students for one of my courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG302&occurrence=21W(C)&year=2021\" rel=\"noreferrer noopener\">SENG 302 (Software Engineering Group Project)</a>, during Semesters 1 and 2 of 2021. I received an A+ grade for the course.",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "The app was created in JavaScript with a Vue.js 2 client (making use of Bootstrap) and Java with a Spring Boot backend and a RESTful API (interacting locally with H2 and on the deployed instance with MariaDB databases). Additionally, Python was used for the generation of SQL sample data.",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<p>Focused on the “reusing” aspect of the waste management hierarchy, REUSABILITY is the best app for users and businesses worldwide to easily buy and sell products on the verge of expiring. The app also features a fully-fledged community marketplace for users to sell, request and exchange anything they desire.<br><br>REUSABILITY features barcode scanning for businesses to quickly import product data from a community-driven database and to find specific products, inventory items and listings. Users can also use this feature to browse listings of a specific product, of which barcodes can be scanned via any device with a camera. The app also allows users to instantly message creators of marketplace cards, with full conversation history. Additional features include editing of user and business profiles, forgotten password resetting, sales and revenue graphs, and bookmarking for products listed in the app.</p>SENG302 Abstracts 2021 <a href=\"https://csse.canterbury.ac.nz/seng/showcase/2021/abstracts/SENG302_Abstracts.php#ferocioushamsters\" rel=\"noreferrer noopener\">https://csse.canterbury.ac.nz/seng/showcase/2021/abstracts/SENG302_Abstracts.php#ferocioushamsters</a>",
-            "tagName": "blockquote",
-            "attributes": []
-        },
-        {
-            "innerHtml": "These are the stories our team completed over the year (in the Product Owner’s priority order).",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<li>U1 – Registering and logging into an individual account</li>\n<li>U2 – Cities, States/Regions, Countries</li>\n<li>U3 – Searching for Users using Name</li>\n<li>U4 – Default Global Application Admin (DGAA)</li>\n<li>U5 – Creating Business Accounts</li>\n<li>U6 – Acting as Individual or Business</li>\n<li>U13 – Home page</li>\n<li>U15 – Product catalogue</li>\n<li>U16 – Product images</li>\n<li>U17 – Modify catalogue entries</li>\n<li>U19 – Create inventory</li>\n<li>U20 – Modify inventory entries</li>\n<li>U22 – List sale</li>\n<li>UCM1 – Community marketplace</li>\n<li>UCM2 – Card creation</li>\n<li>UCM3 – Marketplace section display</li>\n<li>UCM4 – Card expiry</li>\n<li>U26 – Example data in the system (CR)</li>\n<li>U23 – Search for business</li>\n<li>UCM5 – Find my cards</li>\n<li>UCM6 – Keyword management (depends on UCM2)</li>\n<li>UCM8 – Contacting other marketplace users</li>\n<li>UCM9 – Edit card</li>\n<li>U27 – Product lookup</li>\n<li>U28 – Product search</li>\n<li>U10 – Modifying Individuals</li>\n<li>U11 – Modifying Businesses</li>\n<li>U29 – Browse/Search Sale listings</li>\n<li>U30 – Individual full sale listing</li>\n<li>U31 – Purchases</li>\n<li>U41 – Sales report (depends on U31)</li>\n<li>U42 – Sales report graph (depends on U41)</li>\n<li>U25 – Lost password</li>\n<li>U40 – Withdraw sales listing</li>\n",
-            "tagName": "ul",
-            "attributes": []
-        },
-        {
-            "innerHtml": "As part of the “E1 – Differentiation” epic, we also created and completed the following stories (relating to product barcode scanning).",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<li>BS1 – Product Barcode</li>\n<li>BS2 – Barcode User Search</li>\n<li>BS3 – Barcode Business Search</li>\n",
-            "tagName": "ul",
-            "attributes": []
-        },
-        {
-            "innerHtml": "",
-            "tagName": "hr",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Gallery",
-            "tagName": "h4",
-            "attributes": [
-                {
-                    "name": "level",
-                    "value": "4"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Reusability02.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability03.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability04.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability05.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability06.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability07.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability08.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability09.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability10.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability11.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability12.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability13.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability14.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability15.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability16.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability17.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability18.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability19.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability20.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability21.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability22.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability23.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability24.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability25.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability26.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability27.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability28.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability29.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability30.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability31.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability32.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability33.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability34.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability35.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability36.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability37.png",
-            "tagName": "figure",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Reusability38.png",
-            "tagName": "figure",
-            "attributes": []
-        }
-    ],
-    "title": "Reusability: Share & Save",
-    "categories": {
-        "nodes": [
-            {
-                "name": "HTML / CSS",
-                "slug": "html-css"
-            },
-            {
-                "name": "Java",
-                "slug": "java"
-            },
-            {
-                "name": "JavaScript",
-                "slug": "javascript"
-            },
-            {
-                "name": "Python",
-                "slug": "python"
-            },
-            {
-                "name": "Software Projects",
-                "slug": "projects"
-            },
-            {
-                "name": "SQL",
-                "slug": "sql"
-            }
-        ]
+  "blocks": [
+    {
+      "innerHtml": "GitHub Repository: <a href=\"https://github.com/GriffinBaxter/Reusability\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/Reusability</a>",
+      "tagName": "p",
+      "attributes": []
     },
-    "excerpt": "2021, Semester 1 and 2",
-    "featuredImage": {
-        "node": {
-            "sourceUrl": "Reusability01.png"
-        }
+    {
+      "innerHtml": "This food-waste management web app, Reusability: Share &amp; Save, was created with a team of seven other students for one of my courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG302&occurrence=21W(C)&year=2021\" rel=\"noreferrer noopener\">SENG 302 (Software Engineering Group Project)</a>, during Semesters 1 and 2 of 2021. I received an A+ grade for the course.",
+      "tagName": "p",
+      "attributes": []
     },
-    "date": "2021-10-27T13:33:25"
+    {
+      "innerHtml": "The app was created in JavaScript with a Vue.js 2 client (making use of Bootstrap) and Java with a Spring Boot backend and a RESTful API (interacting locally with H2 and on the deployed instance with MariaDB databases). Additionally, Python was used for the generation of SQL sample data.",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<p>Focused on the “reusing” aspect of the waste management hierarchy, REUSABILITY is the best app for users and businesses worldwide to easily buy and sell products on the verge of expiring. The app also features a fully-fledged community marketplace for users to sell, request and exchange anything they desire.<br><br>REUSABILITY features barcode scanning for businesses to quickly import product data from a community-driven database and to find specific products, inventory items and listings. Users can also use this feature to browse listings of a specific product, of which barcodes can be scanned via any device with a camera. The app also allows users to instantly message creators of marketplace cards, with full conversation history. Additional features include editing of user and business profiles, forgotten password resetting, sales and revenue graphs, and bookmarking for products listed in the app.</p>SENG302 Abstracts 2021 <a href=\"https://csse.canterbury.ac.nz/seng/showcase/2021/abstracts/SENG302_Abstracts.php#ferocioushamsters\" rel=\"noreferrer noopener\">https://csse.canterbury.ac.nz/seng/showcase/2021/abstracts/SENG302_Abstracts.php#ferocioushamsters</a>",
+      "tagName": "blockquote",
+      "attributes": []
+    },
+    {
+      "innerHtml": "These are the stories our team completed over the year (in the Product Owner’s priority order).",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<li>U1 – Registering and logging into an individual account</li>\n<li>U2 – Cities, States/Regions, Countries</li>\n<li>U3 – Searching for Users using Name</li>\n<li>U4 – Default Global Application Admin (DGAA)</li>\n<li>U5 – Creating Business Accounts</li>\n<li>U6 – Acting as Individual or Business</li>\n<li>U13 – Home page</li>\n<li>U15 – Product catalogue</li>\n<li>U16 – Product images</li>\n<li>U17 – Modify catalogue entries</li>\n<li>U19 – Create inventory</li>\n<li>U20 – Modify inventory entries</li>\n<li>U22 – List sale</li>\n<li>UCM1 – Community marketplace</li>\n<li>UCM2 – Card creation</li>\n<li>UCM3 – Marketplace section display</li>\n<li>UCM4 – Card expiry</li>\n<li>U26 – Example data in the system (CR)</li>\n<li>U23 – Search for business</li>\n<li>UCM5 – Find my cards</li>\n<li>UCM6 – Keyword management (depends on UCM2)</li>\n<li>UCM8 – Contacting other marketplace users</li>\n<li>UCM9 – Edit card</li>\n<li>U27 – Product lookup</li>\n<li>U28 – Product search</li>\n<li>U10 – Modifying Individuals</li>\n<li>U11 – Modifying Businesses</li>\n<li>U29 – Browse/Search Sale listings</li>\n<li>U30 – Individual full sale listing</li>\n<li>U31 – Purchases</li>\n<li>U41 – Sales report (depends on U31)</li>\n<li>U42 – Sales report graph (depends on U41)</li>\n<li>U25 – Lost password</li>\n<li>U40 – Withdraw sales listing</li>\n",
+      "tagName": "ul",
+      "attributes": []
+    },
+    {
+      "innerHtml": "As part of the “E1 – Differentiation” epic, we also created and completed the following stories (relating to product barcode scanning).",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<li>BS1 – Product Barcode</li>\n<li>BS2 – Barcode User Search</li>\n<li>BS3 – Barcode Business Search</li>\n",
+      "tagName": "ul",
+      "attributes": []
+    },
+    {
+      "innerHtml": "",
+      "tagName": "hr",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Gallery",
+      "tagName": "h4",
+      "attributes": [
+        {
+          "name": "level",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Reusability02.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability03.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability04.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability05.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability06.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability07.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability08.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability09.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability10.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability11.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability12.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability13.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability14.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability15.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability16.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability17.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability18.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability19.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability20.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability21.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability22.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability23.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability24.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability25.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability26.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability27.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability28.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability29.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability30.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability31.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability32.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability33.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability34.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability35.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability36.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability37.png",
+      "tagName": "figure",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Reusability38.png",
+      "tagName": "figure",
+      "attributes": []
+    }
+  ],
+  "title": "Reusability: Share & Save",
+  "categories": {
+    "nodes": [
+      {
+        "name": "HTML / CSS",
+        "slug": "html-css"
+      },
+      {
+        "name": "Java",
+        "slug": "java"
+      },
+      {
+        "name": "JavaScript",
+        "slug": "javascript"
+      },
+      {
+        "name": "Python",
+        "slug": "python"
+      },
+      {
+        "name": "Software Projects",
+        "slug": "projects"
+      },
+      {
+        "name": "SQL",
+        "slug": "sql"
+      }
+    ]
+  },
+  "excerpt": "2021, Semester 1 and 2",
+  "featuredImage": {
+    "node": {
+      "sourceUrl": "Reusability01.png"
+    }
+  },
+  "date": "2021-10-27T13:33:25"
 }

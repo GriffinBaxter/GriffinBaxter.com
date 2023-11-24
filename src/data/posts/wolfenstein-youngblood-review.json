@@ -1,220 +1,220 @@
 {
-    "blocks": [
+  "blocks": [
+    {
+      "innerHtml": "The previous offers in the Wolfenstein series following the 2014 reboot include some of my favourite games of all time. So, when a new co-operative game in the series was announced during E3 2018, I was intrigued. Due to Machine Games’ track record and my experience with the series, I expected an entertaining spinoff akin to Wolfenstein: The Old Blood, that adds to and builds upon the narrative of the previous games.",
+      "tagName": "p",
+      "attributes": [
         {
-            "innerHtml": "The previous offers in the Wolfenstein series following the 2014 reboot include some of my favourite games of all time. So, when a new co-operative game in the series was announced during E3 2018, I was intrigued. Due to Machine Games’ track record and my experience with the series, I expected an entertaining spinoff akin to Wolfenstein: The Old Blood, that adds to and builds upon the narrative of the previous games.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Youngblood makes use of a levelling system that requires the completion of side missions to progress through the main story. This heavy reliance on side missions included tasks that, unfortunately, got very tedious and repetitive. My co-op teammate and I generally wanted to progress through the main story. However, this wasn’t possible a lot of the time, as there were certain levels that the players had to reach to realistically complete certain story missions. This fact was poorly communicated which lead to time-wasting trying to progress through the main game.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Youngblood Screenshot 2.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "wide"
-                },
-                {
-                    "name": "id",
-                    "value": "516"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                }
-            ]
-        },
-        {
-            "innerHtml": "During the campaign, the game’s difficulty seemed to be artificially increased at points. In fact, near the end of the game, my co-op teammate and I decided to turn the difficulty down to the lowest setting. The game ended up being too tedious and uninteresting at this point. Ultimately, we just wanted to push through and finish the game’s story. However, this endeavour was not even worth it on its own. While the story did have a couple of cool moments, the majority of it was simply uninteresting. This was entirely unlike the previous games in the Wolfenstein series.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "The gunplay was good, as its mechanics were seemingly pulled from the previous game in the series, Wolfenstein II: The New Colossus. However, there is a huge caveat to this, as changes were made to the gunplay that negatively affected the experience. Certain enemies were more vulnerable to certain weapons depending on their armour type, which ultimately ended up being an annoying mechanic. While the base gunplay is fun, the fact that almost every enemy feels like a bullet sponge makes the game very tedious to play at points.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Youngblood Screenshot 3.png",
-            "tagName": "figure",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "wide"
-                },
-                {
-                    "name": "id",
-                    "value": "424"
-                },
-                {
-                    "name": "sizeSlug",
-                    "value": "full"
-                }
-            ]
-        },
-        {
-            "innerHtml": "I haven’t brought up much about the co-op at this point, primarily due to it essentially being tacked onto the game, without any clear point to it. In fact, many of the game’s elements were negatively affected due to its co-op nature. One such element is reading things in the game, where due to the online nature, the game cannot be paused, which often renders this action useless. Another is pressing a button to boost the other player, which didn’t add anything meaningful to the gameplay.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Unfortunately, the game’s music feels uninspired and doesn’t feature any new original tracks from Mick Gordon, such as in the previous three games in the series, which make up some of my favourite soundtracks of all time. However, it does showcase some great graphical prowess and runs great on PC. But overall, Youngblood has too many frustrating and uninteresting moments. It feels as though a rushed Wolfenstein game was put together, with co-op tacked on without any real benefit or point. A Way Out is an example of a good co-op game, where its design clearly revolves around co-operative play, leading to a unique experience. Whereas on the other hand, Youngblood does not use co-op in any meaningful fashion. Even though the previous three games were such great experiences, I cannot recommend Wolfenstein: Youngblood, even to a fan of the franchise. The game is a below-average experience and especially disappointing when compared to the previous, excellent games in the Wolfenstein series.",
-            "tagName": "p",
-            "attributes": [
-                {
-                    "name": "align",
-                    "value": "justify"
-                }
-            ]
-        },
-        {
-            "innerHtml": "<a href=\"https://www.wordpress.griffinbaxter.com/review-ratings/\" aria-label=\"undefined (opens in a new tab)\" rel=\"noreferrer noopener\">Numerical Rating</a>: 4/10",
-            "tagName": "h4",
-            "attributes": [
-                {
-                    "name": "textAlign",
-                    "value": "center"
-                },
-                {
-                    "name": "level",
-                    "value": "4"
-                }
-            ]
-        },
-        {
-            "innerHtml": "",
-            "tagName": "hr",
-            "attributes": [
-                {
-                    "name": "className",
-                    "value": "is-style-wide"
-                }
-            ]
-        },
-        {
-            "innerHtml": "Review Info",
-            "tagName": "h4",
-            "attributes": [
-                {
-                    "name": "level",
-                    "value": "4"
-                }
-            ]
-        },
-        {
-            "innerHtml": "The developer/publisher did not provide a review sample of this game.",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Game Info:</strong>",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Name: Wolfenstein: Youngblood",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Developer: Machine Games, Arkane Studios",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Publisher: Bethesda Softworks",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Platform:</strong> PC (Bethesda.net Launcher)",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Review PC Specs:</strong>",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "CPU: Intel i7-8700",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "GPU: Nvidia GTX 1070",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Memory: 16GB DDR4 2666MHz",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "Game Storage: 7200 RPM HDD",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Game Start Date:</strong> 27 December 2019",
-            "tagName": "p",
-            "attributes": []
-        },
-        {
-            "innerHtml": "<strong>Game Completion Date:</strong> 31 January 2020 (Main Story completed)",
-            "tagName": "p",
-            "attributes": []
+          "name": "align",
+          "value": "justify"
         }
-    ],
-    "title": "Wolfenstein: Youngblood",
-    "categories": {
-        "nodes": [
-            {
-                "name": "Game Reviews",
-                "slug": "game-reviews"
-            }
-        ]
+      ]
     },
-    "excerpt": "Co-op Review",
-    "featuredImage": {
-        "node": {
-            "sourceUrl": "Youngblood Screenshot 1.png"
+    {
+      "innerHtml": "Youngblood makes use of a levelling system that requires the completion of side missions to progress through the main story. This heavy reliance on side missions included tasks that, unfortunately, got very tedious and repetitive. My co-op teammate and I generally wanted to progress through the main story. However, this wasn’t possible a lot of the time, as there were certain levels that the players had to reach to realistically complete certain story missions. This fact was poorly communicated which lead to time-wasting trying to progress through the main game.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
         }
+      ]
     },
-    "date": "2020-07-11T17:00:00"
+    {
+      "innerHtml": "Youngblood Screenshot 2.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "wide"
+        },
+        {
+          "name": "id",
+          "value": "516"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "innerHtml": "During the campaign, the game’s difficulty seemed to be artificially increased at points. In fact, near the end of the game, my co-op teammate and I decided to turn the difficulty down to the lowest setting. The game ended up being too tedious and uninteresting at this point. Ultimately, we just wanted to push through and finish the game’s story. However, this endeavour was not even worth it on its own. While the story did have a couple of cool moments, the majority of it was simply uninteresting. This was entirely unlike the previous games in the Wolfenstein series.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
+        }
+      ]
+    },
+    {
+      "innerHtml": "The gunplay was good, as its mechanics were seemingly pulled from the previous game in the series, Wolfenstein II: The New Colossus. However, there is a huge caveat to this, as changes were made to the gunplay that negatively affected the experience. Certain enemies were more vulnerable to certain weapons depending on their armour type, which ultimately ended up being an annoying mechanic. While the base gunplay is fun, the fact that almost every enemy feels like a bullet sponge makes the game very tedious to play at points.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Youngblood Screenshot 3.png",
+      "tagName": "figure",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "wide"
+        },
+        {
+          "name": "id",
+          "value": "424"
+        },
+        {
+          "name": "sizeSlug",
+          "value": "full"
+        }
+      ]
+    },
+    {
+      "innerHtml": "I haven’t brought up much about the co-op at this point, primarily due to it essentially being tacked onto the game, without any clear point to it. In fact, many of the game’s elements were negatively affected due to its co-op nature. One such element is reading things in the game, where due to the online nature, the game cannot be paused, which often renders this action useless. Another is pressing a button to boost the other player, which didn’t add anything meaningful to the gameplay.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Unfortunately, the game’s music feels uninspired and doesn’t feature any new original tracks from Mick Gordon, such as in the previous three games in the series, which make up some of my favourite soundtracks of all time. However, it does showcase some great graphical prowess and runs great on PC. But overall, Youngblood has too many frustrating and uninteresting moments. It feels as though a rushed Wolfenstein game was put together, with co-op tacked on without any real benefit or point. A Way Out is an example of a good co-op game, where its design clearly revolves around co-operative play, leading to a unique experience. Whereas on the other hand, Youngblood does not use co-op in any meaningful fashion. Even though the previous three games were such great experiences, I cannot recommend Wolfenstein: Youngblood, even to a fan of the franchise. The game is a below-average experience and especially disappointing when compared to the previous, excellent games in the Wolfenstein series.",
+      "tagName": "p",
+      "attributes": [
+        {
+          "name": "align",
+          "value": "justify"
+        }
+      ]
+    },
+    {
+      "innerHtml": "<a href=\"https://www.wordpress.griffinbaxter.com/review-ratings/\" aria-label=\"undefined (opens in a new tab)\" rel=\"noreferrer noopener\">Numerical Rating</a>: 4/10",
+      "tagName": "h4",
+      "attributes": [
+        {
+          "name": "textAlign",
+          "value": "center"
+        },
+        {
+          "name": "level",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "innerHtml": "",
+      "tagName": "hr",
+      "attributes": [
+        {
+          "name": "className",
+          "value": "is-style-wide"
+        }
+      ]
+    },
+    {
+      "innerHtml": "Review Info",
+      "tagName": "h4",
+      "attributes": [
+        {
+          "name": "level",
+          "value": "4"
+        }
+      ]
+    },
+    {
+      "innerHtml": "The developer/publisher did not provide a review sample of this game.",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Game Info:</strong>",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Name: Wolfenstein: Youngblood",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Developer: Machine Games, Arkane Studios",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Publisher: Bethesda Softworks",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Platform:</strong> PC (Bethesda.net Launcher)",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Review PC Specs:</strong>",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "CPU: Intel i7-8700",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "GPU: Nvidia GTX 1070",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Memory: 16GB DDR4 2666MHz",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "Game Storage: 7200 RPM HDD",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Game Start Date:</strong> 27 December 2019",
+      "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<strong>Game Completion Date:</strong> 31 January 2020 (Main Story completed)",
+      "tagName": "p",
+      "attributes": []
+    }
+  ],
+  "title": "Wolfenstein: Youngblood",
+  "categories": {
+    "nodes": [
+      {
+        "name": "Game Reviews",
+        "slug": "game-reviews"
+      }
+    ]
+  },
+  "excerpt": "Co-op Review",
+  "featuredImage": {
+    "node": {
+      "sourceUrl": "Youngblood Screenshot 1.png"
+    }
+  },
+  "date": "2020-07-11T17:00:00"
 }
