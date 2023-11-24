@@ -17,7 +17,7 @@ const GameReviews: NextPage = () => {
 
       <NavBar page={NavigationPage.GameReviews} />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center">
+      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center pb-8">
         <p className="py-8 text-center text-5xl font-bold">Game Reviews</p>
         <p className="pb-8 text-center text-xl">
           In <span className="font-bold">reverse chronological</span> order

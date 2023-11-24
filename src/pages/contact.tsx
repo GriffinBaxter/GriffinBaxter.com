@@ -16,7 +16,7 @@ const Contact: NextPage = () => {
 
       <NavBar page={NavigationPage.Contact} />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center">
+      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center pb-8">
         <p className="py-8 text-center text-5xl font-bold">Contact</p>
         <p className="pb-8 text-center text-xl">
           Add me on{" "}
@@ -39,7 +39,7 @@ const Contact: NextPage = () => {
           </a>
         </p>
         <Divider />
-        <div className="grid grid-cols-2 items-center gap-x-6 gap-y-2 pb-12 pt-6">
+        <div className="grid grid-cols-2 items-center gap-x-6 gap-y-2 py-6">
           <a
             target="_blank"
             href="https://www.linkedin.com/in/griffinbaxter/"
