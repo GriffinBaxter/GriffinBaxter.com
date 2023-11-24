@@ -4,6 +4,7 @@ import NavBar, { NavigationPage } from "../components/navbar";
 import FooterComponent from "../components/footer";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Divider from "../components/divider";
+import Link from "next/link";
 
 const Contact: NextPage = () => {
   return (
@@ -20,42 +21,42 @@ const Contact: NextPage = () => {
         <p className="py-8 text-center text-5xl font-bold">Contact</p>
         <p className="pb-8 text-center text-xl">
           Add me on{" "}
-          <a
+          <Link
             target="_blank"
             href="https://www.linkedin.com/in/griffinbaxter/"
             rel="noreferrer"
             className="font-bold text-blue-600 underline hover:text-blue-800"
           >
             LinkedIn
-          </a>{" "}
+          </Link>{" "}
           or follow me on{" "}
-          <a
+          <Link
             target="_blank"
             href="https://github.com/GriffinBaxter"
             rel="noreferrer"
             className="font-bold text-blue-600 underline hover:text-blue-800"
           >
             GitHub
-          </a>
+          </Link>
         </p>
         <Divider />
         <div className="grid grid-cols-2 items-center gap-x-6 gap-y-2 py-6">
-          <a
+          <Link
             target="_blank"
             href="https://www.linkedin.com/in/griffinbaxter/"
             rel="noreferrer"
           >
             <FaLinkedin size={100} color="0d66c2" />
             <p className="pt-2 text-center text-lg font-bold">LinkedIn</p>
-          </a>
-          <a
+          </Link>
+          <Link
             target="_blank"
             href="https://github.com/GriffinBaxter"
             rel="noreferrer"
           >
             <FaGithubSquare size={100} color="24292d" />
             <p className="pt-2 text-center text-lg font-bold">GitHub</p>
-          </a>
+          </Link>
         </div>
       </main>
 
