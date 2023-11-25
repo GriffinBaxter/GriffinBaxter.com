@@ -35,7 +35,9 @@ const Home: NextPage = () => {
           Based in <span className="font-bold">Christchurch, New Zealand</span>
         </p>
         <Divider />
-        <p className="py-8 text-4xl font-bold">Featured Projects</p>
+        <p className="pb-12 pt-8 text-center text-3xl font-extrabold uppercase">
+          Featured Projects
+        </p>
         <div className="grid grid-cols-1 gap-4 pb-8 pt-4 lg:grid-cols-2 xl:grid-cols-3">
           {featuredProjectSlugs
             .map((slug) =>

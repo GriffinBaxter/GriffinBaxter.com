@@ -5,8 +5,24 @@ import ProjectCard from "../components/post/project/project-card";
 import FooterComponent from "../components/footer";
 import projectsJson from "../data/projects.json";
 import Divider from "../components/divider";
+import { languageBadgeColour } from "./[postSlug]";
+import { useState } from "react";
 
 const Projects: NextPage = () => {
+  const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
+    undefined,
+  );
+
+  const categories = [
+    ...new Map(
+      projectsJson
+        .flatMap((project) => project.categories.nodes)
+        .map((item) => [item.slug, item]),
+    ).values(),
+  ]
+    .filter((category) => category.slug !== "projects")
+    .sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
+
   return (
     <>
       <Head>
@@ -23,12 +39,41 @@ const Projects: NextPage = () => {
           In <span className="font-bold">reverse chronological</span> order
         </p>
         <Divider />
-        <div className="grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-3">
-          {projectsJson.map((project) => (
-            <div key={project.slug} className="max-w-sm">
-              <ProjectCard projectObject={project} />
-            </div>
+        <div className="py-8">
+          {categories.map((category) => (
+            <button
+              key={category.slug}
+              className={`badge badge-lg ${
+                languageBadgeColour[category.slug]
+              } mx-1 ${
+                selectedCategory && selectedCategory !== category.slug
+                  ? "opacity-25"
+                  : null
+              }`}
+              onClick={() =>
+                selectedCategory === category.slug
+                  ? setSelectedCategory(undefined)
+                  : setSelectedCategory(category.slug)
+              }
+            >
+              {category.name}
+            </button>
           ))}
+        </div>
+        <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
+          {projectsJson
+            .filter((project) =>
+              selectedCategory
+                ? project.categories.nodes.find(
+                    (category) => category.slug === selectedCategory,
+                  )
+                : true,
+            )
+            .map((project) => (
+              <div key={project.slug} className="max-w-sm">
+                <ProjectCard projectObject={project} />
+              </div>
+            ))}
         </div>
       </main>
 

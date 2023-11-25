@@ -67,7 +67,9 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
               Object.keys(languageBadgeColour).includes(category.slug) ? (
                 <div
                   key={category.slug}
-                  className={`badge ${languageBadgeColour[category.slug]}`}
+                  className={`badge badge-lg ${
+                    languageBadgeColour[category.slug]
+                  }`}
                 >
                   {category.name}
                 </div>
