@@ -49,7 +49,7 @@
       ]
     },
     {
-      "innerHtml": " <a href=\"https://www.wordpress.griffinbaxter.com/review-ratings/\" aria-label=\"undefined (opens in a new tab)\" rel=\"noreferrer noopener\">Numerical Rating</a>: 6/10",
+      "innerHtml": "Rating: 6/10",
       "tagName": "h4",
       "attributes": [
         {
