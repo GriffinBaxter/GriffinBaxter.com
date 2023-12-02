@@ -3,7 +3,6 @@ import Head from "next/head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import Divider from "../components/divider";
 import ProjectCard from "../components/post/project/project-card";
-import FooterComponent from "../components/footer";
 import projectsJson from "../data/projects.json";
 
 const featuredProjectSlugs = [
@@ -52,8 +51,6 @@ const Home: NextPage = () => {
             )}
         </div>
       </main>
-
-      <FooterComponent />
     </>
   );
 };

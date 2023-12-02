@@ -4,7 +4,6 @@ import NavBar, { NavigationPage } from "../components/navbar";
 import Image from "next/image";
 import PostContent from "../components/post/post-content";
 import type { SinglePost } from "../models";
-import FooterComponent from "../components/footer";
 import projectsJson from "../data/projects.json";
 import reviewsJson from "../data/reviews.json";
 
@@ -91,8 +90,6 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
         ></Image>
         <PostContent blocks={post?.blocks} />
       </main>
-
-      <FooterComponent />
     </>
   );
 };

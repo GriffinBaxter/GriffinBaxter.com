@@ -1,8 +1,8 @@
+import "../styles/globals.css";
 import { type AppType } from "next/app";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
-
-import "../styles/globals.css";
+import FooterComponent from "../components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -11,8 +11,9 @@ const inter = Inter({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`${inter.variable} font-sans`}>
+    <main className={`${inter.variable} flex min-h-screen flex-col font-sans`}>
       <Component {...pageProps} />
+      <FooterComponent />
       <Analytics />
     </main>
   );

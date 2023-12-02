@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
-import FooterComponent from "../components/footer";
 import projectsJson from "../data/projects.json";
 import Divider from "../components/divider";
 import { languageBadgeColour } from "./[postSlug]";
@@ -76,8 +75,6 @@ const Projects: NextPage = () => {
             ))}
         </div>
       </main>
-
-      <FooterComponent />
     </>
   );
 };

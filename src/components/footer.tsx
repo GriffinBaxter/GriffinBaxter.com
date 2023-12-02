@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const FooterComponent: NextPage = () => {
   return (
-    <div className="w-full bg-navbar-dark-blue">
+    <div className="mt-auto w-full bg-navbar-dark-blue">
       <footer className="footer mx-auto max-w-[1200px] items-center bg-neutral p-4 text-neutral-content">
         <div className="grid-flow-col items-center">
           <p>© {new Date().getFullYear()} Griffin Baxter</p>

@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import ReviewCard from "../components/post/review/review-card";
-import FooterComponent from "../components/footer";
 import reviewsJson from "../data/reviews.json";
 import Divider from "../components/divider";
 import gamesRankedJson from "../data/games-ranked.json";
@@ -71,8 +70,6 @@ const GameReviews: NextPage = () => {
           </form>
         </dialog>
       </main>
-
-      <FooterComponent />
     </>
   );
 };

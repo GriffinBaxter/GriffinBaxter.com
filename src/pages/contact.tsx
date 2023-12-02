@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import NavBar, { NavigationPage } from "../components/navbar";
-import FooterComponent from "../components/footer";
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Divider from "../components/divider";
 import Link from "next/link";
@@ -59,8 +58,6 @@ const Contact: NextPage = () => {
           </Link>
         </div>
       </main>
-
-      <FooterComponent />
     </>
   );
 };
