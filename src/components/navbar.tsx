@@ -21,13 +21,35 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
             Griffin Baxter
           </Link>
         </div>
-        <div className="flex-none">
-          <ul className="menu menu-horizontal px-1">
+        <div className="dropdown dropdown-left flex-none">
+          <div
+            tabIndex={0}
+            role="button"
+            className="btn btn-circle btn-ghost md:invisible"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </div>
+          <ul className="menu menu-sm z-[1] w-52 rounded-box bg-base-100 px-1 shadow min-[0px]:max-md:dropdown-content md:menu-horizontal md:menu-md md:w-auto md:bg-transparent">
             <li>
               <Link
                 href="/"
                 className={
-                  navPage == NavigationPage.Home ? "text-blue-100" : ""
+                  navPage == NavigationPage.Home
+                    ? "text-blue-900 md:text-blue-100"
+                    : "min-[0px]:max-md:text-gray-500"
                 }
               >
                 Home
@@ -38,8 +60,8 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
                 href="projects"
                 className={
                   navPage == NavigationPage.SoftwareProjects
-                    ? "text-blue-100"
-                    : ""
+                    ? "text-blue-900 md:text-blue-100"
+                    : "min-[0px]:max-md:text-gray-500"
                 }
               >
                 Software Projects
@@ -49,7 +71,9 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
               <Link
                 href="game-reviews"
                 className={
-                  navPage == NavigationPage.GameReviews ? "text-blue-100" : ""
+                  navPage == NavigationPage.GameReviews
+                    ? "text-blue-900 md:text-blue-100"
+                    : "min-[0px]:max-md:text-gray-500"
                 }
               >
                 Game Reviews
@@ -59,7 +83,9 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
               <Link
                 href="contact"
                 className={
-                  navPage == NavigationPage.Contact ? "text-blue-100" : ""
+                  navPage == NavigationPage.Contact
+                    ? "text-blue-900 md:text-blue-100"
+                    : "min-[0px]:max-md:text-gray-500"
                 }
               >
                 Contact
