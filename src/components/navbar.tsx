@@ -21,8 +21,8 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
             Griffin Baxter
           </Link>
         </div>
-        <div className="dropdown dropdown-left flex-none">
-          <div
+        <details className="dropdown dropdown-left flex-none">
+          <summary
             tabIndex={0}
             role="button"
             className="btn btn-circle btn-ghost md:invisible"
@@ -41,7 +41,7 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
                 d="M4 6h16M4 12h16M4 18h7"
               />
             </svg>
-          </div>
+          </summary>
           <ul className="menu menu-sm z-[1] w-52 rounded-box bg-base-100 px-1 shadow min-[0px]:max-md:dropdown-content md:menu-horizontal md:menu-md md:w-auto md:bg-transparent">
             <li>
               <Link
@@ -92,7 +92,7 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
               </Link>
             </li>
           </ul>
-        </div>
+        </details>
       </div>
     </div>
   );
