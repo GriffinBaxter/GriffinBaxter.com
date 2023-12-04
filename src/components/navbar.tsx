@@ -13,6 +13,59 @@ interface Props {
 }
 
 const NavBar: NextPage<Props> = ({ page: navPage }) => {
+  const links = (
+    <ul className="menu menu-sm z-[1] w-52 rounded-box bg-base-100 px-1 shadow min-[0px]:max-md:dropdown-content md:menu-horizontal md:menu-md md:w-auto md:bg-transparent">
+      <li>
+        <Link
+          href="/"
+          className={
+            navPage == NavigationPage.Home
+              ? "text-blue-900 md:text-blue-100"
+              : "min-[0px]:max-md:text-gray-500"
+          }
+        >
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="projects"
+          className={
+            navPage == NavigationPage.SoftwareProjects
+              ? "text-blue-900 md:text-blue-100"
+              : "min-[0px]:max-md:text-gray-500"
+          }
+        >
+          Software Projects
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="game-reviews"
+          className={
+            navPage == NavigationPage.GameReviews
+              ? "text-blue-900 md:text-blue-100"
+              : "min-[0px]:max-md:text-gray-500"
+          }
+        >
+          Game Reviews
+        </Link>
+      </li>
+      <li>
+        <Link
+          href="contact"
+          className={
+            navPage == NavigationPage.Contact
+              ? "text-blue-900 md:text-blue-100"
+              : "min-[0px]:max-md:text-gray-500"
+          }
+        >
+          Contact
+        </Link>
+      </li>
+    </ul>
+  );
+
   return (
     <div className="mb-10 w-full bg-navbar-dark-blue">
       <div className="navbar mx-auto max-w-[1200px] bg-neutral text-neutral-content">
@@ -21,11 +74,11 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
             Griffin Baxter
           </Link>
         </div>
-        <details className="dropdown dropdown-left flex-none">
+        <details className="dropdown dropdown-left flex-none md:hidden">
           <summary
             tabIndex={0}
             role="button"
-            className="btn btn-circle btn-ghost md:invisible"
+            className="btn btn-circle btn-ghost"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,57 +95,9 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
               />
             </svg>
           </summary>
-          <ul className="menu menu-sm z-[1] w-52 rounded-box bg-base-100 px-1 shadow min-[0px]:max-md:dropdown-content md:menu-horizontal md:menu-md md:w-auto md:bg-transparent">
-            <li>
-              <Link
-                href="/"
-                className={
-                  navPage == NavigationPage.Home
-                    ? "text-blue-900 md:text-blue-100"
-                    : "min-[0px]:max-md:text-gray-500"
-                }
-              >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="projects"
-                className={
-                  navPage == NavigationPage.SoftwareProjects
-                    ? "text-blue-900 md:text-blue-100"
-                    : "min-[0px]:max-md:text-gray-500"
-                }
-              >
-                Software Projects
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="game-reviews"
-                className={
-                  navPage == NavigationPage.GameReviews
-                    ? "text-blue-900 md:text-blue-100"
-                    : "min-[0px]:max-md:text-gray-500"
-                }
-              >
-                Game Reviews
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="contact"
-                className={
-                  navPage == NavigationPage.Contact
-                    ? "text-blue-900 md:text-blue-100"
-                    : "min-[0px]:max-md:text-gray-500"
-                }
-              >
-                Contact
-              </Link>
-            </li>
-          </ul>
+          {links}
         </details>
+        <div className="flex-none min-[0px]:max-md:hidden">{links}</div>
       </div>
     </div>
   );
