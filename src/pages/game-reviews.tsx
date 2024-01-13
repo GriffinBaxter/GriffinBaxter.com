@@ -6,6 +6,30 @@ import reviewsJson from "../data/reviews.json";
 import Divider from "../components/divider";
 import gamesRankedJson from "../data/games-ranked.json";
 import Link from "next/link";
+import { months } from "./[postSlug]";
+
+const getDateText = (date: Date): string => {
+  return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+};
+
+const getStartedAndCompleted = (game: {
+  name: string;
+  slug?: string;
+  started?: number[] | string;
+  completed?: number[] | string;
+}): string | undefined => {
+  if (game.started && game.completed) {
+    return `(Started: ${
+      typeof game.started === "string"
+        ? game.started
+        : getDateText(new Date(...(game.started as [number, number, number])))
+    }, Completed: ${
+      typeof game.completed === "string"
+        ? game.completed
+        : getDateText(new Date(...(game.completed as [number, number, number])))
+    })`;
+  }
+};
 
 const GameReviews: NextPage = () => {
   return (
@@ -56,11 +80,19 @@ const GameReviews: NextPage = () => {
                       rel="noreferrer"
                       className="font-bold text-blue-600 underline hover:text-blue-800"
                     >
-                      {game.name}
+                      {game.name}{" "}
+                      <span className="italic">
+                        {getStartedAndCompleted(game)}
+                      </span>
                     </Link>
                   </li>
                 ) : (
-                  <li key={game.name}>{game.name}</li>
+                  <li key={game.name}>
+                    {game.name}{" "}
+                    <span className="italic">
+                      {getStartedAndCompleted(game)}
+                    </span>
+                  </li>
                 ),
               )}
             </ol>

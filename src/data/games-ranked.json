@@ -1,42 +1,106 @@
 [
   { "name": "The Legend of Zelda: Breath of the Wild" },
   { "name": "Life is Strange" },
-  { "name": "Life is Strange 2", "slug": "life-is-strange-2-review" },
+  {
+    "name": "Life is Strange 2",
+    "slug": "life-is-strange-2-review",
+    "started": [2018, 8, 28],
+    "completed": [2019, 11, 4]
+  },
   { "name": "Super Mario Odyssey" },
-  { "name": "Red Dead Redemption 2", "slug": "red-dead-redemption-2-review" },
-  { "name": "Grand Theft Auto V" },
-  { "name": "Detroit: Become Human" },
-  { "name": "Half-Life: Alyx", "slug": "half-life-alyx-review" },
+  {
+    "name": "Red Dead Redemption 2",
+    "slug": "red-dead-redemption-2-review",
+    "started": [2019, 10, 6],
+    "completed": [2019, 11, 30]
+  },
+  {
+    "name": "Grand Theft Auto V",
+    "started": "2015",
+    "completed": [2015, 8, 1]
+  },
+  {
+    "name": "Detroit: Become Human",
+    "started": [2020, 6, 4],
+    "completed": [2020, 6, 9]
+  },
+  {
+    "name": "Half-Life: Alyx",
+    "slug": "half-life-alyx-review",
+    "started": [2020, 2, 24],
+    "completed": [2020, 3, 1]
+  },
   { "name": "Life is Strange: Before the Storm" },
-  { "name": "Beyond: Two Souls" },
-  { "name": "Heavy Rain", "slug": "heavy-rain-review" },
+  {
+    "name": "Beyond: Two Souls",
+    "started": [2020, 5, 29],
+    "completed": [2020, 6, 3]
+  },
+  {
+    "name": "Heavy Rain",
+    "slug": "heavy-rain-review",
+    "started": [2020, 0, 7],
+    "completed": [2020, 0, 13]
+  },
   { "name": "The Legend of Zelda: Skyward Sword HD" },
   { "name": "Super Mario Galaxy 2" },
   { "name": "The Legend of Zelda: Twilight Princess HD" },
-  { "name": "Death Stranding: Director’s Cut" },
-  { "name": "Wolfenstein II: The New Colossus" },
-  { "name": "Wolfenstein: The New Order" },
+  {
+    "name": "Death Stranding: Director’s Cut",
+    "started": "2023",
+    "completed": [2023, 9, 8]
+  },
+  {
+    "name": "Wolfenstein II: The New Colossus",
+    "started": "2018",
+    "completed": [2019, 0, 12]
+  },
+  {
+    "name": "Wolfenstein: The New Order",
+    "started": "2016",
+    "completed": [2017, 0, 18]
+  },
   { "name": "Minecraft" },
   { "name": "The Walking Dead" },
   { "name": "The Walking Dead: Season 2" },
   { "name": "Max Payne 3" },
   { "name": "A Way Out" },
-  { "name": "Black Mesa" },
+  { "name": "Black Mesa", "started": "2021", "completed": [2022, 5, 6] },
   { "name": "The Beginner’s Guide" },
   { "name": "Portal" },
   { "name": "Super Mario 3D World" },
   { "name": "Mirror’s Edge" },
   { "name": "Tales from the Borderlands" },
   { "name": "The Legend of Zelda: The Wind Waker HD" },
-  { "name": "Doom: Eternal" },
-  { "name": "Grand Theft Auto IV" },
-  { "name": "A Plague Tale: Innocence" },
+  {
+    "name": "Doom: Eternal",
+    "started": [2020, 3, 6],
+    "completed": [2020, 3, 18]
+  },
+  {
+    "name": "Grand Theft Auto IV: The Complete Edition",
+    "started": "~2018",
+    "completed": "~2018"
+  },
+  {
+    "name": "A Plague Tale: Innocence",
+    "started": [2021, 8, 5],
+    "completed": [2021, 11, 12]
+  },
   { "name": "The Wolf Among Us" },
-  { "name": "Life is Strange: True Colors" },
-  { "name": "A Plague Tale: Requiem" },
-  { "name": "Doom (2016)" },
+  {
+    "name": "Life is Strange: True Colors",
+    "started": [2022, 10, 12],
+    "completed": [2022, 11, 4]
+  },
+  {
+    "name": "A Plague Tale: Requiem",
+    "started": [2023, 0, 24],
+    "completed": [2023, 2, 2]
+  },
+  { "name": "Doom (2016)", "started": "2018", "completed": [2018, 11, 16] },
   { "name": "Half-Life: Source" },
-  { "name": "Portal 2" },
+  { "name": "Portal 2", "started": "2013", "completed": "2014" },
   { "name": "Portal Stories: Mel" },
   { "name": "Half-Life 2" },
   { "name": "Half-Life 2: Episode 2" },
@@ -46,27 +110,52 @@
   { "name": "New Super Mario Bros. U" },
   { "name": "The Stanley Parable: Ultra Deluxe" },
   { "name": "The Stanley Parable" },
-  { "name": "What Remains of Edith Finch" },
-  { "name": "L.A. Noire" },
+  {
+    "name": "What Remains of Edith Finch",
+    "started": "2019",
+    "completed": "2019"
+  },
+  { "name": "L.A. Noire", "started": [2020, 0, 16], "completed": [2020, 3, 5] },
   { "name": "Inside" },
-  { "name": "Wolfenstein: The Old Blood" },
-  { "name": "Sleeping Dogs" },
+  {
+    "name": "Wolfenstein: The Old Blood",
+    "started": "2017",
+    "completed": [2018, 1, 4]
+  },
+  {
+    "name": "Sleeping Dogs: Definitive Edition",
+    "started": [2022, 5, 3],
+    "completed": [2022, 8, 5]
+  },
   { "name": "Last Day of June" },
-  { "name": "Fahrenheit: Indigo Prophecy" },
+  {
+    "name": "Fahrenheit: Indigo Prophecy",
+    "started": "2019",
+    "completed": [2019, 0, 28]
+  },
   { "name": "Jazzpunk" },
-  { "name": "Soma" },
+  { "name": "Soma", "started": [2022, 11, 17], "completed": [2023, 0, 23] },
+  {
+    "name": "Grand Theft Auto III – The Definitive Edition",
+    "started": [2023, 9, 8],
+    "completed": [2023, 11, 6]
+  },
   { "name": "The Vanishing of Ethan Carter Redux" },
   { "name": "To The Moon" },
-  { "name": "Titanfall 2" },
+  { "name": "Titanfall 2", "started": "2019", "completed": [2019, 11, 1] },
   { "name": "Splatoon" },
   { "name": "Sniper Elite V2" },
-  { "name": "Metro 2033 Redux" },
+  { "name": "Metro 2033 Redux", "started": "2019", "completed": [2019, 6, 11] },
   { "name": "Outlast" },
-  { "name": "Mirror’s Edge: Catalyst" },
-  { "name": "Remember Me" },
-  { "name": "Bioshock: Infinite" },
+  {
+    "name": "Mirror’s Edge: Catalyst",
+    "started": "2016",
+    "completed": "2016/2017"
+  },
+  { "name": "Remember Me", "started": "2020", "completed": [2020, 5, 29] },
+  { "name": "Bioshock: Infinite", "started": "~2017", "completed": "~2017" },
   { "name": "Amnesia: The Dark Descent" },
-  { "name": "Alan Wake" },
+  { "name": "Alan Wake", "started": "2018", "completed": [2018, 11, 28] },
   { "name": "Dear Esther: Landmark Edition" },
   { "name": "Papers, Please" },
   { "name": "Hitman: Absolution" },
@@ -75,7 +164,9 @@
   { "name": "Call of Duty: Black Ops II" },
   {
     "name": "Wolfenstein: Youngblood",
-    "slug": "wolfenstein-youngblood-review"
+    "slug": "wolfenstein-youngblood-review",
+    "started": [2019, 11, 27],
+    "completed": [2020, 0, 31]
   },
   { "name": "A Story About My Uncle" },
   { "name": "Octodad: Dadliest Catch" },
@@ -86,6 +177,8 @@
   { "name": "Amnesia: A Machine For Pigs" },
   {
     "name": "Rise of the Tomb Raider",
-    "slug": "rise-of-the-tomb-raider-review"
+    "slug": "rise-of-the-tomb-raider-review",
+    "started": [2020, 0, 4],
+    "completed": [2020, 0, 7]
   }
 ]
