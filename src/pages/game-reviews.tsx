@@ -28,6 +28,12 @@ const getStartedAndCompleted = (game: {
         ? game.completed
         : getDateText(new Date(...(game.completed as [number, number, number])))
     })`;
+  } else if (game.started) {
+    return `(Started: ${
+      typeof game.started === "string"
+        ? game.started
+        : getDateText(new Date(...(game.started as [number, number, number])))
+    })`;
   }
 };
 
@@ -71,7 +77,7 @@ const GameReviews: NextPage = () => {
               All Games I’ve Completed (Ranked)
             </h3>
             <ol className="list-decimal pl-8">
-              {gamesRankedJson.map((game) =>
+              {gamesRankedJson.completed.map((game) =>
                 game.slug ? (
                   <li key={game.name}>
                     <Link
@@ -96,6 +102,17 @@ const GameReviews: NextPage = () => {
                 ),
               )}
             </ol>
+            <h3 className="pb-6 pt-8 text-center text-2xl font-bold">
+              Games In-Progress
+            </h3>
+            <ul className="list-disc pl-8">
+              {gamesRankedJson.started.map((game) => (
+                <li key={game.name}>
+                  {game.name}{" "}
+                  <span className="italic">{getStartedAndCompleted(game)}</span>
+                </li>
+              ))}
+            </ul>
           </div>
           <form method="dialog" className="modal-backdrop">
             <button>close</button>
