@@ -55,9 +55,17 @@
       "started": [2020, 0, 7],
       "completed": [2020, 0, 13]
     },
-    { "name": "The Legend of Zelda: Skyward Sword HD" },
+    {
+      "name": "The Legend of Zelda: Skyward Sword HD",
+      "started": "2022",
+      "completed": "2023"
+    },
     { "name": "Super Mario Galaxy 2" },
-    { "name": "The Legend of Zelda: Twilight Princess HD" },
+    {
+      "name": "The Legend of Zelda: Twilight Princess HD",
+      "started": "2016",
+      "completed": [2017, 2, 2]
+    },
     {
       "name": "Death Stranding: Director’s Cut",
       "started": "2023",
@@ -74,16 +82,36 @@
       "completed": [2017, 0, 18]
     },
     { "name": "Minecraft" },
-    { "name": "The Walking Dead" },
-    { "name": "The Walking Dead: Season 2" },
-    { "name": "Max Payne 3" },
-    { "name": "A Way Out" },
+    {
+      "name": "The Walking Dead",
+      "started": "2013",
+      "completed": [2014, 8, 25]
+    },
+    {
+      "name": "The Walking Dead: Season 2",
+      "started": [2015, 0, 14],
+      "completed": [2015, 0, 27]
+    },
+    { "name": "Max Payne 3", "started": "2015", "completed": [2015, 8, 2] },
+    { "name": "A Way Out", "started": "2018", "completed": "2018" },
     { "name": "Black Mesa", "started": "2021", "completed": [2022, 5, 6] },
-    { "name": "The Beginner’s Guide" },
-    { "name": "Portal" },
-    { "name": "Super Mario 3D World" },
+    {
+      "name": "The Beginner’s Guide",
+      "started": [2017, 11, 30],
+      "completed": [2017, 11, 30]
+    },
+    { "name": "Portal", "started": "2013", "completed": [2013, 11, 1] },
+    {
+      "name": "Super Mario 3D World",
+      "started": [2013, 11, 25],
+      "completed": "2014?"
+    },
     { "name": "Mirror’s Edge" },
-    { "name": "Tales from the Borderlands" },
+    {
+      "name": "Tales from the Borderlands",
+      "started": "2015",
+      "completed": [2015, 11, 11]
+    },
     { "name": "The Legend of Zelda: The Wind Waker HD" },
     {
       "name": "Doom: Eternal",
@@ -92,15 +120,19 @@
     },
     {
       "name": "Grand Theft Auto IV: The Complete Edition",
-      "started": "~2018",
-      "completed": "~2018"
+      "started": "2018?",
+      "completed": "2018?"
     },
     {
       "name": "A Plague Tale: Innocence",
       "started": [2021, 8, 5],
       "completed": [2021, 11, 12]
     },
-    { "name": "The Wolf Among Us" },
+    {
+      "name": "The Wolf Among Us",
+      "started": "2015",
+      "completed": [2015, 8, 1]
+    },
     {
       "name": "Life is Strange: True Colors",
       "started": [2022, 10, 12],
@@ -114,15 +146,35 @@
     { "name": "Doom (2016)", "started": "2018", "completed": [2018, 11, 16] },
     { "name": "Half-Life: Source" },
     { "name": "Portal 2", "started": "2013", "completed": "2014" },
-    { "name": "Portal Stories: Mel" },
-    { "name": "Half-Life 2" },
-    { "name": "Half-Life 2: Episode 2" },
-    { "name": "Half-Life 2: Episode 1" },
-    { "name": "Brothers: A Tale of Two Sons" },
+    {
+      "name": "Portal Stories: Mel",
+      "started": "2015",
+      "completed": [2015, 9, 26]
+    },
+    { "name": "Half-Life 2", "started": "2014", "completed": [2014, 10, 15] },
+    {
+      "name": "Half-Life 2: Episode Two",
+      "started": "2014",
+      "completed": [2014, 11, 17]
+    },
+    {
+      "name": "Half-Life 2: Episode One",
+      "started": "2014",
+      "completed": [2014, 11, 7]
+    },
+    {
+      "name": "Brothers: A Tale of Two Sons",
+      "started": "2016",
+      "completed": "2016"
+    },
     { "name": "Lego City Undercover" },
     { "name": "New Super Mario Bros. U" },
-    { "name": "The Stanley Parable: Ultra Deluxe" },
-    { "name": "The Stanley Parable" },
+    { "name": "The Stanley Parable: Ultra Deluxe", "started": [2022, 3, 28] },
+    {
+      "name": "The Stanley Parable",
+      "started": "2013",
+      "completed": [2013, 9, 19]
+    },
     {
       "name": "What Remains of Edith Finch",
       "started": "2019",
@@ -133,7 +185,7 @@
       "started": [2020, 0, 16],
       "completed": [2020, 3, 5]
     },
-    { "name": "Inside" },
+    { "name": "Inside", "started": "2018", "completed": "2018" },
     {
       "name": "Wolfenstein: The Old Blood",
       "started": "2017",
@@ -144,58 +196,102 @@
       "started": [2022, 5, 3],
       "completed": [2022, 8, 5]
     },
-    { "name": "Last Day of June" },
+    {
+      "name": "Last Day of June",
+      "started": [2019, 0, 14],
+      "completed": [2019, 0, 14]
+    },
     {
       "name": "Fahrenheit: Indigo Prophecy",
       "started": "2019",
       "completed": [2019, 0, 28]
     },
-    { "name": "Jazzpunk" },
+    {
+      "name": "Jazzpunk: Director’s Cut",
+      "started": "2014",
+      "completed": "2014"
+    },
     { "name": "Soma", "started": [2022, 11, 17], "completed": [2023, 0, 23] },
     {
       "name": "Grand Theft Auto III – The Definitive Edition",
       "started": [2023, 9, 8],
       "completed": [2023, 11, 6]
     },
-    { "name": "The Vanishing of Ethan Carter Redux" },
-    { "name": "To The Moon" },
+    {
+      "name": "The Vanishing of Ethan Carter Redux",
+      "started": "2019",
+      "completed": [2019, 6, 13]
+    },
+    {
+      "name": "To The Moon",
+      "started": "2015/2016",
+      "completed": [2016, 4, 26]
+    },
     { "name": "Titanfall 2", "started": "2019", "completed": [2019, 11, 1] },
-    { "name": "Splatoon" },
-    { "name": "Sniper Elite V2" },
+    { "name": "Splatoon", "started": "2015" },
+    {
+      "name": "Sniper Elite V2",
+      "started": "2014",
+      "completed": [2014, 11, 7]
+    },
     {
       "name": "Metro 2033 Redux",
       "started": "2019",
       "completed": [2019, 6, 11]
     },
-    { "name": "Outlast" },
+    { "name": "Outlast", "started": "2015", "completed": [2015, 1, 22] },
     {
       "name": "Mirror’s Edge: Catalyst",
       "started": "2016",
       "completed": "2016/2017"
     },
     { "name": "Remember Me", "started": "2020", "completed": [2020, 5, 29] },
-    { "name": "Bioshock: Infinite", "started": "~2017", "completed": "~2017" },
+    { "name": "Bioshock: Infinite", "started": "2017?", "completed": "2017?" },
     { "name": "Amnesia: The Dark Descent" },
     { "name": "Alan Wake", "started": "2018", "completed": [2018, 11, 28] },
-    { "name": "Dear Esther: Landmark Edition" },
-    { "name": "Papers, Please" },
-    { "name": "Hitman: Absolution" },
-    { "name": "Tomb Raider" },
+    {
+      "name": "Dear Esther: Landmark Edition",
+      "started": [2022, 3, 29],
+      "completed": [2022, 3, 29]
+    },
+    { "name": "Papers, Please", "started": "2015", "completed": "2015" },
+    {
+      "name": "Hitman: Absolution",
+      "started": "2015",
+      "completed": [2016, 0, 16]
+    },
+    { "name": "Tomb Raider", "started": "2014", "completed": [2015, 0, 11] },
     { "name": "Battlefield 1" },
-    { "name": "Call of Duty: Black Ops II" },
+    {
+      "name": "Call of Duty: Black Ops II",
+      "started": "2013",
+      "completed": [2013, 10, 7]
+    },
     {
       "name": "Wolfenstein: Youngblood",
       "slug": "wolfenstein-youngblood-review",
       "started": [2019, 11, 27],
       "completed": [2020, 0, 31]
     },
-    { "name": "A Story About My Uncle" },
-    { "name": "Octodad: Dadliest Catch" },
-    { "name": "Crysis 2" },
+    {
+      "name": "A Story About My Uncle",
+      "started": "2018",
+      "completed": "2018"
+    },
+    {
+      "name": "Octodad: Dadliest Catch",
+      "started": "2015",
+      "completed": [2015, 0, 30]
+    },
+    { "name": "Crysis 2", "started": "2015?", "completed": "2015" },
     { "name": "Bioshock" },
-    { "name": "Just Cause 2" },
+    { "name": "Just Cause 2", "started": "2014", "completed": [2015, 1, 22] },
     { "name": "Battlefield 4" },
-    { "name": "Amnesia: A Machine For Pigs" },
+    {
+      "name": "Amnesia: A Machine For Pigs",
+      "started": "2014",
+      "completed": "2014"
+    },
     {
       "name": "Rise of the Tomb Raider",
       "slug": "rise-of-the-tomb-raider-review",
