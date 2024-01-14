@@ -84,9 +84,9 @@ const GameReviews: NextPage = () => {
                       target="_blank"
                       href={game.slug}
                       rel="noreferrer"
-                      className="font-bold text-blue-600 underline hover:text-blue-800"
+                      className="text-blue-600 underline hover:text-blue-800"
                     >
-                      {game.name}{" "}
+                      <span className="font-bold">{game.name}</span>{" "}
                       <span className="italic">
                         {getStartedAndCompleted(game)}
                       </span>
@@ -94,7 +94,7 @@ const GameReviews: NextPage = () => {
                   </li>
                 ) : (
                   <li key={game.name}>
-                    {game.name}{" "}
+                    <span className="font-bold">{game.name}</span>{" "}
                     <span className="italic">
                       {getStartedAndCompleted(game)}
                     </span>
@@ -108,7 +108,7 @@ const GameReviews: NextPage = () => {
             <ul className="list-disc pl-8">
               {gamesRankedJson.started.map((game) => (
                 <li key={game.name}>
-                  {game.name}{" "}
+                  <span className="font-bold">{game.name}</span>{" "}
                   <span className="italic">{getStartedAndCompleted(game)}</span>
                 </li>
               ))}
