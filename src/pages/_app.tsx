@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import { type AppType } from "next/app";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import FooterComponent from "../components/footer";
 
 const inter = Inter({
@@ -15,6 +16,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
       <Component {...pageProps} />
       <FooterComponent />
       <Analytics />
+      <SpeedInsights />
     </main>
   );
 };
