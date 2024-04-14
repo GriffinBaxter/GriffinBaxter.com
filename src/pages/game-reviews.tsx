@@ -7,6 +7,8 @@ import Divider from "../components/divider";
 import gamesRankedJson from "../data/games-ranked.json";
 import Link from "next/link";
 import { months } from "./[postSlug]";
+import { SiLetterboxd } from "react-icons/si";
+import { FaGamepad, FaSortAmountDown } from "react-icons/fa";
 
 const getDateText = (date: Date): string => {
   return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
@@ -61,16 +63,40 @@ const GameReviews: NextPage = () => {
             </div>
           ))}
         </div>
-        <button
-          className="btn btn-secondary my-4"
-          onClick={() =>
-            (
-              document.getElementById("games-ranked-modal") as HTMLDialogElement
-            ).showModal()
-          }
-        >
-          Games Ranked
-        </button>
+        <div className="my-4 flex-col">
+          <Link
+            className="mx-2"
+            target="_blank"
+            href="https://letterboxd.com/GriffinBaxter"
+            rel="noreferrer"
+          >
+            <button className="btn btn-secondary my-4">
+              <SiLetterboxd size={24} /> Letterboxd
+            </button>
+          </Link>
+          <Link
+            className="mx-2"
+            target="_blank"
+            href="https://backloggd.com/u/GriffinBaxter"
+            rel="noreferrer"
+          >
+            <button className="btn btn-secondary my-4">
+              <FaGamepad size={24} /> Backloggd
+            </button>
+          </Link>
+          <button
+            className="btn btn-secondary mx-2"
+            onClick={() =>
+              (
+                document.getElementById(
+                  "games-ranked-modal",
+                ) as HTMLDialogElement
+              ).showModal()
+            }
+          >
+            <FaSortAmountDown size={24} /> Games Ranked
+          </button>
+        </div>
         <dialog id="games-ranked-modal" className="modal">
           <div className="modal-box">
             <h3 className="pb-6 pt-2 text-center text-2xl font-bold">

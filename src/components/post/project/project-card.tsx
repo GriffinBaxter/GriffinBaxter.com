@@ -11,7 +11,7 @@ interface Props {
 const ProjectCard: NextPage<Props> = ({ projectObject: project }) => {
   return (
     <Link href={project.slug}>
-      <div className="max-w-96 card bg-base-100 shadow-xl">
+      <div className="card max-w-96 bg-base-100 shadow-xl">
         <figure>
           <Image
             src={`/images/${project.featuredImage.node.sourceUrl}`}
