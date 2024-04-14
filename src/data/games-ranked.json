@@ -7,6 +7,11 @@
     },
     { "name": "Life is Strange", "started": "2015", "completed": [2016, 0, 9] },
     {
+      "name": "The Legend of Zelda: Tears of the Kingdom",
+      "started": [2023, 4, 12],
+      "completed": [2024, 2, 30]
+    },
+    {
       "name": "Life is Strange 2",
       "slug": "life-is-strange-2-review",
       "started": [2018, 8, 28],
@@ -305,10 +310,6 @@
       "started": "2022"
     },
     {
-      "name": "The Legend of Zelda: Tears of the Kingdom",
-      "started": [2023, 4, 12]
-    },
-    {
       "name": "Saints Row The Third Remastered",
       "started": [2023, 7, 5]
     },
@@ -327,6 +328,10 @@
     {
       "name": "DUSK",
       "started": [2024, 1, 6]
+    },
+    {
+      "name": "The Legend of Zelda: Ocarina of Time",
+      "started": [2024, 3, 13]
     }
   ]
 }
