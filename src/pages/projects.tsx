@@ -25,18 +25,15 @@ const Projects: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Software Projects - Griffin Baxter</title>
-        <meta name="description" content="Software Projects" />
+        <title>Projects - Griffin Baxter</title>
+        <meta name="description" content="Projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <NavBar page={NavigationPage.SoftwareProjects} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center pb-8">
-        <p className="py-8 text-center text-5xl font-bold">Software Projects</p>
-        <p className="pb-8 text-center text-xl">
-          In <span className="font-bold">reverse chronological</span> order
-        </p>
+        <p className="py-8 text-center text-5xl font-bold">Projects</p>
         <Divider />
         <div className="py-8">
           {categories.map((category) => (

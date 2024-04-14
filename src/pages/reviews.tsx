@@ -43,26 +43,16 @@ const GameReviews: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Game Reviews - Griffin Baxter</title>
-        <meta name="description" content="Game Reviews" />
+        <title>Reviews - Griffin Baxter</title>
+        <meta name="description" content="Reviews" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <NavBar page={NavigationPage.GameReviews} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center pb-8">
-        <p className="py-8 text-center text-5xl font-bold">Game Reviews</p>
-        <p className="pb-8 text-center text-xl">
-          In <span className="font-bold">reverse chronological</span> order
-        </p>
+        <p className="py-8 text-center text-5xl font-bold">Reviews</p>
         <Divider />
-        <div className="grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-3">
-          {reviewsJson.map((review) => (
-            <div key={review.slug} className="max-w-sm">
-              <ReviewCard reviewObject={review} />
-            </div>
-          ))}
-        </div>
         <div className="my-4 flex-col">
           <Link
             className="mx-2"
@@ -96,54 +86,63 @@ const GameReviews: NextPage = () => {
           >
             <FaSortAmountDown size={24} /> Games Ranked
           </button>
-        </div>
-        <dialog id="games-ranked-modal" className="modal">
-          <div className="modal-box">
-            <h3 className="pb-6 pt-2 text-center text-2xl font-bold">
-              All Games I’ve Completed (Ranked)
-            </h3>
-            <ol className="list-decimal pl-8">
-              {gamesRankedJson.completed.map((game) =>
-                game.slug ? (
-                  <li key={game.name}>
-                    <Link
-                      target="_blank"
-                      href={game.slug}
-                      rel="noreferrer"
-                      className="text-blue-600 underline hover:text-blue-800"
-                    >
+          <dialog id="games-ranked-modal" className="modal">
+            <div className="modal-box">
+              <h3 className="pb-6 pt-2 text-center text-2xl font-bold">
+                All Games I’ve Completed (Ranked)
+              </h3>
+              <ol className="list-decimal pl-8">
+                {gamesRankedJson.completed.map((game) =>
+                  game.slug ? (
+                    <li key={game.name}>
+                      <Link
+                        target="_blank"
+                        href={game.slug}
+                        rel="noreferrer"
+                        className="text-blue-600 underline hover:text-blue-800"
+                      >
+                        <span className="font-bold">{game.name}</span>{" "}
+                        <span className="italic">
+                          {getStartedAndCompleted(game)}
+                        </span>
+                      </Link>
+                    </li>
+                  ) : (
+                    <li key={game.name}>
                       <span className="font-bold">{game.name}</span>{" "}
                       <span className="italic">
                         {getStartedAndCompleted(game)}
                       </span>
-                    </Link>
-                  </li>
-                ) : (
+                    </li>
+                  ),
+                )}
+              </ol>
+              <h3 className="pb-6 pt-8 text-center text-2xl font-bold">
+                Games In-Progress
+              </h3>
+              <ul className="list-disc pl-8">
+                {gamesRankedJson.started.map((game) => (
                   <li key={game.name}>
                     <span className="font-bold">{game.name}</span>{" "}
                     <span className="italic">
                       {getStartedAndCompleted(game)}
                     </span>
                   </li>
-                ),
-              )}
-            </ol>
-            <h3 className="pb-6 pt-8 text-center text-2xl font-bold">
-              Games In-Progress
-            </h3>
-            <ul className="list-disc pl-8">
-              {gamesRankedJson.started.map((game) => (
-                <li key={game.name}>
-                  <span className="font-bold">{game.name}</span>{" "}
-                  <span className="italic">{getStartedAndCompleted(game)}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <form method="dialog" className="modal-backdrop">
-            <button>close</button>
-          </form>
-        </dialog>
+                ))}
+              </ul>
+            </div>
+            <form method="dialog" className="modal-backdrop">
+              <button>close</button>
+            </form>
+          </dialog>
+        </div>
+        <div className="grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-3">
+          {reviewsJson.map((review) => (
+            <div key={review.slug} className="max-w-sm">
+              <ReviewCard reviewObject={review} />
+            </div>
+          ))}
+        </div>
       </main>
     </>
   );

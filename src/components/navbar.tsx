@@ -36,19 +36,19 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
               : "min-[0px]:max-md:text-gray-500"
           }
         >
-          Software Projects
+          Projects
         </Link>
       </li>
       <li>
         <Link
-          href="game-reviews"
+          href="reviews"
           className={
             navPage == NavigationPage.GameReviews
               ? "text-blue-900 md:text-blue-100"
               : "min-[0px]:max-md:text-gray-500"
           }
         >
-          Game Reviews
+          Reviews
         </Link>
       </li>
       <li>
