@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
       <NavBar page={NavigationPage.Home} />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-8">
+      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-3xl font-medium sm:text-5xl">
           I’m <span className="font-bold">Griffin</span>, a{" "}
           <span className="font-bold">Full-Stack</span> Web Software Engineer
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         <p className="pb-12 pt-8 text-center text-2xl font-extrabold uppercase sm:text-3xl">
           Featured Projects
         </p>
-        <div className="grid grid-cols-1 gap-4 pb-8 pt-4 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
           {featuredProjectSlugs
             .map((slug) =>
               projectsJson.find((project) => project.slug === slug),

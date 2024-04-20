@@ -20,7 +20,7 @@ const Contact: NextPage = () => {
         <p className="py-8 text-center text-3xl font-bold sm:text-5xl">
           Contact
         </p>
-        <p className="pb-8 text-center text-xl">
+        <p className="text-md pb-8 text-center sm:text-xl">
           Add me on{" "}
           <Link
             target="_blank"
