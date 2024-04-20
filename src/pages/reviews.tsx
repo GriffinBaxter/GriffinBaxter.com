@@ -50,7 +50,7 @@ const GameReviews: NextPage = () => {
 
       <NavBar page={NavigationPage.GameReviews} />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center pb-8">
+      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-5xl font-bold">Reviews</p>
         <Divider />
         <div className="my-4 flex-col">
@@ -136,7 +136,7 @@ const GameReviews: NextPage = () => {
             </form>
           </dialog>
         </div>
-        <div className="grid grid-cols-1 gap-4 py-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
           {reviewsJson.map((review) => (
             <div key={review.slug} className="max-w-sm">
               <ReviewCard reviewObject={review} />

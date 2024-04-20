@@ -32,7 +32,7 @@ const Projects: NextPage = () => {
 
       <NavBar page={NavigationPage.SoftwareProjects} />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center pb-8">
+      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-5xl font-bold">Projects</p>
         <Divider />
         <div className="py-8">
@@ -41,7 +41,7 @@ const Projects: NextPage = () => {
               key={category.slug}
               className={`badge badge-lg ${
                 languageBadgeColour[category.slug]
-              } mx-1 ${
+              } m-1 ${
                 selectedCategory && selectedCategory !== category.slug
                   ? "opacity-25"
                   : null

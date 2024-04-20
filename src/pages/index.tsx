@@ -25,7 +25,7 @@ const Home: NextPage = () => {
 
       <NavBar page={NavigationPage.Home} />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col justify-center pb-8">
+      <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-8">
         <p className="py-8 text-center text-5xl font-medium">
           I’m <span className="font-bold">Griffin</span>, a{" "}
           <span className="font-bold">Full-Stack</span> Web Software Engineer

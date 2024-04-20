@@ -12,7 +12,7 @@ const ReviewCard: NextPage<Props> = ({ reviewObject: review }) => {
   const date = new Date(review.date);
   return (
     <Link href={review.slug}>
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card max-w-96 bg-base-100 shadow-xl">
         <figure>
           <Image
             src={`/images/${review.featuredImage.node.sourceUrl}`}

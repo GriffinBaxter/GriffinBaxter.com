@@ -57,7 +57,7 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
         }
       />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col justify-center pb-8">
+      <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-8">
         <p className="pt-10 text-center text-7xl font-bold">{post?.title}</p>
         <p className="py-10 text-center text-4xl">{post?.excerpt}</p>
         {isProject ? (

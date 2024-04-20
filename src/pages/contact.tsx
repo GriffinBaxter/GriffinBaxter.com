@@ -16,7 +16,7 @@ const Contact: NextPage = () => {
 
       <NavBar page={NavigationPage.Contact} />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center pb-8">
+      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-5xl font-bold">Contact</p>
         <p className="pb-8 text-center text-xl">
           Add me on{" "}
