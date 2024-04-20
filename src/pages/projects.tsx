@@ -33,7 +33,9 @@ const Projects: NextPage = () => {
       <NavBar page={NavigationPage.SoftwareProjects} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
-        <p className="py-8 text-center text-5xl font-bold">Projects</p>
+        <p className="py-8 text-center text-3xl font-bold sm:text-5xl">
+          Projects
+        </p>
         <Divider />
         <div className="py-8">
           {categories.map((category) => (

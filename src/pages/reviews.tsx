@@ -51,7 +51,9 @@ const GameReviews: NextPage = () => {
       <NavBar page={NavigationPage.GameReviews} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
-        <p className="py-8 text-center text-5xl font-bold">Reviews</p>
+        <p className="py-8 text-center text-3xl font-bold sm:text-5xl">
+          Reviews
+        </p>
         <Divider />
         <div className="my-4 flex-col">
           <Link
