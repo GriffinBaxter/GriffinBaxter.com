@@ -58,8 +58,12 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
       />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-8">
-        <p className="pt-10 text-center text-7xl font-bold">{post?.title}</p>
-        <p className="py-10 text-center text-4xl">{post?.excerpt}</p>
+        <p className="pt-10 text-center text-3xl font-bold sm:text-5xl md:text-7xl">
+          {post?.title}
+        </p>
+        <p className="py-10 text-center text-2xl sm:text-3xl md:text-4xl">
+          {post?.excerpt}
+        </p>
         {isProject ? (
           <div className="mx-auto flex flex-wrap gap-2 pb-6">
             {post?.categories.nodes.map((category) =>

@@ -8,7 +8,7 @@ interface Props {
 function styleLinks(html: string) {
   return html.replaceAll(
     "<a ",
-    `<a class="underline text-blue-600 hover:text-blue-800" target="_blank" `,
+    `<a class="break-words underline text-blue-600 hover:text-blue-800" target="_blank" `,
   );
 }
 
