@@ -43,7 +43,7 @@ const Projects: NextPage = () => {
               key={category.slug}
               className={`badge badge-lg ${
                 languageBadgeColour[category.slug]
-              } m-1 ${
+              } m-1 drop-shadow ${
                 selectedCategory && selectedCategory !== category.slug
                   ? "opacity-25"
                   : null

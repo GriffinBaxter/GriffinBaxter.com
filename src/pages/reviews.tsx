@@ -55,29 +55,27 @@ const GameReviews: NextPage = () => {
           Reviews
         </p>
         <Divider />
-        <div className="my-4 flex-col">
+        <div className="my-4 grid grid-cols-1 gap-2 py-4 sm:grid-cols-3">
           <Link
-            className="mx-2"
             target="_blank"
             href="https://letterboxd.com/GriffinBaxter"
             rel="noreferrer"
           >
-            <button className="btn btn-secondary my-4">
+            <button className="btn btn-secondary">
               <SiLetterboxd size={24} /> Letterboxd
             </button>
           </Link>
           <Link
-            className="mx-2"
             target="_blank"
             href="https://backloggd.com/u/GriffinBaxter"
             rel="noreferrer"
           >
-            <button className="btn btn-secondary my-4">
+            <button className="btn btn-secondary">
               <FaGamepad size={24} /> Backloggd
             </button>
           </Link>
           <button
-            className="btn btn-secondary mx-2"
+            className="btn btn-secondary"
             onClick={() =>
               (
                 document.getElementById(
