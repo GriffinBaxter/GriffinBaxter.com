@@ -19,22 +19,22 @@ function styleH4(html: string, attributes: BlockAttribute[]) {
         attribute.name == "textAlign" && attribute.value == "center",
     ).length > 0;
   if (isCentre) {
-    return `<p class="text-3xl font-bold text-center py-6">${styleLinks(
+    return `<p class="text-xl sm:text-2xl md:text-3xl font-bold text-center py-6">${styleLinks(
       html,
     )}</p>`;
   } else {
-    return `<p class="text-3xl font-bold">${styleLinks(html)}</p>`;
+    return `<p class="text-xl sm:text-2xl md:text-3xl font-bold">${styleLinks(html)}</p>`;
   }
 }
 
 function styleList(html: string) {
-  return html.replaceAll("<li>", `<li class="text-xl pb-2">`);
+  return html.replaceAll("<li>", `<li class="text-md sm:text-lg md:text-xl pb-2">`);
 }
 
 function styleQuote(html: string) {
   return `
         <div class="p-8 border-l-2 border-blue-500">
-            ${styleLinks(html.replaceAll("<p>", `<p class="text-xl pb-8">`))}
+            ${styleLinks(html.replaceAll("<p>", `<p class="text-md sm:text-lg md:text-xl pb-8">`))}
         </div>
     `;
 }
@@ -57,7 +57,7 @@ const PostContent: NextPage<Props> = ({ blocks }) => {
   let contentHTML = "";
   if (blocks) {
     for (const block of blocks) {
-      contentHTML += `<p class="text-xl pt-8">`;
+      contentHTML += `<p class="text-md sm:text-lg md:text-xl pt-8">`;
       if (block.tagName == "p") {
         contentHTML += styleLinks(block.innerHtml);
       } else if (block.tagName == "h4") {
