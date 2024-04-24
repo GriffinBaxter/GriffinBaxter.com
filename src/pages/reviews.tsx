@@ -7,8 +7,9 @@ import Divider from "../components/divider";
 import gamesRankedJson from "../data/games-ranked.json";
 import Link from "next/link";
 import { months } from "./[postSlug]";
-import { SiLetterboxd } from "react-icons/si";
-import { FaGamepad, FaSortAmountDown } from "react-icons/fa";
+import { SiLetterboxd } from "@react-icons/all-files/si/SiLetterboxd";
+import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
+import { FaSortAmountDown } from "@react-icons/all-files/fa/FaSortAmountDown";
 
 const getDateText = (date: Date): string => {
   return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;

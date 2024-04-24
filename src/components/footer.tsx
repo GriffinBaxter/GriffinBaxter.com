@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import Link from "next/link";
 
 const FooterComponent: NextPage = () => {

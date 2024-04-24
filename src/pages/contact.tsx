@@ -1,7 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 import NavBar, { NavigationPage } from "../components/navbar";
-import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
+import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
 import Divider from "../components/divider";
 import Link from "next/link";
 

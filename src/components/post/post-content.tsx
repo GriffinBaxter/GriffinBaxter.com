@@ -28,7 +28,10 @@ function styleH4(html: string, attributes: BlockAttribute[]) {
 }
 
 function styleList(html: string) {
-  return html.replaceAll("<li>", `<li class="text-md sm:text-lg md:text-xl pb-2">`);
+  return html.replaceAll(
+    "<li>",
+    `<li class="text-md sm:text-lg md:text-xl pb-2">`,
+  );
 }
 
 function styleQuote(html: string) {
