@@ -1,5 +1,5 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
-import CustomHead from "../components/head";
+import CustomHead from "../components/custom-head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import Image from "next/image";
 import PostContent from "../components/post/post-content";

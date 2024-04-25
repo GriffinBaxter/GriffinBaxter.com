@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import CustomHead from "../components/head";
+import CustomHead from "../components/custom-head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import ReviewCard from "../components/post/review/review-card";
 import reviewsJson from "../data/reviews.json";

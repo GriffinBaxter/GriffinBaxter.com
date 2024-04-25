@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import CustomHead from "../components/head";
+import CustomHead from "../components/custom-head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import ProjectCard from "../components/post/project/project-card";
 import projectsJson from "../data/projects.json";

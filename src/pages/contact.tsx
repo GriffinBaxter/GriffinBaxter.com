@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import CustomHead from "../components/head";
+import CustomHead from "../components/custom-head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
