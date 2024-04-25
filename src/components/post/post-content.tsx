@@ -12,7 +12,7 @@ const styleH4 = (html: string, attributes: BlockAttribute[]) => {
   const isCentre =
     attributes.filter(
       (attribute) =>
-        attribute.name == "textAlign" && attribute.value == "center",
+        attribute.name === "textAlign" && attribute.value === "center",
     ).length > 0;
   if (isCentre) {
     return `<p class="text-xl sm:text-2xl md:text-3xl font-bold text-center py-6">${styleLinks(
@@ -59,19 +59,19 @@ const PostContent: NextPage<Props> = ({ blocks }) => {
   if (blocks) {
     for (const block of blocks) {
       contentHTML += `<p class="text-md sm:text-lg md:text-xl pt-8">`;
-      if (block.tagName == "p") {
+      if (block.tagName === "p") {
         contentHTML += styleLinks(block.innerHtml);
-      } else if (block.tagName == "h4") {
+      } else if (block.tagName === "h4") {
         contentHTML += styleH4(block.innerHtml, block.attributes);
-      } else if (block.tagName == "ul") {
+      } else if (block.tagName === "ul") {
         contentHTML += styleList(block.innerHtml);
-      } else if (block.tagName == "blockquote") {
+      } else if (block.tagName === "blockquote") {
         contentHTML += styleQuote(block.innerHtml);
-      } else if (block.tagName == "figure") {
+      } else if (block.tagName === "figure") {
         contentHTML += `<div class="flex flex-col items-center py-6">${styleImage(
           block.innerHtml,
         )}</div>`;
-      } else if (block.tagName == "hr") {
+      } else if (block.tagName === "hr") {
         contentHTML += contentDivider;
       }
       contentHTML += "</p>";
