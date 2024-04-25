@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 import CustomHead from "../components/custom-head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import Divider from "../components/divider";
-import ProjectCard from "../components/post/project/project-card";
+import ProjectCard from "../components/post/project-card";
 import projectsJson from "../data/projects.json";
 
 const featuredProjectSlugs = [
