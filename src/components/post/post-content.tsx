@@ -1,18 +1,14 @@
 import { type NextPage } from "next";
 import type { Block, BlockAttribute } from "../../models";
 
-interface Props {
-  blocks: Block[];
-}
-
-function styleLinks(html: string) {
+const styleLinks = (html: string) => {
   return html.replaceAll(
     "<a ",
     `<a class="break-words underline text-blue-600 hover:text-blue-800" target="_blank" `,
   );
-}
+};
 
-function styleH4(html: string, attributes: BlockAttribute[]) {
+const styleH4 = (html: string, attributes: BlockAttribute[]) => {
   const isCentre =
     attributes.filter(
       (attribute) =>
@@ -25,35 +21,37 @@ function styleH4(html: string, attributes: BlockAttribute[]) {
   } else {
     return `<p class="text-xl sm:text-2xl md:text-3xl font-bold">${styleLinks(html)}</p>`;
   }
-}
+};
 
-function styleList(html: string) {
+const styleList = (html: string) => {
   return html.replaceAll(
     "<li>",
     `<li class="text-md sm:text-lg md:text-xl pb-2">`,
   );
-}
+};
 
-function styleQuote(html: string) {
+const styleQuote = (html: string) => {
   return `
-        <div class="p-8 border-l-2 border-blue-500">
-            ${styleLinks(html.replaceAll("<p>", `<p class="text-md sm:text-lg md:text-xl pb-8">`))}
-        </div>
-    `;
-}
+    <div class="p-8 border-l-2 border-blue-500">
+      ${styleLinks(html.replaceAll("<p>", `<p class="text-md sm:text-lg md:text-xl pb-8">`))}
+    </div>
+  `;
+};
 
-function contentDivider() {
-  return `
-        <div class="relative flex py-2 items-center w-full">
-            <div class="flex-grow border-t border-gray-400"></div>
-            <span class="flex-shrink mx-4 text-gray-400 select-none">//</span>
-            <div class="flex-grow border-t border-gray-400"></div>
-        </div>
-    `;
-}
-
-function styleImage(fileName: string) {
+const styleImage = (fileName: string) => {
   return `<img src="/images/${fileName}" alt="Post Image" class="max-h-[675px]"/>`;
+};
+
+const contentDivider = `
+  <div class="relative flex py-2 items-center w-full">
+    <div class="flex-grow border-t border-gray-400"></div>
+    <span class="flex-shrink mx-4 text-gray-400 select-none">//</span>
+    <div class="flex-grow border-t border-gray-400"></div>
+  </div>
+`;
+
+interface Props {
+  blocks: Block[];
 }
 
 const PostContent: NextPage<Props> = ({ blocks }) => {
@@ -69,12 +67,12 @@ const PostContent: NextPage<Props> = ({ blocks }) => {
         contentHTML += styleList(block.innerHtml);
       } else if (block.tagName == "blockquote") {
         contentHTML += styleQuote(block.innerHtml);
-      } else if (block.tagName == "hr") {
-        contentHTML += contentDivider();
       } else if (block.tagName == "figure") {
         contentHTML += `<div class="flex flex-col items-center py-6">${styleImage(
           block.innerHtml,
         )}</div>`;
+      } else if (block.tagName == "hr") {
+        contentHTML += contentDivider;
       }
       contentHTML += "</p>";
     }
