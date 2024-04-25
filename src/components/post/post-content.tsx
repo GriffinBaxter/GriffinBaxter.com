@@ -43,9 +43,9 @@ const styleImage = (fileName: string) => {
 };
 
 const contentDivider = `
-  <div class="relative flex py-2 items-center w-full">
+  <div class="relative flex w-full items-center py-5 py-8">
     <div class="flex-grow border-t border-gray-400"></div>
-    <span class="flex-shrink mx-4 text-gray-400 select-none">//</span>
+    <span class="mx-4 flex-shrink select-none text-gray-400">//</span>
     <div class="flex-grow border-t border-gray-400"></div>
   </div>
 `;
