@@ -3,66 +3,49 @@ import Link from "next/link";
 
 export enum NavigationPage {
   Home,
-  SoftwareProjects,
-  GameReviews,
+  Projects,
+  Reviews,
   Contact,
 }
 
+const navigationPageDetails: Record<
+  NavigationPage,
+  { title: string; href: string }
+> = {
+  [NavigationPage.Home]: { title: "Home", href: "/" },
+  [NavigationPage.Projects]: { title: "Projects", href: "projects" },
+  [NavigationPage.Reviews]: { title: "Reviews", href: "reviews" },
+  [NavigationPage.Contact]: { title: "Contact", href: "contact" },
+};
+
+const navbarLink = (page: NavigationPage, currentPage: NavigationPage) => {
+  return (
+    <li>
+      <Link
+        href={navigationPageDetails[page].href}
+        className={
+          page === currentPage
+            ? "text-blue-900 md:text-blue-100"
+            : "min-[0px]:max-md:text-gray-500"
+        }
+      >
+        {navigationPageDetails[page].title}
+      </Link>
+    </li>
+  );
+};
+
 interface Props {
-  page?: NavigationPage;
+  currentPage: NavigationPage;
 }
 
-const NavBar: NextPage<Props> = ({ page: navPage }) => {
+const Navbar: NextPage<Props> = ({ currentPage }) => {
   const links = (
     <ul className="menu menu-sm z-[1] w-52 rounded-box bg-base-100 px-1 shadow min-[0px]:max-md:dropdown-content md:menu-horizontal md:menu-md md:w-auto md:bg-transparent">
-      <li>
-        <Link
-          href="/"
-          className={
-            navPage == NavigationPage.Home
-              ? "text-blue-900 md:text-blue-100"
-              : "min-[0px]:max-md:text-gray-500"
-          }
-        >
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="projects"
-          className={
-            navPage == NavigationPage.SoftwareProjects
-              ? "text-blue-900 md:text-blue-100"
-              : "min-[0px]:max-md:text-gray-500"
-          }
-        >
-          Projects
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="reviews"
-          className={
-            navPage == NavigationPage.GameReviews
-              ? "text-blue-900 md:text-blue-100"
-              : "min-[0px]:max-md:text-gray-500"
-          }
-        >
-          Reviews
-        </Link>
-      </li>
-      <li>
-        <Link
-          href="contact"
-          className={
-            navPage == NavigationPage.Contact
-              ? "text-blue-900 md:text-blue-100"
-              : "min-[0px]:max-md:text-gray-500"
-          }
-        >
-          Contact
-        </Link>
-      </li>
+      {navbarLink(NavigationPage.Home, currentPage)}
+      {navbarLink(NavigationPage.Projects, currentPage)}
+      {navbarLink(NavigationPage.Reviews, currentPage)}
+      {navbarLink(NavigationPage.Contact, currentPage)}
     </ul>
   );
 
@@ -103,4 +86,4 @@ const NavBar: NextPage<Props> = ({ page: navPage }) => {
   );
 };
 
-export default NavBar;
+export default Navbar;

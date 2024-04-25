@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import CustomHead from "../components/custom-head";
-import NavBar, { NavigationPage } from "../components/navbar";
+import Navbar, { NavigationPage } from "../components/navbar";
 import ReviewCard from "../components/post/review-card";
 import reviewsJson from "../data/reviews.json";
 import Divider from "../components/divider";
@@ -45,7 +45,7 @@ const GameReviews: NextPage = () => {
     <>
       <CustomHead title="Reviews" />
 
-      <NavBar page={NavigationPage.GameReviews} />
+      <Navbar currentPage={NavigationPage.Reviews} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-3xl font-bold sm:text-5xl">

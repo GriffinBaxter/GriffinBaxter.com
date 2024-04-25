@@ -1,6 +1,6 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import CustomHead from "../components/custom-head";
-import NavBar, { NavigationPage } from "../components/navbar";
+import Navbar, { NavigationPage } from "../components/navbar";
 import Image from "next/image";
 import PostContent from "../components/post/post-content";
 import type { SinglePost } from "../models";
@@ -44,11 +44,9 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
     <>
       <CustomHead title={post.title} />
 
-      <NavBar
-        page={
-          isProject
-            ? NavigationPage.SoftwareProjects
-            : NavigationPage.GameReviews
+      <Navbar
+        currentPage={
+          isProject ? NavigationPage.Projects : NavigationPage.Reviews
         }
       />
 
@@ -100,7 +98,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 
   let isProject = false;
   for (const category of post.categories.nodes) {
-    if (category.slug == "projects") {
+    if (category.slug === "projects") {
       isProject = true;
     }
   }

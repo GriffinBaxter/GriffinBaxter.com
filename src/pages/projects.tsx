@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import CustomHead from "../components/custom-head";
-import NavBar, { NavigationPage } from "../components/navbar";
+import Navbar, { NavigationPage } from "../components/navbar";
 import ProjectCard from "../components/post/project-card";
 import projectsJson from "../data/projects.json";
 import Divider from "../components/divider";
@@ -26,7 +26,7 @@ const Projects: NextPage = () => {
     <>
       <CustomHead title="Projects" />
 
-      <NavBar page={NavigationPage.SoftwareProjects} />
+      <Navbar currentPage={NavigationPage.Projects} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-3xl font-bold sm:text-5xl">

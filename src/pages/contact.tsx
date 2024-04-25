@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import CustomHead from "../components/custom-head";
-import NavBar, { NavigationPage } from "../components/navbar";
+import Navbar, { NavigationPage } from "../components/navbar";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
 import Divider from "../components/divider";
@@ -11,7 +11,7 @@ const Contact: NextPage = () => {
     <>
       <CustomHead title="Contact" />
 
-      <NavBar page={NavigationPage.Contact} />
+      <Navbar currentPage={NavigationPage.Contact} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-3xl font-bold sm:text-5xl">
