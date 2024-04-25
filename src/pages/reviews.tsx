@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import CustomHead from "../components/head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import ReviewCard from "../components/post/review/review-card";
 import reviewsJson from "../data/reviews.json";
@@ -43,11 +43,7 @@ const getStartedAndCompleted = (game: {
 const GameReviews: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Reviews - Griffin Baxter</title>
-        <meta name="description" content="Reviews" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <CustomHead title="Reviews" />
 
       <NavBar page={NavigationPage.GameReviews} />
 

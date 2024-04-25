@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Head from "next/head";
+import CustomHead from "../components/head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
@@ -9,11 +9,7 @@ import Link from "next/link";
 const Contact: NextPage = () => {
   return (
     <>
-      <Head>
-        <title>Contact - Griffin Baxter</title>
-        <meta name="description" content="Contact" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <CustomHead title="Contact" />
 
       <NavBar page={NavigationPage.Contact} />
 

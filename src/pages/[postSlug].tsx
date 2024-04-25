@@ -1,5 +1,5 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
-import Head from "next/head";
+import CustomHead from "../components/head";
 import NavBar, { NavigationPage } from "../components/navbar";
 import Image from "next/image";
 import PostContent from "../components/post/post-content";
@@ -39,15 +39,10 @@ interface Props {
 }
 
 const Post: NextPage<Props> = ({ post, isProject }) => {
-  const pageTitle = `${post?.title} - Griffin Baxter`;
-  const date = new Date(post?.date);
+  const date = new Date(post.date);
   return (
     <>
-      <Head>
-        <title>{pageTitle}</title>
-        <meta name="description" content="Post" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <CustomHead title={post.title} />
 
       <NavBar
         page={
@@ -59,14 +54,14 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
 
       <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-8">
         <p className="pt-10 text-center text-3xl font-bold sm:text-5xl md:text-7xl">
-          {post?.title}
+          {post.title}
         </p>
         <p className="py-10 text-center text-2xl sm:text-3xl md:text-4xl">
-          {post?.excerpt}
+          {post.excerpt}
         </p>
         {isProject ? (
           <div className="mx-auto flex flex-wrap gap-2 pb-6">
-            {post?.categories.nodes.map((category) =>
+            {post.categories.nodes.map((category) =>
               Object.keys(languageBadgeColour).includes(category.slug) ? (
                 <div
                   key={category.slug}
@@ -86,13 +81,13 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
         )}
         <Image
           className="mx-auto py-3"
-          src={`/images/${post?.featuredImage.node.sourceUrl}`}
+          src={`/images/${post.featuredImage.node.sourceUrl}`}
           alt="Main Post Image"
           width="1200"
           height="675"
           priority={true}
         ></Image>
-        <PostContent blocks={post?.blocks} />
+        <PostContent blocks={post.blocks} />
       </main>
     </>
   );
