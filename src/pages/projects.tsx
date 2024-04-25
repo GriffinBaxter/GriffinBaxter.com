@@ -4,7 +4,7 @@ import Navbar, { NavigationPage } from "../components/navbar";
 import ProjectCard from "../components/post/project-card";
 import projectsJson from "../data/projects.json";
 import Divider from "../components/divider";
-import { languageBadgeColour } from "./[postSlug]";
+import { languageBadgeColour } from "../components/post/post-header";
 import { useState } from "react";
 
 const Projects: NextPage = () => {

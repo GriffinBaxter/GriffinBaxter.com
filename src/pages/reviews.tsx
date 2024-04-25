@@ -6,7 +6,7 @@ import reviewsJson from "../data/reviews.json";
 import Divider from "../components/divider";
 import gamesRankedJson from "../data/games-ranked.json";
 import Link from "next/link";
-import { months } from "./[postSlug]";
+import { months } from "../components/post/post-header";
 import { SiLetterboxd } from "@react-icons/all-files/si/SiLetterboxd";
 import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
 import { FaSortAmountDown } from "@react-icons/all-files/fa/FaSortAmountDown";

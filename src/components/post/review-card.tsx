@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
 import { type Review } from "../../models";
-import { months } from "../../pages/[postSlug]";
+import { months } from "./post-header";
 import Link from "next/link";
 import Image from "next/image";
 
