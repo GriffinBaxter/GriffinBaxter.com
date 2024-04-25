@@ -1,5 +1,6 @@
 import { type NextPage } from "next";
 import type { Block, BlockAttribute } from "../../models";
+import { rawHtmlDivider } from "../divider";
 
 const styleLinks = (html: string) => {
   return html.replaceAll(
@@ -42,14 +43,6 @@ const styleImage = (fileName: string) => {
   return `<img src="/images/${fileName}" alt="Post Image" class="max-h-[675px]"/>`;
 };
 
-const contentDivider = `
-  <div class="relative flex w-full items-center py-5 py-8">
-    <div class="flex-grow border-t border-gray-400"></div>
-    <span class="mx-4 flex-shrink select-none text-gray-400">//</span>
-    <div class="flex-grow border-t border-gray-400"></div>
-  </div>
-`;
-
 interface Props {
   blocks: Block[];
 }
@@ -72,7 +65,7 @@ const PostContent: NextPage<Props> = ({ blocks }) => {
           block.innerHtml,
         )}</div>`;
       } else if (block.tagName === "hr") {
-        contentHTML += contentDivider;
+        contentHTML += rawHtmlDivider;
       }
       contentHTML += "</p>";
     }
