@@ -12,7 +12,7 @@ import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
 import { FaSortAmountDown } from "@react-icons/all-files/fa/FaSortAmountDown";
 
 const getDateText = (date: Date): string => {
-  return `${date.getDate()} ${months[date.getMonth()]} ${date.getFullYear()}`;
+  return `${date.getDate().toString()} ${months[date.getMonth()] as string} ${date.getFullYear().toString()}`;
 };
 
 const getStartedAndCompleted = (game: {
@@ -75,13 +75,13 @@ const GameReviews: NextPage = () => {
           </Link>
           <button
             className="btn btn-secondary mx-auto my-2 sm:mx-0"
-            onClick={() =>
+            onClick={() => {
               (
                 document.getElementById(
                   "games-ranked-modal",
                 ) as HTMLDialogElement
-              ).showModal()
-            }
+              ).showModal();
+            }}
           >
             <FaSortAmountDown size={24} /> Games Ranked
           </button>

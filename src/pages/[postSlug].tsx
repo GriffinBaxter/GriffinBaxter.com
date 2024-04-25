@@ -34,7 +34,9 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
 export default Post;
 
 export const getStaticProps: GetStaticProps = async (context) => {
-  const post = await require(`../data/posts/${context.params?.postSlug}.json`);
+  const post = (await require(
+    `../data/posts/${context.params?.postSlug as string}.json`,
+  )) as SinglePost;
 
   let isProject = false;
   for (const category of post.categories.nodes) {

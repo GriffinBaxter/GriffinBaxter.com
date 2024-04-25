@@ -50,7 +50,7 @@ const PostHeader: NextPage<Props> = ({ post, isProject }) => {
               <div
                 key={category.slug}
                 className={`badge badge-lg ${
-                  languageBadgeColour[category.slug]
+                  languageBadgeColour[category.slug] as string
                 }`}
               >
                 {category.name}

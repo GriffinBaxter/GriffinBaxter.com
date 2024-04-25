@@ -28,7 +28,7 @@ const ProjectCard: NextPage<Props> = ({ projectObject: project }) => {
               Object.keys(languageBadgeColour).includes(category.slug) ? (
                 <div
                   key={category.slug}
-                  className={`badge ${languageBadgeColour[category.slug]}`}
+                  className={`badge ${languageBadgeColour[category.slug] as string}`}
                 >
                   {category.name}
                 </div>

@@ -38,17 +38,17 @@ const Projects: NextPage = () => {
             <button
               key={category.slug}
               className={`badge badge-lg ${
-                languageBadgeColour[category.slug]
+                languageBadgeColour[category.slug] as string
               } m-1 drop-shadow ${
                 selectedCategory && selectedCategory !== category.slug
                   ? "opacity-25"
-                  : null
+                  : ""
               }`}
-              onClick={() =>
+              onClick={() => {
                 selectedCategory === category.slug
                   ? setSelectedCategory(undefined)
-                  : setSelectedCategory(category.slug)
-              }
+                  : setSelectedCategory(category.slug);
+              }}
             >
               {category.name}
             </button>

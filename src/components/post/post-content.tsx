@@ -49,26 +49,24 @@ interface Props {
 
 const PostContent: NextPage<Props> = ({ blocks }) => {
   let contentHTML = "";
-  if (blocks) {
-    for (const block of blocks) {
-      contentHTML += `<p class="text-md sm:text-lg md:text-xl pt-8">`;
-      if (block.tagName === "p") {
-        contentHTML += styleLinks(block.innerHtml);
-      } else if (block.tagName === "h4") {
-        contentHTML += styleH4(block.innerHtml, block.attributes);
-      } else if (block.tagName === "ul") {
-        contentHTML += styleList(block.innerHtml);
-      } else if (block.tagName === "blockquote") {
-        contentHTML += styleQuote(block.innerHtml);
-      } else if (block.tagName === "figure") {
-        contentHTML += `<div class="flex flex-col items-center py-6">${styleImage(
-          block.innerHtml,
-        )}</div>`;
-      } else if (block.tagName === "hr") {
-        contentHTML += rawHtmlDivider;
-      }
-      contentHTML += "</p>";
+  for (const block of blocks) {
+    contentHTML += `<p class="text-md sm:text-lg md:text-xl pt-8">`;
+    if (block.tagName === "p") {
+      contentHTML += styleLinks(block.innerHtml);
+    } else if (block.tagName === "h4") {
+      contentHTML += styleH4(block.innerHtml, block.attributes);
+    } else if (block.tagName === "ul") {
+      contentHTML += styleList(block.innerHtml);
+    } else if (block.tagName === "blockquote") {
+      contentHTML += styleQuote(block.innerHtml);
+    } else if (block.tagName === "figure") {
+      contentHTML += `<div class="flex flex-col items-center py-6">${styleImage(
+        block.innerHtml,
+      )}</div>`;
+    } else if (block.tagName === "hr") {
+      contentHTML += rawHtmlDivider;
     }
+    contentHTML += "</p>";
   }
   return (
     <div className="pt-2" dangerouslySetInnerHTML={{ __html: contentHTML }} />
