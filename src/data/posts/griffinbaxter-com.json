@@ -16,8 +16,13 @@
       "attributes": []
     },
     {
-      "innerHtml": "This new version of the site is intended to be continually updated and improved.",
+      "innerHtml": "This new version of the site is intended to be continually updated and improved. A summary of site's history is shown below:",
       "tagName": "p",
+      "attributes": []
+    },
+    {
+      "innerHtml": "<li>1.0 – Initial Wordpress site\n<li>2.0 – New statically-generated NextJS site with Wordpress backend (WPGraphQL)\n<li>2.1 – Replaced the Wordpress backend with stored JSON and image files</li>\n<li>2.2 – Optimised for mobile screens</li>\n",
+      "tagName": "ul",
       "attributes": []
     }
   ],
