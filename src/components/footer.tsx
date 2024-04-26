@@ -5,13 +5,11 @@ import Link from "next/link";
 
 const FooterComponent: NextPage = () => {
   return (
-    <div className="mt-auto w-full bg-navbar-dark-blue">
-      <footer className="footer mx-auto max-w-[1200px] items-center bg-neutral p-4 text-neutral-content">
-        <div className="grid-flow-col items-center">
-          <p>© {new Date().getFullYear()} Griffin Baxter</p>
-        </div>
-        <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+    <div className="bg-navbar-dark-blue py-6 text-neutral-content">
+      <div className="container mx-auto flex max-w-[1200px] flex-col items-center justify-between px-6 sm:flex-row">
+        <div className="flex items-center space-x-4">
           <Link
+            className="hover:text-white"
             target="_blank"
             href="https://www.linkedin.com/in/griffinbaxter/"
             rel="noreferrer"
@@ -19,6 +17,7 @@ const FooterComponent: NextPage = () => {
             <FaLinkedin size={24}></FaLinkedin>
           </Link>
           <Link
+            className="hover:text-white"
             target="_blank"
             href="https://github.com/GriffinBaxter"
             rel="noreferrer"
@@ -26,7 +25,10 @@ const FooterComponent: NextPage = () => {
             <FaGithub size={24}></FaGithub>
           </Link>
         </div>
-      </footer>
+        <p className="mt-4 text-sm sm:mt-0">
+          © {new Date().getFullYear()} Griffin Baxter
+        </p>
+      </div>
     </div>
   );
 };
