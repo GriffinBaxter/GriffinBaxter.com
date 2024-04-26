@@ -218,6 +218,11 @@
     },
     { "name": "Soma", "started": [2022, 11, 17], "completed": [2023, 0, 23] },
     {
+      "name": "Grand Theft Auto: Vice City – The Definitive Edition",
+      "started": [2023, 11, 13],
+      "completed": [2024, 3, 26]
+    },
+    {
       "name": "Grand Theft Auto III – The Definitive Edition",
       "started": [2023, 9, 8],
       "completed": [2023, 11, 6]
@@ -316,10 +321,6 @@
     {
       "name": "Super Mario Bros. Wonder",
       "started": [2023, 10, 2]
-    },
-    {
-      "name": "Grand Theft Auto: Vice City – The Definitive Edition",
-      "started": [2023, 11, 13]
     },
     {
       "name": "Outer Wilds",
