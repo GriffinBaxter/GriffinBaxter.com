@@ -40,7 +40,11 @@ const styleQuote = (html: string) => {
 };
 
 const styleImage = (fileName: string) => {
-  return `<img src="/images/${fileName}" alt="Post Image" class="max-h-[675px]"/>`;
+  return `
+    <div class="flex flex-col items-center py-6">
+      <img src="/images/${fileName}" alt="Post Image" class="max-h-[675px]"/>
+    </div>
+  `;
 };
 
 interface Props {
@@ -60,9 +64,7 @@ const PostContent: NextPage<Props> = ({ blocks }) => {
     } else if (block.tagName === "blockquote") {
       contentHTML += styleQuote(block.innerHtml);
     } else if (block.tagName === "figure") {
-      contentHTML += `<div class="flex flex-col items-center py-6">${styleImage(
-        block.innerHtml,
-      )}</div>`;
+      contentHTML += styleImage(block.innerHtml);
     } else if (block.tagName === "hr") {
       contentHTML += rawHtmlDivider;
     }

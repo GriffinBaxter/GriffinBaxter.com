@@ -6,6 +6,7 @@ import type { SinglePost } from "../models";
 import projectsJson from "../data/projects.json";
 import reviewsJson from "../data/reviews.json";
 import PostHeader from "../components/post/post-header";
+import PostGallery from "../components/post/post-gallery";
 
 interface Props {
   post: SinglePost;
@@ -13,6 +14,10 @@ interface Props {
 }
 
 const Post: NextPage<Props> = ({ post, isProject }) => {
+  const galleryBlockIndex = post.blocks.findLastIndex(
+    (block) => block.tagName === "h4" && block.innerHtml === "Gallery",
+  );
+
   return (
     <>
       <CustomHead title={post.title} />
@@ -25,7 +30,16 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
 
       <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-8">
         <PostHeader post={post} isProject={isProject} />
-        <PostContent blocks={post.blocks} />
+        <PostContent
+          blocks={
+            galleryBlockIndex !== -1
+              ? post.blocks.slice(0, galleryBlockIndex)
+              : post.blocks
+          }
+        />
+        {isProject && galleryBlockIndex !== -1 ? (
+          <PostGallery blocks={post.blocks.slice(galleryBlockIndex + 1)} />
+        ) : null}
       </main>
     </>
   );
