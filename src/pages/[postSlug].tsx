@@ -17,6 +17,7 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
   const galleryBlockIndex = post.blocks.findLastIndex(
     (block) => block.tagName === "h4" && block.innerHtml === "Gallery",
   );
+  const hasGallery = isProject && galleryBlockIndex !== -1;
 
   return (
     <>
@@ -32,12 +33,10 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
         <PostHeader post={post} isProject={isProject} />
         <PostContent
           blocks={
-            galleryBlockIndex !== -1
-              ? post.blocks.slice(0, galleryBlockIndex)
-              : post.blocks
+            hasGallery ? post.blocks.slice(0, galleryBlockIndex) : post.blocks
           }
         />
-        {isProject && galleryBlockIndex !== -1 ? (
+        {hasGallery ? (
           <ProjectGallery blocks={post.blocks.slice(galleryBlockIndex + 1)} />
         ) : null}
       </main>
