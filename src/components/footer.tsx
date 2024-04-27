@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const FooterComponent: NextPage = () => {
   return (
-    <div className="bg-navbar-dark-blue py-6 text-neutral-content">
+    <div className="mt-auto bg-navbar-dark-blue py-6 text-neutral-content">
       <div className="container mx-auto flex max-w-[1200px] flex-col items-center justify-between px-6 sm:flex-row">
         <div className="flex items-center space-x-4">
           <Link
