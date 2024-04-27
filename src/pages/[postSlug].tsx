@@ -6,7 +6,7 @@ import type { SinglePost } from "../models";
 import projectsJson from "../data/projects.json";
 import reviewsJson from "../data/reviews.json";
 import PostHeader from "../components/post/post-header";
-import PostGallery from "../components/post/post-gallery";
+import ProjectGallery from "../components/post/project/project-gallery";
 
 interface Props {
   post: SinglePost;
@@ -38,7 +38,7 @@ const Post: NextPage<Props> = ({ post, isProject }) => {
           }
         />
         {isProject && galleryBlockIndex !== -1 ? (
-          <PostGallery blocks={post.blocks.slice(galleryBlockIndex + 1)} />
+          <ProjectGallery blocks={post.blocks.slice(galleryBlockIndex + 1)} />
         ) : null}
       </main>
     </>

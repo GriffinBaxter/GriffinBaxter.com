@@ -1,12 +1,12 @@
 import type { NextPage } from "next";
-import type { Block } from "../../models";
+import type { Block } from "../../../models";
 import Image from "next/image";
 
 interface Props {
   blocks: Block[];
 }
 
-const PostGallery: NextPage<Props> = ({ blocks }) => {
+const ProjectGallery: NextPage<Props> = ({ blocks }) => {
   return (
     <div className="carousel w-full py-6">
       {blocks.map((block, index) => {
@@ -45,4 +45,4 @@ const PostGallery: NextPage<Props> = ({ blocks }) => {
   );
 };
 
-export default PostGallery;
+export default ProjectGallery;

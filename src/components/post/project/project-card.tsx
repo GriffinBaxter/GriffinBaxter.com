@@ -1,6 +1,6 @@
 import { type NextPage } from "next";
-import type { Project } from "../../models";
-import { languageBadgeColour } from "./post-header";
+import type { Project } from "../../../models";
+import { languageBadgeColour } from "../post-header";
 import Image from "next/image";
 import Link from "next/link";
 
