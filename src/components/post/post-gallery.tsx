@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import type { Block } from "../../models";
+import Image from "next/image";
 
 interface Props {
   blocks: Block[];
@@ -16,10 +17,12 @@ const PostGallery: NextPage<Props> = ({ blocks }) => {
             key={block.innerHtml}
             className="carousel-item relative aspect-[16/9] w-full"
           >
-            <img
+            <Image
+              className="mx-auto max-h-[675px]"
               src={`/images/${block.innerHtml}`}
               alt={`Gallery Image (Slide ${slideNumber.toString()})`}
-              className="mx-auto max-h-[675px]"
+              fill={true}
+              style={{ objectFit: "contain" }}
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
               <a
