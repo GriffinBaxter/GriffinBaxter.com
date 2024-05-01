@@ -59,7 +59,9 @@ export default async function Page({ params }: Props) {
 }
 
 export const generateStaticParams = () => {
-  return [...projectsJson, ...reviewsJson].map(({ slug }) => `/${slug}`);
+  return [...projectsJson, ...reviewsJson].map(({ slug }) => ({
+    postSlug: slug,
+  }));
 };
 
 export const dynamicParams = false;
