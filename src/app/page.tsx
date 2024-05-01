@@ -1,5 +1,4 @@
-import type { NextPage } from "next";
-import CustomHead from "../components/custom-head";
+import type { Metadata } from "next";
 import Navbar, { NavigationPage } from "../components/navbar";
 import Divider from "../components/divider";
 import ProjectCard from "../components/post/project/project-card";
@@ -14,11 +13,19 @@ const featuredProjectSlugs = [
   "guess-it",
 ];
 
-const Home: NextPage = () => {
+export const customMetadata = (name: string): Metadata => {
+  return {
+    title: name === "Home" ? "Griffin Baxter" : `${name} - Griffin Baxter`,
+    description: name,
+    icons: "/favicon.ico",
+  };
+};
+
+export const metadata: Metadata = customMetadata("Home");
+
+export default function Page() {
   return (
     <>
-      <CustomHead title="Home" />
-
       <Navbar currentPage={NavigationPage.Home} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
@@ -41,7 +48,7 @@ const Home: NextPage = () => {
             .map((project) =>
               project ? (
                 <div key={project.slug} className="max-w-sm">
-                  <ProjectCard projectObject={project} />
+                  <ProjectCard project={project} />
                 </div>
               ) : null,
             )}
@@ -49,6 +56,4 @@ const Home: NextPage = () => {
       </main>
     </>
   );
-};
-
-export default Home;
+}

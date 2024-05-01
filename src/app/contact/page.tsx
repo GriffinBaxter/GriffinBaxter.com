@@ -1,16 +1,16 @@
-import type { NextPage } from "next";
-import CustomHead from "../components/custom-head";
-import Navbar, { NavigationPage } from "../components/navbar";
+import type { Metadata } from "next";
+import { customMetadata } from "../page";
+import Navbar, { NavigationPage } from "../../components/navbar";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
-import Divider from "../components/divider";
+import Divider from "../../components/divider";
 import Link from "next/link";
 
-const Contact: NextPage = () => {
+export const metadata: Metadata = customMetadata("Contact");
+
+export default function Page() {
   return (
     <>
-      <CustomHead title="Contact" />
-
       <Navbar currentPage={NavigationPage.Contact} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
@@ -59,6 +59,4 @@ const Contact: NextPage = () => {
       </main>
     </>
   );
-};
-
-export default Contact;
+}

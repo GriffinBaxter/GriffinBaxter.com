@@ -1,9 +1,8 @@
-import { type NextPage } from "next";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import Link from "next/link";
 
-const FooterComponent: NextPage = () => {
+export default function FooterComponent() {
   return (
     <div className="mt-auto bg-navbar-dark-blue py-6 text-neutral-content">
       <div className="container mx-auto flex max-w-[1200px] flex-col items-center justify-between px-6 sm:flex-row">
@@ -31,6 +30,4 @@ const FooterComponent: NextPage = () => {
       </div>
     </div>
   );
-};
-
-export default FooterComponent;
+}

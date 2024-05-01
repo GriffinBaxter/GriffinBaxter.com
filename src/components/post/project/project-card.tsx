@@ -1,14 +1,13 @@
-import { type NextPage } from "next";
 import type { Project } from "../../../models";
 import { languageBadgeColour } from "../post-header";
 import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
-  projectObject: Project;
+  project: Project;
 }
 
-const ProjectCard: NextPage<Props> = ({ projectObject: project }) => {
+export default function ProjectCard({ project }: Props) {
   return (
     <Link href={project.slug}>
       <div className="card max-w-96 bg-base-100 shadow-xl">
@@ -39,6 +38,4 @@ const ProjectCard: NextPage<Props> = ({ projectObject: project }) => {
       </div>
     </Link>
   );
-};
-
-export default ProjectCard;
+}

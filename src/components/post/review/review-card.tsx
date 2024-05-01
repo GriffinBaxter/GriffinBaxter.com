@@ -1,14 +1,13 @@
-import { type NextPage } from "next";
 import { type Review } from "../../../models";
 import { months } from "../post-header";
 import Link from "next/link";
 import Image from "next/image";
 
 interface Props {
-  reviewObject: Review;
+  review: Review;
 }
 
-const ReviewCard: NextPage<Props> = ({ reviewObject: review }) => {
+export default function ReviewCard({ review }: Props) {
   const date = new Date(review.date);
   return (
     <Link href={review.slug}>
@@ -31,6 +30,4 @@ const ReviewCard: NextPage<Props> = ({ reviewObject: review }) => {
       </div>
     </Link>
   );
-};
-
-export default ReviewCard;
+}

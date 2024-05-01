@@ -1,4 +1,3 @@
-import type { NextPage } from "next";
 import type { SinglePost } from "../../models";
 import Image from "next/image";
 
@@ -33,7 +32,7 @@ interface Props {
   isProject: boolean;
 }
 
-const PostHeader: NextPage<Props> = ({ post, isProject }) => {
+export default function PostHeader({ post, isProject }: Props) {
   const date = new Date(post.date);
   return (
     <>
@@ -73,6 +72,4 @@ const PostHeader: NextPage<Props> = ({ post, isProject }) => {
       ></Image>
     </>
   );
-};
-
-export default PostHeader;
+}

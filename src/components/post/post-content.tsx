@@ -1,4 +1,3 @@
-import { type NextPage } from "next";
 import type { Block, BlockAttribute } from "../../models";
 import { rawHtmlDivider } from "../divider";
 
@@ -51,7 +50,7 @@ interface Props {
   blocks: Block[];
 }
 
-const PostContent: NextPage<Props> = ({ blocks }) => {
+export default function PostContent({ blocks }: Props) {
   let contentHTML = "";
   for (const block of blocks) {
     contentHTML += `<p class="text-md sm:text-lg md:text-xl pt-8">`;
@@ -73,6 +72,4 @@ const PostContent: NextPage<Props> = ({ blocks }) => {
   return (
     <div className="pt-2" dangerouslySetInnerHTML={{ __html: contentHTML }} />
   );
-};
-
-export default PostContent;
+}

@@ -1,5 +1,3 @@
-import { type NextPage } from "next";
-
 export const rawHtmlDivider = `
   <div class="relative flex w-full items-center py-5 py-8">
     <div class="flex-grow border-t border-gray-400"></div>
@@ -8,7 +6,7 @@ export const rawHtmlDivider = `
   </div>
 `;
 
-const Divider: NextPage = () => {
+export default function Divider() {
   return (
     <div className="relative flex w-full items-center py-5 py-8">
       <div className="flex-grow border-t border-gray-400"></div>
@@ -16,6 +14,4 @@ const Divider: NextPage = () => {
       <div className="flex-grow border-t border-gray-400"></div>
     </div>
   );
-};
-
-export default Divider;
+}

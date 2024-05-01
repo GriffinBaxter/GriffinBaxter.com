@@ -1,4 +1,3 @@
-import { type NextPage } from "next";
 import Link from "next/link";
 
 export enum NavigationPage {
@@ -39,7 +38,7 @@ interface Props {
   currentPage: NavigationPage;
 }
 
-const Navbar: NextPage<Props> = ({ currentPage }) => {
+export default function Navbar({ currentPage }: Props) {
   const links = (
     <ul className="menu menu-sm z-[1] w-52 rounded-box bg-base-100 px-1 shadow min-[0px]:max-md:dropdown-content md:menu-horizontal md:menu-md md:w-auto md:bg-transparent">
       {navbarLink(NavigationPage.Home, currentPage)}
@@ -84,6 +83,4 @@ const Navbar: NextPage<Props> = ({ currentPage }) => {
       </div>
     </div>
   );
-};
-
-export default Navbar;
+}

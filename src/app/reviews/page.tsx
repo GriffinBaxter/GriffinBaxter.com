@@ -1,15 +1,15 @@
-import type { NextPage } from "next";
-import CustomHead from "../components/custom-head";
-import Navbar, { NavigationPage } from "../components/navbar";
-import ReviewCard from "../components/post/review/review-card";
-import reviewsJson from "../data/reviews.json";
-import Divider from "../components/divider";
-import gamesRankedJson from "../data/games-ranked.json";
+import type { Metadata } from "next";
+import { customMetadata } from "../page";
+import Navbar, { NavigationPage } from "../../components/navbar";
+import ReviewCard from "../../components/post/review/review-card";
+import reviewsJson from "../../data/reviews.json";
+import Divider from "../../components/divider";
+import gamesRankedJson from "../../data/games-ranked.json";
 import Link from "next/link";
-import { months } from "../components/post/post-header";
+import { months } from "../../components/post/post-header";
 import { SiLetterboxd } from "@react-icons/all-files/si/SiLetterboxd";
 import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
-import { FaSortAmountDown } from "@react-icons/all-files/fa/FaSortAmountDown";
+import ReviewsPage from "./reviews-page";
 
 const getDateText = (date: Date): string => {
   return `${date.getDate().toString()} ${months[date.getMonth()] as string} ${date.getFullYear().toString()}`;
@@ -40,11 +40,11 @@ const getStartedAndCompleted = (game: {
   }
 };
 
-const GameReviews: NextPage = () => {
+export const metadata: Metadata = customMetadata("Reviews");
+
+export default function Page() {
   return (
     <>
-      <CustomHead title="Reviews" />
-
       <Navbar currentPage={NavigationPage.Reviews} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
@@ -73,18 +73,7 @@ const GameReviews: NextPage = () => {
               <FaGamepad size={24} /> Backloggd
             </button>
           </Link>
-          <button
-            className="btn btn-secondary mx-auto my-2 sm:mx-0"
-            onClick={() => {
-              (
-                document.getElementById(
-                  "games-ranked-modal",
-                ) as HTMLDialogElement
-              ).showModal();
-            }}
-          >
-            <FaSortAmountDown size={24} /> Games Ranked
-          </button>
+          <ReviewsPage />
           <dialog id="games-ranked-modal" className="modal">
             <div className="modal-box">
               <h3 className="pb-6 pt-2 text-center text-2xl font-bold">
@@ -138,13 +127,11 @@ const GameReviews: NextPage = () => {
         <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
           {reviewsJson.map((review) => (
             <div key={review.slug} className="max-w-sm">
-              <ReviewCard reviewObject={review} />
+              <ReviewCard review={review} />
             </div>
           ))}
         </div>
       </main>
     </>
   );
-};
-
-export default GameReviews;
+}
