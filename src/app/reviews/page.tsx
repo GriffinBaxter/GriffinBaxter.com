@@ -9,7 +9,7 @@ import Link from "next/link";
 import { months } from "../../components/post/post-header";
 import { SiLetterboxd } from "@react-icons/all-files/si/SiLetterboxd";
 import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
-import ReviewsPage from "./reviews-page";
+import GamesRankedClient from "./games-ranked-client";
 
 const getDateText = (date: Date): string => {
   return `${date.getDate().toString()} ${months[date.getMonth()] as string} ${date.getFullYear().toString()}`;
@@ -73,7 +73,7 @@ export default function Page() {
               <FaGamepad size={24} /> Backloggd
             </button>
           </Link>
-          <ReviewsPage />
+          <GamesRankedClient />
           <dialog id="games-ranked-modal" className="modal">
             <div className="modal-box">
               <h3 className="pb-6 pt-2 text-center text-2xl font-bold">

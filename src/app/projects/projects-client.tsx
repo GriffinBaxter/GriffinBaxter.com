@@ -10,7 +10,7 @@ interface Props {
   categories: Category[];
 }
 
-export default function ProjectsPage({ categories }: Props) {
+export default function ProjectsClient({ categories }: Props) {
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
     undefined,
   );
