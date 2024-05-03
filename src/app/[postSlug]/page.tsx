@@ -6,19 +6,28 @@ import projectsJson from "../../data/projects.json";
 import reviewsJson from "../../data/reviews.json";
 import PostHeader from "../../components/post/post-header";
 import ProjectGallery from "../../components/post/project/project-gallery";
+import { notFound } from "next/navigation";
+
+const slugs = [...projectsJson, ...reviewsJson].map(({ slug }) => slug);
 
 interface Props {
   params: { postSlug: string };
 }
 
 export async function generateMetadata({ params }: Props) {
-  const post = (await require(
-    `../../data/posts/${params.postSlug}.json`,
-  )) as SinglePost;
-  return customMetadata(post.title);
+  if (slugs.includes(params.postSlug)) {
+    const post = (await require(
+      `../../data/posts/${params.postSlug}.json`,
+    )) as SinglePost;
+    return customMetadata(post.title);
+  }
 }
 
 export default async function Page({ params }: Props) {
+  if (!slugs.includes(params.postSlug)) {
+    notFound();
+  }
+
   const post = (await require(
     `../../data/posts/${params.postSlug}.json`,
   )) as SinglePost;
@@ -59,9 +68,5 @@ export default async function Page({ params }: Props) {
 }
 
 export const generateStaticParams = () => {
-  return [...projectsJson, ...reviewsJson].map(({ slug }) => ({
-    postSlug: slug,
-  }));
+  return slugs.map((slug) => ({ postSlug: slug }));
 };
-
-export const dynamicParams = false;
