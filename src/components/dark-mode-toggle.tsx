@@ -1,0 +1,41 @@
+"use client";
+
+import { setDarkMode } from "./theme-controller";
+import { MdOutlineDarkMode } from "@react-icons/all-files/md/MdOutlineDarkMode";
+import { MdOutlineLightMode } from "@react-icons/all-files/md/MdOutlineLightMode";
+import { useEffect, useState } from "react";
+
+interface Props {
+  isDarkModeCookie?: string;
+}
+
+export default function DarkModeToggle({ isDarkModeCookie }: Props) {
+  const [isDarkMode, setIsDarkMode] = useState<string | undefined>(
+    isDarkModeCookie,
+  );
+
+  useEffect(() => {
+    if (isDarkMode === undefined) {
+      setIsDarkMode(
+        window.matchMedia("(prefers-color-scheme: dark)").matches.toString(),
+      );
+    }
+  }, [isDarkMode, setIsDarkMode]);
+
+  return isDarkMode === undefined ? (
+    <></>
+  ) : (
+    <label className="flex cursor-pointer gap-2 pl-4">
+      <MdOutlineLightMode size={24} />
+      <input
+        type="checkbox"
+        defaultChecked={isDarkMode === "true"}
+        onChange={(event) => {
+          event.target.checked ? setDarkMode(true) : setDarkMode(false);
+        }}
+        className="toggle"
+      />
+      <MdOutlineDarkMode size={24} />
+    </label>
+  );
+}

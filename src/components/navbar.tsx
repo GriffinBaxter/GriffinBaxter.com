@@ -49,7 +49,7 @@ export default function Navbar({ currentPage }: Props) {
   );
 
   return (
-    <div className="mb-10 w-full bg-navbar-dark-blue">
+    <div className="mb-10 w-full bg-neutral">
       <div className="navbar mx-auto max-w-[1200px] bg-neutral text-neutral-content">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost text-xl normal-case">

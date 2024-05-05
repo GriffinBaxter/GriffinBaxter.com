@@ -44,7 +44,7 @@ export default function Page() {
             href="https://www.linkedin.com/in/griffinbaxter/"
             rel="noreferrer"
           >
-            <FaLinkedin size={100} color="0d66c2" />
+            <FaLinkedin className="text-primary" size={100} />
             <p className="pt-2 text-center text-lg font-bold">LinkedIn</p>
           </Link>
           <Link
@@ -52,7 +52,7 @@ export default function Page() {
             href="https://github.com/GriffinBaxter"
             rel="noreferrer"
           >
-            <FaGithubSquare size={100} color="24292d" />
+            <FaGithubSquare className="text-base-content" size={100} />
             <p className="pt-2 text-center text-lg font-bold">GitHub</p>
           </Link>
         </div>
