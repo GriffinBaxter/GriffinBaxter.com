@@ -119,6 +119,11 @@
     },
     { "name": "The Legend of Zelda: The Wind Waker HD" },
     {
+      "name": "Super Mario Bros. Wonder",
+      "started": [2023, 10, 2],
+      "completed": [2024, 10, 2]
+    },
+    {
       "name": "Doom: Eternal",
       "started": [2020, 3, 6],
       "completed": [2020, 3, 18]
@@ -215,6 +220,11 @@
       "name": "Last Day of June",
       "started": [2019, 0, 14],
       "completed": [2019, 0, 14]
+    },
+    {
+      "name": "Mind Over Magnet",
+      "started": [2024, 9, 16],
+      "completed": [2024, 9, 17]
     },
     {
       "name": "Fahrenheit: Indigo Prophecy",
@@ -330,14 +340,6 @@
       "started": "2022"
     },
     {
-      "name": "Saints Row The Third Remastered",
-      "started": [2023, 7, 5]
-    },
-    {
-      "name": "Super Mario Bros. Wonder",
-      "started": [2023, 10, 2]
-    },
-    {
       "name": "DUSK",
       "started": [2024, 1, 6]
     },
@@ -348,6 +350,10 @@
     {
       "name": "Grand Theft Auto: San Andreas – The Definitive Edition",
       "started": [2024, 5, 14]
+    },
+    {
+      "name": "The Witcher 3: Wild Hunt",
+      "started": [2024, 6, 6]
     }
   ]
 }
