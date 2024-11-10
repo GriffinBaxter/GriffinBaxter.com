@@ -31,7 +31,11 @@ export default function DarkModeToggle({ isDarkModeCookie }: Props) {
         type="checkbox"
         defaultChecked={isDarkMode === "true"}
         onChange={(event) => {
-          event.target.checked ? setDarkMode(true) : setDarkMode(false);
+          if (event.target.checked) {
+            setDarkMode(true);
+          } else {
+            setDarkMode(false);
+          }
         }}
         className="toggle"
       />

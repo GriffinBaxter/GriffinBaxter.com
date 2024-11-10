@@ -11,12 +11,12 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  const isDarkModeCookie = cookies().get("isDarkMode")?.value;
+  const isDarkModeCookie = (await cookies()).get("isDarkMode")?.value;
 
   return (
     <html lang="en">

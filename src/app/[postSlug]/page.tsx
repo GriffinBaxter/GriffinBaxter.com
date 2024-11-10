@@ -11,25 +11,29 @@ import { notFound } from "next/navigation";
 const slugs = [...projectsJson, ...reviewsJson].map(({ slug }) => slug);
 
 interface Props {
-  params: { postSlug: string };
+  params: Promise<{ postSlug: string }>;
 }
 
-export async function generateMetadata({ params }: Props) {
+export async function generateMetadata(props: Props) {
+  const params = await props.params;
+
   if (slugs.includes(params.postSlug)) {
-    const post = (await require(
-      `../../data/posts/${params.postSlug}.json`,
+    const post = (await import(
+      `../../data/posts/${params.postSlug}.json`
     )) as SinglePost;
     return customMetadata(post.title);
   }
 }
 
-export default async function Page({ params }: Props) {
+export default async function Page(props: Props) {
+  const params = await props.params;
+
   if (!slugs.includes(params.postSlug)) {
     notFound();
   }
 
-  const post = (await require(
-    `../../data/posts/${params.postSlug}.json`,
+  const post = (await import(
+    `../../data/posts/${params.postSlug}.json`
   )) as SinglePost;
 
   let isProject = false;

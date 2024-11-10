@@ -29,9 +29,11 @@ export default function ProjectsClient({ categories }: Props) {
                 : ""
             }`}
             onClick={() => {
-              selectedCategory === category.slug
-                ? setSelectedCategory(undefined)
-                : setSelectedCategory(category.slug);
+              if (selectedCategory === category.slug) {
+                setSelectedCategory(undefined);
+              } else {
+                setSelectedCategory(category.slug);
+              }
             }}
           >
             {category.name}

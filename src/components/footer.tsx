@@ -4,8 +4,8 @@ import Link from "next/link";
 import { cookies } from "next/headers";
 import DarkModeToggle from "./dark-mode-toggle";
 
-export default function FooterComponent() {
-  const isDarkModeCookie = cookies().get("isDarkMode")?.value;
+export default async function FooterComponent() {
+  const isDarkModeCookie = (await cookies()).get("isDarkMode")?.value;
 
   return (
     <div className="mt-auto bg-neutral py-6 text-neutral-content">
