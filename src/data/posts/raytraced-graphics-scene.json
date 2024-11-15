@@ -2,60 +2,23 @@
   "blocks": [
     {
       "innerHtml": "This raytraced graphics scene was created in OpenGL 2 using C++ for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC363&occurrence=21S1(C)&year=2021\" rel=\"noreferrer noopener\">COSC 363 (Computer Graphics)</a>, during Semester 1 of 2021. The project itself received an A+ (97.5%) grade for the course.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "The raytraced scene showcases reflections, refractions, transparency, fog, texturing, lighting and shadows. Anti-aliasing is also used in the scene, with super-sampling and adaptive sampling.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "",
-      "tagName": "hr",
-      "attributes": []
+      "tagName": "hr"
     },
     {
       "innerHtml": "Gallery",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "Raytraced Graphics Scene 2.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "wide"
-        },
-        {
-          "name": "id",
-          "value": "830"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     }
   ],
   "title": "Raytraced Graphics Scene",

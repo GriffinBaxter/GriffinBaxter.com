@@ -26,7 +26,7 @@ export interface BlockAttribute {
 export interface Block {
   innerHtml: string;
   tagName: string;
-  attributes: BlockAttribute[];
+  attributes?: BlockAttribute[];
 }
 
 export interface SinglePost extends Project, Review {

@@ -2,183 +2,79 @@
   "blocks": [
     {
       "innerHtml": "GitHub Repository: <a href=\"https://github.com/GriffinBaxter/GreenFlights\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/GreenFlights</a>",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "This flight tracking application, GreenFlights, was created in Java with a team of four other students for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG202&occurrence=20S2(C)&year=2020\" rel=\"noreferrer noopener\">SENG 202 (Software Engineering Project Workshop)</a>, during Semester 2 of 2020. I received a B+ grade for the course.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "This application makes use of an SQL database (SQLite) for storing, filtering and sorting data. The application is based around offsetting and reducing carbon emissions on series of flights.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "The airline, airport, route and flight path tabs of the application are primarily filled with tables for uploading and inserting data into, deleting data from, and updating any data records. Data can be manually entered or uploaded via specified <a href=\"https://openflights.org/data.html\" rel=\"noreferrer noopener\">OpenFlights</a> or <a href=\"https://flightplandatabase.com/planner#\" rel=\"noreferrer noopener\">Flight Planner</a> data formats. The map tab allows routes and airports to be visualised via the Google Maps API. Selected routes from the routes tab can be loaded into the emissions tab for calculating per-person carbon emissions. Once routes are loaded in, emissions are calculated in terms of carbon dioxide. Ways to offset emissions are also given in terms of calculated environmental donation and tree equivalent values.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "",
-      "tagName": "hr",
-      "attributes": []
+      "tagName": "hr"
     },
     {
       "innerHtml": "Gallery",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "GreenFlights Screenshot 2.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "587"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 3.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "588"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 4.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "589"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 5.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "576"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 6.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "577"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 7.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "578"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 8.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "579"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 9.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "580"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 10.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "581"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 11.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "582"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 12.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "583"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 13.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "584"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GreenFlights Screenshot 14.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "585"
-        }
-      ]
+      "tagName": "figure"
     }
   ],
   "title": "GreenFlights",

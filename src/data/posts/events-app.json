@@ -2,93 +2,63 @@
   "blocks": [
     {
       "innerHtml": "GitHub Repository (Backend): <a href=\"https://github.com/GriffinBaxter/Events-App-Backend\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/Events-App-Backend</a>",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "GitHub Repository (Frontend / Client): <a href=\"https://github.com/GriffinBaxter/Events-App\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/Events-App</a>",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "This events web app was created in JavaScript with a Vue.js 3 client (making use of Bootstrap and Element Plus) and a backend RESTful API (interacting with MySQL database server) for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG365&occurrence=21S1(C)&year=2021\" rel=\"noreferrer noopener\">SENG 365 (Web Computing Architectures)</a>, during Semester 1 of 2021. The project itself received an A+ (98.75%) grade for the backend (top in class) and an A+ (90%) grade for the frontend client for the course.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "The web app allows for users to register/login and create, view, modify, delete and attend events with the intention of multiple users making use of the app.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "",
-      "tagName": "hr",
-      "attributes": []
+      "tagName": "hr"
     },
     {
       "innerHtml": "Gallery",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "Events App 1.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "Events App 2.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "Events App 4.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "Events App 5.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "Events App 6.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "Events App 7.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "Events App 8.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "Events App 9.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "Events App 10.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     }
   ],
   "title": "Events App",

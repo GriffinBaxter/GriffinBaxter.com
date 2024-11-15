@@ -2,246 +2,79 @@
   "blocks": [
     {
       "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/Guess-it\">GitHub.com/GriffinBaxter/Guess-it</a>",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "This Android game, “Guess it!”, was created in Kotlin with a team of two other students for one of my University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG440&occurrence=22S2(C)&year=2022\">SENG 440 (Special Topic: Topics in Mobile Computing)</a>, during Semester 2 of 2022. I received an A+ grade for the course.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "“Guess it!” is a two-player mobile game where players can guess where a friend’s photo has been taken. The main goal of our application is to encourage users to go out into the world and take photos of locations they think would be fun for their friends to guess. At the same time, we wanted to provide functionality that would allow players to use photos they have already taken at a prior date. Additionally, “Guess it!” was designed to provide seamless connectivity between two devices, so users do not have to know how to set up device advertising or discovery when they wish to play a round.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "“Guess it!” was developed using a single-activity architecture where each screen is a fragment. XML was used for declaratively creating the user interface because of its greater interoperability with some Android APIs such as the Preferences and Camera APIs. We chose to use the <a href=\"https://developers.google.com/nearby\" rel=\"noreferrer noopener\">Nearby API</a> for inter-device connectivity as it provides a great abstraction of the lower-level connectivity libraries present on Android devices.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "We also chose to use <a rel=\"noreferrer noopener\" href=\"https://developer.android.com/training/dependency-injection/hilt-android\">Dagger Hilt</a> for dependency injection, with a clearly separated<br>architecture with one fragment dedicated to a single purpose, along with ViewModels as needed. This approach allowed us to keep our codebase easy to modify and extend. Additionally, this allowed us to more easily encapsulate and provide <a rel=\"noreferrer noopener\" href=\"https://developers.google.com/nearby\">Nearby API</a> functionality throughout the app whenever required.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "The app also makes use of camera interaction for taking photos within the app, <a rel=\"noreferrer noopener\" href=\"https://developers.google.com/ml-kit\">ML Kit</a> for labelling selected images, implicit intents for sharing scores, data persistence, notifications for when the other player has finished guessing, preferences for a dark theme and modifying the number of photos displayed per row, a <a rel=\"noreferrer noopener\" href=\"https://developer.android.com/develop/ui/views/launch/splash-screen\">splash screen</a>, <a rel=\"noreferrer noopener\" href=\"https://docs.mapbox.com/android/maps/guides/\">Mapbox</a> for showing the map, <a href=\"https://square.github.io/picasso/\" rel=\"noreferrer noopener\">Picasso</a> for displaying images, and supports both landscape and portrait orientations.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "",
-      "tagName": "hr",
-      "attributes": []
+      "tagName": "hr"
     },
     {
       "innerHtml": "Gallery",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "GuessIt02.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3543"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt03.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3544"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt04.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3545"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt05.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3546"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt06.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3547"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt07.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3548"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt08.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3549"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt09.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3550"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt10.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3551"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt11.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3552"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "GuessIt12.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3553"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     }
   ],
   "title": "Guess it!",

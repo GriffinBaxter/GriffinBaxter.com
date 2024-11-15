@@ -2,105 +2,35 @@
   "blocks": [
     {
       "innerHtml": "This terrain model scene was created in OpenGL 4 using C++ for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC422&occurrence=22S2(C)&year=2022\" rel=\"noreferrer noopener\">COSC 422 (Advanced Computer Graphics)</a>, during Semester 2 of 2022. The project itself received an A+ (100%) grade for the course.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "This terrain depicts a scene with mountains, consisting of grass, dirt, snow, and water. Using the arrow keys, the scene can be interacted with to move around. Using the arrow keys, the scene can be interacted with to move around. The scene makes use of adjustable snow and water levels, fog, smooth shading, and multiple terrain models that can be swapped between.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "",
-      "tagName": "hr",
-      "attributes": []
+      "tagName": "hr"
     },
     {
       "innerHtml": "Gallery",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "Terrain02.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3511"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "Terrain03.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3512"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "Terrain04.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3513"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "Terrain05.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3514"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     }
   ],
   "title": "Terrain Model",

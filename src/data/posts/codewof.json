@@ -2,112 +2,51 @@
   "blocks": [
     {
       "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/uccser/codewof\">GitHub.com/uccser/codewof</a>",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "GitHub Pull Request: <a rel=\"noreferrer noopener\" href=\"https://github.com/uccser/codewof/pull/557\">GitHub.com/uccser/codewof/pull/557</a>",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "Project Report: <a rel=\"noreferrer noopener\" href=\"https://github.com/uccser/codewof/blob/develop/project-reports/2022%20-%20Skill%20tracking%20and%20recommendations%20-%20Griffin%20Baxter.pdf\">GitHub.com/uccser/codewof/blob/develop/project-reports/2022%20-%20Skill%20tracking%20and%20recommendations%20-%20Griffin%20Baxter.pdf</a>",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "This project for implementing skill tracking and recommendations into CodeWOF was completed for one of my University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG402&occurrence=22W(C)&year=2022\">SENG 402 (Software Engineering Research Project)</a>, during Semesters 1 and 2 of 2022. The project was conducted with the <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/engineering/schools/csse/research/cse/\">Computer Science Education Research Group (CSERG)</a>. <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/engineering/contact-us/people/tim-bell.html\">Tim Bell</a>, the head of CSERG, was the supervisor for this project. Jack Morgan, the technical lead of CSERG (at the time), was also heavily involved. I received an A grade for the course.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "<a rel=\"noreferrer noopener\" href=\"https://www.codewof.co.nz/\">CodeWOF</a> was created in the <a rel=\"noreferrer noopener\" href=\"https://www.djangoproject.com/\">Django</a> Python web framework, and makes use of <a rel=\"noreferrer noopener\" href=\"https://getbootstrap.com/\">Bootstrap</a>, <a rel=\"noreferrer noopener\" href=\"https://sass-lang.com/\">Sass</a>, and JavaScript scripts for some of its functionality.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "<p>CodeWOF is a web application developed by the University of Canterbury Computer Science Education Research Group. The app’s purpose is to help school teachers maintain and revise their programming knowledge with the use of various coding exercises. At the start of this project, all programming questions on CodeWOF were laid out on a single page, which caused issues when users chose a question to attempt. The solution involved modifying CodeWOF to include descriptive tags and filtering for each programming question, tracking the proficiency of users’ programming skills, and using this information to suggest exercises for the user to perform. In this modified version of CodeWOF, two question recommendations are provided to users each time they navigate to the site, and are uniquely generated based on a given user’s tracked skills. As part of this solution, research was conducted on the teaching, refreshing, tracking, and recommendation of programming skills. After the modifications were completed, the improvements to CodeWOF were evaluated through a survey sent to digital technologies teachers around New Zealand. This evaluation showed that while most users did not find the original questions page to be too bad, almost all survey respondents found the new version of CodeWOF to be significantly better. Notably, users liked the filtering panel, the new questions page with question tags and filtering, and appreciated the question recommendations.</p>Final Report Abstract <a rel=\"noreferrer noopener\" href=\"https://github.com/uccser/codewof/blob/develop/project-reports/2022%20-%20Skill%20tracking%20and%20recommendations%20-%20Griffin%20Baxter.pdf\">https://github.com/uccser/codewof/blob/develop/project-reports/2022%20-%20Skill%20tracking%20and%20recommendations%20-%20Griffin%20Baxter.pdf</a>",
-      "tagName": "blockquote",
-      "attributes": []
+      "tagName": "blockquote"
     },
     {
       "innerHtml": "Poster",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "CodeWOF02.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3572"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "",
-      "tagName": "hr",
-      "attributes": []
+      "tagName": "hr"
     },
     {
       "innerHtml": "Gallery",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "CodeWOF03.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3573"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "CodeWOF04.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3574"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     }
   ],
   "title": "Skill Tracking and Recommendations for CodeWOF",

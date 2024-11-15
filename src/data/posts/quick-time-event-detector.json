@@ -2,78 +2,47 @@
   "blocks": [
     {
       "innerHtml": "GitHub Repository: <a href=\"https://github.com/GriffinBaxter/Quick-Time-Event-Detector\" rel=\"noreferrer noopener\">GitHub.com/GriffinBaxter/Quick-Time-Event-Detector</a>",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "This Quick-Time Event Detector was created in OpenCV and Tesseract OCR using Python for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC428&occurrence=22S1(C)&year=2022\" rel=\"noreferrer noopener\">COSC 428 (Computer Vision)</a>, during Semester 1 of 2022.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "The detector is able to find quick-time events and display the action that they represent using computer vision. This is done with the use of footage from the PC version of the game ‘Detroit: Become Human’ by Quantic Dream.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "Additionally, I wrote a six-page conference paper about this project, which can be found in the GitHub repository.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "",
-      "tagName": "hr",
-      "attributes": []
+      "tagName": "hr"
     },
     {
       "innerHtml": "Gallery",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "QTE02.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "QTE03.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "QTE04.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "QTE05.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     },
     {
       "innerHtml": "QTE06.png",
-      "tagName": "figure",
-      "attributes": []
+      "tagName": "figure"
     }
   ],
   "title": "Quick-Time Event Detector",

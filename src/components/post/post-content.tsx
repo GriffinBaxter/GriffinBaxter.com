@@ -8,12 +8,13 @@ const styleLinks = (html: string) => {
   );
 };
 
-const styleH4 = (html: string, attributes: BlockAttribute[]) => {
-  const isCentre =
-    attributes.filter(
-      (attribute) =>
-        attribute.name === "textAlign" && attribute.value === "center",
-    ).length > 0;
+const styleH4 = (html: string, attributes: BlockAttribute[] | undefined) => {
+  const isCentre = attributes
+    ? attributes.filter(
+        (attribute) =>
+          attribute.name === "textAlign" && attribute.value === "center",
+      ).length
+    : false;
   if (isCentre) {
     return `<p class="text-xl sm:text-2xl md:text-3xl font-bold text-center py-6">${styleLinks(
       html,

@@ -2,87 +2,31 @@
   "blocks": [
     {
       "innerHtml": "This skeletal animation was created in OpenGL 2 using C++ for one of my University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC422&occurrence=22S2(C)&year=2022\">COSC 422 (Advanced Computer Graphics)</a>, during Semester 2 of 2022. The project itself received an A+ (95%) grade for the course.",
-      "tagName": "p",
-      "attributes": [
-        {
-          "name": "align",
-          "value": "justify"
-        }
-      ]
+      "tagName": "p"
     },
     {
       "innerHtml": "The scene depicts a robot character walking around a football field. Using the arrow keys, the character can be rotated around while in motion. A BVH mocap file was used for the skeletal animation, and was loaded and animated using <a rel=\"noreferrer noopener\" href=\"https://www.assimp.org/\">Assimp</a>. The skeletal animation makes use of planar shadows, a hand model with fingers, joint rotations without visible gaps between the mesh surfaces, and various shapes, models, and textures.",
-      "tagName": "p",
-      "attributes": []
+      "tagName": "p"
     },
     {
       "innerHtml": "",
-      "tagName": "hr",
-      "attributes": []
+      "tagName": "hr"
     },
     {
       "innerHtml": "Gallery",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "level",
-          "value": "4"
-        }
-      ]
+      "tagName": "h4"
     },
     {
       "innerHtml": "Skeletal02.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3563"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "Skeletal03.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3564"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     },
     {
       "innerHtml": "Skeletal04.png",
-      "tagName": "figure",
-      "attributes": [
-        {
-          "name": "id",
-          "value": "3565"
-        },
-        {
-          "name": "sizeSlug",
-          "value": "full"
-        },
-        {
-          "name": "linkDestination",
-          "value": "none"
-        }
-      ]
+      "tagName": "figure"
     }
   ],
   "title": "Skeletal Animation",
