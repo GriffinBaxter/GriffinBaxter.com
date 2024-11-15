@@ -46,6 +46,13 @@ const styleImage = (fileName: string) => {
   `;
 };
 
+const styleIframe = (html: string) => {
+  return html.replaceAll(
+    "<iframe ",
+    `<iframe class="w-full max-h-[675px] aspect-video" `,
+  );
+};
+
 interface Props {
   blocks: Block[];
 }
@@ -64,6 +71,8 @@ export default function PostContent({ blocks }: Props) {
       contentHTML += styleQuote(block.innerHtml);
     } else if (block.tagName === "figure") {
       contentHTML += styleImage(block.innerHtml);
+    } else if (block.tagName === "iframe") {
+      contentHTML += styleIframe(block.innerHtml);
     } else if (block.tagName === "hr") {
       contentHTML += rawHtmlDivider;
     }

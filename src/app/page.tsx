@@ -6,10 +6,10 @@ import projectsJson from "../data/projects.json";
 
 const featuredProjectSlugs = [
   "codewof",
-  "reusability",
+  "scaled-to-nothing",
   "griffinbaxter-com",
+  "reusability",
   "video-speed-keys",
-  "events-app",
   "guess-it",
 ];
 
@@ -29,9 +29,10 @@ export default function Page() {
       <Navbar currentPage={NavigationPage.Home} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
-        <p className="py-8 text-center text-3xl font-medium sm:text-5xl">
+        <p className="text-balance py-8 text-center text-3xl font-medium sm:text-5xl">
           I’m <span className="font-bold">Griffin</span>, a{" "}
-          <span className="font-bold">Full-Stack</span> Web Software Engineer
+          <span className="font-bold">Full-Stack</span> Web/Mobile Software
+          Engineer
         </p>
         <p className="text-md pb-8 text-center sm:text-xl">
           Based in <span className="font-bold">Christchurch, New Zealand</span>

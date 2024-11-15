@@ -3,6 +3,7 @@ import Image from "next/image";
 
 export const languageBadgeColour: Record<string, string> = {
   c: "",
+  gdscript: "badge-neutral",
   "html-css": "badge-error",
   java: "badge-accent",
   javascript: "badge-warning",

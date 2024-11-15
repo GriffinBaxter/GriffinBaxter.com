@@ -1,5 +1,27 @@
 [
   {
+    "slug": "scaled-to-nothing",
+    "title": "Scaled To Nothing",
+    "categories": {
+      "nodes": [
+        {
+          "name": "GDScript",
+          "slug": "gdscript"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2024, August",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "ScaledToNothing01.jpg"
+      }
+    }
+  },
+  {
     "slug": "griffinbaxter-com",
     "title": "GriffinBaxter.com",
     "categories": {

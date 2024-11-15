@@ -88,6 +88,11 @@
     },
     { "name": "Minecraft" },
     {
+      "name": "Astro's Playroom",
+      "started": [2024, 10, 7],
+      "completed": [2024, 10, 14]
+    },
+    {
       "name": "The Walking Dead",
       "started": "2013",
       "completed": [2014, 8, 25]
@@ -354,10 +359,6 @@
     {
       "name": "The Witcher 3: Wild Hunt",
       "started": [2024, 6, 6]
-    },
-    {
-      "name": "Astro's Playroom",
-      "started": [2024, 10, 7]
     },
     {
       "name": "Red Dead Redemption",
