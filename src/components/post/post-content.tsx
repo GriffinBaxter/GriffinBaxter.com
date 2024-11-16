@@ -1,4 +1,4 @@
-import type { Block, BlockAttribute } from "../../models";
+import type { PostBlock, BlockAttribute } from "../../models";
 import { rawHtmlDivider } from "../divider";
 
 const styleLinks = (html: string) => {
@@ -55,7 +55,7 @@ const styleIframe = (html: string) => {
 };
 
 interface Props {
-  blocks: Block[];
+  blocks: PostBlock[];
 }
 
 export default function PostContent({ blocks }: Props) {

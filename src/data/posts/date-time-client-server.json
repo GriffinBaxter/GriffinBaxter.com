@@ -1,32 +1,30 @@
-{
-  "blocks": [
-    {
-      "innerHtml": "This Date-Time client/server socket application was created in Python for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC264&occurrence=20S2(C)&year=2020\" rel=\"noreferrer noopener\">COSC 264 (Introduction to Computer Networks and the Internet)</a>, during Semester 2 of 2020. The project itself received an A (88%) grade for the course.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "The application works by first starting the server with specified port numbers for each of the UDP sockets for the Date-Time information in English, Māori and German languages. The client can then request either the time or date, the server IP address (127.0.0.1 if running locally) and the port number for the desired language. If successful, either the current date or time information is returned to the client.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "",
-      "tagName": "hr"
-    },
-    {
-      "innerHtml": "Gallery",
-      "tagName": "h4"
-    },
-    {
-      "innerHtml": "DateTime Photo 2.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "DateTime Photo 3.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "DateTime Photo 4.png",
-      "tagName": "figure"
-    }
-  ]
-}
+[
+  {
+    "innerHtml": "This Date-Time client/server socket application was created in Python for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC264&occurrence=20S2(C)&year=2020\" rel=\"noreferrer noopener\">COSC 264 (Introduction to Computer Networks and the Internet)</a>, during Semester 2 of 2020. The project itself received an A (88%) grade for the course.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "The application works by first starting the server with specified port numbers for each of the UDP sockets for the Date-Time information in English, Māori and German languages. The client can then request either the time or date, the server IP address (127.0.0.1 if running locally) and the port number for the desired language. If successful, either the current date or time information is returned to the client.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "",
+    "tagName": "hr"
+  },
+  {
+    "innerHtml": "Gallery",
+    "tagName": "h4"
+  },
+  {
+    "innerHtml": "DateTime Photo 2.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "DateTime Photo 3.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "DateTime Photo 4.png",
+    "tagName": "figure"
+  }
+]

@@ -1,122 +1,120 @@
-{
-  "blocks": [
-    {
-      "innerHtml": "When Heavy Rain started, I knew it was my type of game. An interactive story told with the use of interesting mechanics and interactions. Most of the game’s interactions made use of gestures that require the player to move the mouse or controller in the direction of the character’s actions. This movement style is seemingly typical of Quantic Dream, the game’s developer. I had played their previous game, Fahrenheit: Indigo Prophecy, before starting Heavy Rain, which utilised the same mechanic. Unfortunately, there were some moments in my playthrough where certain actions were unreasonably hard to perform. However, these were only occasional and not a huge setback to the enjoyment of the game. The unreasonable movements could be explained by the way controller inputs were ported to mouse and keyboard by the game’s developer.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Many of the game’s movements made use of ‘quick-time events’ (QTEs), where actions had to be performed in a timely manner. Failing a QTE in this game leads to the character not making the expected action, which can lead to negative consequences. This is significantly better than games that force you to be successful in most, if not all, QTEs in order to finish the game.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "HR Screenshot 2.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "On the topic of the game’s controls, walking around can sometimes be a frustration when the camera angle changes orientation. The game uses a somewhat dated method of having set camera positions when walking around the environment. Unfortunately, this often causes the movement controls to not work as expected during camera angle transitions. However, these are minor problems that are infrequent enough to not be annoying. And in fact, there were some intentionally tricky controls that worked well. One example was having to press up to five buttons on the keyboard at once while performing additional actions, whereas at the same time the controlled character is going through a tough and awkward manoeuvre in-game. Overall, the game’s unique movement system works well in many areas and is a great addition to the game’s interactivity.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "The atmosphere and soundtrack of this game are amazing and make up some Heavy Rain’s greatest moments. The camera shots and placements are brilliant alongside the game’s expertly crafted environments. These elements create an immersive experience alongside the game’s accompanying music. While the game repeats many of its songs throughout the campaign, the music is deliberately utilised to showcase the differences and various situations that the characters find themselves in. This makes it so that every character has their own unique theme. Many scenes throughout the game cleverly utilise split-screen for showing different things happening at the same time, similar to scenes within the game ‘A Way Out’. I’m a huge fan of this type of cinematography and it works great in a game. An example of its use in Heavy Rain was for having one part of the screen used for gameplay and another for showing what else is happening at the same time. The only real criticism I could make in terms of the game’s environment would be one of the character’s ‘futuristic’ gadgets and HUD, which end up looking dated and tacky.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "HR Screenshot 3.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "The game’s main mechanic, the choice system, amounts to a total of 17 different endings. Of course, many of the game’s endings have scenes and elements incorporated from the other endings. But, that doesn’t change the fact that the choices made and actions taken throughout the game amount to an impressive amount of endings, all of which are well presented. Throughout the game, the choices given to the player can be difficult, thought-provoking and can lead to some interesting outcomes. Many of the game’s stressful and time-sensitive choices encompass some of Heavy Rain’s best moments.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "There is a system in the game that lets the player hear what a character is thinking at any time, with categories of thoughts able to be chosen. This is a great addition that helps the player understand the characters of the game better, however, this brings on the topic of the game’s voice acting. Unfortunately, the voice acting in Heavy Rain has some inconsistencies in terms of its quality. It never got to a point where I found it distracting, it’s just that the game’s voice acting had an overall ‘B-movie’ quality to it.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "HR Screenshot 4.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "The game visually looks good despite its age and the PC version features many convenient graphics and video options. However, to play the game at above 60 frames per second, the game files have to be modified. Nonetheless even 60 frames per second would have been a big improvement over the PlayStation 3 and 4 versions, which unfortunately still run at 30 frames per second.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Overall, Heavy Rain tells an entertaining story which sometimes falls short due to some dated elements and inconsistencies. The game is very fun to play, especially with its interchanging, wide array of playable characters which each have their own interesting and surprising plot points and story.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Rating: 8/10",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "textAlign",
-          "value": "center"
-        }
-      ]
-    },
-    {
-      "innerHtml": "",
-      "tagName": "hr"
-    },
-    {
-      "innerHtml": "Review Info",
-      "tagName": "h4"
-    },
-    {
-      "innerHtml": "The developer/publisher did not provide a review sample of this game.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Game Info:</strong>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Name: Heavy Rain",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Developer: Quantic Dream",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Publisher: Sony Computer Entertainment, Quantic Dream (PC)",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Platform:</strong> PC (Epic Games Store)",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Review PC Specs:</strong>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "CPU: Intel i7-8700",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "GPU: Nvidia GTX 1070",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Memory: 16GB DDR4 2666MHz",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Game Storage: NVME SSD",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Game Start Date:</strong> 7 January 2020",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Game Completion Date:</strong> 13 January 2020 (Main Story completed)",
-      "tagName": "p"
-    }
-  ]
-}
+[
+  {
+    "innerHtml": "When Heavy Rain started, I knew it was my type of game. An interactive story told with the use of interesting mechanics and interactions. Most of the game’s interactions made use of gestures that require the player to move the mouse or controller in the direction of the character’s actions. This movement style is seemingly typical of Quantic Dream, the game’s developer. I had played their previous game, Fahrenheit: Indigo Prophecy, before starting Heavy Rain, which utilised the same mechanic. Unfortunately, there were some moments in my playthrough where certain actions were unreasonably hard to perform. However, these were only occasional and not a huge setback to the enjoyment of the game. The unreasonable movements could be explained by the way controller inputs were ported to mouse and keyboard by the game’s developer.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Many of the game’s movements made use of ‘quick-time events’ (QTEs), where actions had to be performed in a timely manner. Failing a QTE in this game leads to the character not making the expected action, which can lead to negative consequences. This is significantly better than games that force you to be successful in most, if not all, QTEs in order to finish the game.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "HR Screenshot 2.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "On the topic of the game’s controls, walking around can sometimes be a frustration when the camera angle changes orientation. The game uses a somewhat dated method of having set camera positions when walking around the environment. Unfortunately, this often causes the movement controls to not work as expected during camera angle transitions. However, these are minor problems that are infrequent enough to not be annoying. And in fact, there were some intentionally tricky controls that worked well. One example was having to press up to five buttons on the keyboard at once while performing additional actions, whereas at the same time the controlled character is going through a tough and awkward manoeuvre in-game. Overall, the game’s unique movement system works well in many areas and is a great addition to the game’s interactivity.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "The atmosphere and soundtrack of this game are amazing and make up some Heavy Rain’s greatest moments. The camera shots and placements are brilliant alongside the game’s expertly crafted environments. These elements create an immersive experience alongside the game’s accompanying music. While the game repeats many of its songs throughout the campaign, the music is deliberately utilised to showcase the differences and various situations that the characters find themselves in. This makes it so that every character has their own unique theme. Many scenes throughout the game cleverly utilise split-screen for showing different things happening at the same time, similar to scenes within the game ‘A Way Out’. I’m a huge fan of this type of cinematography and it works great in a game. An example of its use in Heavy Rain was for having one part of the screen used for gameplay and another for showing what else is happening at the same time. The only real criticism I could make in terms of the game’s environment would be one of the character’s ‘futuristic’ gadgets and HUD, which end up looking dated and tacky.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "HR Screenshot 3.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "The game’s main mechanic, the choice system, amounts to a total of 17 different endings. Of course, many of the game’s endings have scenes and elements incorporated from the other endings. But, that doesn’t change the fact that the choices made and actions taken throughout the game amount to an impressive amount of endings, all of which are well presented. Throughout the game, the choices given to the player can be difficult, thought-provoking and can lead to some interesting outcomes. Many of the game’s stressful and time-sensitive choices encompass some of Heavy Rain’s best moments.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "There is a system in the game that lets the player hear what a character is thinking at any time, with categories of thoughts able to be chosen. This is a great addition that helps the player understand the characters of the game better, however, this brings on the topic of the game’s voice acting. Unfortunately, the voice acting in Heavy Rain has some inconsistencies in terms of its quality. It never got to a point where I found it distracting, it’s just that the game’s voice acting had an overall ‘B-movie’ quality to it.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "HR Screenshot 4.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "The game visually looks good despite its age and the PC version features many convenient graphics and video options. However, to play the game at above 60 frames per second, the game files have to be modified. Nonetheless even 60 frames per second would have been a big improvement over the PlayStation 3 and 4 versions, which unfortunately still run at 30 frames per second.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Overall, Heavy Rain tells an entertaining story which sometimes falls short due to some dated elements and inconsistencies. The game is very fun to play, especially with its interchanging, wide array of playable characters which each have their own interesting and surprising plot points and story.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Rating: 8/10",
+    "tagName": "h4",
+    "attributes": [
+      {
+        "name": "textAlign",
+        "value": "center"
+      }
+    ]
+  },
+  {
+    "innerHtml": "",
+    "tagName": "hr"
+  },
+  {
+    "innerHtml": "Review Info",
+    "tagName": "h4"
+  },
+  {
+    "innerHtml": "The developer/publisher did not provide a review sample of this game.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Game Info:</strong>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Name: Heavy Rain",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Developer: Quantic Dream",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Publisher: Sony Computer Entertainment, Quantic Dream (PC)",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Platform:</strong> PC (Epic Games Store)",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Review PC Specs:</strong>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "CPU: Intel i7-8700",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "GPU: Nvidia GTX 1070",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Memory: 16GB DDR4 2666MHz",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Game Storage: NVME SSD",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Game Start Date:</strong> 7 January 2020",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Game Completion Date:</strong> 13 January 2020 (Main Story completed)",
+    "tagName": "p"
+  }
+]

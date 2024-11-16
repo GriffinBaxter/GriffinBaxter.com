@@ -1,8 +1,8 @@
-import type { Block } from "../../../models";
+import type { PostBlock } from "../../../models";
 import Image from "next/image";
 
 interface Props {
-  blocks: Block[];
+  blocks: PostBlock[];
 }
 
 export default function ProjectGallery({ blocks }: Props) {

@@ -1,94 +1,92 @@
-{
-  "blocks": [
-    {
-      "innerHtml": "Rise of the Tomb Raider is another Tomb Raider game, with not much more to say about it. The gameplay can be exciting and fun at times, especially during the scripted, parkour action sequences, of which are visually stunning. However, those parts of the game are unfortunately few and far between. Most of the game involves walking around and solving mundane puzzles. The gunplay and combat sections are easily the worst parts of the game, with uninspiring third-person shooting mechanics and weirdly balanced enemies. Some of the game’s puzzles can be quite egregious and finicky to solve, especially with many of the physics related puzzles.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "The game’s difficulty is a weird one. I played the game on the ‘Seasoned Raider’ difficulty, being the second hardest out of the four difficulties. This seemed fine at first, but there were some weirdly unbalanced parts later in the game. There were sections that I found extremely easy and just flew through them, whereas there were other sections that I found extremely hard, which took me multiple attempts to complete. And it wasn’t like the game just got more difficult over time, the easy and hard parts were mixed in between each other with no real significance to the harder sections of the game, in terms of the story point or situation.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "RotTR Screenshot 2.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "The story of Rise of the Tomb Raider is okay, it can be predictable at times, but it does have some cool moments. The game ran extremely well on my PC looked visually brilliant throughout the game’s story. Long story short, as I said at the start, Rise of the Tomb Raider is another entry in the Tomb Raider series, nothing more, nothing less. I believe it is an above average-game due to the game’s brilliant parkour action sequences, of which are unfortunately bogged down by mundane Tomb Raider gameplay.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Rating: 6/10",
-      "tagName": "h4",
-      "attributes": [
-        {
-          "name": "textAlign",
-          "value": "center"
-        }
-      ]
-    },
-    {
-      "innerHtml": "",
-      "tagName": "hr"
-    },
-    {
-      "innerHtml": "Review Info",
-      "tagName": "h4"
-    },
-    {
-      "innerHtml": "The developer/publisher did not provide a review sample of this game.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Game Info:</strong>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Name: Rise of the Tomb Raider",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Developer: Crystal Dynamics",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Publisher: Square Enix",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Platform: </strong>PC (Xbox Game Pass For PC)",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Review PC Specs:</strong>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "CPU: Intel i7-8700",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "GPU: Nvidia GTX 1070",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Memory: 16GB DDR4 2666MHz",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "Game Storage: NVME SSD",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Game Start Date: </strong>4 January 2020",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<strong>Game Completion Date: </strong>7 January 2020 (Main Story completed)",
-      "tagName": "p"
-    }
-  ]
-}
+[
+  {
+    "innerHtml": "Rise of the Tomb Raider is another Tomb Raider game, with not much more to say about it. The gameplay can be exciting and fun at times, especially during the scripted, parkour action sequences, of which are visually stunning. However, those parts of the game are unfortunately few and far between. Most of the game involves walking around and solving mundane puzzles. The gunplay and combat sections are easily the worst parts of the game, with uninspiring third-person shooting mechanics and weirdly balanced enemies. Some of the game’s puzzles can be quite egregious and finicky to solve, especially with many of the physics related puzzles.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "The game’s difficulty is a weird one. I played the game on the ‘Seasoned Raider’ difficulty, being the second hardest out of the four difficulties. This seemed fine at first, but there were some weirdly unbalanced parts later in the game. There were sections that I found extremely easy and just flew through them, whereas there were other sections that I found extremely hard, which took me multiple attempts to complete. And it wasn’t like the game just got more difficult over time, the easy and hard parts were mixed in between each other with no real significance to the harder sections of the game, in terms of the story point or situation.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "RotTR Screenshot 2.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "The story of Rise of the Tomb Raider is okay, it can be predictable at times, but it does have some cool moments. The game ran extremely well on my PC looked visually brilliant throughout the game’s story. Long story short, as I said at the start, Rise of the Tomb Raider is another entry in the Tomb Raider series, nothing more, nothing less. I believe it is an above average-game due to the game’s brilliant parkour action sequences, of which are unfortunately bogged down by mundane Tomb Raider gameplay.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Rating: 6/10",
+    "tagName": "h4",
+    "attributes": [
+      {
+        "name": "textAlign",
+        "value": "center"
+      }
+    ]
+  },
+  {
+    "innerHtml": "",
+    "tagName": "hr"
+  },
+  {
+    "innerHtml": "Review Info",
+    "tagName": "h4"
+  },
+  {
+    "innerHtml": "The developer/publisher did not provide a review sample of this game.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Game Info:</strong>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Name: Rise of the Tomb Raider",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Developer: Crystal Dynamics",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Publisher: Square Enix",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Platform: </strong>PC (Xbox Game Pass For PC)",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Review PC Specs:</strong>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "CPU: Intel i7-8700",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "GPU: Nvidia GTX 1070",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Memory: 16GB DDR4 2666MHz",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Game Storage: NVME SSD",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Game Start Date: </strong>4 January 2020",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<strong>Game Completion Date: </strong>7 January 2020 (Main Story completed)",
+    "tagName": "p"
+  }
+]

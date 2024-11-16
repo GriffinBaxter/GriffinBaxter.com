@@ -1,52 +1,50 @@
-{
-  "blocks": [
-    {
-      "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/Scaled-To-Nothing\">GitHub.com/GriffinBaxter/Scaled-To-Nothing</a>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "itch.io Page: <a rel=\"noreferrer noopener\" href=\"https://griffinbaxter.itch.io/scaled-to-nothing\">GriffinBaxter.itch.io/Scaled-To-Nothing</a>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "\"How I Made\" Video: <a rel=\"noreferrer noopener\" href=\"https://www.youtube.com/watch?v=VLym-hQ_e0c\">YouTube.com/watch?v=VLym-hQ_e0c</a>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "In <a rel=\"noreferrer noopener\" href=\"https://gamemakerstoolkit.com/\">Game Maker Toolkit</a>'s 2024 Game Jam, I made a game called \"Scaled to Nothing\". I've been learning the <a rel=\"noreferrer noopener\" href=\"https://godotengine.org/\">Godot</a> game engine (and GDScript), in my spare time for around a year, so I thought I was at the point where I could try entering my first game jam. I could only spare the weekend for this four-day jam, and I chose to work by myself! I created a \"How I Made\" video that you can watch below, or at the link above which covers the journey more in-depth.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<iframe src=\"https://www.youtube.com/embed/VLym-hQ_e0c?si=vng9bDkOUrsLCzTd\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
-      "tagName": "iframe"
-    },
-    {
-      "innerHtml": "I was also very happy with the results (with over 7,000 entries), which are shown below and can be seen on itch.io: <a rel=\"noreferrer noopener\" href=\"https://itch.io/jam/gmtk-2024/rate/2904792\">itch.io/jam/gmtk-2024/rate/2904792</a>.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "ScaledToNothing02.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "",
-      "tagName": "hr"
-    },
-    {
-      "innerHtml": "Gallery",
-      "tagName": "h4"
-    },
-    {
-      "innerHtml": "ScaledToNothing03.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "ScaledToNothing04.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "ScaledToNothing05.png",
-      "tagName": "figure"
-    }
-  ]
-}
+[
+  {
+    "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/Scaled-To-Nothing\">GitHub.com/GriffinBaxter/Scaled-To-Nothing</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "itch.io Page: <a rel=\"noreferrer noopener\" href=\"https://griffinbaxter.itch.io/scaled-to-nothing\">GriffinBaxter.itch.io/Scaled-To-Nothing</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "\"How I Made\" Video: <a rel=\"noreferrer noopener\" href=\"https://www.youtube.com/watch?v=VLym-hQ_e0c\">YouTube.com/watch?v=VLym-hQ_e0c</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "In <a rel=\"noreferrer noopener\" href=\"https://gamemakerstoolkit.com/\">Game Maker Toolkit</a>'s 2024 Game Jam, I made a game called \"Scaled to Nothing\". I've been learning the <a rel=\"noreferrer noopener\" href=\"https://godotengine.org/\">Godot</a> game engine (and GDScript), in my spare time for around a year, so I thought I was at the point where I could try entering my first game jam. I could only spare the weekend for this four-day jam, and I chose to work by myself! I created a \"How I Made\" video that you can watch below, or at the link above which covers the journey more in-depth.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<iframe src=\"https://www.youtube.com/embed/VLym-hQ_e0c?si=vng9bDkOUrsLCzTd\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+    "tagName": "iframe"
+  },
+  {
+    "innerHtml": "I was also very happy with the results (with over 7,000 entries), which are shown below and can be seen on itch.io: <a rel=\"noreferrer noopener\" href=\"https://itch.io/jam/gmtk-2024/rate/2904792\">itch.io/jam/gmtk-2024/rate/2904792</a>.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "ScaledToNothing02.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "",
+    "tagName": "hr"
+  },
+  {
+    "innerHtml": "Gallery",
+    "tagName": "h4"
+  },
+  {
+    "innerHtml": "ScaledToNothing03.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "ScaledToNothing04.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "ScaledToNothing05.png",
+    "tagName": "figure"
+  }
+]

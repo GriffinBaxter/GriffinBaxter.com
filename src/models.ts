@@ -12,19 +12,15 @@ export interface PostDetails {
   categories?: { nodes: Category[] };
 }
 
-export interface Post {
-  blocks: Block[];
+export interface PostBlock {
+  innerHtml: string;
+  tagName: string;
+  attributes?: BlockAttribute[];
 }
 
 export interface BlockAttribute {
   name: string;
   value: string;
-}
-
-export interface Block {
-  innerHtml: string;
-  tagName: string;
-  attributes?: BlockAttribute[];
 }
 
 export interface Slug {

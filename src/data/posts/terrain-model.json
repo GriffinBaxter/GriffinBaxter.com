@@ -1,36 +1,34 @@
-{
-  "blocks": [
-    {
-      "innerHtml": "This terrain model scene was created in OpenGL 4 using C++ for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC422&occurrence=22S2(C)&year=2022\" rel=\"noreferrer noopener\">COSC 422 (Advanced Computer Graphics)</a>, during Semester 2 of 2022. The project itself received an A+ (100%) grade for the course.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "This terrain depicts a scene with mountains, consisting of grass, dirt, snow, and water. Using the arrow keys, the scene can be interacted with to move around. Using the arrow keys, the scene can be interacted with to move around. The scene makes use of adjustable snow and water levels, fog, smooth shading, and multiple terrain models that can be swapped between.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "",
-      "tagName": "hr"
-    },
-    {
-      "innerHtml": "Gallery",
-      "tagName": "h4"
-    },
-    {
-      "innerHtml": "Terrain02.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Terrain03.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Terrain04.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Terrain05.png",
-      "tagName": "figure"
-    }
-  ]
-}
+[
+  {
+    "innerHtml": "This terrain model scene was created in OpenGL 4 using C++ for one of my University courses, <a href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC422&occurrence=22S2(C)&year=2022\" rel=\"noreferrer noopener\">COSC 422 (Advanced Computer Graphics)</a>, during Semester 2 of 2022. The project itself received an A+ (100%) grade for the course.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "This terrain depicts a scene with mountains, consisting of grass, dirt, snow, and water. Using the arrow keys, the scene can be interacted with to move around. Using the arrow keys, the scene can be interacted with to move around. The scene makes use of adjustable snow and water levels, fog, smooth shading, and multiple terrain models that can be swapped between.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "",
+    "tagName": "hr"
+  },
+  {
+    "innerHtml": "Gallery",
+    "tagName": "h4"
+  },
+  {
+    "innerHtml": "Terrain02.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Terrain03.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Terrain04.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Terrain05.png",
+    "tagName": "figure"
+  }
+]

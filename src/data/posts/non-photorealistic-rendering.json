@@ -1,40 +1,38 @@
-{
-  "blocks": [
-    {
-      "innerHtml": "This Non-Photorealistic Rendering (NPR) of a 3D mesh model was created in OpenGL 4 using C++ for one of my University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC422&occurrence=22S2(C)&year=2022\">COSC 422 (Advanced Computer Graphics)</a>, during Semester 2 of 2022. The project itself received an A+ (100%) grade for the course.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "A <a rel=\"noreferrer noopener\" href=\"https://free3d.com/3d-model/low-poly-deer-72513.html\">3D deer mesh model</a> was used for the NPR, and loaded using <a rel=\"noreferrer noopener\" href=\"https://www.graphics.rwth-aachen.de/software/openmesh/\">OpenMesh</a>. Using the arrow keys, the deer can be rotated. Additionally, the two-tone and pencil shading rendering methods can be swapped between. The NPR makes use of mipmaps for the pencil strokes, silhouette and crease edge highlighting using triangle adjacency primitives, variable edge thickness, local curvature estimation for the pencil textures, multi-texture blending, and mesh simplification.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "",
-      "tagName": "hr"
-    },
-    {
-      "innerHtml": "Gallery",
-      "tagName": "h4"
-    },
-    {
-      "innerHtml": "NPR02.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "NPR03.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "NPR04.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "NPR05.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "NPR06.png",
-      "tagName": "figure"
-    }
-  ]
-}
+[
+  {
+    "innerHtml": "This Non-Photorealistic Rendering (NPR) of a 3D mesh model was created in OpenGL 4 using C++ for one of my University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=COSC422&occurrence=22S2(C)&year=2022\">COSC 422 (Advanced Computer Graphics)</a>, during Semester 2 of 2022. The project itself received an A+ (100%) grade for the course.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "A <a rel=\"noreferrer noopener\" href=\"https://free3d.com/3d-model/low-poly-deer-72513.html\">3D deer mesh model</a> was used for the NPR, and loaded using <a rel=\"noreferrer noopener\" href=\"https://www.graphics.rwth-aachen.de/software/openmesh/\">OpenMesh</a>. Using the arrow keys, the deer can be rotated. Additionally, the two-tone and pencil shading rendering methods can be swapped between. The NPR makes use of mipmaps for the pencil strokes, silhouette and crease edge highlighting using triangle adjacency primitives, variable edge thickness, local curvature estimation for the pencil textures, multi-texture blending, and mesh simplification.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "",
+    "tagName": "hr"
+  },
+  {
+    "innerHtml": "Gallery",
+    "tagName": "h4"
+  },
+  {
+    "innerHtml": "NPR02.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "NPR03.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "NPR04.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "NPR05.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "NPR06.png",
+    "tagName": "figure"
+  }
+]

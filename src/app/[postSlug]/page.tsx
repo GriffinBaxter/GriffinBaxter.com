@@ -1,7 +1,7 @@
 import { customMetadata } from "../page";
 import Navbar, { NavigationPage } from "../../components/navbar";
 import PostContent from "../../components/post/post-content";
-import type { PostDetails, Post } from "../../models";
+import type { PostDetails, PostBlock } from "../../models";
 import projectsJson from "../../data/projects.json";
 import reviewsJson from "../../data/reviews.json";
 import PostHeader from "../../components/post/post-header";
@@ -35,7 +35,7 @@ export default async function Page(props: Props) {
 
   const postContent = (await import(
     `../../data/posts/${params.postSlug}.json`
-  )) as Post;
+  )) as PostBlock[];
   const projectPost = projectsJson.find(
     (post) => post.slug === params.postSlug,
   ) as PostDetails | undefined;
@@ -46,7 +46,7 @@ export default async function Page(props: Props) {
   const isProject = !!projectPost;
   const post = (isProject ? projectPost : reviewPost) as PostDetails;
 
-  const galleryBlockIndex = postContent.blocks.findLastIndex(
+  const galleryBlockIndex = postContent.findLastIndex(
     (block) => block.tagName === "h4" && block.innerHtml === "Gallery",
   );
   const hasGallery = isProject && galleryBlockIndex !== -1;
@@ -63,15 +63,11 @@ export default async function Page(props: Props) {
         <PostHeader postDetails={post} isProject={isProject} />
         <PostContent
           blocks={
-            hasGallery
-              ? postContent.blocks.slice(0, galleryBlockIndex)
-              : postContent.blocks
+            hasGallery ? postContent.slice(0, galleryBlockIndex) : postContent
           }
         />
         {hasGallery ? (
-          <ProjectGallery
-            blocks={postContent.blocks.slice(galleryBlockIndex + 1)}
-          />
+          <ProjectGallery blocks={postContent.slice(galleryBlockIndex + 1)} />
         ) : null}
       </main>
     </>

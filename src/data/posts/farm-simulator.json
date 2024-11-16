@@ -1,52 +1,50 @@
-{
-  "blocks": [
-    {
-      "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/Farm-Simulator-Game\">GitHub.com/GriffinBaxter/Farm-Simulator-Game</a>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "This game, Farm Simulator, was created in Java with a project partner for one of my  University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG201&occurrence=20S1(C)&year=2020\">SENG 201 (Software Engineering I)</a>, during Semester 1 of 2020.  The project itself received an A+ (95%) grade for the course.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "The game includes a fully-featured GUI interface making use of Swing, a widget toolkit for Java. The game can be downloaded and played using the GitHub repository link above, given that Java SE Development Kit 11 is installed on the machine. Additionally, the source code for the project is available publicly on the GitHub repository.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "",
-      "tagName": "hr"
-    },
-    {
-      "innerHtml": "Gallery",
-      "tagName": "h4"
-    },
-    {
-      "innerHtml": "Farm Simulator Game Screenshot 2.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Farm Simulator Game Screenshot 3.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Farm Simulator Game Screenshot 4.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Farm Simulator Game Screenshot 5.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Farm Simulator Game Screenshot 6.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Farm Simulator Game Screenshot 7.png",
-      "tagName": "figure"
-    },
-    {
-      "innerHtml": "Farm Simulator Game Screenshot 8.png",
-      "tagName": "figure"
-    }
-  ]
-}
+[
+  {
+    "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/Farm-Simulator-Game\">GitHub.com/GriffinBaxter/Farm-Simulator-Game</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "This game, Farm Simulator, was created in Java with a project partner for one of my  University courses, <a rel=\"noreferrer noopener\" href=\"https://www.canterbury.ac.nz/courseinfo/GetCourseDetails.aspx?course=SENG201&occurrence=20S1(C)&year=2020\">SENG 201 (Software Engineering I)</a>, during Semester 1 of 2020.  The project itself received an A+ (95%) grade for the course.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "The game includes a fully-featured GUI interface making use of Swing, a widget toolkit for Java. The game can be downloaded and played using the GitHub repository link above, given that Java SE Development Kit 11 is installed on the machine. Additionally, the source code for the project is available publicly on the GitHub repository.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "",
+    "tagName": "hr"
+  },
+  {
+    "innerHtml": "Gallery",
+    "tagName": "h4"
+  },
+  {
+    "innerHtml": "Farm Simulator Game Screenshot 2.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Farm Simulator Game Screenshot 3.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Farm Simulator Game Screenshot 4.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Farm Simulator Game Screenshot 5.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Farm Simulator Game Screenshot 6.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Farm Simulator Game Screenshot 7.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "Farm Simulator Game Screenshot 8.png",
+    "tagName": "figure"
+  }
+]

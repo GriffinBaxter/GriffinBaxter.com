@@ -1,24 +1,22 @@
-{
-  "blocks": [
-    {
-      "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/GriffinBaxter.com\">GitHub.com/GriffinBaxter/GriffinBaxter.com</a>",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "The latest version of this website, GriffinBaxter.com, was created from <a rel=\"noreferrer noopener\" href=\"https://create.t3.gg/\">Create T3 App</a>, developed in TypeScript, and makes use of <a rel=\"noreferrer noopener\" href=\"https://nextjs.org/\">NextJS (React)</a>, <a rel=\"noreferrer noopener\" href=\"https://tailwindcss.com/\">Tailwind CSS</a>, and <a rel=\"noreferrer noopener\" href=\"https://daisyui.com/\">DaisyUI</a>. This new version of the site is statically generated and hosted on <a rel=\"noreferrer noopener\" href=\"https://vercel.com/\">Vercel</a>, which has significantly sped up loading times.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "This replaces the original version of this website, which was created entirely using <a rel=\"noreferrer noopener\" href=\"https://wordpress.org/\">WordPress</a>. Up until now, WordPress was still being used, but only as a headless CMS using <a rel=\"noreferrer noopener\" href=\"https://www.wpgraphql.com/\">WPGraphQL</a>, in order to load the website’s content at build time (thus allowing for the site’s static generation of pages). However, as of November 2023, the site is now no longer reliant on Wordpress, and instead grabs the required data from JSON and image files stored in the GitHub repository to generate the static site.",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "This new version of the site is intended to be continually updated and improved. A summary of site's history is shown below:",
-      "tagName": "p"
-    },
-    {
-      "innerHtml": "<li>1.0 – Initial Wordpress site\n<li>2.0 – New statically-generated NextJS site with Wordpress backend (WPGraphQL)\n<li>2.1 – Replaced the Wordpress backend with stored JSON and image files</li>\n<li>2.2 – Optimised for mobile screens</li>\n",
-      "tagName": "ul"
-    }
-  ]
-}
+[
+  {
+    "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/GriffinBaxter.com\">GitHub.com/GriffinBaxter/GriffinBaxter.com</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "The latest version of this website, GriffinBaxter.com, was created from <a rel=\"noreferrer noopener\" href=\"https://create.t3.gg/\">Create T3 App</a>, developed in TypeScript, and makes use of <a rel=\"noreferrer noopener\" href=\"https://nextjs.org/\">NextJS (React)</a>, <a rel=\"noreferrer noopener\" href=\"https://tailwindcss.com/\">Tailwind CSS</a>, and <a rel=\"noreferrer noopener\" href=\"https://daisyui.com/\">DaisyUI</a>. This new version of the site is statically generated and hosted on <a rel=\"noreferrer noopener\" href=\"https://vercel.com/\">Vercel</a>, which has significantly sped up loading times.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "This replaces the original version of this website, which was created entirely using <a rel=\"noreferrer noopener\" href=\"https://wordpress.org/\">WordPress</a>. Up until now, WordPress was still being used, but only as a headless CMS using <a rel=\"noreferrer noopener\" href=\"https://www.wpgraphql.com/\">WPGraphQL</a>, in order to load the website’s content at build time (thus allowing for the site’s static generation of pages). However, as of November 2023, the site is now no longer reliant on Wordpress, and instead grabs the required data from JSON and image files stored in the GitHub repository to generate the static site.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "This new version of the site is intended to be continually updated and improved. A summary of site's history is shown below:",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<li>1.0 – Initial Wordpress site\n<li>2.0 – New statically-generated NextJS site with Wordpress backend (WPGraphQL)\n<li>2.1 – Replaced the Wordpress backend with stored JSON and image files</li>\n<li>2.2 – Optimised for mobile screens</li>\n",
+    "tagName": "ul"
+  }
+]
