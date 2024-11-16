@@ -76,25 +76,5 @@
       "innerHtml": "GuessIt12.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Guess it!",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Kotlin",
-        "slug": "kotlin"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2022, Semester 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "GuessIt01.png"
-    }
-  },
-  "date": "2022-11-30T16:02:37"
+  ]
 }

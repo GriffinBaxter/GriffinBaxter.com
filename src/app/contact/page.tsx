@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { customMetadata } from "../page";
 import Navbar, { NavigationPage } from "../../components/navbar";
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
@@ -6,7 +5,7 @@ import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
 import Divider from "../../components/divider";
 import Link from "next/link";
 
-export const metadata: Metadata = customMetadata("Contact");
+export const metadata = customMetadata("Contact");
 
 export default function Page() {
   return (

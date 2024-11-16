@@ -1,7 +1,7 @@
 import { customMetadata } from "../page";
 import Navbar, { NavigationPage } from "../../components/navbar";
 import PostContent from "../../components/post/post-content";
-import type { SinglePost } from "../../models";
+import type { PostDetails, Post } from "../../models";
 import projectsJson from "../../data/projects.json";
 import reviewsJson from "../../data/reviews.json";
 import PostHeader from "../../components/post/post-header";
@@ -18,10 +18,11 @@ export async function generateMetadata(props: Props) {
   const params = await props.params;
 
   if (slugs.includes(params.postSlug)) {
-    const post = (await import(
-      `../../data/posts/${params.postSlug}.json`
-    )) as SinglePost;
-    return customMetadata(post.title);
+    return customMetadata(
+      [...projectsJson, ...reviewsJson].find(
+        (post) => post.slug === params.postSlug,
+      )?.title,
+    );
   }
 }
 
@@ -32,18 +33,20 @@ export default async function Page(props: Props) {
     notFound();
   }
 
-  const post = (await import(
+  const postContent = (await import(
     `../../data/posts/${params.postSlug}.json`
-  )) as SinglePost;
+  )) as Post;
+  const projectPost = projectsJson.find(
+    (post) => post.slug === params.postSlug,
+  ) as PostDetails | undefined;
+  const reviewPost = reviewsJson.find(
+    (post) => post.slug === params.postSlug,
+  ) as PostDetails | undefined;
 
-  let isProject = false;
-  for (const category of post.categories.nodes) {
-    if (category.slug === "projects") {
-      isProject = true;
-    }
-  }
+  const isProject = !!projectPost;
+  const post = (isProject ? projectPost : reviewPost) as PostDetails;
 
-  const galleryBlockIndex = post.blocks.findLastIndex(
+  const galleryBlockIndex = postContent.blocks.findLastIndex(
     (block) => block.tagName === "h4" && block.innerHtml === "Gallery",
   );
   const hasGallery = isProject && galleryBlockIndex !== -1;
@@ -57,14 +60,18 @@ export default async function Page(props: Props) {
       />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-8">
-        <PostHeader post={post} isProject={isProject} />
+        <PostHeader postDetails={post} isProject={isProject} />
         <PostContent
           blocks={
-            hasGallery ? post.blocks.slice(0, galleryBlockIndex) : post.blocks
+            hasGallery
+              ? postContent.blocks.slice(0, galleryBlockIndex)
+              : postContent.blocks
           }
         />
         {hasGallery ? (
-          <ProjectGallery blocks={post.blocks.slice(galleryBlockIndex + 1)} />
+          <ProjectGallery
+            blocks={postContent.blocks.slice(galleryBlockIndex + 1)}
+          />
         ) : null}
       </main>
     </>

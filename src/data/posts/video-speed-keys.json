@@ -16,29 +16,5 @@
       "innerHtml": "Many video speed extensions work using Chrome’s cloud sync rather than the local storage, meaning that there is a delay in retrieving this information and subsequently applying the stored set video speed upon loading a new video. However, this extension makes use of Chrome’s local storage to retrieve and set video speeds. The storage aspect also allows for the video speed to be persisted across videos and browser sessions on the same machine.",
       "tagName": "p"
     }
-  ],
-  "title": "Video Speed Keys",
-  "categories": {
-    "nodes": [
-      {
-        "name": "HTML / CSS",
-        "slug": "html-css"
-      },
-      {
-        "name": "JavaScript",
-        "slug": "javascript"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2021/2022, Summer Break",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "Video Speed Keys 1.png"
-    }
-  },
-  "date": "2022-02-19T13:37:52"
+  ]
 }

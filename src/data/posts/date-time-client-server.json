@@ -28,25 +28,5 @@
       "innerHtml": "DateTime Photo 4.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Date-Time App",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Python",
-        "slug": "python"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2020, Semester 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "DateTime Photo 1.png"
-    }
-  },
-  "date": "2021-06-21T14:30:25"
+  ]
 }

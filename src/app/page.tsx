@@ -13,15 +13,19 @@ const featuredProjectSlugs = [
   "guess-it",
 ];
 
-export const customMetadata = (name: string): Metadata => {
-  return {
-    title: name === "Home" ? "Griffin Baxter" : `${name} - Griffin Baxter`,
-    description: name,
-    icons: "/favicon.ico",
-  };
+export const customMetadata = (
+  name: string | undefined,
+): Metadata | undefined => {
+  if (name) {
+    return {
+      title: name === "Home" ? "Griffin Baxter" : `${name} - Griffin Baxter`,
+      description: name,
+      icons: "/favicon.ico",
+    };
+  }
 };
 
-export const metadata: Metadata = customMetadata("Home");
+export const metadata = customMetadata("Home");
 
 export default function Page() {
   return (
@@ -49,7 +53,7 @@ export default function Page() {
             .map((project) =>
               project ? (
                 <div key={project.slug} className="max-w-sm">
-                  <ProjectCard project={project} />
+                  <ProjectCard postDetails={project} />
                 </div>
               ) : null,
             )}

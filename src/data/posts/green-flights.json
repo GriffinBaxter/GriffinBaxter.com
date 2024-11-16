@@ -76,29 +76,5 @@
       "innerHtml": "GreenFlights Screenshot 14.png",
       "tagName": "figure"
     }
-  ],
-  "title": "GreenFlights",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Java",
-        "slug": "java"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      },
-      {
-        "name": "SQL",
-        "slug": "sql"
-      }
-    ]
-  },
-  "excerpt": "2020, Semester 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "GreenFlights Screenshot 1.png"
-    }
-  },
-  "date": "2021-02-10T23:56:08"
+  ]
 }

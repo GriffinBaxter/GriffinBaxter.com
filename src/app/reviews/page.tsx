@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { customMetadata } from "../page";
 import Navbar, { NavigationPage } from "../../components/navbar";
 import ReviewCard from "../../components/post/review/review-card";
@@ -40,7 +39,7 @@ const getStartedAndCompleted = (game: {
   }
 };
 
-export const metadata: Metadata = customMetadata("Reviews");
+export const metadata = customMetadata("Reviews");
 
 export default function Page() {
   return (
@@ -125,9 +124,9 @@ export default function Page() {
           </dialog>
         </div>
         <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
-          {reviewsJson.map((review) => (
-            <div key={review.slug} className="max-w-sm">
-              <ReviewCard review={review} />
+          {reviewsJson.map((postDetails) => (
+            <div key={postDetails.slug} className="max-w-sm">
+              <ReviewCard postDetails={postDetails} />
             </div>
           ))}
         </div>

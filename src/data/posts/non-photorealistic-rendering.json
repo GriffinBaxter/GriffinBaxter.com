@@ -36,25 +36,5 @@
       "innerHtml": "NPR06.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Non-Photorealistic Rendering",
-  "categories": {
-    "nodes": [
-      {
-        "name": "C / C++",
-        "slug": "c"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2022, Semester 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "NPR01.png"
-    }
-  },
-  "date": "2022-11-30T15:10:00"
+  ]
 }

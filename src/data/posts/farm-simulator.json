@@ -48,25 +48,5 @@
       "innerHtml": "Farm Simulator Game Screenshot 8.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Farm Simulator",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Java",
-        "slug": "java"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2020, Semester 1",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "Farm Simulator Game Screenshot 1.png"
-    }
-  },
-  "date": "2020-07-06T14:00:29"
+  ]
 }

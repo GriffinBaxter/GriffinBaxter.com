@@ -102,21 +102,5 @@
       "innerHtml": "<strong>Game Completion Date:</strong> 1 April 2020 (Main Story completed)",
       "tagName": "p"
     }
-  ],
-  "title": "Half-Life: Alyx",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Game Reviews",
-        "slug": "game-reviews"
-      }
-    ]
-  },
-  "excerpt": "Review",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "HLA Screenshot 1.png"
-    }
-  },
-  "date": "2020-09-05T12:00:00"
+  ]
 }

@@ -32,25 +32,5 @@
       "innerHtml": "NoDataProvided04.png",
       "tagName": "figure"
     }
-  ],
-  "title": "No Data Provided",
-  "categories": {
-    "nodes": [
-      {
-        "name": "GDScript",
-        "slug": "gdscript"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2023/2024",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "NoDataProvided01.png"
-    }
-  },
-  "date": "2024-11-16T18:00:00"
+  ]
 }

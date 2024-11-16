@@ -118,21 +118,5 @@
       "innerHtml": "<strong>Game Completion Date:</strong> 13 January 2020 (Main Story completed)",
       "tagName": "p"
     }
-  ],
-  "title": "Heavy Rain",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Game Reviews",
-        "slug": "game-reviews"
-      }
-    ]
-  },
-  "excerpt": "Review",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "HR Screenshot 1.png"
-    }
-  },
-  "date": "2020-04-20T22:00:00"
+  ]
 }

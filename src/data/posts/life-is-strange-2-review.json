@@ -130,21 +130,5 @@
       "innerHtml": "<strong>Game Completion Date:</strong> 4 December 2019 (All five episodes completed)",
       "tagName": "p"
     }
-  ],
-  "title": "Life is Strange 2",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Game Reviews",
-        "slug": "game-reviews"
-      }
-    ]
-  },
-  "excerpt": "Review",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "LiS2 Screenshot 1.jpeg"
-    }
-  },
-  "date": "2020-02-15T18:00:00"
+  ]
 }

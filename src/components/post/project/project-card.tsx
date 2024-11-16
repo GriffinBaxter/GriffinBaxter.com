@@ -1,29 +1,29 @@
-import type { Project } from "../../../models";
+import type { PostDetails } from "../../../models";
 import { languageBadgeColour } from "../post-header";
 import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
-  project: Project;
+  postDetails: PostDetails;
 }
 
-export default function ProjectCard({ project }: Props) {
+export default function ProjectCard({ postDetails }: Props) {
   return (
-    <Link href={project.slug}>
+    <Link href={postDetails.slug}>
       <div className="card max-w-96 bg-base-100 shadow-xl">
         <figure>
           <Image
-            src={`/images/${project.featuredImage.node.sourceUrl}`}
+            src={`/images/${postDetails.featuredImage.node.sourceUrl}`}
             alt="Project Image"
             width={384}
             height={216}
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{project.title}</h2>
-          <p className="font-semibold">{project.excerpt}</p>
+          <h2 className="card-title">{postDetails.title}</h2>
+          <p className="font-semibold">{postDetails.excerpt}</p>
           <div className="flex flex-wrap gap-2">
-            {project.categories.nodes.map((category) =>
+            {postDetails.categories?.nodes.map((category) =>
               Object.keys(languageBadgeColour).includes(category.slug) ? (
                 <div
                   key={category.slug}

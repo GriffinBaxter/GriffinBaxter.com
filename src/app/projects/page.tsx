@@ -1,11 +1,10 @@
-import type { Metadata } from "next";
 import { customMetadata } from "../page";
 import Navbar, { NavigationPage } from "../../components/navbar";
 import projectsJson from "../../data/projects.json";
 import Divider from "../../components/divider";
 import ProjectsClient from "./projects-client";
 
-export const metadata: Metadata = customMetadata("Projects");
+export const metadata = customMetadata("Projects");
 
 export default function Page() {
   const categories = [

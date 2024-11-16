@@ -32,25 +32,5 @@
       "innerHtml": "Terrain05.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Terrain Model",
-  "categories": {
-    "nodes": [
-      {
-        "name": "C / C++",
-        "slug": "c"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2022, Semester 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "Terrain01.png"
-    }
-  },
-  "date": "2022-11-29T15:01:11"
+  ]
 }

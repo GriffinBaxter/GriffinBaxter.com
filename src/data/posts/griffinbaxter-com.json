@@ -20,29 +20,5 @@
       "innerHtml": "<li>1.0 – Initial Wordpress site\n<li>2.0 – New statically-generated NextJS site with Wordpress backend (WPGraphQL)\n<li>2.1 – Replaced the Wordpress backend with stored JSON and image files</li>\n<li>2.2 – Optimised for mobile screens</li>\n",
       "tagName": "ul"
     }
-  ],
-  "title": "GriffinBaxter.com",
-  "categories": {
-    "nodes": [
-      {
-        "name": "HTML / CSS",
-        "slug": "html-css"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      },
-      {
-        "name": "TypeScript",
-        "slug": "typescript"
-      }
-    ]
-  },
-  "excerpt": "2022 Onwards",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "GriffinBaxter.com01.png"
-    }
-  },
-  "date": "2022-11-30T22:45:13"
+  ]
 }

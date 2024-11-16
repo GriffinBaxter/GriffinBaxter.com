@@ -90,21 +90,5 @@
       "innerHtml": "<strong>Game Completion Date: </strong>7 January 2020 (Main Story completed)",
       "tagName": "p"
     }
-  ],
-  "title": "Rise of the Tomb Raider",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Game Reviews",
-        "slug": "game-reviews"
-      }
-    ]
-  },
-  "excerpt": "Short Review",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "RotTR Screenshot 1.png"
-    }
-  },
-  "date": "2020-03-23T18:00:00"
+  ]
 }

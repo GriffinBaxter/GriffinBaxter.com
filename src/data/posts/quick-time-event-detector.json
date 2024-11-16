@@ -44,25 +44,5 @@
       "innerHtml": "QTE06.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Quick-Time Event Detector",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Python",
-        "slug": "python"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2022, Semester 1",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "QTE01.png"
-    }
-  },
-  "date": "2022-05-29T11:46:49"
+  ]
 }

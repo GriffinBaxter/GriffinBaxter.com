@@ -28,25 +28,5 @@
       "innerHtml": "Skeletal04.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Skeletal Animation",
-  "categories": {
-    "nodes": [
-      {
-        "name": "C / C++",
-        "slug": "c"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2022, Semester 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "Skeletal01.png"
-    }
-  },
-  "date": "2022-11-30T16:33:40"
+  ]
 }

@@ -48,25 +48,5 @@
       "innerHtml": "ScaledToNothing05.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Scaled To Nothing",
-  "categories": {
-    "nodes": [
-      {
-        "name": "GDScript",
-        "slug": "gdscript"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2024, August",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "ScaledToNothing01.jpg"
-    }
-  },
-  "date": "2024-11-15T19:48:00"
+  ]
 }

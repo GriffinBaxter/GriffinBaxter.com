@@ -48,33 +48,5 @@
       "innerHtml": "CodeWOF04.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Skill Tracking and Recommendations for CodeWOF",
-  "categories": {
-    "nodes": [
-      {
-        "name": "HTML / CSS",
-        "slug": "html-css"
-      },
-      {
-        "name": "JavaScript",
-        "slug": "javascript"
-      },
-      {
-        "name": "Python",
-        "slug": "python"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2022, Semester 1 and 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "CodeWOF01.png"
-    }
-  },
-  "date": "2022-11-30T18:35:38"
+  ]
 }

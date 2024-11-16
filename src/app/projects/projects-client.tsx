@@ -42,16 +42,16 @@ export default function ProjectsClient({ categories }: Props) {
       </div>
       <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
         {projectsJson
-          .filter((project) =>
+          .filter((postDetails) =>
             selectedCategory
-              ? project.categories.nodes.find(
+              ? postDetails.categories.nodes.find(
                   (category) => category.slug === selectedCategory,
                 )
               : true,
           )
           .map((project) => (
             <div key={project.slug} className="max-w-sm">
-              <ProjectCard project={project} />
+              <ProjectCard postDetails={project} />
             </div>
           ))}
       </div>

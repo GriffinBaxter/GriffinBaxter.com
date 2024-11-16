@@ -48,25 +48,5 @@
       "innerHtml": "CalendarNotes07.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Calendar Notes",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Kotlin",
-        "slug": "kotlin"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2022, Semester 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "CalendarNotes01.png"
-    }
-  },
-  "date": "2022-11-30T14:02:26"
+  ]
 }

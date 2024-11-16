@@ -1,28 +1,28 @@
-import { type Review } from "../../../models";
+import type { PostDetails } from "../../../models";
 import { months } from "../post-header";
 import Link from "next/link";
 import Image from "next/image";
 
 interface Props {
-  review: Review;
+  postDetails: PostDetails;
 }
 
-export default function ReviewCard({ review }: Props) {
-  const date = new Date(review.date);
+export default function ReviewCard({ postDetails }: Props) {
+  const date = new Date(postDetails.date);
   return (
-    <Link href={review.slug}>
+    <Link href={postDetails.slug}>
       <div className="card max-w-96 bg-base-100 shadow-xl">
         <figure>
           <Image
-            src={`/images/${review.featuredImage.node.sourceUrl}`}
+            src={`/images/${postDetails.featuredImage.node.sourceUrl}`}
             alt="Review Image"
             width={384}
             height={216}
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{review.title}</h2>
-          <p className="font-semibold">{review.excerpt}</p>
+          <h2 className="card-title">{postDetails.title}</h2>
+          <p className="font-semibold">{postDetails.excerpt}</p>
           <p>
             {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
           </p>

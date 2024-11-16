@@ -12,25 +12,5 @@
       "innerHtml": "Battleships can be played with two players using two ATmega32U2 microcontrollers via IR transmitters, each with a 5×7 LED display. To start, each player must choose the positions of three ships, each of different sizes, using a joystick and button. Once both players have chosen, the game of Battleships starts. Each player can check the status of their own ships and shoot a shot when it is their turn until the game is complete.",
       "tagName": "p"
     }
-  ],
-  "title": "Battleships",
-  "categories": {
-    "nodes": [
-      {
-        "name": "C / C++",
-        "slug": "c"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      }
-    ]
-  },
-  "excerpt": "2020, Semester 2",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "Battleships Photo 1.png"
-    }
-  },
-  "date": "2021-02-11T13:03:33"
+  ]
 }

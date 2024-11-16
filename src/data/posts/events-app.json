@@ -60,33 +60,5 @@
       "innerHtml": "Events App 10.png",
       "tagName": "figure"
     }
-  ],
-  "title": "Events App",
-  "categories": {
-    "nodes": [
-      {
-        "name": "HTML / CSS",
-        "slug": "html-css"
-      },
-      {
-        "name": "JavaScript",
-        "slug": "javascript"
-      },
-      {
-        "name": "Software Projects",
-        "slug": "projects"
-      },
-      {
-        "name": "SQL",
-        "slug": "sql"
-      }
-    ]
-  },
-  "excerpt": "2021, Semester 1",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "Events App Featured.png"
-    }
-  },
-  "date": "2021-06-22T12:45:57"
+  ]
 }

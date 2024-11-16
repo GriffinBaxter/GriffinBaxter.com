@@ -138,21 +138,5 @@
       "innerHtml": "<strong>Game Completion Date:</strong> 30 December 2019 (Main Chapters and Epilogue completed)",
       "tagName": "p"
     }
-  ],
-  "title": "Red Dead Redemption 2",
-  "categories": {
-    "nodes": [
-      {
-        "name": "Game Reviews",
-        "slug": "game-reviews"
-      }
-    ]
-  },
-  "excerpt": "Single-player Review",
-  "featuredImage": {
-    "node": {
-      "sourceUrl": "RDR2 Screenshot 1.png"
-    }
-  },
-  "date": "2020-01-25T14:00:13"
+  ]
 }
