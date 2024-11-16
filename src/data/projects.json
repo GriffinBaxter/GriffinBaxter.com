@@ -1,5 +1,27 @@
 [
   {
+    "slug": "no-data-provided",
+    "title": "No Data Provided",
+    "categories": {
+      "nodes": [
+        {
+          "name": "GDScript",
+          "slug": "gdscript"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2023/2024",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "NoDataProvided01.png"
+      }
+    }
+  },
+  {
     "slug": "scaled-to-nothing",
     "title": "Scaled To Nothing",
     "categories": {

@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/No-Data-Provided\">GitHub.com/GriffinBaxter/No-Data-Provided</a>",
+      "tagName": "p"
+    },
+    {
+      "innerHtml": "itch.io Page (Windows download): <a rel=\"noreferrer noopener\" href=\"https://griffinbaxter.itch.io/no-data-provided\">GriffinBaxter.itch.io/No-Data-Provided</a>",
+      "tagName": "p"
+    },
+    {
+      "innerHtml": "This is my first game made in Godot, which I worked on this in my spare time in 2023/2024. It's a short prototype that I may expand into a full game, or use elements of in a future project. I was notably proud of the cutscenes I created by tracking movements from a VR headset.",
+      "tagName": "p"
+    },
+    {
+      "innerHtml": "",
+      "tagName": "hr"
+    },
+    {
+      "innerHtml": "Gallery",
+      "tagName": "h4"
+    },
+    {
+      "innerHtml": "NoDataProvided02.png",
+      "tagName": "figure"
+    },
+    {
+      "innerHtml": "NoDataProvided03.png",
+      "tagName": "figure"
+    },
+    {
+      "innerHtml": "NoDataProvided04.png",
+      "tagName": "figure"
+    }
+  ],
+  "title": "No Data Provided",
+  "categories": {
+    "nodes": [
+      {
+        "name": "GDScript",
+        "slug": "gdscript"
+      },
+      {
+        "name": "Software Projects",
+        "slug": "projects"
+      }
+    ]
+  },
+  "excerpt": "2023/2024",
+  "featuredImage": {
+    "node": {
+      "sourceUrl": "NoDataProvided01.png"
+    }
+  },
+  "date": "2024-11-16T18:00:00"
+}
