@@ -33,9 +33,12 @@ export default async function Page(props: Props) {
     notFound();
   }
 
-  const postContent = (await import(
+  const postContentJson = (await import(
     `../../data/posts/${params.postSlug}.json`
   )) as PostBlock[];
+  const postContent = [...Array(postContentJson.length).keys()].map(
+    (i) => postContentJson[i],
+  ) as PostBlock[];
   const projectPost = projectsJson.find(
     (post) => post.slug === params.postSlug,
   ) as PostDetails | undefined;
