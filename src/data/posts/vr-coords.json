@@ -1,0 +1,22 @@
+[
+  {
+    "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/VR-Coords\">GitHub.com/GriffinBaxter/VR-Coords</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "itch.io Page: <a rel=\"noreferrer noopener\" href=\"https://griffinbaxter.itch.io/vr-coords\">GriffinBaxter.itch.io/vr-coords</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "VR Coords is a tool I made in <a rel=\"noreferrer noopener\" href=\"https://godotengine.org/\">Godot</a> for exporting BVH files following movement (position and rotation) from a VR headset.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Run with a compatible VR headset connected. Press \"Start Recording\" to record the headset's movement (position and rotation). Press the button again to stop once the recording is complete, and you'll be prompted to save a BVH file.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "The cutscenes at the start of <a rel=\"noreferrer noopener\" href=\"/no-data-provided\">No Data Provided</a> were created using VR Coords.",
+    "tagName": "p"
+  }
+]

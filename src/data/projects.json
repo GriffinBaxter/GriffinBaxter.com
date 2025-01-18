@@ -1,5 +1,28 @@
 [
   {
+    "slug": "vr-coords",
+    "title": "VR Coords",
+    "categories": {
+      "nodes": [
+        {
+          "name": "GDScript",
+          "slug": "gdscript"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2024 - 2025",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "VrCoords01.png"
+      }
+    },
+    "date": "2025-01-18T21:00:00"
+  },
+  {
     "slug": "no-data-provided",
     "title": "No Data Provided",
     "categories": {
@@ -14,7 +37,7 @@
         }
       ]
     },
-    "excerpt": "2023/2024",
+    "excerpt": "2023 - 2024",
     "featuredImage": {
       "node": {
         "sourceUrl": "NoDataProvided01.png"
@@ -260,7 +283,7 @@
         }
       ]
     },
-    "excerpt": "2021/2022, Summer Break",
+    "excerpt": "2021 - 2022, Summer Break",
     "featuredImage": {
       "node": {
         "sourceUrl": "Video Speed Keys 1.png"
