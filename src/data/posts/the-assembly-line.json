@@ -1,0 +1,50 @@
+[
+  {
+    "innerHtml": "GitHub Repository: <a rel=\"noreferrer noopener\" href=\"https://github.com/GriffinBaxter/The-Assembly-Line\">GitHub.com/GriffinBaxter/The-Assembly-Line</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "itch.io Page: <a rel=\"noreferrer noopener\" href=\"https://griffinbaxter.itch.io/the-assembly-line\">GriffinBaxter.itch.io/The-Assembly-Line</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "\"How I Made\" Video: <a rel=\"noreferrer noopener\" href=\"https://www.youtube.com/watch?v=6CrAkUljL8o\">YouTube.com/watch?v=6CrAkUljL8o</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "In <a rel=\"noreferrer noopener\" href=\"https://gamemakerstoolkit.com/\">Game Maker Toolkit</a>'s 2024 Patreon Jam, I made a game called \"The Assembly Line\". This was my second game jam, and being a week-long jam I spent quite a bit of time working on it after work during the week. I created a \"How I Made\" video that you can watch below, or at the link above which covers the journey more in-depth.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<iframe src=\"https://www.youtube.com/embed/6CrAkUljL8o?si=YwHJPKJeo0uEmE9V\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+    "tagName": "iframe"
+  },
+  {
+    "innerHtml": "",
+    "tagName": "hr"
+  },
+  {
+    "innerHtml": "Gallery",
+    "tagName": "h4"
+  },
+  {
+    "innerHtml": "TheAssemblyLine02.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "TheAssemblyLine03.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "TheAssemblyLine04.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "TheAssemblyLine05.png",
+    "tagName": "figure"
+  },
+  {
+    "innerHtml": "TheAssemblyLine06.png",
+    "tagName": "figure"
+  }
+]

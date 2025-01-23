@@ -6,7 +6,7 @@ import projectsJson from "../data/projects.json";
 
 const featuredProjectSlugs = [
   "codewof",
-  "no-data-provided",
+  "the-assembly-line",
   "griffinbaxter-com",
   "scaled-to-nothing",
   "video-speed-keys",

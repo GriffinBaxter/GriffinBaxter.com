@@ -23,6 +23,29 @@
     "date": "2025-01-18T21:00:00"
   },
   {
+    "slug": "the-assembly-line",
+    "title": "The Assembly Line",
+    "categories": {
+      "nodes": [
+        {
+          "name": "GDScript",
+          "slug": "gdscript"
+        },
+        {
+          "name": "Software Projects",
+          "slug": "projects"
+        }
+      ]
+    },
+    "excerpt": "2024, December",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "TheAssemblyLine01.jpg"
+      }
+    },
+    "date": "2025-01-23T21:00:00"
+  },
+  {
     "slug": "no-data-provided",
     "title": "No Data Provided",
     "categories": {
