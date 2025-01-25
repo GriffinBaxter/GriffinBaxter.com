@@ -25,7 +25,7 @@ const navbarLink = (page: NavigationPage, currentPage: NavigationPage) => {
         className={
           page === currentPage
             ? "text-blue-900 md:text-blue-100"
-            : "min-[0px]:max-md:text-gray-500"
+            : "max-md:text-gray-500"
         }
       >
         {navigationPageDetails[page].title}
@@ -40,7 +40,7 @@ interface Props {
 
 export default function Navbar({ currentPage }: Props) {
   const links = (
-    <ul className="menu menu-sm z-[1] w-52 rounded-box bg-base-100 px-1 shadow min-[0px]:max-md:dropdown-content md:menu-horizontal md:menu-md md:w-auto md:bg-transparent">
+    <ul className="menu menu-sm z-[1] w-52 rounded-box bg-base-100 px-1 max-md:dropdown-content md:menu-horizontal md:menu-md max-md:shadow md:w-auto md:bg-transparent">
       {navbarLink(NavigationPage.Home, currentPage)}
       {navbarLink(NavigationPage.Projects, currentPage)}
       {navbarLink(NavigationPage.Reviews, currentPage)}
@@ -79,7 +79,7 @@ export default function Navbar({ currentPage }: Props) {
           </summary>
           {links}
         </details>
-        <div className="flex-none min-[0px]:max-md:hidden">{links}</div>
+        <div className="flex-none max-md:hidden">{links}</div>
       </div>
     </div>
   );
