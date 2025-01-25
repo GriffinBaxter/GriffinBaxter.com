@@ -5,6 +5,7 @@ import { languageBadgeColour } from "../../components/post/post-header";
 import projectsJson from "../../data/projects.json";
 import ProjectCard from "../../components/post/project/project-card";
 import type { Category } from "../../models";
+import { motion } from "motion/react";
 
 interface Props {
   categories: Category[];
@@ -19,7 +20,9 @@ export default function ProjectsClient({ categories }: Props) {
     <>
       <div className="py-8">
         {categories.map((category) => (
-          <button
+          <motion.button
+            whileHover={{ scale: 1.075 }}
+            whileTap={{ scale: 0.925 }}
             key={category.slug}
             className={`badge badge-lg ${
               languageBadgeColour[category.slug] as string
@@ -37,7 +40,7 @@ export default function ProjectsClient({ categories }: Props) {
             }}
           >
             {category.name}
-          </button>
+          </motion.button>
         ))}
       </div>
       <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">

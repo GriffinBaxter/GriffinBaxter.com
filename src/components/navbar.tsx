@@ -52,7 +52,7 @@ export default function Navbar({ currentPage }: Props) {
     <div className="mb-10 w-full bg-neutral">
       <div className="navbar mx-auto max-w-[1200px] bg-neutral text-neutral-content">
         <div className="flex-1">
-          <Link href="/" className="btn btn-ghost text-xl normal-case">
+          <Link href="/" className="btn btn-ghost text-xl">
             Griffin Baxter
           </Link>
         </div>

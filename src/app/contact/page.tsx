@@ -1,9 +1,8 @@
 import { customMetadata } from "../page";
 import Navbar, { NavigationPage } from "../../components/navbar";
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
-import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
 import Divider from "../../components/divider";
 import Link from "next/link";
+import ContactClient from "./contact-client";
 
 export const metadata = customMetadata("Contact");
 
@@ -38,22 +37,7 @@ export default function Page() {
         </p>
         <Divider />
         <div className="grid grid-cols-2 items-center gap-x-6 gap-y-2 py-6">
-          <Link
-            target="_blank"
-            href="https://www.linkedin.com/in/griffinbaxter/"
-            rel="noreferrer"
-          >
-            <FaLinkedin className="text-primary" size={100} />
-            <p className="pt-2 text-center text-lg font-bold">LinkedIn</p>
-          </Link>
-          <Link
-            target="_blank"
-            href="https://github.com/GriffinBaxter"
-            rel="noreferrer"
-          >
-            <FaGithubSquare className="text-base-content" size={100} />
-            <p className="pt-2 text-center text-lg font-bold">GitHub</p>
-          </Link>
+          <ContactClient />
         </div>
       </main>
     </>
