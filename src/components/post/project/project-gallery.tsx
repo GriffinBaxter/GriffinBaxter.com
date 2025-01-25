@@ -1,3 +1,5 @@
+"use client";
+
 import type { PostBlock } from "../../../models";
 import Image from "next/image";
 
@@ -8,8 +10,7 @@ interface Props {
 export default function ProjectGallery({ blocks }: Props) {
   return (
     <div className="carousel w-full py-6">
-      {blocks.map((block, index) => {
-        const slideNumber = index + 1;
+      {blocks.map((block, slideNumber) => {
         return (
           <div
             id={`slide${slideNumber.toString()}`}
@@ -25,14 +26,26 @@ export default function ProjectGallery({ blocks }: Props) {
             />
             <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
               <a
-                href={`#slide${slideNumber > 1 ? (slideNumber - 1).toString() : blocks.length.toString()}`}
                 className="btn btn-circle"
+                onClick={() => {
+                  document
+                    .getElementById(
+                      `slide${slideNumber > 0 ? (slideNumber - 1).toString() : (blocks.length - 1).toString()}`,
+                    )
+                    ?.scrollIntoView({ behavior: "instant" });
+                }}
               >
                 ❮
               </a>
               <a
-                href={`#slide${slideNumber < blocks.length ? (slideNumber + 1).toString() : "1"}`}
                 className="btn btn-circle"
+                onClick={() => {
+                  document
+                    .getElementById(
+                      `slide${slideNumber < blocks.length - 1 ? (slideNumber + 1).toString() : "0"}`,
+                    )
+                    ?.scrollIntoView({ behavior: "instant" });
+                }}
               >
                 ❯
               </a>
