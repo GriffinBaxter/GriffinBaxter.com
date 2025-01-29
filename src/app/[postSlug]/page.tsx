@@ -7,6 +7,7 @@ import reviewsJson from "../../data/reviews.json";
 import PostHeader from "../../components/post/post-header";
 import ProjectGallery from "../../components/post/project/project-gallery";
 import { notFound } from "next/navigation";
+import PostClient from "./post-client";
 
 const slugs = [...projectsJson, ...reviewsJson].map(({ slug }) => slug);
 
@@ -56,6 +57,8 @@ export default async function Page(props: Props) {
 
   return (
     <>
+      <PostClient />
+
       <Navbar
         currentPage={
           isProject ? NavigationPage.Projects : NavigationPage.Reviews
