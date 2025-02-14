@@ -5,7 +5,7 @@ import { motion, useSpring, useScroll } from "motion/react";
 export default function PostClient() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
-    stiffness: 100,
+    stiffness: 200,
     damping: 30,
     restDelta: 0.001,
   });
