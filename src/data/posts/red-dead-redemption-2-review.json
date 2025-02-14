@@ -82,51 +82,7 @@
     "tagName": "h4"
   },
   {
-    "innerHtml": "The developer/publisher did not provide a review sample of this game.",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "<strong>Game Info:</strong>",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "Name: Red Dead Redemption 2",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "Developer: Rockstar Games",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "Publisher: Rockstar Games",
-    "tagName": "p"
-  },
-  {
     "innerHtml": "<strong>Platform:</strong> PC (Rockstar Games Launcher)",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "<strong>Review PC Specs:</strong>",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "CPU: Intel i7-8700",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "GPU: Nvidia GTX 1070",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "Memory: 16GB DDR4 2666MHz",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "Monitor: 1440p 165Hz IPS G-Sync 27”",
-    "tagName": "p"
-  },
-  {
-    "innerHtml": "Game Storage: NVME SSD",
     "tagName": "p"
   },
   {
@@ -134,7 +90,7 @@
     "tagName": "p"
   },
   {
-    "innerHtml": "<strong>Game Completion Date:</strong> 30 December 2019 (Main Chapters and Epilogue completed)",
+    "innerHtml": "<strong>Game Completion Date:</strong> 30 December 2019 (Main chapters and epilogue completed)",
     "tagName": "p"
   }
 ]

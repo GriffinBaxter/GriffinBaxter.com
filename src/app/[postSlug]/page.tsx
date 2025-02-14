@@ -65,7 +65,7 @@ export default async function Page(props: Props) {
         }
       />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-8">
+      <main className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-16">
         <PostHeader postDetails={post} isProject={isProject} />
         <PostContent
           blocks={

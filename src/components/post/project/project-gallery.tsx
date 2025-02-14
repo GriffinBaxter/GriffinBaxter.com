@@ -9,7 +9,7 @@ interface Props {
 
 export default function ProjectGallery({ blocks }: Props) {
   return (
-    <div className="carousel w-full py-6">
+    <div className="carousel w-full pt-6">
       {blocks.map((block, slideNumber) => {
         return (
           <div
