@@ -24,8 +24,8 @@ export default function Page() {
             className="font-bold text-blue-600 underline hover:text-blue-800"
           >
             LinkedIn
-          </Link>{" "}
-          or follow me on{" "}
+          </Link>
+          , follow me on{" "}
           <Link
             target="_blank"
             href="https://github.com/GriffinBaxter"
@@ -34,9 +34,18 @@ export default function Page() {
           >
             GitHub
           </Link>
+          , or{" "}
+          <Link
+            target="_blank"
+            href="https://griffinbaxter.itch.io/"
+            rel="noreferrer"
+            className="font-bold text-blue-600 underline hover:text-blue-800"
+          >
+            itch.io
+          </Link>
         </p>
         <Divider />
-        <div className="grid grid-cols-2 items-center gap-x-6 gap-y-2 py-6">
+        <div className="grid grid-cols-3 items-center gap-x-6 gap-y-2 py-6">
           <ContactClient />
         </div>
       </main>
