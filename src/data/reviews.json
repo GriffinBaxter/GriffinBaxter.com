@@ -2,6 +2,14 @@
   {
     "slug": "movies-i-watched-in-2024-review",
     "title": "Movies I Watched In 2024",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Movies",
+          "slug": "movies"
+        }
+      ]
+    },
     "excerpt": "Review",
     "featuredImage": {
       "node": {
@@ -13,6 +21,14 @@
   {
     "slug": "half-life-alyx-review",
     "title": "Half-Life: Alyx",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Games",
+          "slug": "games"
+        }
+      ]
+    },
     "excerpt": "Review",
     "featuredImage": {
       "node": {
@@ -24,6 +40,14 @@
   {
     "slug": "wolfenstein-youngblood-review",
     "title": "Wolfenstein: Youngblood",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Games",
+          "slug": "games"
+        }
+      ]
+    },
     "excerpt": "Co-op Review",
     "featuredImage": {
       "node": {
@@ -35,6 +59,14 @@
   {
     "slug": "heavy-rain-review",
     "title": "Heavy Rain",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Games",
+          "slug": "games"
+        }
+      ]
+    },
     "excerpt": "Review",
     "featuredImage": {
       "node": {
@@ -46,6 +78,14 @@
   {
     "slug": "rise-of-the-tomb-raider-review",
     "title": "Rise of the Tomb Raider",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Games",
+          "slug": "games"
+        }
+      ]
+    },
     "excerpt": "Short Review",
     "featuredImage": {
       "node": {
@@ -57,6 +97,14 @@
   {
     "slug": "life-is-strange-2-review",
     "title": "Life is Strange 2",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Games",
+          "slug": "games"
+        }
+      ]
+    },
     "excerpt": "Review",
     "featuredImage": {
       "node": {
@@ -68,6 +116,14 @@
   {
     "slug": "red-dead-redemption-2-review",
     "title": "Red Dead Redemption 2",
+    "categories": {
+      "nodes": [
+        {
+          "name": "Games",
+          "slug": "games"
+        }
+      ]
+    },
     "excerpt": "Single-player Review",
     "featuredImage": {
       "node": {

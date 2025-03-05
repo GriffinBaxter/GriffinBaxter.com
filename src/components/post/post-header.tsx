@@ -13,6 +13,11 @@ export const languageBadgeColour: Record<string, string> = {
   typescript: "badge-primary",
 };
 
+export const reviewMediumBadgeColour: Record<string, string> = {
+  games: "badge-info",
+  movies: "badge-accent",
+};
+
 export const months = [
   "January",
   "February",
@@ -44,8 +49,8 @@ export default function PostHeader({ postDetails, isProject }: Props) {
         {postDetails.excerpt}
       </p>
       {isProject ? (
-        <div className="mx-auto flex flex-wrap gap-2 pb-6">
-          {postDetails.categories?.nodes.map((category) =>
+        <div className="mx-auto flex flex-wrap gap-6 pb-6">
+          {postDetails.categories.nodes.map((category) =>
             Object.keys(languageBadgeColour).includes(category.slug) ? (
               <div
                 key={category.slug}
@@ -59,8 +64,18 @@ export default function PostHeader({ postDetails, isProject }: Props) {
           )}
         </div>
       ) : (
-        <div className="mx-auto flex flex-wrap gap-2 pb-6">
+        <div className="mx-auto flex flex-wrap gap-6 pb-6">
           {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
+          {postDetails.categories.nodes.map((category) => (
+            <div
+              key={category.slug}
+              className={`badge badge-lg ${
+                reviewMediumBadgeColour[category.slug] as string
+              }`}
+            >
+              {category.name}
+            </div>
+          ))}
         </div>
       )}
       <Image

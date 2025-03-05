@@ -9,7 +9,7 @@ export interface PostDetails {
   excerpt: string;
   featuredImage: { node: { sourceUrl: string } };
   date: string;
-  categories?: { nodes: Category[] };
+  categories: { nodes: Category[] };
 }
 
 export interface PostBlock {

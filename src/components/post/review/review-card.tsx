@@ -1,7 +1,7 @@
 "use client";
 
 import type { PostDetails } from "../../../models";
-import { months } from "../post-header";
+import { months, reviewMediumBadgeColour } from "../post-header";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
@@ -30,6 +30,16 @@ export default function ReviewCard({ postDetails }: Props) {
             <p>
               {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
             </p>
+            <div className="flex flex-wrap gap-2 pt-1">
+              {postDetails.categories.nodes.map((category) => (
+                <div
+                  key={category.slug}
+                  className={`badge ${reviewMediumBadgeColour[category.slug] as string}`}
+                >
+                  {category.name}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </Link>

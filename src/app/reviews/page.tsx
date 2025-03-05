@@ -1,14 +1,11 @@
 import { customMetadata } from "../page";
 import Navbar, { NavigationPage } from "../../components/navbar";
-import ReviewCard from "../../components/post/review/review-card";
 import reviewsJson from "../../data/reviews.json";
 import Divider from "../../components/divider";
 import gamesRankedJson from "../../data/games-ranked.json";
 import Link from "next/link";
 import { months } from "../../components/post/post-header";
-import { SiLetterboxd } from "@react-icons/all-files/si/SiLetterboxd";
-import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
-import GamesRankedClient from "./games-ranked-client";
+import ReviewsClient from "./reviews-client";
 
 const getDateText = (date: Date): string => {
   return `${date.getDate().toString()} ${months[date.getMonth()] as string} ${date.getFullYear().toString()}`;
@@ -42,6 +39,14 @@ const getStartedAndCompleted = (game: {
 export const metadata = customMetadata("Reviews");
 
 export default function Page() {
+  const categories = [
+    ...new Map(
+      reviewsJson
+        .flatMap((review) => review.categories.nodes)
+        .map((item) => [item.slug, item]),
+    ).values(),
+  ].sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
+
   return (
     <>
       <Navbar currentPage={NavigationPage.Reviews} />
@@ -51,85 +56,56 @@ export default function Page() {
           Reviews
         </p>
         <Divider />
-        <div className="grid grid-cols-1 gap-2 py-4 sm:grid-cols-3">
-          <Link
-            target="_blank"
-            href="https://letterboxd.com/GriffinBaxter"
-            rel="noreferrer"
-            className="mx-auto my-2 sm:mx-0"
-          >
-            <button className="btn btn-secondary">
-              <SiLetterboxd size={24} /> Letterboxd
-            </button>
-          </Link>
-          <Link
-            target="_blank"
-            href="https://backloggd.com/u/GriffinBaxter"
-            rel="noreferrer"
-            className="mx-auto my-2 sm:mx-0"
-          >
-            <button className="btn btn-secondary">
-              <FaGamepad size={24} /> Backloggd
-            </button>
-          </Link>
-          <GamesRankedClient />
-          <dialog id="games-ranked-modal" className="modal">
-            <div className="modal-box">
-              <h3 className="pb-6 pt-2 text-center text-2xl font-bold">
-                All Games I’ve Completed (Ranked)
-              </h3>
-              <ol className="list-decimal pl-8">
-                {gamesRankedJson.completed.map((game) =>
-                  game.slug ? (
-                    <li key={game.name}>
-                      <Link
-                        target="_blank"
-                        href={game.slug}
-                        rel="noreferrer"
-                        className="text-blue-600 underline hover:text-blue-800"
-                      >
-                        <span className="font-bold">{game.name}</span>{" "}
-                        <span className="italic">
-                          {getStartedAndCompleted(game)}
-                        </span>
-                      </Link>
-                    </li>
-                  ) : (
-                    <li key={game.name}>
+
+        <ReviewsClient categories={categories} />
+
+        <dialog id="games-ranked-modal" className="modal">
+          <div className="modal-box">
+            <h3 className="pb-6 pt-2 text-center text-2xl font-bold">
+              All Games I’ve Completed (Ranked)
+            </h3>
+            <ol className="list-decimal pl-8">
+              {gamesRankedJson.completed.map((game) =>
+                game.slug ? (
+                  <li key={game.name}>
+                    <Link
+                      target="_blank"
+                      href={game.slug}
+                      rel="noreferrer"
+                      className="text-blue-600 underline hover:text-blue-800"
+                    >
                       <span className="font-bold">{game.name}</span>{" "}
                       <span className="italic">
                         {getStartedAndCompleted(game)}
                       </span>
-                    </li>
-                  ),
-                )}
-              </ol>
-              <h3 className="pb-6 pt-8 text-center text-2xl font-bold">
-                Games In-Progress
-              </h3>
-              <ul className="list-disc pl-8">
-                {gamesRankedJson.started.map((game) => (
+                    </Link>
+                  </li>
+                ) : (
                   <li key={game.name}>
                     <span className="font-bold">{game.name}</span>{" "}
                     <span className="italic">
                       {getStartedAndCompleted(game)}
                     </span>
                   </li>
-                ))}
-              </ul>
-            </div>
-            <form method="dialog" className="modal-backdrop">
-              <button>close</button>
-            </form>
-          </dialog>
-        </div>
-        <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
-          {reviewsJson.map((postDetails) => (
-            <div key={postDetails.slug} className="max-w-sm">
-              <ReviewCard postDetails={postDetails} />
-            </div>
-          ))}
-        </div>
+                ),
+              )}
+            </ol>
+            <h3 className="pb-6 pt-8 text-center text-2xl font-bold">
+              Games In-Progress
+            </h3>
+            <ul className="list-disc pl-8">
+              {gamesRankedJson.started.map((game) => (
+                <li key={game.name}>
+                  <span className="font-bold">{game.name}</span>{" "}
+                  <span className="italic">{getStartedAndCompleted(game)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <form method="dialog" className="modal-backdrop">
+            <button>close</button>
+          </form>
+        </dialog>
       </main>
     </>
   );
