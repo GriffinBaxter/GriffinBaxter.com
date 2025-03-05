@@ -1,0 +1,18 @@
+[
+  {
+    "innerHtml": "I watched 89 movies (totalling to over 150 hours) in 2024, and made a video talking about them for 15 minutes.",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "Video: <a rel=\"noreferrer noopener\" href=\"https://www.youtube.com/watch?v=_seAZYj7u5c\">YouTube.com/watch?v=_seAZYj7u5c</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "My Letterboxd: <a rel=\"noreferrer noopener\" href=\"https://letterboxd.com/GriffinBaxter\">Letterboxd.com/GriffinBaxter</a>",
+    "tagName": "p"
+  },
+  {
+    "innerHtml": "<iframe src=\"https://www.youtube.com/embed/_seAZYj7u5c?si=yaLGGcLk2tCbgwG1\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>",
+    "tagName": "iframe"
+  }
+]

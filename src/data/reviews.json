@@ -1,5 +1,16 @@
 [
   {
+    "slug": "movies-i-watched-in-2024-review",
+    "title": "Movies I Watched In 2024",
+    "excerpt": "Review",
+    "featuredImage": {
+      "node": {
+        "sourceUrl": "MoviesIWatchedIn2024.jpg"
+      }
+    },
+    "date": "2025-03-05T21:00:00"
+  },
+  {
     "slug": "half-life-alyx-review",
     "title": "Half-Life: Alyx",
     "excerpt": "Review",
