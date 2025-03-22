@@ -1,5 +1,6 @@
 import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
+import { FaItchIo } from "@react-icons/all-files/fa/FaItchIo";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import DarkModeToggle from "./dark-mode-toggle";
@@ -17,7 +18,7 @@ export default async function FooterComponent() {
             href="https://www.linkedin.com/in/griffinbaxter/"
             rel="noreferrer"
           >
-            <FaLinkedin size={24}></FaLinkedin>
+            <FaLinkedin size={24} />
           </Link>
           <Link
             className="hover:text-white"
@@ -25,7 +26,15 @@ export default async function FooterComponent() {
             href="https://github.com/GriffinBaxter"
             rel="noreferrer"
           >
-            <FaGithub size={24}></FaGithub>
+            <FaGithub size={24} />
+          </Link>
+          <Link
+            className="hover:text-white"
+            target="_blank"
+            href="https://griffinbaxter.itch.io/"
+            rel="noreferrer"
+          >
+            <FaItchIo size={24} />
           </Link>
           <DarkModeToggle isDarkModeCookie={isDarkModeCookie} />
         </div>
