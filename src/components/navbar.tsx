@@ -40,7 +40,10 @@ interface Props {
 
 export default function Navbar({ currentPage }: Props) {
   const links = (
-    <ul className="menu menu-sm rounded-box bg-base-100 max-md:dropdown-content md:menu-horizontal md:menu-md z-1 w-52 px-1 max-md:shadow-sm md:w-auto md:bg-transparent">
+    <ul
+      tabIndex={0}
+      className="dropdown-content menu menu-sm rounded-box bg-base-100 max-md:dropdown-content md:menu-horizontal md:menu-md z-1 w-52 px-1 max-md:shadow-sm md:w-auto md:bg-transparent"
+    >
       {navbarLink(NavigationPage.Home, currentPage)}
       {navbarLink(NavigationPage.Projects, currentPage)}
       {navbarLink(NavigationPage.Reviews, currentPage)}
@@ -56,7 +59,7 @@ export default function Navbar({ currentPage }: Props) {
             Griffin Baxter
           </Link>
         </div>
-        <details className="dropdown dropdown-left flex-none md:hidden">
+        <div className="dropdown dropdown-left flex-none md:hidden">
           <summary
             tabIndex={0}
             role="button"
@@ -78,7 +81,7 @@ export default function Navbar({ currentPage }: Props) {
             </svg>
           </summary>
           {links}
-        </details>
+        </div>
         <div className="flex-none max-md:hidden">{links}</div>
       </div>
     </div>
