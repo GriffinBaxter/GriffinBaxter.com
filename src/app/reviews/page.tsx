@@ -61,7 +61,7 @@ export default function Page() {
 
         <dialog id="games-ranked-modal" className="modal">
           <div className="modal-box">
-            <h3 className="pb-6 pt-2 text-center text-2xl font-bold">
+            <h3 className="pt-2 pb-6 text-center text-2xl font-bold">
               All Games I’ve Completed (Ranked)
             </h3>
             <ol className="list-decimal pl-8">
@@ -90,7 +90,7 @@ export default function Page() {
                 ),
               )}
             </ol>
-            <h3 className="pb-6 pt-8 text-center text-2xl font-bold">
+            <h3 className="pt-8 pb-6 text-center text-2xl font-bold">
               Games In-Progress
             </h3>
             <ul className="list-disc pl-8">

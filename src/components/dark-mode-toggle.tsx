@@ -37,7 +37,7 @@ export default function DarkModeToggle({ isDarkModeCookie }: Props) {
             setDarkMode(false);
           }
         }}
-        className="toggle"
+        className="toggle text-neutral bg-white checked:text-white"
       />
       <MdOutlineDarkMode size={24} />
     </label>

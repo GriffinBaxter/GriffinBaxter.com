@@ -15,7 +15,7 @@ export default function ProjectGallery({ blocks }: Props) {
           <div
             id={`slide${slideNumber.toString()}`}
             key={block.innerHtml}
-            className="carousel-item relative aspect-[16/9] w-full"
+            className="carousel-item relative aspect-16/9 w-full"
           >
             <Image
               className="mx-auto max-h-[675px]"
@@ -24,7 +24,7 @@ export default function ProjectGallery({ blocks }: Props) {
               fill={true}
               style={{ objectFit: "contain" }}
             />
-            <div className="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <div className="absolute top-1/2 right-5 left-5 flex -translate-y-1/2 transform justify-between">
               <a
                 className="btn btn-circle"
                 onClick={() => {

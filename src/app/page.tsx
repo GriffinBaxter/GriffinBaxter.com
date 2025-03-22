@@ -33,7 +33,7 @@ export default function Page() {
       <Navbar currentPage={NavigationPage.Home} />
 
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
-        <p className="text-balance py-8 text-center text-3xl font-medium sm:text-5xl">
+        <p className="py-8 text-center text-3xl font-medium text-balance sm:text-5xl">
           I’m <span className="font-bold">Griffin</span>, a{" "}
           <span className="font-bold">Full-Stack</span> Web/Mobile Software
           Engineer
@@ -42,7 +42,7 @@ export default function Page() {
           Based in <span className="font-bold">Christchurch, New Zealand</span>
         </p>
         <Divider />
-        <p className="pb-12 pt-8 text-center text-2xl font-extrabold uppercase sm:text-3xl">
+        <p className="pt-8 pb-12 text-center text-2xl font-extrabold uppercase sm:text-3xl">
           Featured Projects
         </p>
         <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
