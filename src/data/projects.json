@@ -7,10 +7,6 @@
         {
           "name": "GDScript",
           "slug": "gdscript"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -30,10 +26,6 @@
         {
           "name": "GDScript",
           "slug": "gdscript"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -53,10 +45,6 @@
         {
           "name": "GDScript",
           "slug": "gdscript"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -76,10 +64,6 @@
         {
           "name": "GDScript",
           "slug": "gdscript"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -99,10 +83,6 @@
         {
           "name": "HTML / CSS",
           "slug": "html-css"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         },
         {
           "name": "TypeScript",
@@ -134,10 +114,6 @@
         {
           "name": "Python",
           "slug": "python"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -157,10 +133,6 @@
         {
           "name": "C / C++",
           "slug": "c"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -180,10 +152,6 @@
         {
           "name": "Kotlin",
           "slug": "kotlin"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -203,10 +171,6 @@
         {
           "name": "C / C++",
           "slug": "c"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -226,10 +190,6 @@
         {
           "name": "Kotlin",
           "slug": "kotlin"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -249,10 +209,6 @@
         {
           "name": "C / C++",
           "slug": "c"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -272,10 +228,6 @@
         {
           "name": "Python",
           "slug": "python"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -299,10 +251,6 @@
         {
           "name": "JavaScript",
           "slug": "javascript"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -336,10 +284,6 @@
           "slug": "python"
         },
         {
-          "name": "Software Projects",
-          "slug": "projects"
-        },
-        {
           "name": "SQL",
           "slug": "sql"
         }
@@ -361,10 +305,6 @@
         {
           "name": "C / C++",
           "slug": "c"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -390,10 +330,6 @@
           "slug": "javascript"
         },
         {
-          "name": "Software Projects",
-          "slug": "projects"
-        },
-        {
           "name": "SQL",
           "slug": "sql"
         }
@@ -415,10 +351,6 @@
         {
           "name": "C / C++",
           "slug": "c"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -438,10 +370,6 @@
         {
           "name": "Python",
           "slug": "python"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -461,10 +389,6 @@
         {
           "name": "C / C++",
           "slug": "c"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
@@ -484,10 +408,6 @@
         {
           "name": "Java",
           "slug": "java"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         },
         {
           "name": "SQL",
@@ -511,10 +431,6 @@
         {
           "name": "Java",
           "slug": "java"
-        },
-        {
-          "name": "Software Projects",
-          "slug": "projects"
         }
       ]
     },
