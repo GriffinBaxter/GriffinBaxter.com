@@ -8,7 +8,12 @@ import { motion } from "motion/react";
 
 export default function ContactClient() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="grid grid-cols-3 items-center gap-x-6 gap-y-2 py-6"
+    >
       <motion.div whileHover={{ scale: 1.075 }} whileTap={{ scale: 0.925 }}>
         <Link
           target="_blank"
@@ -39,6 +44,6 @@ export default function ContactClient() {
           <p className="pt-2 text-center text-lg font-bold">itch.io</p>
         </Link>
       </motion.div>
-    </>
+    </motion.div>
   );
 }

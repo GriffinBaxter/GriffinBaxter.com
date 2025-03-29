@@ -1,17 +1,7 @@
 import type { Metadata } from "next";
 import Navbar, { NavigationPage } from "../components/navbar";
 import Divider from "../components/divider";
-import ProjectCard from "../components/post/project/project-card";
-import projectsJson from "../data/projects.json";
-
-const featuredProjectSlugs = [
-  "codewof",
-  "the-assembly-line",
-  "griffinbaxter-com",
-  "scaled-to-nothing",
-  "video-speed-keys",
-  "guess-it",
-];
+import HomeClient from "./home-client";
 
 export const customMetadata = (
   name: string | undefined,
@@ -45,19 +35,7 @@ export default function Page() {
         <p className="pt-8 pb-12 text-center text-2xl font-extrabold uppercase sm:text-3xl">
           Featured Projects
         </p>
-        <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
-          {featuredProjectSlugs
-            .map((slug) =>
-              projectsJson.find((project) => project.slug === slug),
-            )
-            .map((project) =>
-              project ? (
-                <div key={project.slug} className="max-w-sm">
-                  <ProjectCard postDetails={project} />
-                </div>
-              ) : null,
-            )}
-        </div>
+        <HomeClient />
       </main>
     </>
   );

@@ -43,7 +43,12 @@ export default function ProjectsClient({ categories }: Props) {
           </motion.button>
         ))}
       </div>
-      <div className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3 }}
+        className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3"
+      >
         {projectsJson
           .filter((postDetails) =>
             selectedCategory
@@ -57,7 +62,7 @@ export default function ProjectsClient({ categories }: Props) {
               <ProjectCard postDetails={project} />
             </div>
           ))}
-      </div>
+      </motion.div>
     </>
   );
 }

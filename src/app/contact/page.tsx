@@ -45,9 +45,7 @@ export default function Page() {
           </Link>
         </p>
         <Divider />
-        <div className="grid grid-cols-3 items-center gap-x-6 gap-y-2 py-6">
-          <ContactClient />
-        </div>
+        <ContactClient />
       </main>
     </>
   );
