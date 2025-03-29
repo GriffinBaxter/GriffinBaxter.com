@@ -18,7 +18,7 @@ export default function ReviewCard({ postDetails }: Props) {
         <div className="card bg-base-100 max-w-96 shadow-xl">
           <figure>
             <Image
-              src={`/images/${postDetails.featuredImage.node.sourceUrl}`}
+              src={`/images/${postDetails.featuredImage}`}
               alt="Review Image"
               width={384}
               height={216}
@@ -31,7 +31,7 @@ export default function ReviewCard({ postDetails }: Props) {
               {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
             </p>
             <div className="flex flex-wrap gap-2 pt-1">
-              {postDetails.categories.nodes.map((category) => (
+              {postDetails.categories.map((category) => (
                 <div
                   key={category.slug}
                   className={`badge ${reviewMediumBadgeColour[category.slug] as string}`}

@@ -42,7 +42,7 @@ export default function Page() {
   const categories = [
     ...new Map(
       reviewsJson
-        .flatMap((review) => review.categories.nodes)
+        .flatMap((review) => review.categories)
         .map((item) => [item.slug, item]),
     ).values(),
   ].sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));

@@ -1,4 +1,4 @@
-import type { PostBlock, BlockAttribute } from "../../models";
+import type { PostBlock } from "../../models";
 import { rawHtmlDivider } from "../divider";
 
 const styleLinks = (html: string) => {
@@ -8,12 +8,9 @@ const styleLinks = (html: string) => {
   );
 };
 
-const styleH4 = (html: string, attributes: BlockAttribute[] | undefined) => {
+const styleH4 = (html: string, attributes: string[] | undefined) => {
   const isCentre = attributes
-    ? attributes.filter(
-        (attribute) =>
-          attribute.name === "textAlign" && attribute.value === "center",
-      ).length
+    ? attributes.filter((attribute) => attribute === "textCenter").length
     : false;
   if (isCentre) {
     return `<p class="text-xl sm:text-2xl md:text-3xl font-bold text-center py-6">${styleLinks(

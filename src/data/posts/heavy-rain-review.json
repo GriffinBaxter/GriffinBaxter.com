@@ -46,12 +46,7 @@
   {
     "innerHtml": "Rating: 8/10",
     "tagName": "h4",
-    "attributes": [
-      {
-        "name": "textAlign",
-        "value": "center"
-      }
-    ]
+    "attributes": ["textCenter"]
   },
   {
     "innerHtml": "",

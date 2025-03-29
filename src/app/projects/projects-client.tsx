@@ -47,7 +47,7 @@ export default function ProjectsClient({ categories }: Props) {
         {projectsJson
           .filter((postDetails) =>
             selectedCategory
-              ? postDetails.categories.nodes.find(
+              ? postDetails.categories.find(
                   (category) => category.slug === selectedCategory,
                 )
               : true,

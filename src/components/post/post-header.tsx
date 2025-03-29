@@ -50,7 +50,7 @@ export default function PostHeader({ postDetails, isProject }: Props) {
       </p>
       {isProject ? (
         <div className="mx-auto flex flex-wrap gap-6 pb-6">
-          {postDetails.categories.nodes.map((category) =>
+          {postDetails.categories.map((category) =>
             Object.keys(languageBadgeColour).includes(category.slug) ? (
               <div
                 key={category.slug}
@@ -66,7 +66,7 @@ export default function PostHeader({ postDetails, isProject }: Props) {
       ) : (
         <div className="mx-auto flex flex-wrap gap-6 pb-6">
           {date.getDate()} {months[date.getMonth()]} {date.getFullYear()}
-          {postDetails.categories.nodes.map((category) => (
+          {postDetails.categories.map((category) => (
             <div
               key={category.slug}
               className={`badge badge-lg ${
@@ -80,7 +80,7 @@ export default function PostHeader({ postDetails, isProject }: Props) {
       )}
       <Image
         className="mx-auto py-3"
-        src={`/images/${postDetails.featuredImage.node.sourceUrl}`}
+        src={`/images/${postDetails.featuredImage}`}
         alt="Main Post Image"
         width="1200"
         height="675"

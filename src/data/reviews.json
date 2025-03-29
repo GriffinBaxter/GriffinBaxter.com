@@ -2,134 +2,92 @@
   {
     "slug": "movies-i-watched-in-2024-review",
     "title": "Movies I Watched In 2024",
-    "categories": {
-      "nodes": [
-        {
-          "name": "Movies",
-          "slug": "movies"
-        }
-      ]
-    },
-    "excerpt": "Review",
-    "featuredImage": {
-      "node": {
-        "sourceUrl": "MoviesIWatchedIn2024.jpg"
+    "categories": [
+      {
+        "name": "Movies",
+        "slug": "movies"
       }
-    },
+    ],
+    "excerpt": "Review",
+    "featuredImage": "MoviesIWatchedIn2024.jpg",
     "date": "2025-03-05T21:00:00"
   },
   {
     "slug": "half-life-alyx-review",
     "title": "Half-Life: Alyx",
-    "categories": {
-      "nodes": [
-        {
-          "name": "Games",
-          "slug": "games"
-        }
-      ]
-    },
-    "excerpt": "Review",
-    "featuredImage": {
-      "node": {
-        "sourceUrl": "HLA Screenshot 1.png"
+    "categories": [
+      {
+        "name": "Games",
+        "slug": "games"
       }
-    },
+    ],
+    "excerpt": "Review",
+    "featuredImage": "HLA Screenshot 1.png",
     "date": "2020-09-05T12:00:00"
   },
   {
     "slug": "wolfenstein-youngblood-review",
     "title": "Wolfenstein: Youngblood",
-    "categories": {
-      "nodes": [
-        {
-          "name": "Games",
-          "slug": "games"
-        }
-      ]
-    },
-    "excerpt": "Co-op Review",
-    "featuredImage": {
-      "node": {
-        "sourceUrl": "Youngblood Screenshot 1.png"
+    "categories": [
+      {
+        "name": "Games",
+        "slug": "games"
       }
-    },
+    ],
+    "excerpt": "Co-op Review",
+    "featuredImage": "Youngblood Screenshot 1.png",
     "date": "2020-07-11T17:00:00"
   },
   {
     "slug": "heavy-rain-review",
     "title": "Heavy Rain",
-    "categories": {
-      "nodes": [
-        {
-          "name": "Games",
-          "slug": "games"
-        }
-      ]
-    },
-    "excerpt": "Review",
-    "featuredImage": {
-      "node": {
-        "sourceUrl": "HR Screenshot 1.png"
+    "categories": [
+      {
+        "name": "Games",
+        "slug": "games"
       }
-    },
+    ],
+    "excerpt": "Review",
+    "featuredImage": "HR Screenshot 1.png",
     "date": "2020-04-20T22:00:00"
   },
   {
     "slug": "rise-of-the-tomb-raider-review",
     "title": "Rise of the Tomb Raider",
-    "categories": {
-      "nodes": [
-        {
-          "name": "Games",
-          "slug": "games"
-        }
-      ]
-    },
-    "excerpt": "Short Review",
-    "featuredImage": {
-      "node": {
-        "sourceUrl": "RotTR Screenshot 1.png"
+    "categories": [
+      {
+        "name": "Games",
+        "slug": "games"
       }
-    },
+    ],
+    "excerpt": "Short Review",
+    "featuredImage": "RotTR Screenshot 1.png",
     "date": "2020-03-23T18:00:00"
   },
   {
     "slug": "life-is-strange-2-review",
     "title": "Life is Strange 2",
-    "categories": {
-      "nodes": [
-        {
-          "name": "Games",
-          "slug": "games"
-        }
-      ]
-    },
-    "excerpt": "Review",
-    "featuredImage": {
-      "node": {
-        "sourceUrl": "LiS2 Screenshot 1.jpeg"
+    "categories": [
+      {
+        "name": "Games",
+        "slug": "games"
       }
-    },
+    ],
+    "excerpt": "Review",
+    "featuredImage": "LiS2 Screenshot 1.jpeg",
     "date": "2020-02-15T18:00:00"
   },
   {
     "slug": "red-dead-redemption-2-review",
     "title": "Red Dead Redemption 2",
-    "categories": {
-      "nodes": [
-        {
-          "name": "Games",
-          "slug": "games"
-        }
-      ]
-    },
-    "excerpt": "Single-player Review",
-    "featuredImage": {
-      "node": {
-        "sourceUrl": "RDR2 Screenshot 1.png"
+    "categories": [
+      {
+        "name": "Games",
+        "slug": "games"
       }
-    },
+    ],
+    "excerpt": "Single-player Review",
+    "featuredImage": "RDR2 Screenshot 1.png",
     "date": "2020-01-25T14:00:13"
   }
 ]

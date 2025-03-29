@@ -7,20 +7,15 @@ export interface PostDetails {
   slug: string;
   title: string;
   excerpt: string;
-  featuredImage: { node: { sourceUrl: string } };
+  featuredImage: string;
   date: string;
-  categories: { nodes: Category[] };
+  categories: Category[];
 }
 
 export interface PostBlock {
   innerHtml: string;
   tagName: string;
-  attributes?: BlockAttribute[];
-}
-
-export interface BlockAttribute {
-  name: string;
-  value: string;
+  attributes?: string[];
 }
 
 export interface Slug {

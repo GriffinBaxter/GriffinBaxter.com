@@ -10,7 +10,7 @@ export default function Page() {
   const categories = [
     ...new Map(
       projectsJson
-        .flatMap((project) => project.categories.nodes)
+        .flatMap((project) => project.categories)
         .map((item) => [item.slug, item]),
     ).values(),
   ]

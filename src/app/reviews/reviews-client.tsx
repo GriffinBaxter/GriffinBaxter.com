@@ -83,7 +83,7 @@ export default function ReviewsClient({ categories }: Props) {
         {reviewsJson
           .filter((postDetails) =>
             selectedCategory
-              ? postDetails.categories.nodes.find(
+              ? postDetails.categories.find(
                   (category) => category.slug === selectedCategory,
                 )
               : true,
