@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Navbar, { NavigationPage } from "../components/navbar";
 import Divider from "../components/divider";
 import HomeClient from "./home-client";
+import Link from "next/link";
 
 export const customMetadata = (
   name: string | undefined,
@@ -36,6 +37,9 @@ export default function Page() {
           Featured Projects
         </p>
         <HomeClient />
+        <Link href="projects" className="mx-auto my-2 sm:mx-0">
+          <button className="btn btn-info">View All Projects</button>
+        </Link>
       </main>
     </>
   );
