@@ -7,7 +7,8 @@ import Link from "next/link";
 import { months } from "../../components/post/post-header";
 import ReviewsClient from "./reviews-client";
 
-const getDateText = (date: Date): string => {
+const getDateText = (yearMonthDay: [number, number, number]): string => {
+  const date = new Date(yearMonthDay[0], yearMonthDay[1] - 1, yearMonthDay[2]);
   return `${date.getDate().toString()} ${months[date.getMonth()] as string} ${date.getFullYear().toString()}`;
 };
 
@@ -21,17 +22,17 @@ const getStartedAndCompleted = (game: {
     return `(Started: ${
       typeof game.started === "string"
         ? game.started
-        : getDateText(new Date(...(game.started as [number, number, number])))
+        : getDateText(game.started as [number, number, number])
     }, Completed: ${
       typeof game.completed === "string"
         ? game.completed
-        : getDateText(new Date(...(game.completed as [number, number, number])))
+        : getDateText(game.completed as [number, number, number])
     })`;
   } else if (game.started) {
     return `(Started: ${
       typeof game.started === "string"
         ? game.started
-        : getDateText(new Date(...(game.started as [number, number, number])))
+        : getDateText(game.started as [number, number, number])
     })`;
   }
 };
