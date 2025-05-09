@@ -82,6 +82,11 @@
       "completed": [2023, 9, 8]
     },
     {
+      "name": "The Last of Us Part I",
+      "started": [2025, 0, 22],
+      "completed": [2025, 4, 8]
+    },
+    {
       "name": "Wolfenstein II: The New Colossus",
       "started": "2018",
       "completed": [2019, 0, 12]
@@ -354,10 +359,6 @@
       "started": [2024, 1, 6]
     },
     {
-      "name": "The Legend of Zelda: Ocarina of Time",
-      "started": [2024, 3, 13]
-    },
-    {
       "name": "Grand Theft Auto: San Andreas – The Definitive Edition",
       "started": [2024, 5, 14]
     },
@@ -368,10 +369,6 @@
     {
       "name": "Red Dead Redemption",
       "started": [2024, 10, 9]
-    },
-    {
-      "name": "The Last of Us Part I",
-      "started": [2025, 0, 22]
     }
   ]
 }
