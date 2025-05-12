@@ -22,7 +22,7 @@
     "@types/node": "^22.15.17",
     "@types/react": "^19.1.4",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
-    "@typescript-eslint/parser": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.1",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
     "daisyui": "^5.0.35",
