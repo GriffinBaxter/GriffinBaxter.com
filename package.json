@@ -11,7 +11,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "motion": "^12.10.4",
+    "motion": "^12.11.0",
     "next": "^15.3.2",
     "react": "19.1.0",
     "zod": "^3.24.4"
