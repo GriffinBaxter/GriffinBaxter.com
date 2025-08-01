@@ -11,26 +11,26 @@
     "format:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
-    "motion": "^12.22.0",
-    "next": "^15.3.4",
-    "react": "19.1.0",
-    "zod": "^3.25.67"
+    "motion": "^12.23.12",
+    "next": "^15.4.5",
+    "react": "19.1.1",
+    "zod": "^4.0.14"
   },
   "devDependencies": {
     "@react-icons/all-files": "https://github.com/react-icons/react-icons/releases/download/v5.5.0/react-icons-all-files-5.5.0.tgz",
     "@tailwindcss/postcss": "^4.1.11",
-    "@types/node": "^24.0.10",
-    "@types/react": "^19.1.8",
-    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@types/node": "^24.1.0",
+    "@types/react": "^19.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.32.1",
     "@vercel/analytics": "^1.5.0",
     "@vercel/speed-insights": "^1.2.0",
-    "daisyui": "^5.0.43",
-    "eslint": "^9.30.1",
-    "eslint-config-next": "15.3.4",
+    "daisyui": "^5.0.50",
+    "eslint": "^9.32.0",
+    "eslint-config-next": "15.4.5",
     "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.6.13",
-    "react-dom": "19.1.0",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "react-dom": "19.1.1",
     "tailwindcss": "^4.1.6",
     "typescript": "^5.8.3"
   },
