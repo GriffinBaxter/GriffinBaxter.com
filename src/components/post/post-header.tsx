@@ -80,7 +80,11 @@ export default function PostHeader({ postDetails, isProject }: Props) {
       )}
       <Image
         className="mx-auto py-3"
-        src={`/images/${postDetails.featuredImage}`}
+        src={
+          process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
+            ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${postDetails.featuredImage}`
+            : ""
+        }
         alt="Main Post Image"
         width="1200"
         height="675"

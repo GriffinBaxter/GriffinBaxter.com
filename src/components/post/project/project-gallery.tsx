@@ -19,8 +19,12 @@ export default function ProjectGallery({ blocks }: Props) {
           >
             <Image
               className="mx-auto max-h-[675px]"
-              src={`/images/${block.innerHtml}`}
-              alt={`Gallery Image (Slide ${slideNumber.toString()})`}
+              src={
+                process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
+                  ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${block.innerHtml}`
+                  : ""
+              }
+              alt={`Gallery Image (Slide ${(slideNumber + 1).toString()})`}
               fill={true}
               style={{ objectFit: "contain" }}
             />

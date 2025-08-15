@@ -18,7 +18,11 @@ export default function ReviewCard({ postDetails }: Props) {
         <div className="card bg-base-100 max-w-96 shadow-xl">
           <figure>
             <Image
-              src={`/images/${postDetails.featuredImage}`}
+              src={
+                process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
+                  ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${postDetails.featuredImage}`
+                  : ""
+              }
               alt="Review Image"
               width={384}
               height={216}

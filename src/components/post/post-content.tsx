@@ -39,7 +39,11 @@ const styleQuote = (html: string) => {
 const styleImage = (fileName: string) => {
   return `
     <div class="flex flex-col items-center py-6">
-      <img src="/images/${fileName}" alt="Post Image" class="max-h-[675px]"/>
+      <img src="${
+        process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
+          ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${fileName}`
+          : ""
+      }" alt="Post Image" class="max-h-[675px]"/>
     </div>
   `;
 };
