@@ -74,8 +74,9 @@ export default function ContactClient() {
             </div>
           ) : (
             <>
-              <label className="floating-label pb-2">
+              <label htmlFor="name" className="floating-label pb-2">
                 <input
+                  id="name"
                   type="text"
                   name="name"
                   placeholder="Name"
@@ -84,8 +85,9 @@ export default function ContactClient() {
                 />
                 <span>Name</span>
               </label>
-              <label className="floating-label pb-2">
+              <label htmlFor="email" className="floating-label pb-2">
                 <input
+                  id="email"
                   type="email"
                   name="email"
                   placeholder="Email"
@@ -94,8 +96,9 @@ export default function ContactClient() {
                 />
                 <span>Email</span>
               </label>
-              <label className="floating-label pb-2">
+              <label htmlFor="message" className="floating-label pb-2">
                 <textarea
+                  id="message"
                   name="message"
                   className="textarea textarea-lg h-48"
                   placeholder="Message"

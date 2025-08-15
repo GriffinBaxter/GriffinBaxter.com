@@ -13,6 +13,7 @@ export default async function FooterComponent() {
       <div className="container mx-auto flex max-w-[1200px] flex-col items-center justify-between px-6 sm:flex-row">
         <div className="flex items-center space-x-4">
           <Link
+            aria-label="LinkedIn"
             className="hover:text-white"
             target="_blank"
             href="https://www.linkedin.com/in/griffinbaxter/"
@@ -21,6 +22,7 @@ export default async function FooterComponent() {
             <FaLinkedin size={24} />
           </Link>
           <Link
+            aria-label="GitHub"
             className="hover:text-white"
             target="_blank"
             href="https://github.com/GriffinBaxter"
@@ -29,6 +31,7 @@ export default async function FooterComponent() {
             <FaGithub size={24} />
           </Link>
           <Link
+            aria-label="itch.io"
             className="hover:text-white"
             target="_blank"
             href="https://griffinbaxter.itch.io/"

@@ -25,9 +25,13 @@ export default function DarkModeToggle({ isDarkModeCookie }: Props) {
   return isDarkMode === undefined ? (
     <></>
   ) : (
-    <label className="flex cursor-pointer gap-2 pl-4">
+    <label
+      htmlFor="dark-mode-toggle"
+      className="flex cursor-pointer gap-2 pl-4"
+    >
       <MdOutlineLightMode size={24} />
       <input
+        id="dark-mode-toggle"
         type="checkbox"
         defaultChecked={isDarkMode === "true"}
         onChange={(event) => {
