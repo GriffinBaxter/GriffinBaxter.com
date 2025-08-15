@@ -50,6 +50,16 @@
       "completed": [2025, 1, 19]
     },
     {
+      "name": "Death Stranding: Director’s Cut",
+      "started": "2023",
+      "completed": [2023, 10, 8]
+    },
+    {
+      "name": "Death Stranding 2: On The Beach",
+      "started": [2025, 6, 26],
+      "completed": [2024, 8, 12]
+    },
+    {
       "name": "Life is Strange: Before the Storm",
       "started": [2017, 8, 31],
       "completed": [2017, 12, 21]
@@ -75,11 +85,6 @@
       "name": "The Legend of Zelda: Twilight Princess HD",
       "started": "2016",
       "completed": [2017, 3, 2]
-    },
-    {
-      "name": "Death Stranding: Director’s Cut",
-      "started": "2023",
-      "completed": [2023, 10, 8]
     },
     {
       "name": "The Last of Us Part I",
@@ -374,6 +379,10 @@
     {
       "name": "Stardew Valley",
       "started": [2025, 3, 30]
+    },
+    {
+      "name": "Donkey Kong Bananza",
+      "started": [2025, 7, 20]
     }
   ]
 }
