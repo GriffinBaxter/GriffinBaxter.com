@@ -22,10 +22,12 @@ const styleH4 = (html: string, attributes: string[] | undefined) => {
 };
 
 const styleList = (html: string) => {
-  return html.replaceAll(
-    "<li>",
-    `<li class="text-md sm:text-lg md:text-xl pb-2">`,
-  );
+  return `<ul class="list-disc list-inside">
+    ${html.replaceAll(
+      "<li>",
+      `<li class="text-md sm:text-lg md:text-xl pb-2">`,
+    )}
+  </ul>`;
 };
 
 const styleQuote = (html: string) => {

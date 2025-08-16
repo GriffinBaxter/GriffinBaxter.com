@@ -29,7 +29,7 @@ export default function ProjectGallery({ blocks }: Props) {
               style={{ objectFit: "contain" }}
             />
             <div className="absolute top-1/2 right-5 left-5 flex -translate-y-1/2 transform justify-between">
-              <a
+              <button
                 className="btn btn-circle"
                 onClick={() => {
                   document
@@ -40,8 +40,8 @@ export default function ProjectGallery({ blocks }: Props) {
                 }}
               >
                 ❮
-              </a>
-              <a
+              </button>
+              <button
                 className="btn btn-circle"
                 onClick={() => {
                   document
@@ -52,7 +52,7 @@ export default function ProjectGallery({ blocks }: Props) {
                 }}
               >
                 ❯
-              </a>
+              </button>
             </div>
           </div>
         );
