@@ -32,6 +32,7 @@ export default function DarkModeToggle({ isDarkModeCookie }: Props) {
       <MdOutlineLightMode size={24} />
       <input
         id="dark-mode-toggle"
+        aria-label="Dark Mode Toggle"
         type="checkbox"
         defaultChecked={isDarkMode === "true"}
         onChange={(event) => {
