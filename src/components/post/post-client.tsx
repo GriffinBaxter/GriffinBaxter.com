@@ -1,9 +1,9 @@
 "use client";
 
 import { motion, useSpring, useScroll } from "motion/react";
-import PostContent from "../../components/post/post-content";
-import PostHeader from "../../components/post/post-header";
-import ProjectGallery from "../../components/post/project/project-gallery";
+import PostContent from "../post/post-content";
+import PostHeader from "../post/post-header";
+import ProjectGallery from "../post/project/project-gallery";
 import type { PostDetails, PostBlock } from "../../models";
 
 interface Props {

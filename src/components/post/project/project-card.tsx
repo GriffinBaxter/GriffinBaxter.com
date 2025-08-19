@@ -13,7 +13,7 @@ interface Props {
 export default function ProjectCard({ postDetails }: Props) {
   return (
     <motion.div whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.975 }}>
-      <Link href={postDetails.slug}>
+      <Link href={`projects/${postDetails.slug}`}>
         <div className="card bg-base-100 max-w-96 shadow-xl">
           <figure>
             <Image

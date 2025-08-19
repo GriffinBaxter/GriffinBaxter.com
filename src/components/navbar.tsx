@@ -12,9 +12,9 @@ const navigationPageDetails: Record<
   { title: string; href: string }
 > = {
   [NavigationPage.Home]: { title: "Home", href: "/" },
-  [NavigationPage.Projects]: { title: "Projects", href: "projects" },
-  [NavigationPage.Reviews]: { title: "Reviews", href: "reviews" },
-  [NavigationPage.Contact]: { title: "Contact", href: "contact" },
+  [NavigationPage.Projects]: { title: "Projects", href: "/projects" },
+  [NavigationPage.Reviews]: { title: "Reviews", href: "/reviews" },
+  [NavigationPage.Contact]: { title: "Contact", href: "/contact" },
 };
 
 const navbarLink = (page: NavigationPage, currentPage: NavigationPage) => {

@@ -1,10 +1,10 @@
+// Redirect for old post links not using /projects or /reviews
+
 import { customMetadata } from "../page";
-import Navbar, { NavigationPage } from "../../components/navbar";
-import type { PostDetails, PostBlock } from "../../models";
+import type { PostDetails } from "../../models";
 import projectsJson from "../../data/projects.json";
 import reviewsJson from "../../data/reviews.json";
-import { notFound } from "next/navigation";
-import PostClient from "./post-client";
+import { notFound, permanentRedirect } from "next/navigation";
 
 const slugs = [...projectsJson, ...reviewsJson].map(({ slug }) => slug);
 
@@ -31,32 +31,14 @@ export default async function Page(props: Props) {
     notFound();
   }
 
-  const postContentJson = (await import(
-    `../../data/posts/${params.postSlug}.json`
-  )) as PostBlock[];
-  const postContent = [...Array(postContentJson.length).keys()].map(
-    (i) => postContentJson[i],
-  ) as PostBlock[];
   const projectPost = projectsJson.find(
-    (post) => post.slug === params.postSlug,
-  ) as PostDetails | undefined;
-  const reviewPost = reviewsJson.find(
     (post) => post.slug === params.postSlug,
   ) as PostDetails | undefined;
 
   const isProject = !!projectPost;
-  const post = (isProject ? projectPost : reviewPost) as PostDetails;
 
-  return (
-    <>
-      <Navbar
-        currentPage={
-          isProject ? NavigationPage.Projects : NavigationPage.Reviews
-        }
-      />
-
-      <PostClient postContent={postContent} isProject={isProject} post={post} />
-    </>
+  permanentRedirect(
+    `/${isProject ? "projects" : "reviews"}/${params.postSlug}`,
   );
 }
 
