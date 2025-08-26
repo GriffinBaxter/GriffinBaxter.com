@@ -1,6 +1,5 @@
-// Redirect for old post links not using /projects or /reviews
+// Redirect for old post links without a /projects or /reviews prefix
 
-import { customMetadata } from "../page";
 import type { PostDetails } from "../../models";
 import projectsJson from "../../data/projects.json";
 import reviewsJson from "../../data/reviews.json";
@@ -10,18 +9,6 @@ const slugs = [...projectsJson, ...reviewsJson].map(({ slug }) => slug);
 
 interface Props {
   params: Promise<{ postSlug: string }>;
-}
-
-export async function generateMetadata(props: Props) {
-  const params = await props.params;
-
-  if (slugs.includes(params.postSlug)) {
-    return customMetadata(
-      [...projectsJson, ...reviewsJson].find(
-        (post) => post.slug === params.postSlug,
-      )?.title,
-    );
-  }
 }
 
 export default async function Page(props: Props) {

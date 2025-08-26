@@ -3,13 +3,19 @@ import type { PostDetails, PostBlock } from "../../models";
 import projectsJson from "../../data/projects.json";
 import reviewsJson from "../../data/reviews.json";
 import PostClient from "./post-client";
+import { notFound } from "next/navigation";
 
 interface Props {
+  slugs: string[];
   postSlug: string;
   isProject: boolean;
 }
 
-export default async function Post({ postSlug, isProject }: Props) {
+export default async function Post({ slugs, postSlug, isProject }: Props) {
+  if (!slugs.includes(postSlug)) {
+    notFound();
+  }
+
   const postContentJson = (await import(
     `../../data/posts/${postSlug}.json`
   )) as PostBlock[];

@@ -1,7 +1,6 @@
 import projectsJson from "../../../data/projects.json";
-import { customMetadata } from "../../page";
 import Post from "../../../components/post/post";
-import { notFound } from "next/navigation";
+import { generatePostMetadata } from "../../../components/metadata";
 
 const slugs = projectsJson.map(({ slug }) => slug);
 
@@ -11,22 +10,12 @@ interface Props {
 
 export async function generateMetadata(props: Props) {
   const params = await props.params;
-
-  if (slugs.includes(params.projectSlug)) {
-    return customMetadata(
-      projectsJson.find((post) => post.slug === params.projectSlug)?.title,
-    );
-  }
+  return generatePostMetadata(params.projectSlug, slugs, projectsJson);
 }
 
 export default async function Page(props: Props) {
   const params = await props.params;
-
-  if (!slugs.includes(params.projectSlug)) {
-    notFound();
-  }
-
-  return <Post postSlug={params.projectSlug} isProject={true} />;
+  return <Post slugs={slugs} postSlug={params.projectSlug} isProject={true} />;
 }
 
 export const generateStaticParams = () => {

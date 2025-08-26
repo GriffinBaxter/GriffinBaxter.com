@@ -1,4 +1,4 @@
-import { customMetadata } from "../page";
+import { customMetadata } from "../../components/metadata";
 import Navbar, { NavigationPage } from "../../components/navbar";
 import reviewsJson from "../../data/reviews.json";
 import Divider from "../../components/divider";

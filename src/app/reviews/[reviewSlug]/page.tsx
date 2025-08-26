@@ -1,7 +1,6 @@
 import reviewsJson from "../../../data/reviews.json";
-import { customMetadata } from "../../page";
 import Post from "../../../components/post/post";
-import { notFound } from "next/navigation";
+import { generatePostMetadata } from "../../../components/metadata";
 
 const slugs = reviewsJson.map(({ slug }) => slug);
 
@@ -11,22 +10,12 @@ interface Props {
 
 export async function generateMetadata(props: Props) {
   const params = await props.params;
-
-  if (slugs.includes(params.reviewSlug)) {
-    return customMetadata(
-      reviewsJson.find((post) => post.slug === params.reviewSlug)?.title,
-    );
-  }
+  return generatePostMetadata(params.reviewSlug, slugs, reviewsJson);
 }
 
 export default async function Page(props: Props) {
   const params = await props.params;
-
-  if (!slugs.includes(params.reviewSlug)) {
-    notFound();
-  }
-
-  return <Post postSlug={params.reviewSlug} isProject={false} />;
+  return <Post slugs={slugs} postSlug={params.reviewSlug} isProject={false} />;
 }
 
 export const generateStaticParams = () => {

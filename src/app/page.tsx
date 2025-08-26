@@ -1,20 +1,8 @@
-import type { Metadata } from "next";
 import Navbar, { NavigationPage } from "../components/navbar";
 import Divider from "../components/divider";
 import HomeClient from "./home-client";
 import Link from "next/link";
-
-export const customMetadata = (
-  name: string | undefined,
-): Metadata | undefined => {
-  if (name) {
-    return {
-      title: name === "Home" ? "Griffin Baxter" : `${name} - Griffin Baxter`,
-      description: name,
-      icons: "/favicon.ico",
-    };
-  }
-};
+import { customMetadata } from "../components/metadata";
 
 export const metadata = customMetadata("Home");
 
