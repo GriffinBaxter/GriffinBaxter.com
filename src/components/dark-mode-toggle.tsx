@@ -20,7 +20,7 @@ export default function DarkModeToggle({ isDarkModeCookie }: Props) {
         window.matchMedia("(prefers-color-scheme: dark)").matches.toString(),
       );
     }
-  }, [isDarkMode, setIsDarkMode]);
+  }, [isDarkMode]);
 
   return isDarkMode === undefined ? (
     <></>

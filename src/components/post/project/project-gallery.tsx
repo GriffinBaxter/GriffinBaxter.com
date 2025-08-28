@@ -1,5 +1,7 @@
 "use client";
 
+import { getPagination } from "@kaliber/pagination";
+import { useEffect, useState } from "react";
 import type { PostBlock } from "../../../models";
 import Image from "next/image";
 
@@ -8,9 +10,23 @@ interface Props {
 }
 
 export default function ProjectGallery({ blocks }: Props) {
+  const numberOfSlides = blocks.length;
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [pagination, setPagination] = useState<(number | null)[]>([]);
+
+  useEffect(() => {
+    setPagination(
+      getPagination({
+        padding: 1,
+        current: currentSlide + 1,
+        max: numberOfSlides,
+      }).map((slide) => (slide ? slide - 1 : null)),
+    );
+  }, [currentSlide, numberOfSlides]);
+
   return (
     <>
-      <div className="carousel w-full pt-6">
+      <div className="carousel w-full overflow-x-hidden pt-6">
         {blocks.map((block, slideNumber) => {
           return (
             <div
@@ -29,52 +45,64 @@ export default function ProjectGallery({ blocks }: Props) {
                 fill={true}
                 style={{ objectFit: "contain" }}
               />
-              <div className="absolute top-1/2 right-5 left-5 flex -translate-y-1/2 transform justify-between">
-                <button
-                  className="btn btn-circle"
-                  onClick={() => {
-                    document
-                      .getElementById(
-                        `slide${slideNumber > 0 ? (slideNumber - 1).toString() : (blocks.length - 1).toString()}`,
-                      )
-                      ?.scrollIntoView({ behavior: "instant" });
-                  }}
-                >
-                  ❮
-                </button>
-                <button
-                  className="btn btn-circle"
-                  onClick={() => {
-                    document
-                      .getElementById(
-                        `slide${slideNumber < blocks.length - 1 ? (slideNumber + 1).toString() : "0"}`,
-                      )
-                      ?.scrollIntoView({ behavior: "instant" });
-                  }}
-                >
-                  ❯
-                </button>
-              </div>
             </div>
           );
         })}
       </div>
-      <div className="flex w-full flex-wrap justify-center gap-2 py-2">
-        {blocks.map((block, slideNumber) => {
-          return (
-            <button
-              key={block.innerHtml}
-              className="btn btn-xs"
-              onClick={() => {
-                document
-                  .getElementById(`slide${slideNumber.toString()}`)
-                  ?.scrollIntoView({ behavior: "instant" });
-              }}
-            >
-              {(slideNumber + 1).toString()}
-            </button>
-          );
+      <div className="join flex w-full flex-wrap justify-center pt-4">
+        <button
+          className="btn btn-sm sm:btn-md join-item w-8 sm:w-12"
+          onClick={() => {
+            const newSlide =
+              currentSlide > 0 ? currentSlide - 1 : numberOfSlides - 1;
+            document
+              .getElementById(`slide${newSlide.toString()}`)
+              ?.scrollIntoView({ behavior: "instant" });
+            setCurrentSlide(newSlide);
+          }}
+        >
+          ❮
+        </button>
+        {pagination.map((slideNumber, index) => {
+          if (slideNumber === null) {
+            return (
+              <button
+                key={index}
+                className="join-item btn btn-disabled btn-sm sm:btn-md w-8 sm:w-12"
+              >
+                ...
+              </button>
+            );
+          } else {
+            return (
+              <button
+                key={index}
+                className={`btn btn-sm sm:btn-md join-item w-8 sm:w-12 ${slideNumber === currentSlide ? "btn-active" : ""}`}
+                onClick={() => {
+                  document
+                    .getElementById(`slide${slideNumber.toString()}`)
+                    ?.scrollIntoView({ behavior: "instant" });
+                  setCurrentSlide(slideNumber);
+                }}
+              >
+                {(slideNumber + 1).toString()}
+              </button>
+            );
+          }
         })}
+        <button
+          className="btn btn-sm sm:btn-md join-item w-8 sm:w-12"
+          onClick={() => {
+            const newSlide =
+              currentSlide < numberOfSlides - 1 ? currentSlide + 1 : 0;
+            document
+              .getElementById(`slide${newSlide.toString()}`)
+              ?.scrollIntoView({ behavior: "instant" });
+            setCurrentSlide(newSlide);
+          }}
+        >
+          ❯
+        </button>
       </div>
     </>
   );
