@@ -1,5 +1,18 @@
 [
   {
+    "slug": "prof-oddheart",
+    "title": "Prof. Oddheart or: How I Learned to Stop Worrying and Love the Elevator",
+    "categories": [
+      {
+        "name": "GDScript",
+        "slug": "gdscript"
+      }
+    ],
+    "excerpt": "2025, April",
+    "featuredImage": "1n9pLKr03ujEsfxnJACNnSkBP2GhK7VFZXOgURz6T1pvCE8o",
+    "date": "2025-09-06T20:00:00"
+  },
+  {
     "slug": "vr-coords",
     "title": "VR Coords",
     "categories": [
