@@ -169,6 +169,11 @@
       "completed": [2015, 9, 1]
     },
     {
+      "name": "The Last of Us: Left Behind",
+      "started": [2025, 9, 4],
+      "completed": [2025, 9, 4]
+    },
+    {
       "name": "Life is Strange: True Colors",
       "started": [2022, 11, 12],
       "completed": [2022, 12, 4]
@@ -321,6 +326,11 @@
       "completed": [2016, 1, 16]
     },
     { "name": "Tomb Raider", "started": "2014", "completed": [2015, 1, 11] },
+    {
+      "name": "DUSK",
+      "started": [2024, 2, 6],
+      "completed": [2025, 9, 14]
+    },
     { "name": "Battlefield 1" },
     {
       "name": "Call of Duty: Black Ops II",
@@ -363,10 +373,6 @@
     {
       "name": "It Takes Two",
       "started": "2022"
-    },
-    {
-      "name": "DUSK",
-      "started": [2024, 2, 6]
     },
     {
       "name": "The Witcher 3: Wild Hunt",
