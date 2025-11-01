@@ -1,33 +1,20 @@
 import { defineConfig, globalIgnores } from "eslint/config";
 import typescriptEslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
-import js from "@eslint/js";
-import { FlatCompat } from "@eslint/eslintrc";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const compat = new FlatCompat({
-  baseDirectory: __dirname,
-  recommendedConfig: js.configs.recommended,
-  allConfig: js.configs.all,
-});
+import nextVitals from "eslint-config-next/core-web-vitals";
+import tseslint from "typescript-eslint";
 
 export default defineConfig([
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  ...nextVitals,
+  ...tseslint.configs.strictTypeChecked,
   globalIgnores([".next/"]),
   {
-    extends: compat.extends(
-      "next/core-web-vitals",
-      "plugin:@typescript-eslint/strict-type-checked",
-    ),
-
     plugins: {
       "@typescript-eslint": typescriptEslint,
     },
 
     languageOptions: {
-      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
       parser: tsParser,
       ecmaVersion: 5,
       sourceType: "script",
