@@ -31,6 +31,7 @@ export default function ThemeController({ isDarkModeCookie, main }: Props) {
         setDarkMode(false);
       }
     }
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setDarkModeCalled(true);
   }, [isDarkModeCookie, setDarkModeCalled]);
   return darkModeCalled ? main : <></>;

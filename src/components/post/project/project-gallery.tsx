@@ -15,6 +15,7 @@ export default function ProjectGallery({ blocks }: Props) {
   const [pagination, setPagination] = useState<(number | null)[]>([]);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setPagination(
       getPagination({
         padding: 1,

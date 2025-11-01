@@ -16,6 +16,7 @@ export default function DarkModeToggle({ isDarkModeCookie }: Props) {
 
   useEffect(() => {
     if (isDarkMode === undefined) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setIsDarkMode(
         window.matchMedia("(prefers-color-scheme: dark)").matches.toString(),
       );
@@ -42,7 +43,7 @@ export default function DarkModeToggle({ isDarkModeCookie }: Props) {
             setDarkMode(false);
           }
         }}
-        className="toggle text-neutral bg-white checked:text-white"
+        className="toggle text-neutral checked:bg-base-100 bg-white checked:text-white"
       />
       <MdOutlineDarkMode size={24} />
     </label>

@@ -5,6 +5,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import FooterComponent from "../components/footer";
 import { cookies } from "next/headers";
 import ThemeController from "../components/theme-controller";
+import type { ReactNode } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -14,7 +15,7 @@ const inter = Inter({
 export default async function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: ReactNode;
 }) {
   const isDarkModeCookie = (await cookies()).get("isDarkMode")?.value;
 
