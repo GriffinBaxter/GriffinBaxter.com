@@ -1,8 +1,7 @@
 "use client";
 
 import { setDarkMode } from "./theme-controller";
-import { MdOutlineDarkMode } from "@react-icons/all-files/md/MdOutlineDarkMode";
-import { MdOutlineLightMode } from "@react-icons/all-files/md/MdOutlineLightMode";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 import { useEffect, useState } from "react";
 
 interface Props {

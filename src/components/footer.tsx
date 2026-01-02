@@ -1,6 +1,4 @@
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
-import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
-import { FaItchIo } from "@react-icons/all-files/fa/FaItchIo";
+import { FaLinkedin, FaGithub, FaItchIo } from "react-icons/fa";
 import Link from "next/link";
 import { cookies } from "next/headers";
 import DarkModeToggle from "./dark-mode-toggle";

@@ -1,13 +1,12 @@
 "use client";
 
-import { FaSortAmountDown } from "@react-icons/all-files/fa/FaSortAmountDown";
+import { FaSortAmountDown, FaGamepad } from "react-icons/fa";
 import { useState } from "react";
 import type { Category } from "../../models";
 import { motion } from "motion/react";
 import { reviewMediumBadgeColour } from "../../components/post/post-header";
 import Link from "next/link";
-import { SiLetterboxd } from "@react-icons/all-files/si/SiLetterboxd";
-import { FaGamepad } from "@react-icons/all-files/fa/FaGamepad";
+import { SiLetterboxd } from "react-icons/si";
 import reviewsJson from "../../data/reviews.json";
 import ReviewCard from "../../components/post/review/review-card";
 

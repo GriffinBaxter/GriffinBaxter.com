@@ -1,8 +1,6 @@
 "use client";
 
-import { FaLinkedin } from "@react-icons/all-files/fa/FaLinkedin";
-import { FaGithubSquare } from "@react-icons/all-files/fa/FaGithubSquare";
-import { FaItchIo } from "@react-icons/all-files/fa/FaItchIo";
+import { FaLinkedin, FaGithubSquare, FaItchIo } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "motion/react";
 import { useSearchParams } from "next/navigation";
