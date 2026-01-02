@@ -87,6 +87,11 @@
       "completed": [2017, 3, 2]
     },
     {
+      "name": "Donkey Kong Bananza",
+      "started": [2025, 7, 20],
+      "completed": [2025, 10, 31]
+    },
+    {
       "name": "The Last of Us Part I",
       "started": [2025, 1, 22],
       "completed": [2025, 5, 8]
@@ -242,6 +247,11 @@
       "completed": [2018, 2, 4]
     },
     {
+      "name": "The Witcher 3: Wild Hunt",
+      "started": [2024, 7, 6],
+      "completed": [2025, 12, 21]
+    },
+    {
       "name": "Sleeping Dogs: Definitive Edition",
       "started": [2022, 6, 3],
       "completed": [2022, 9, 5]
@@ -327,6 +337,11 @@
     },
     { "name": "Tomb Raider", "started": "2014", "completed": [2015, 1, 11] },
     {
+      "name": "Road 96",
+      "started": [2025, 10, 23],
+      "completed": [2025, 11, 23]
+    },
+    {
       "name": "DUSK",
       "started": [2024, 2, 6],
       "completed": [2025, 9, 14]
@@ -375,20 +390,20 @@
       "started": "2022"
     },
     {
-      "name": "The Witcher 3: Wild Hunt",
-      "started": [2024, 7, 6]
-    },
-    {
       "name": "Red Dead Redemption",
       "started": [2024, 11, 9]
     },
     {
-      "name": "Stardew Valley",
-      "started": [2025, 3, 30]
+      "name": "The Legend of Zelda: Echoes of Wisdom",
+      "started": [2025, 11, 1]
     },
     {
-      "name": "Donkey Kong Bananza",
-      "started": [2025, 7, 20]
+      "name": "The Last of Us Part II",
+      "started": [2025, 12, 8]
+    },
+    {
+      "name": "Amnesia: Rebirth",
+      "started": [2025, 12, 26]
     }
   ]
 }

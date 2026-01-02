@@ -14,8 +14,7 @@ export default function Page() {
       <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-3xl font-medium text-balance sm:text-5xl">
           I’m <span className="font-bold">Griffin</span>, a{" "}
-          <span className="font-bold">Full-Stack</span> Web/Mobile Software
-          Engineer
+          <span className="font-bold">Full-Stack</span> Software Engineer
         </p>
         <p className="text-md pb-8 text-center sm:text-xl">
           Based in <span className="font-bold">Christchurch, New Zealand</span>
