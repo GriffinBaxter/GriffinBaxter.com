@@ -13,7 +13,7 @@
   "dependencies": {
     "@kaliber/pagination": "^1.0.1",
     "motion": "^12.34.3",
-    "next": "^16.1.6",
+    "next": "^16.1.7",
     "react": "19.2.4",
     "react-icons": "^5.5.0",
     "zod": "^4.3.6"
