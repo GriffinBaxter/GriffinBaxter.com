@@ -1,18 +1,5 @@
 [
   {
-    "slug": "movies-i-watched-in-2024-review",
-    "title": "Movies I Watched In 2024",
-    "categories": [
-      {
-        "name": "Movies",
-        "slug": "movies"
-      }
-    ],
-    "excerpt": "Review",
-    "featuredImage": "1n9pLKr03ujEtJNSGsZ35jS3cZAlDanVweCqf4bXGt6EdJIU",
-    "date": "2025-03-05T21:00:00"
-  },
-  {
     "slug": "half-life-alyx-review",
     "title": "Half-Life: Alyx",
     "categories": [

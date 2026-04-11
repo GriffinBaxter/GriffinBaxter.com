@@ -1,5 +1,18 @@
 [
   {
+    "slug": "full-grid",
+    "title": "Full Grid",
+    "categories": [
+      {
+        "name": "GDScript",
+        "slug": "gdscript"
+      }
+    ],
+    "excerpt": "2026 Onwards",
+    "featuredImage": "1n9pLKr03ujEIsyVWVJGWpaxSKbT1Y50h6dMLrZDCmXjws8o",
+    "date": "2026-04-11T23:40:00"
+  },
+  {
     "slug": "prof-oddheart",
     "title": "Prof. Oddheart or: How I Learned to Stop Worrying and Love the Elevator",
     "categories": [

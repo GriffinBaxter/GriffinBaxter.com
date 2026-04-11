@@ -138,11 +138,21 @@
     },
     { "name": "Mirror’s Edge" },
     {
+      "name": "Amnesia: Rebirth",
+      "started": [2025, 12, 26],
+      "completed": [2026, 1, 18]
+    },
+    {
       "name": "Tales from the Borderlands",
       "started": "2015",
       "completed": [2015, 12, 11]
     },
     { "name": "The Legend of Zelda: The Wind Waker HD" },
+    {
+      "name": "The Legend of Zelda: Echoes of Wisdom",
+      "started": [2025, 11, 1],
+      "completed": [2026, 3, 14]
+    },
     {
       "name": "Super Mario Bros. Wonder",
       "started": [2023, 11, 2],
@@ -393,17 +403,18 @@
       "name": "Red Dead Redemption",
       "started": [2024, 11, 9]
     },
-    {
-      "name": "The Legend of Zelda: Echoes of Wisdom",
-      "started": [2025, 11, 1]
-    },
+
     {
       "name": "The Last of Us Part II",
       "started": [2025, 12, 8]
     },
     {
-      "name": "Amnesia: Rebirth",
-      "started": [2025, 12, 26]
+      "name": "Teardown",
+      "started": [2026, 1, 20]
+    },
+    {
+      "name": "Mafia: Definitive Edition",
+      "started": [2026, 3, 21]
     }
   ]
 }
