@@ -50,61 +50,63 @@ export default function ProjectGallery({ blocks }: Props) {
           );
         })}
       </div>
-      <div className="join flex w-full flex-wrap justify-center pt-4">
-        <button
-          className="btn btn-sm sm:btn-md join-item w-8 sm:w-12"
-          onClick={() => {
-            const newSlide =
-              currentSlide > 0 ? currentSlide - 1 : numberOfSlides - 1;
-            document
-              .getElementById(`slide${newSlide.toString()}`)
-              ?.scrollIntoView({ behavior: "instant" });
-            setCurrentSlide(newSlide);
-          }}
-        >
-          ❮
-        </button>
-        {pagination.map((slideNumber, index) => {
-          if (slideNumber === null) {
-            return (
-              <button
-                key={index}
-                className="join-item btn btn-disabled btn-sm sm:btn-md w-8 sm:w-12"
-              >
-                ...
-              </button>
-            );
-          } else {
-            return (
-              <button
-                key={index}
-                className={`btn btn-sm sm:btn-md join-item w-8 sm:w-12 ${slideNumber === currentSlide ? "btn-active" : ""}`}
-                onClick={() => {
-                  document
-                    .getElementById(`slide${slideNumber.toString()}`)
-                    ?.scrollIntoView({ behavior: "instant" });
-                  setCurrentSlide(slideNumber);
-                }}
-              >
-                {(slideNumber + 1).toString()}
-              </button>
-            );
-          }
-        })}
-        <button
-          className="btn btn-sm sm:btn-md join-item w-8 sm:w-12"
-          onClick={() => {
-            const newSlide =
-              currentSlide < numberOfSlides - 1 ? currentSlide + 1 : 0;
-            document
-              .getElementById(`slide${newSlide.toString()}`)
-              ?.scrollIntoView({ behavior: "instant" });
-            setCurrentSlide(newSlide);
-          }}
-        >
-          ❯
-        </button>
-      </div>
+      {numberOfSlides > 1 && (
+        <div className="join flex w-full flex-wrap justify-center pt-4">
+          <button
+            className="btn btn-sm sm:btn-md join-item w-8 sm:w-12"
+            onClick={() => {
+              const newSlide =
+                currentSlide > 0 ? currentSlide - 1 : numberOfSlides - 1;
+              document
+                .getElementById(`slide${newSlide.toString()}`)
+                ?.scrollIntoView({ behavior: "instant" });
+              setCurrentSlide(newSlide);
+            }}
+          >
+            ❮
+          </button>
+          {pagination.map((slideNumber, index) => {
+            if (slideNumber === null) {
+              return (
+                <button
+                  key={index}
+                  className="join-item btn btn-disabled btn-sm sm:btn-md w-8 sm:w-12"
+                >
+                  ...
+                </button>
+              );
+            } else {
+              return (
+                <button
+                  key={index}
+                  className={`btn btn-sm sm:btn-md join-item w-8 sm:w-12 ${slideNumber === currentSlide ? "btn-active" : ""}`}
+                  onClick={() => {
+                    document
+                      .getElementById(`slide${slideNumber.toString()}`)
+                      ?.scrollIntoView({ behavior: "instant" });
+                    setCurrentSlide(slideNumber);
+                  }}
+                >
+                  {(slideNumber + 1).toString()}
+                </button>
+              );
+            }
+          })}
+          <button
+            className="btn btn-sm sm:btn-md join-item w-8 sm:w-12"
+            onClick={() => {
+              const newSlide =
+                currentSlide < numberOfSlides - 1 ? currentSlide + 1 : 0;
+              document
+                .getElementById(`slide${newSlide.toString()}`)
+                ?.scrollIntoView({ behavior: "instant" });
+              setCurrentSlide(newSlide);
+            }}
+          >
+            ❯
+          </button>
+        </div>
+      )}
     </>
   );
 }
