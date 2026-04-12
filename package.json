@@ -36,6 +36,11 @@
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.54.0"
   },
+  "browserslist": [
+    "last 2 versions",
+    "> 0.2%",
+    "not dead"
+  ],
   "ct3aMetadata": {
     "initVersion": "6.8.0"
   }
