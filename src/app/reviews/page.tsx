@@ -2,44 +2,63 @@ import { customMetadata } from "../../components/metadata";
 import Navbar, { NavigationPage } from "../../components/navbar";
 import reviewsJson from "../../data/reviews.json";
 import Divider from "../../components/divider";
-import gamesRankedJson from "../../data/games-ranked.json";
 import Link from "next/link";
 import { months } from "../../components/post/post-header";
 import ReviewsClient from "./reviews-client";
+import { getRecord } from "../../data/records";
 
-const getDateText = (yearMonthDay: [number, number, number]): string => {
-  const date = new Date(yearMonthDay[0], yearMonthDay[1] - 1, yearMonthDay[2]);
-  return `${date.getDate().toString()} ${months[date.getMonth()] as string} ${date.getFullYear().toString()}`;
+interface Game {
+  name: string;
+  reviewSlug?: string;
+  started?: string;
+  startedApproximate?: boolean;
+  completed?: string;
+  completedApproximate?: boolean;
+  inProgress?: boolean;
+}
+
+const formatDateValue = (value: string, approximate?: boolean): string => {
+  const prefix = approximate ? "~" : "";
+
+  if (value.includes("/")) {
+    const [start, end] = value.split("/");
+    return `${prefix}${start}/${end}`;
+  }
+
+  const parts = value.split("-").map(Number);
+
+  if (parts.length === 3) {
+    const [year, month, day] = parts;
+    const date = new Date(year as number, (month as number) - 1, day);
+    return `${prefix}${date.getDate().toString()} ${months[date.getMonth()] as string} ${date.getFullYear().toString()}`;
+  }
+
+  if (parts.length === 2) {
+    const [year, month] = parts;
+    return `${prefix}${months[(month as number) - 1] as string} ${(year as number).toString()}`;
+  }
+
+  return `${prefix}${value}`;
 };
 
-const getStartedAndCompleted = (game: {
-  name: string;
-  slug?: string;
-  started?: number[] | string;
-  completed?: number[] | string;
-}): string | undefined => {
-  if (game.started && game.completed) {
-    return `(Started: ${
-      typeof game.started === "string"
-        ? game.started
-        : getDateText(game.started as [number, number, number])
-    }, Completed: ${
-      typeof game.completed === "string"
-        ? game.completed
-        : getDateText(game.completed as [number, number, number])
-    })`;
-  } else if (game.started) {
-    return `(Started: ${
-      typeof game.started === "string"
-        ? game.started
-        : getDateText(game.started as [number, number, number])
-    })`;
+const getStartedAndCompleted = (game: Game): string | undefined => {
+  const startedText = game.started
+    ? formatDateValue(game.started, game.startedApproximate)
+    : undefined;
+  const completedText = game.completed
+    ? formatDateValue(game.completed, game.completedApproximate)
+    : undefined;
+
+  if (startedText && completedText) {
+    return `(Started: ${startedText}, Completed: ${completedText})`;
+  } else if (startedText) {
+    return `(Started: ${startedText})`;
   }
 };
 
 export const metadata = customMetadata("Reviews");
 
-export default function Page() {
+export default async function Page() {
   const categories = [
     ...new Map(
       reviewsJson
@@ -47,6 +66,11 @@ export default function Page() {
         .map((item) => [item.slug, item]),
     ).values(),
   ].sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0));
+
+  const gamesRanked = await getRecord<Game[]>("Games/games-ranked.json");
+
+  const completedGames = gamesRanked.filter((game) => !game.inProgress);
+  const inProgressGames = gamesRanked.filter((game) => game.inProgress);
 
   return (
     <>
@@ -66,12 +90,12 @@ export default function Page() {
               All Games I’ve Completed (Ranked)
             </h3>
             <ol className="list-decimal pl-8">
-              {gamesRankedJson.completed.map((game) =>
-                game.slug ? (
+              {completedGames.map((game) =>
+                game.reviewSlug ? (
                   <li key={game.name}>
                     <Link
                       target="_blank"
-                      href={game.slug}
+                      href={game.reviewSlug}
                       rel="noreferrer"
                       className="text-blue-600 underline hover:text-blue-800"
                     >
@@ -95,7 +119,7 @@ export default function Page() {
               Games In-Progress
             </h3>
             <ul className="list-disc pl-8">
-              {gamesRankedJson.started.map((game) => (
+              {inProgressGames.map((game) => (
                 <li key={game.name}>
                   <span className="font-bold">{game.name}</span>{" "}
                   <span className="italic">{getStartedAndCompleted(game)}</span>
