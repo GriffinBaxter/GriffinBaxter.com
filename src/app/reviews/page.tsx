@@ -22,7 +22,7 @@ const formatDateValue = (value: string, approximate?: boolean): string => {
 
   if (value.includes("/")) {
     const [start, end] = value.split("/");
-    return `${prefix}${start}/${end}`;
+    return `${prefix as string}${start as string}/${end as string}`;
   }
 
   const parts = value.split("-").map(Number);

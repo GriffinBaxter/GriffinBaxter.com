@@ -1,6 +1,5 @@
 // Redirect for old post links without a /projects or /reviews prefix
 
-import type { PostDetails } from "../../models";
 import projectsJson from "../../data/projects.json";
 import reviewsJson from "../../data/reviews.json";
 import { notFound, permanentRedirect } from "next/navigation";
@@ -20,7 +19,7 @@ export default async function Page(props: Props) {
 
   const projectPost = projectsJson.find(
     (post) => post.slug === params.postSlug,
-  ) as PostDetails | undefined;
+  );
 
   const isProject = !!projectPost;
 
