@@ -15,6 +15,7 @@ interface Game {
   completed?: string;
   completedApproximate?: boolean;
   inProgress?: boolean;
+  status?: "completed" | "in_progress";
 }
 
 const formatDateValue = (value: string, approximate?: boolean): string => {
@@ -69,8 +70,12 @@ export default async function Page() {
 
   const gamesRanked = await getRecord<Game[]>("Games/games-ranked.json");
 
-  const completedGames = gamesRanked.filter((game) => !game.inProgress);
-  const inProgressGames = gamesRanked.filter((game) => game.inProgress);
+  const completedGames = gamesRanked.filter(
+    (game) => !game.inProgress || game.status === "completed",
+  );
+  const inProgressGames = gamesRanked.filter(
+    (game) => game.inProgress || game.status === "in_progress",
+  );
 
   return (
     <>
