@@ -1,10 +1,9 @@
-// Redirect for old post links without a /projects or /reviews prefix
+// Redirect for old post links without a /projects prefix
 
 import projectsJson from "../../data/projects.json";
-import reviewsJson from "../../data/reviews.json";
 import { notFound, permanentRedirect } from "next/navigation";
 
-const slugs = [...projectsJson, ...reviewsJson].map(({ slug }) => slug);
+const slugs = projectsJson.map(({ slug }) => slug);
 
 interface Props {
   params: Promise<{ postSlug: string }>;

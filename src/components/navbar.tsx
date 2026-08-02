@@ -46,7 +46,6 @@ export default function Navbar({ currentPage }: Props) {
     >
       {navbarLink(NavigationPage.Home, currentPage)}
       {navbarLink(NavigationPage.Projects, currentPage)}
-      {navbarLink(NavigationPage.Reviews, currentPage)}
       {navbarLink(NavigationPage.Contact, currentPage)}
     </ul>
   );
