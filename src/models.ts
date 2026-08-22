@@ -12,12 +12,11 @@ export interface PostDetails {
   categories: Category[];
 }
 
+export type PostBlockTag =
+  "p" | "h4" | "ul" | "blockquote" | "figure" | "iframe" | "hr";
+
 export interface PostBlock {
   innerHtml: string;
-  tagName: string;
+  tagName: PostBlockTag;
   attributes?: string[];
-}
-
-export interface Slug {
-  slug: string;
 }

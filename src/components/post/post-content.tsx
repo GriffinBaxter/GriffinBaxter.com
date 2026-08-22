@@ -65,20 +65,30 @@ export default function PostContent({ blocks }: Props) {
   let contentHTML = "";
   for (const block of blocks) {
     contentHTML += `<p class="text-md sm:text-lg md:text-xl pt-8">`;
-    if (block.tagName === "p") {
-      contentHTML += styleLinks(block.innerHtml);
-    } else if (block.tagName === "h4") {
-      contentHTML += styleH4(block.innerHtml, block.attributes);
-    } else if (block.tagName === "ul") {
-      contentHTML += styleList(block.innerHtml);
-    } else if (block.tagName === "blockquote") {
-      contentHTML += styleQuote(block.innerHtml);
-    } else if (block.tagName === "figure") {
-      contentHTML += styleImage(block.innerHtml);
-    } else if (block.tagName === "iframe") {
-      contentHTML += styleIframe(block.innerHtml);
-    } else if (block.tagName === "hr") {
-      contentHTML += rawHtmlDivider;
+    switch (block.tagName) {
+      case "p":
+        contentHTML += styleLinks(block.innerHtml);
+        break;
+      case "h4":
+        contentHTML += styleH4(block.innerHtml, block.attributes);
+        break;
+      case "ul":
+        contentHTML += styleList(block.innerHtml);
+        break;
+      case "blockquote":
+        contentHTML += styleQuote(block.innerHtml);
+        break;
+      case "figure":
+        contentHTML += styleImage(block.innerHtml);
+        break;
+      case "iframe":
+        contentHTML += styleIframe(block.innerHtml);
+        break;
+      case "hr":
+        contentHTML += rawHtmlDivider;
+        break;
+      default:
+        throw new Error(`Unhandled tagName`);
     }
     contentHTML += "</p>";
   }
