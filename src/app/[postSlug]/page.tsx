@@ -16,15 +16,7 @@ export default async function Page(props: Props) {
     notFound();
   }
 
-  const projectPost = projectsJson.find(
-    (post) => post.slug === params.postSlug,
-  );
-
-  const isProject = !!projectPost;
-
-  permanentRedirect(
-    `/${isProject ? "projects" : "reviews"}/${params.postSlug}`,
-  );
+  permanentRedirect(`/projects/${params.postSlug}`);
 }
 
 export const generateStaticParams = () => {

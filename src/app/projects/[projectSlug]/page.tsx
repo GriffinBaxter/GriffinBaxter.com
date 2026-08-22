@@ -15,7 +15,7 @@ export async function generateMetadata(props: Props) {
 
 export default async function Page(props: Props) {
   const params = await props.params;
-  return <Post slugs={slugs} postSlug={params.projectSlug} isProject={true} />;
+  return <Post slugs={slugs} postSlug={params.projectSlug} />;
 }
 
 export const generateStaticParams = () => {

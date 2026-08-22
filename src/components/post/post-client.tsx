@@ -8,11 +8,10 @@ import type { PostDetails, PostBlock } from "../../models";
 
 interface Props {
   postContent: PostBlock[];
-  isProject: boolean;
   post: PostDetails;
 }
 
-export default function PostClient({ postContent, isProject, post }: Props) {
+export default function PostClient({ postContent, post }: Props) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 200,
@@ -23,7 +22,7 @@ export default function PostClient({ postContent, isProject, post }: Props) {
   const galleryBlockIndex = postContent.findLastIndex(
     (block) => block.tagName === "h4" && block.innerHtml === "Gallery",
   );
-  const hasGallery = isProject && galleryBlockIndex !== -1;
+  const hasGallery = galleryBlockIndex !== -1;
 
   return (
     <>
@@ -47,7 +46,7 @@ export default function PostClient({ postContent, isProject, post }: Props) {
         transition={{ duration: 0.3 }}
         className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-16"
       >
-        <PostHeader postDetails={post} isProject={isProject} />
+        <PostHeader postDetails={post} />
         <PostContent
           blocks={
             hasGallery ? postContent.slice(0, galleryBlockIndex) : postContent

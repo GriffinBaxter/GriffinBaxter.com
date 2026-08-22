@@ -3,7 +3,6 @@ import Link from "next/link";
 export enum NavigationPage {
   Home,
   Projects,
-  Reviews,
   Contact,
 }
 
@@ -13,7 +12,6 @@ const navigationPageDetails: Record<
 > = {
   [NavigationPage.Home]: { title: "Home", href: "/" },
   [NavigationPage.Projects]: { title: "Projects", href: "/projects" },
-  [NavigationPage.Reviews]: { title: "Reviews", href: "/reviews" },
   [NavigationPage.Contact]: { title: "Contact", href: "/contact" },
 };
 
