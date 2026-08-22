@@ -33,10 +33,10 @@ export default function ProjectGallery({ blocks }: Props) {
             <div
               id={`slide${slideNumber.toString()}`}
               key={block.innerHtml}
-              className="carousel-item relative aspect-16/9 w-full"
+              className="relative carousel-item aspect-video w-full"
             >
               <Image
-                className="mx-auto max-h-[675px]"
+                className="mx-auto max-h-168.75"
                 src={
                   process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
                     ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${block.innerHtml}`
@@ -53,7 +53,7 @@ export default function ProjectGallery({ blocks }: Props) {
       {numberOfSlides > 1 && (
         <div className="join flex w-full flex-wrap justify-center pt-4">
           <button
-            className="btn btn-sm sm:btn-md join-item w-8 sm:w-12"
+            className="btn join-item w-8 btn-sm sm:w-12 sm:btn-md"
             onClick={() => {
               const newSlide =
                 currentSlide > 0 ? currentSlide - 1 : numberOfSlides - 1;
@@ -70,7 +70,7 @@ export default function ProjectGallery({ blocks }: Props) {
               return (
                 <button
                   key={index}
-                  className="join-item btn btn-disabled btn-sm sm:btn-md w-8 sm:w-12"
+                  className="btn btn-disabled join-item w-8 btn-sm sm:w-12 sm:btn-md"
                 >
                   ...
                 </button>
@@ -79,7 +79,7 @@ export default function ProjectGallery({ blocks }: Props) {
               return (
                 <button
                   key={index}
-                  className={`btn btn-sm sm:btn-md join-item w-8 sm:w-12 ${slideNumber === currentSlide ? "btn-active" : ""}`}
+                  className={`btn join-item w-8 btn-sm sm:w-12 sm:btn-md ${slideNumber === currentSlide ? "btn-active" : ""}`}
                   onClick={() => {
                     document
                       .getElementById(`slide${slideNumber.toString()}`)
@@ -93,7 +93,7 @@ export default function ProjectGallery({ blocks }: Props) {
             }
           })}
           <button
-            className="btn btn-sm sm:btn-md join-item w-8 sm:w-12"
+            className="btn join-item w-8 btn-sm sm:w-12 sm:btn-md"
             onClick={() => {
               const newSlide =
                 currentSlide < numberOfSlides - 1 ? currentSlide + 1 : 0;

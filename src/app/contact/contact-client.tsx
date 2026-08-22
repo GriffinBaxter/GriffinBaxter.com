@@ -52,7 +52,7 @@ export default function ContactClient() {
         method="POST"
         className="pt-8"
       >
-        <fieldset className="fieldset bg-base-200 border-base-300 rounded-box w-full border p-4">
+        <fieldset className="fieldset w-full rounded-box border border-base-300 bg-base-200 p-4">
           {onSuccessPage ? (
             <div role="alert" className="alert alert-success">
               <svg
@@ -98,7 +98,7 @@ export default function ContactClient() {
                 <textarea
                   id="message"
                   name="message"
-                  className="textarea textarea-lg h-48"
+                  className="textarea h-48 textarea-lg"
                   placeholder="Message"
                   required
                 ></textarea>

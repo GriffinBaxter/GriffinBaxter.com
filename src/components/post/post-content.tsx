@@ -4,7 +4,7 @@ import { rawHtmlDivider } from "../divider";
 const styleLinks = (html: string) => {
   return html.replaceAll(
     "<a ",
-    `<a class="break-words underline text-blue-600 hover:text-blue-800" target="_blank" `,
+    `<a class="wrap-break-word underline text-blue-600 hover:text-blue-800" target="_blank" `,
   );
 };
 
@@ -45,7 +45,7 @@ const styleImage = (fileName: string) => {
         process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
           ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${fileName}`
           : ""
-      }" alt="Post Image" class="max-h-[675px]"/>
+      }" alt="Post Image" class="max-h-168.75"/>
     </div>
   `;
 };
@@ -53,7 +53,7 @@ const styleImage = (fileName: string) => {
 const styleIframe = (html: string) => {
   return html.replaceAll(
     "<iframe ",
-    `<iframe class="w-full max-h-[675px] aspect-video" `,
+    `<iframe class="w-full max-h-168.75 aspect-video" `,
   );
 };
 

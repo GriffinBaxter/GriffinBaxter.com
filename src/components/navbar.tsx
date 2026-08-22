@@ -40,7 +40,7 @@ export default function Navbar({ currentPage }: Props) {
   const links = (
     <ul
       tabIndex={0}
-      className="dropdown-content menu menu-sm rounded-box bg-base-100 max-md:dropdown-content md:menu-horizontal md:menu-md z-1 w-52 px-1 max-md:shadow-sm md:w-auto md:bg-transparent"
+      className="menu dropdown-content z-1 w-52 menu-sm rounded-box bg-base-100 px-1 max-md:dropdown-content max-md:shadow-sm md:menu-horizontal md:w-auto md:menu-md md:bg-transparent"
     >
       {navbarLink(NavigationPage.Home, currentPage)}
       {navbarLink(NavigationPage.Projects, currentPage)}
@@ -49,8 +49,8 @@ export default function Navbar({ currentPage }: Props) {
   );
 
   return (
-    <div className="bg-neutral mb-10 w-full">
-      <div className="navbar bg-neutral text-neutral-content mx-auto max-w-[1200px]">
+    <div className="mb-10 w-full bg-neutral">
+      <div className="navbar mx-auto max-w-300 bg-neutral text-neutral-content">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost text-xl">
             Griffin Baxter

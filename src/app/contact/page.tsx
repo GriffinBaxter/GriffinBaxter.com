@@ -10,7 +10,7 @@ export default function Page() {
     <>
       <Navbar currentPage={NavigationPage.Contact} />
 
-      <main className="container mx-auto flex max-w-[1200px] flex-col items-center justify-center px-8 pb-8">
+      <main className="container mx-auto flex max-w-300 flex-col items-center justify-center px-8 pb-8">
         <p className="py-8 text-center text-3xl font-bold sm:text-5xl">
           Contact
         </p>

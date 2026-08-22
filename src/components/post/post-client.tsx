@@ -44,7 +44,7 @@ export default function PostClient({ postContent, post }: Props) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3 }}
-        className="container mx-auto flex max-w-[1200px] flex-col justify-center px-8 pb-16"
+        className="container mx-auto flex max-w-300 flex-col justify-center px-8 pb-16"
       >
         <PostHeader postDetails={post} />
         <PostContent
