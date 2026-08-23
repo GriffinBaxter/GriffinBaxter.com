@@ -2,6 +2,7 @@
 
 import type { PostDetails } from "../../../models";
 import { languageBadgeColour } from "../post-header";
+import { uploadThingUrl } from "../../../images";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "motion/react";
@@ -17,11 +18,7 @@ export default function ProjectCard({ postDetails }: Props) {
         <div className="card max-w-96 bg-base-100 shadow-xl">
           <figure>
             <Image
-              src={
-                process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
-                  ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${postDetails.featuredImage}`
-                  : ""
-              }
+              src={uploadThingUrl(postDetails.featuredImage)}
               alt="Project Image"
               width={384}
               height={216}

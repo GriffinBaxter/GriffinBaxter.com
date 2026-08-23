@@ -16,7 +16,7 @@ export default function Page() {
           I’m <span className="font-bold">Griffin</span>, a{" "}
           <span className="font-bold">Full-Stack</span> Software Engineer
         </p>
-        <p className="text-md pb-8 text-center sm:text-xl">
+        <p className="pb-8 text-center sm:text-xl">
           Based in <span className="font-bold">Christchurch, New Zealand</span>
         </p>
         <Divider />

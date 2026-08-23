@@ -1,4 +1,5 @@
 import type { PostDetails } from "../../models";
+import { uploadThingUrl } from "../../images";
 import Image from "next/image";
 
 export const languageBadgeColour: Record<string, string> = {
@@ -42,11 +43,7 @@ export default function PostHeader({ postDetails }: Props) {
       </div>
       <Image
         className="mx-auto py-3"
-        src={
-          process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
-            ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${postDetails.featuredImage}`
-            : ""
-        }
+        src={uploadThingUrl(postDetails.featuredImage)}
         alt="Main Post Image"
         width="1200"
         height="675"

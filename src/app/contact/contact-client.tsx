@@ -108,7 +108,7 @@ export default function ContactClient() {
               <input
                 type="hidden"
                 name="access_key"
-                value="30208aad-0dfd-4259-a56d-4951c2c96e03"
+                value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY}
               />
               <input
                 type="hidden"
