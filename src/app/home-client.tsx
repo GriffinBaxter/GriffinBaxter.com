@@ -26,7 +26,7 @@ export default function HomeClient() {
         .map((project) =>
           project ? (
             <div key={project.slug} className="max-w-sm">
-              <ProjectCard postDetails={project} />
+              <ProjectCard postDetails={project} imageLoading={"eager"} />
             </div>
           ) : null,
         )}

@@ -57,9 +57,12 @@ export default function ProjectsClient({ categories }: Props) {
                 )
               : true,
           )
-          .map((project) => (
+          .map((project, index) => (
             <div key={project.slug} className="max-w-sm">
-              <ProjectCard postDetails={project} />
+              <ProjectCard
+                postDetails={project}
+                imageLoading={index < 3 ? "eager" : "lazy"}
+              />
             </div>
           ))}
       </motion.div>

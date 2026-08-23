@@ -47,7 +47,7 @@ export default function PostHeader({ postDetails }: Props) {
         alt="Main Post Image"
         width="1200"
         height="675"
-        priority={true}
+        loading="eager"
       ></Image>
     </>
   );

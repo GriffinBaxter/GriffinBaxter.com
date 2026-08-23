@@ -9,9 +9,13 @@ import { motion } from "motion/react";
 
 interface Props {
   postDetails: PostDetails;
+  imageLoading?: "eager" | "lazy";
 }
 
-export default function ProjectCard({ postDetails }: Props) {
+export default function ProjectCard({
+  postDetails,
+  imageLoading = "lazy",
+}: Props) {
   return (
     <motion.div whileHover={{ scale: 1.025 }} whileTap={{ scale: 0.975 }}>
       <Link href={`projects/${postDetails.slug}`}>
@@ -22,6 +26,7 @@ export default function ProjectCard({ postDetails }: Props) {
               alt="Project Image"
               width={384}
               height={216}
+              loading={imageLoading}
             />
           </figure>
           <div className="card-body">
