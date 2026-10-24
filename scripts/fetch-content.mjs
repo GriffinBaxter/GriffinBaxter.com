@@ -11,13 +11,13 @@ const GITHUB_PAT = process.env.GITHUB_PAT;
 async function fetchContent() {
   if (!CONTENT_REPO) {
     throw new Error(
-      "CONTENT_REPO is not set; configure the owner/repository for private content.",
+      "CONTENT_REPO is not set",
     );
   }
 
   if (!GITHUB_PAT) {
     throw new Error(
-      "GITHUB_PAT is not set; configure it to fetch the private content repository.",
+      "GITHUB_PAT is not set",
     );
   }
 
@@ -41,7 +41,7 @@ async function fetchContent() {
     (file) => file.type === "file" && file.name.endsWith(".md"),
   );
   if (files.length === 0) {
-    throw new Error(`No Markdown files found in ${CONTENT_REPO}`);
+    throw new Error("No Markdown files found");
   }
 
   const downloadedFiles = await Promise.all(
