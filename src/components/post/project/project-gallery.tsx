@@ -2,15 +2,14 @@
 
 import { getPagination } from "@kaliber/pagination";
 import { useEffect, useState } from "react";
-import type { PostBlock } from "../../../models";
 import Image from "next/image";
 
 interface Props {
-  blocks: PostBlock[];
+  images: string[];
 }
 
-export default function ProjectGallery({ blocks }: Props) {
-  const numberOfSlides = blocks.length;
+export default function ProjectGallery({ images }: Props) {
+  const numberOfSlides = images.length;
   const [currentSlide, setCurrentSlide] = useState(0);
   const [pagination, setPagination] = useState<(number | null)[]>([]);
 
@@ -28,18 +27,18 @@ export default function ProjectGallery({ blocks }: Props) {
   return (
     <>
       <div className="carousel w-full overflow-x-hidden pt-6">
-        {blocks.map((block, slideNumber) => {
+        {images.map((imageId, slideNumber) => {
           return (
             <div
               id={`slide${slideNumber.toString()}`}
-              key={block.innerHtml}
+              key={imageId}
               className="relative carousel-item aspect-video w-full"
             >
               <Image
                 className="mx-auto max-h-168.75"
                 src={
                   process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID
-                    ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${block.innerHtml}`
+                    ? `https://${process.env.NEXT_PUBLIC_UPLOADTHING_APP_ID}.ufs.sh/f/${imageId}`
                     : ""
                 }
                 alt={`Gallery Image (Slide ${(slideNumber + 1).toString()})`}

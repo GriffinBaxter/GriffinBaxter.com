@@ -11,12 +11,3 @@ export interface PostDetails {
   date: string;
   categories: Category[];
 }
-
-export type PostBlockTag =
-  "p" | "h4" | "ul" | "blockquote" | "figure" | "iframe" | "hr";
-
-export interface PostBlock {
-  innerHtml: string;
-  tagName: PostBlockTag;
-  attributes?: string[];
-}

@@ -1,7 +1,9 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @plugin "daisyui" {
   themes: dark, winter;
 }
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 @theme {
   --font-sans:
@@ -27,4 +29,15 @@
   ::file-selector-button {
     border-color: var(--color-gray-200, currentColor);
   }
+}
+
+.markdown-content img {
+  max-height: 42.1875rem;
+  object-fit: contain;
+}
+
+.markdown-content iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-height: 42.1875rem;
 }

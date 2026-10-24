@@ -36,3 +36,6 @@ yarn-error.log*
 # ide
 .idea/
 .vscode/
+
+# content
+/src/content/

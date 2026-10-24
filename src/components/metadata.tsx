@@ -15,10 +15,7 @@ export const customMetadata = (
 
 export const generatePostMetadata = (
   slug: string,
-  slugs: string[],
-  json: PostDetails[],
+  projects: PostDetails[],
 ): Metadata | undefined => {
-  if (slugs.includes(slug)) {
-    return customMetadata(json.find((post) => post.slug === slug)?.title);
-  }
+  return customMetadata(projects.find((post) => post.slug === slug)?.title);
 };

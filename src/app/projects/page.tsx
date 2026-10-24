@@ -1,15 +1,16 @@
 import { customMetadata } from "../../components/metadata";
 import Navbar, { NavigationPage } from "../../components/navbar";
-import projectsJson from "../../data/projects.json";
+import { getAllProjects } from "../../project-content";
 import Divider from "../../components/divider";
 import ProjectsClient from "./projects-client";
 
 export const metadata = customMetadata("Projects");
 
 export default function Page() {
+  const projects = getAllProjects();
   const categories = [
     ...new Map(
-      projectsJson
+      projects
         .flatMap((project) => project.categories)
         .map((item) => [item.slug, item]),
     ).values(),
@@ -26,7 +27,7 @@ export default function Page() {
           Projects
         </p>
         <Divider />
-        <ProjectsClient categories={categories} />
+        <ProjectsClient categories={categories} projects={projects} />
       </main>
     </>
   );

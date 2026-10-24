@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prebuild": "npm run content:fetch",
     "build": "next build",
     "dev": "next dev --turbo",
+    "content:fetch": "node scripts/fetch-content.mjs",
     "lint": "eslint .",
     "start": "next start",
     "format": "prettier --check .",
@@ -12,6 +14,9 @@
   },
   "dependencies": {
     "@kaliber/pagination": "^1.0.1",
+    "dotenv": "^18.0.9",
+    "gray-matter": "^4.0.3",
+    "marked": "^18.1.1",
     "motion": "^13.4.4",
     "next": "^16.4.2",
     "react": "19.3.0",
@@ -22,6 +27,7 @@
     "@eslint/eslintrc": "^3.3.7",
     "@eslint/js": "^9.39.5",
     "@tailwindcss/postcss": "^4.3.3",
+    "@tailwindcss/typography": "^0.5.20",
     "@types/node": "^26.6.3",
     "@types/react": "^19.3.0",
     "@vercel/analytics": "^2.0.1",

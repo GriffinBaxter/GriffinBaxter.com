@@ -1,9 +1,7 @@
 // Redirect for old post links without a /projects prefix
 
-import projectsJson from "../../data/projects.json";
+import { getProjectSlugs } from "../../project-content";
 import { notFound, permanentRedirect } from "next/navigation";
-
-const slugs = projectsJson.map(({ slug }) => slug);
 
 interface Props {
   params: Promise<{ postSlug: string }>;
@@ -11,6 +9,7 @@ interface Props {
 
 export default async function Page(props: Props) {
   const params = await props.params;
+  const slugs = getProjectSlugs();
 
   if (!slugs.includes(params.postSlug)) {
     notFound();
@@ -20,5 +19,6 @@ export default async function Page(props: Props) {
 }
 
 export const generateStaticParams = () => {
+  const slugs = getProjectSlugs();
   return slugs.map((slug) => ({ postSlug: slug }));
 };

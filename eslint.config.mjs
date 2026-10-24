@@ -12,6 +12,7 @@ export default defineConfig(
     "eslint.config.mjs",
     "postcss.config.cjs",
     "prettier.config.cjs",
+    "scripts/**",
   ]),
   {
     languageOptions: {

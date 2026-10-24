@@ -1,35 +1,28 @@
 import Navbar, { NavigationPage } from "../../components/navbar";
-import type { PostDetails, PostBlock } from "../../models";
-import projectsJson from "../../data/projects.json";
+import { getProject } from "../../project-content";
 import PostClient from "./post-client";
 import { notFound } from "next/navigation";
 
 interface Props {
-  slugs: string[];
+  slugs?: string[];
   postSlug: string;
 }
 
-export default async function Post({ slugs, postSlug }: Props) {
-  if (!slugs.includes(postSlug)) {
+export default function Post({ postSlug }: Props) {
+  const projectPost = getProject(postSlug);
+  if (!projectPost) {
     notFound();
   }
-
-  const postContentJson = (await import(
-    `../../data/posts/${postSlug}.json`
-  )) as PostBlock[];
-  const postContent = [...Array(postContentJson.length).keys()].map(
-    (i) => postContentJson[i],
-  ) as PostBlock[];
-
-  const post = projectsJson.find(
-    (project) => project.slug === postSlug,
-  ) as PostDetails;
 
   return (
     <>
       <Navbar currentPage={NavigationPage.Projects} />
 
-      <PostClient postContent={postContent} post={post} />
+      <PostClient
+        html={projectPost.html}
+        gallery={projectPost.gallery}
+        post={projectPost.project}
+      />
     </>
   );
 }

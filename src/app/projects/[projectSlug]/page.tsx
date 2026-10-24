@@ -1,8 +1,6 @@
-import projectsJson from "../../../data/projects.json";
+import { getAllProjects, getProjectSlugs } from "../../../project-content";
 import Post from "../../../components/post/post";
 import { generatePostMetadata } from "../../../components/metadata";
-
-const slugs = projectsJson.map(({ slug }) => slug);
 
 interface Props {
   params: Promise<{ projectSlug: string }>;
@@ -10,14 +8,16 @@ interface Props {
 
 export async function generateMetadata(props: Props) {
   const params = await props.params;
-  return generatePostMetadata(params.projectSlug, slugs, projectsJson);
+  const allProjects = getAllProjects();
+  return generatePostMetadata(params.projectSlug, allProjects);
 }
 
 export default async function Page(props: Props) {
   const params = await props.params;
-  return <Post slugs={slugs} postSlug={params.projectSlug} />;
+  return <Post postSlug={params.projectSlug} />;
 }
 
 export const generateStaticParams = () => {
+  const slugs = getProjectSlugs();
   return slugs.map((slug) => ({ projectSlug: slug }));
 };

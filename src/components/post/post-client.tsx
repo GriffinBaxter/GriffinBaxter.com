@@ -1,17 +1,17 @@
 "use client";
 
 import { motion, useSpring, useScroll } from "motion/react";
-import PostContent from "../post/post-content";
 import PostHeader from "../post/post-header";
 import ProjectGallery from "../post/project/project-gallery";
-import type { PostDetails, PostBlock } from "../../models";
+import type { PostDetails } from "../../models";
 
 interface Props {
-  postContent: PostBlock[];
+  html: string;
+  gallery: string[];
   post: PostDetails;
 }
 
-export default function PostClient({ postContent, post }: Props) {
+export default function PostClient({ html, gallery, post }: Props) {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 200,
@@ -19,10 +19,7 @@ export default function PostClient({ postContent, post }: Props) {
     restDelta: 0.001,
   });
 
-  const galleryBlockIndex = postContent.findLastIndex(
-    (block) => block.tagName === "h4" && block.innerHtml === "Gallery",
-  );
-  const hasGallery = galleryBlockIndex !== -1;
+  const hasGallery = gallery.length > 0;
 
   return (
     <>
@@ -47,14 +44,11 @@ export default function PostClient({ postContent, post }: Props) {
         className="container mx-auto flex max-w-300 flex-col justify-center px-8 pb-16"
       >
         <PostHeader postDetails={post} />
-        <PostContent
-          blocks={
-            hasGallery ? postContent.slice(0, galleryBlockIndex) : postContent
-          }
+        <div
+          className="markdown-content prose max-w-none pt-2 sm:prose-lg md:prose-xl dark:prose-invert"
+          dangerouslySetInnerHTML={{ __html: html }}
         />
-        {hasGallery ? (
-          <ProjectGallery blocks={postContent.slice(galleryBlockIndex + 1)} />
-        ) : null}
+        {hasGallery ? <ProjectGallery images={gallery} /> : null}
       </motion.main>
     </>
   );

@@ -2,16 +2,16 @@
 
 import { useState } from "react";
 import { languageBadgeColour } from "../../components/post/post-header";
-import projectsJson from "../../data/projects.json";
 import ProjectCard from "../../components/post/project/project-card";
-import type { Category } from "../../models";
+import type { Category, PostDetails } from "../../models";
 import { motion } from "motion/react";
 
 interface Props {
   categories: Category[];
+  projects: PostDetails[];
 }
 
-export default function ProjectsClient({ categories }: Props) {
+export default function ProjectsClient({ categories, projects }: Props) {
   const [selectedCategory, setSelectedCategory] = useState<string | undefined>(
     undefined,
   );
@@ -49,7 +49,7 @@ export default function ProjectsClient({ categories }: Props) {
         transition={{ duration: 0.3 }}
         className="grid grid-cols-1 gap-4 py-10 md:grid-cols-2 lg:grid-cols-3"
       >
-        {projectsJson
+        {projects
           .filter((postDetails) =>
             selectedCategory
               ? postDetails.categories.find(
