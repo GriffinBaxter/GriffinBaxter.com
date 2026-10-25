@@ -40,7 +40,7 @@ const frontmatterSchema = z.object({
 
 interface ContentEntry {
   project: PostDetails;
-  content: string;
+  html: string;
   gallery: string[];
 }
 
@@ -81,11 +81,19 @@ let cachedContent: ContentEntry[] | null = null;
 
 function getContent(): ContentEntry[] {
   if (cachedContent) return cachedContent;
-  if (!fs.existsSync(CONTENT_DIR)) return [];
+  if (!fs.existsSync(CONTENT_DIR)) {
+    throw new Error(`Markdown content directory not found: ${CONTENT_DIR}`);
+  }
 
-  cachedContent = fs
+  const fileNames = fs
     .readdirSync(CONTENT_DIR)
-    .filter((fileName) => fileName.endsWith(".md"))
+    .filter((fileName) => fileName.endsWith(".md"));
+
+  if (fileNames.length === 0) {
+    throw new Error(`No Markdown files found in ${CONTENT_DIR}`);
+  }
+
+  cachedContent = fileNames
     .map((fileName) => {
       const slug = fileName.replace(/\.md$/, "");
       const { data, content } = matter(
@@ -100,10 +108,19 @@ function getContent(): ContentEntry[] {
         throw new Error(`Invalid frontmatter in ${fileName}: ${issues}`);
       }
 
+      if (!content.trim()) {
+        throw new Error(`Markdown body is empty in ${fileName}`);
+      }
+
+      const html = renderMarkdown(content);
+      if (!html.trim()) {
+        throw new Error(`Markdown rendered to empty content in ${fileName}`);
+      }
+
       const { gallery, ...metadata } = result.data;
       return {
         project: { slug, ...metadata },
-        content,
+        html,
         gallery,
       };
     })
@@ -126,7 +143,7 @@ export function getProject(slug: string): ProjectPost | null {
 
   return {
     project: entry.project,
-    html: renderMarkdown(entry.content),
+    html: entry.html,
     gallery: entry.gallery,
   };
 }

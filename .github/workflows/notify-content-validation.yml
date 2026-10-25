@@ -1,0 +1,27 @@
+name: Notify content validation
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger content validation
+        env:
+          GH_TOKEN: ${{ secrets.CONTENT_PAT }}
+          CONTENT_REPO: ${{ secrets.CONTENT_REPO }}
+        run: |
+          if [ -z "$CONTENT_REPO" ]; then
+            echo "CONTENT_REPO secret is not set"
+            exit 1
+          fi
+          gh api \
+            --method POST \
+            "repos/${CONTENT_REPO}/dispatches" \
+            -f event_type=griffinbaxter-com-updated

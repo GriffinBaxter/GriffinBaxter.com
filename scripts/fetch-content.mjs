@@ -6,25 +6,21 @@ dotenv.config();
 
 const TARGET_DIR = path.join(process.cwd(), "src", "content");
 const CONTENT_REPO = process.env.CONTENT_REPO;
-const GITHUB_PAT = process.env.GITHUB_PAT;
+const CONTENT_PAT = process.env.CONTENT_PAT;
 
 async function fetchContent() {
   if (!CONTENT_REPO) {
-    throw new Error(
-      "CONTENT_REPO is not set",
-    );
+    throw new Error("CONTENT_REPO is not set");
   }
 
-  if (!GITHUB_PAT) {
-    throw new Error(
-      "GITHUB_PAT is not set",
-    );
+  if (!CONTENT_PAT) {
+    throw new Error("CONTENT_PAT is not set");
   }
 
   const headers = {
     Accept: "application/vnd.github+json",
-    "User-Agent": "site-content-fetcher",
-    Authorization: `Bearer ${GITHUB_PAT}`,
+    "User-Agent": "content-fetcher",
+    Authorization: `Bearer ${CONTENT_PAT}`,
   };
   const response = await fetch(
     `https://api.github.com/repos/${CONTENT_REPO}/contents?ref=main`,
